@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Archive — HF Daily Papers Mirror</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,'Noto Serif SC',serif;background:#faf9f6;color:#1a1a1a;line-height:1.6}
+  .container{max-width:960px;margin:0 auto;padding:2rem 1rem}
+  header{border-bottom:2px solid #1a1a1a;padding-bottom:1rem;margin-bottom:1.5rem}
+  header h1{font-size:1.8rem} header a{color:#666;text-decoration:none;font-size:0.9rem}
+  .layout{display:flex;gap:2rem}
+  .sidebar{flex:0 0 160px}
+  .sidebar ul{list-style:none;font-size:0.82rem}
+  .sidebar li a{color:#2563eb;text-decoration:none;display:block;padding:0.15rem 0}
+  .sidebar li a:hover{text-decoration:underline}
+  .main{flex:1;overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:0.9rem}
+  th,td{text-align:left;padding:0.6rem 0.5rem;border-bottom:1px solid #e8e8e8}
+  th{font-size:0.75rem;text-transform:uppercase;color:#888;font-weight:600}
+  footer{text-align:center;padding:2rem 0;color:#999;font-size:0.8rem;margin-top:2rem;border-top:1px solid #e8e8e8}
+  @media(max-width:600px){.layout{flex-direction:column}.sidebar{flex:none}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>HF Daily Papers Mirror — Archive</h1>
+  <a href="index.html">← Back to today</a>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <p style="font-weight:600;margin-bottom:0.5rem">Dates</p>
+    <ul><li><a href="#" onclick="loadArchive('2026-05-30')">2026-05-30</a></li></ul>
+  </aside>
+  <div class="main">
+    <table>
+      <thead><tr><th>ID</th><th>Title</th><th>Authors</th><th>Votes</th></tr></thead>
+      <tbody>
+    <tr>
+      <td><a href="https://arxiv.org/abs/2605.21781">2605.21781</a></td>
+      <td><a href="https://arxiv.org/abs/2605.21781">Reflective Prompt Tuning through Language Model Function-Calling</a></td>
+      <td>Farima Fatahi Bayat, Moin Aminnaseri, Pouya Pezeshkpour</td>
+      <td style="text-align:right">▲ 42</td>
+    </tr>
+    <tr>
+      <td><a href="https://arxiv.org/abs/2605.30280">2605.30280</a></td>
+      <td><a href="https://arxiv.org/abs/2605.30280">Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks</a></td>
+      <td>Jinghui Chen, Yu Wu</td>
+      <td style="text-align:right">▲ 35</td>
+    </tr>
+    <tr>
+      <td><a href="https://arxiv.org/abs/2605.29801">2605.29801</a></td>
+      <td><a href="https://arxiv.org/abs/2605.29801">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety</a></td>
+      <td>Alice Wang, Bob Li, Carol Zhang</td>
+      <td style="text-align:right">▲ 18</td>
+    </tr></tbody>
+    </table>
+  </div>
+</div>
+<footer>
+  <p>Archive of <a href="https://huggingface.co/papers">HuggingFace Daily Papers</a></p>
+</footer>
+</div>
+<script>
+function loadArchive(date) {
+  const rows = document.querySelectorAll('tbody tr');
+  fetch('archive/' + date + '.json').then(r => r.json()).then(data => {
+    const ids = new Set(data.papers.map(p => p.id));
+    rows.forEach(row => {
+      row.style.display = ids.has(row.querySelector('td:first-child a').textContent.trim()) ? '' : 'none';
+    });
+  });
+}
+</script>
+</body>
+</html>

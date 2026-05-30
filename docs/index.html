@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HF Daily Papers Mirror — 2026-05-30</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,'Noto Serif SC',serif;background:#faf9f6;color:#1a1a1a;line-height:1.6}
+  .container{max-width:800px;margin:0 auto;padding:2rem 1rem}
+  header{border-bottom:2px solid #1a1a1a;padding-bottom:1rem;margin-bottom:2rem;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem}
+  header h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;letter-spacing:-0.02em}
+  header p{color:#666;font-size:0.9rem}
+  nav{display:flex;gap:0.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
+  nav a{padding:0.4rem 1rem;border:1px solid #d4d4d4;border-radius:4px;text-decoration:none;color:#1a1a1a;font-size:0.85rem;transition:background .2s}
+  nav a:hover,nav a.active{background:#1a1a1a;color:#fff}
+  .paper{border-bottom:1px solid #e8e8e8;padding:1.5rem 0}
+  .paper:first-child{border-top:1px solid #e8e8e8}
+  .paper h2{font-size:1.15rem;font-weight:700;margin-bottom:0.3rem;line-height:1.4}
+  .paper h2 a{color:#1a1a1a;text-decoration:none}
+  .paper h2 a:hover{text-decoration:underline}
+  .meta{font-size:0.82rem;color:#888;margin-bottom:0.5rem;display:flex;gap:1rem;flex-wrap:wrap}
+  .meta .upvotes{color:#c41e3a;font-weight:600}
+  .summary{font-size:0.9rem;color:#444;line-height:1.6;max-height:5em;overflow:hidden;position:relative}
+  .summary::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2em;background:linear-gradient(transparent,#faf9f6)}
+  .links{margin-top:0.5rem;display:flex;gap:0.75rem;flex-wrap:wrap}
+  .links a{font-size:0.82rem;color:#2563eb;text-decoration:none;border:1px solid #2563eb;padding:0.25rem 0.75rem;border-radius:3px;transition:all .2s}
+  .links a:hover{background:#2563eb;color:#fff}
+  .links a.arxiv-pdf{border-color:#b31b1b;color:#b31b1b}
+  .links a.arxiv-pdf:hover{background:#b31b1b;color:#fff}
+  .archive-panel{display:none;background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1rem;margin-bottom:1.5rem}
+  .archive-panel.open{display:block}
+  .archive-panel ul{list-style:none;columns:2}
+  .archive-panel li a{color:#2563eb;text-decoration:none;font-size:0.85rem}
+  .archive-panel li a:hover{text-decoration:underline}
+  footer{text-align:center;padding:2rem 0;color:#999;font-size:0.8rem}
+  footer a{color:#666}
+  .rss-link{padding:0.4rem 0.8rem;background:#f26522;color:#fff!important;border-radius:4px;text-decoration:none;font-size:0.8rem;font-family:sans-serif}
+  @media(max-width:600px){
+    header{flex-direction:column;align-items:flex-start}
+    .archive-panel ul{columns:1}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <div>
+    <h1>HF Daily Papers Mirror</h1>
+    <p>Daily papers from HuggingFace, mirrored for access from China</p>
+  </div>
+  <a href="rss.xml" class="rss-link">RSS</a>
+</header>
+
+<nav>
+  <a href="#" class="active">Daily</a>
+  <a href="archive.html">Archive</a>
+  <a href="#" onclick="document.querySelector('.archive-panel').classList.toggle('open');return false">Date ▾</a>
+</nav>
+
+<div class="archive-panel">
+  <ul><li><a href="#" data-date="2026-05-30" onclick="loadDate('2026-05-30')">2026-05-30</a></li></ul>
+</div>
+
+<main>
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2605.21781" target="_blank">Reflective Prompt Tuning through Language Model Function-Calling</a></h2>
+  <div class="meta">
+    <span>Farima Fatahi Bayat, Moin Aminnaseri, Pouya Pezeshkpour, Estevam Hruschka</span>
+    <span class="upvotes">▲ 42</span>
+    <span>by @farimafatahi</span>
+  </div>
+  <div class="summary">Large language models (LLMs) have become increasingly capable of following instructions and complex reasoning... We propose Reflective Prompt Tuning (RPT), a framework that uses LLM function calling to simulate the iterative workflow of human prompt engineers.</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2605.21781" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2605.21781" target="_blank" class="arxiv-pdf">PDF</a>
+    
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2605.30280" target="_blank">Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks</a></h2>
+  <div class="meta">
+    <span>Jinghui Chen, Yu Wu</span>
+    <span class="upvotes">▲ 35</span>
+    
+  </div>
+  <div class="summary">We present Qwen-VLA, a unified vision-language-action model that generalizes across diverse tasks, environments, and robot embodiments.</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2605.30280" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2605.30280" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/QwenLM/Qwen-VLA" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2605.29801" target="_blank">AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety</a></h2>
+  <div class="meta">
+    <span>Alice Wang, Bob Li, Carol Zhang</span>
+    <span class="upvotes">▲ 18</span>
+    
+  </div>
+  <div class="summary">AgentDoG 1.5 introduces a lightweight framework for aligning AI agents with safety and security constraints.</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2605.29801" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2605.29801" target="_blank" class="arxiv-pdf">PDF</a>
+    
+  </div>
+</article></main>
+
+<footer>
+  <p>Papers from <a href="https://huggingface.co/papers">HuggingFace Daily Papers</a> — content on <a href="https://arxiv.org">arXiv</a></p>
+  <p>Generated 2026-05-30 · <a href="https://github.com/YOUR_USERNAME/hf-daily-papers-mirror">GitHub</a> · <a href="rss.xml">RSS Feed</a> · <a href="index.json">JSON API</a></p>
+</footer>
+</div>
+
+<script>
+async function loadDate(date) {
+  window.location.href = 'archive.html?date=' + date;
+}
+</script>
+</body>
+</html>
