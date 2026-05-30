@@ -8,15 +8,15 @@ HuggingFace Daily Papers 的国内可访问镜像站。
 
 ## 使用方式
 
-- **网页浏览**: `https://YOUR_USERNAME.github.io/hf-daily-papers-mirror/`
-- **RSS 订阅**: `https://YOUR_USERNAME.github.io/hf-daily-papers-mirror/rss.xml`
-- **JSON API**: `https://YOUR_USERNAME.github.io/hf-daily-papers-mirror/index.json`
+- **网页浏览**: `https://saffee666.github.io/hf-daily-papers-mirror/`
+- **RSS 订阅**: `https://saffee666.github.io/hf-daily-papers-mirror/rss.xml`
+- **JSON API**: `https://saffee666.github.io/hf-daily-papers-mirror/index.json`
 
 ## 部署
 
 1. Fork 本仓库
 2. Settings → Pages → Source: GitHub Actions
-3. 修改 `scripts/fetch_and_build.py` 中的 `RSS_FEED_URL` 和 `YOUR_USERNAME`
+3. 修改 `scripts/fetch_and_build.py` 中的 `RSS_FEED_URL` 和 `saffee666`
 4. Actions 会自动每日 UTC 0:00 运行，或手动触发
 
 ## 本地运行
