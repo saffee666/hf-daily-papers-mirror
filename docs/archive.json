@@ -4803,7 +4803,7 @@
       "upvotes": 0,
       "publishedAt": "2026-06-04T00:00:00.000Z",
       "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
-      "githubRepo": "",
+      "githubRepo": "https://github.com/showlab/Dream.exe",
       "submittedBy": "ruizhaocv"
     },
     "2606.03940": {
@@ -5656,9 +5656,297 @@
       "submittedOnDailyAt": "2026-06-04T00:00:00.000Z",
       "githubRepo": "https://github.com/MAGIC-AI4Med/MedSP1000",
       "submittedBy": "byrLLCC"
+    },
+    "2606.05515": {
+      "title": "BRepCLIP: Contrastive Multimodal Pretraining on BRep Primitives for CAD Understanding",
+      "authors": [
+        "Muhammad Usama",
+        "Didier Stricker",
+        "Mohammad Sadil Khan",
+        "Muhammad Zeshan Afzal"
+      ],
+      "summary": "Learning representations of CAD models is a largely open problem. While 3D representation learning has flourished around point clouds and meshes, the native format of CAD - boundary representations BReps, which encodes exact parametric surfaces, curves, and their topology, has received little attention as a representation learning substrate. We introduce BRepCLIP, the first framework to align BRep geometry with language and image embeddings through contrastive pretraining. We model each CAD object as a sequence of face and edge tokens with separate discrete vocabularies for surface and curve geometry, augmented with spatial and semantic descriptors that capture surface types (e.g., cylindrical, torus, NURBS) and curve primitives (e.g., line, arc, B-spline). A transformer encoder aggregates these tokens into a global BRep embedding, aligned with CLIP's text and image encoders via a joint contrastive objective. BRepCLIP generates more discriminative and semantically grounded embeddings than existing point-based alternatives, improving Top-1 retrieval over OpenShape by 40.4%, 22.0%, and 23.9% on ABC, CADParser, and Automate, respectively, and improving zero-shot classification on FabWave by 15% in Top-1 score. We further demonstrate its utility as a CAD-aware similarity metric for evaluating text and image-conditioned CAD generation, establishing the importance of structure-aware pretraining for multimodal CAD understanding. Project page is available at https://muhammadusama100.github.io/BrepClip2026/",
+      "upvotes": 0,
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "SadilKhan"
+    },
+    "2606.06486": {
+      "title": "Regret Minimization with Adaptive Opponents in Repeated Games",
+      "authors": [
+        "Mingyang Liu",
+        "Asuman Ozdaglar",
+        "Tiancheng Yu",
+        "Kaiqing Zhang"
+      ],
+      "summary": "In this paper, we study regret minimization in repeated games with adaptive opponents who can respond based on histories of play. The standard metric of external regret in online learning is known to fail to capture such adaptivity. To account for players' counterfactual reasoning, we introduce {\\tt Repeated Policy Regret (RP-Regret)}, a game-theoretic metric that measures the difference between the realized and the best-in-hindsight accumulated utility when all players can respond to the history of play. Compared to existing regret notions in this setting, ours is native to repeated game playing, enabling stronger comparators and opponents with fewer constraints, while maintaining the possibility of finding better equilibria when all players minimize it. We first identify necessary conditions for obtaining {\\tt RP-Regret} sublinear in time, on the variation of the player's comparator strategies in the regret definition and on the memories of both the comparator and opponents' strategies. We then study additional conditions and provable algorithms to minimize {\\tt RP-Regret}, which is by definition non-convex in the strategy space. To address this challenge, we propose three algorithms: (i) one based on an optimization oracle, as assumed in some prior work in online non-convex learning; (ii) one that minimizes a convex and linearized surrogate of {\\tt RP-Regret} at each iteration; (iii) one that directly minimizes {\\tt RP-Regret} when opponents change strategies slowly. Furthermore, when all players can run algorithms to minimize the {\\tt RP-Regret} (or its linearized variant), certain subgame perfect equilibria of the repeated game can be learned. We also provide experiments showing that minimizing our regret notions can lead to more cooperative solutions with higher utility in games such as Stag-Hunt.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "liumy2010"
+    },
+    "2606.02956": {
+      "title": "The Road Ahead in Autonomous Driving: The KITScenes Multimodal Dataset",
+      "authors": [
+        "Richard Schwarzkopf",
+        "Fabian Immel",
+        "Alexander Blumberg",
+        "Jonas Merkert",
+        "Nils Rack",
+        "Kaiwen Wang",
+        "Fabian Konstantinidis",
+        "Julian Truetsch",
+        "Carlos Fernandez",
+        "Annika Bätz",
+        "Kevin Rösch",
+        "Marlon Steiner",
+        "Willi Poh",
+        "Yinzhe Shen",
+        "Royden Wagner",
+        "Felix Hauser",
+        "Dominik Strutz",
+        "Jaime Villa",
+        "Gleb Stepanov",
+        "Holger Caesar",
+        "Ömer Şahin Taş",
+        "Frank Bieder",
+        "Jan-Hendrik Pauls",
+        "Christoph Stiller"
+      ],
+      "summary": "Existing autonomous driving datasets have enabled major progress, but fall short in sensor fidelity, map completeness, or geographic diversity. We present KITScenes Multimodal, a European dataset built around high-fidelity sensors and maps. Our fully synchronized sensor suite combines high-resolution global-shutter cameras, long-range lidar beyond 400m, 4D imaging radar, and redundant GNSS/INS localization. Our HD maps are, to our knowledge, the most complete of any sensor dataset, validated through autonomous driving trials on open-source software. For the first time in a public dataset, all driving-relevant traffic elements, such as traffic lights, are mapped in 3D to a reprojection-accurate level with full topological connectivity. Recorded in cities with irregular street layouts and mixed traffic modes, our dataset complements existing datasets by broadening the available geographic diversity. We also introduce four benchmarks, each advancing spatial learning for embodied AI: online HD map construction, long-range depth estimation, novel view synthesis, and end-to-end driving. Project page: https://kitscenes.com/",
+      "upvotes": 0,
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "immel-f"
+    },
+    "2606.04880": {
+      "title": "MAOAM: Unified Object and Material Selection with Vision-Language Models",
+      "authors": [
+        "Jaden Park",
+        "Valentin Deschaintre",
+        "Jason Kuen",
+        "Kangning Liu",
+        "Iliyan Georgiev",
+        "Krishna Kumar Singh",
+        "Yong Jae Lee",
+        "Michael Fischer"
+      ],
+      "summary": "Selection is a core operation in interactive image editing. To be practical, a user should be able to specify and disambiguate the desired selection region through either text or click-based interactions, and the system should support selecting not only objects but also other criteria, such as materials. Material-based selection is valuable for tasks like re-texturing surfaces or editing instances of a specific material. However, existing vision-language-model (VLM) based selection methods are object-centric and typically support a single interaction modality, limiting their applicability. In this work, we thus present Mask Any Object And Material (MAOAM), a unified selection framework that enables precise object and material-level selection across both text- and click-based interactions. MAOAM leverages a VLM with a segmentation head to produce pixel-accurate masks from user prompts: the VLM interprets the user's selection intent (object or material-level) and encodes visual entities, attributes, and spatial relations, while the segmentation head decodes the output token into a mask. A key challenge is the lack of material selection datasets with text annotations. We propose a scalable data generation pipeline: we collect real and synthetic images with material masks, and leverage VLMs to generate material descriptions with rich visual-semantics. We train MAOAM with a multi-task objective over click and text-based selection, along with an auxiliary VQA task derived from the material descriptions to facilitate deeper material understanding. Despite being trained with uni-modal prompts, our model exhibits an emergent improvement in selection when combining text and clicks at inference, enabling flexible image editing workflows. Experiments demonstrate accurate and coherent selections across diverse objects, materials, and interaction scenarios, highlighting robustness in practice.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/adobe-research/obj-and-mat-selection",
+      "submittedBy": "jpark677"
+    },
+    "2605.27079": {
+      "title": "Trust Region Q Adjoint Matching",
+      "authors": [
+        "Yonghoon Dong",
+        "Kyungmin Lee",
+        "Changyeon Kim",
+        "Jaehyuk Kim",
+        "Jinwoo Shin"
+      ],
+      "summary": "Off-policy reinforcement learning of pretrained flow policies remains challenging due to the instability of optimization arising from the multi-step sampling process. Recently, Q-learning with Adjoint Matching (QAM) addressed this issue by reformulating into a memoryless stochastic optimal control (SOC) problem with a learned critic. However, QAM inherits a fundamental fragility of critic-guided improvement: small critic errors are amplified when critics are ill-conditioned, often leading to model collapse. This paper introduces Trust Region Q-Adjoint Matching (TRQAM), a stable off-policy fine-tuning algorithm that adaptively controls the path-space KL with pretrained flow policies through projected dual descent. Specifically, we optimize the trust-region parameter λ in SOC dynamics, and theoretically show that the path-space KL can be represented by a closed-form function of λ. As a result, our method can precisely control the exact deviation from pretrained flow policies, achieving stable off-policy RL. Through experiments on 50 OGBench tasks, TRQAM consistently outperforms prior arts in both offline RL and offline-to-online RL. In particular, TRQAM achieves an overall success rate of 68% in offline RL, substantially improves the strongest baseline at 46%.",
+      "upvotes": 0,
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/yonghdong/trqam",
+      "submittedBy": "yonghoon96"
+    },
+    "2605.30848": {
+      "title": "LLM Anonymization Against Agentic Re-Identification",
+      "authors": [
+        "Ziwen Li",
+        "Jianing Wen",
+        "Tianshi Li"
+      ],
+      "summary": "Agentic LLMs with web search change the threat model for text anonymization: weak contextual cues can become cross-referenceable evidence for re-identification, yet those same details also carry downstream analytic value of the text. Existing defenses either remove explicit identifiers, perturb text for formal privacy, or test rewritten text against non-web inference models, leaving underexplored the operating region between resistance to agentic web-search re-identification and utility retention. We introduce AURA (Anonymization with Utility-Retention Adaptation), an LLM-powered mask-reconstruct framework that decouples privacy localization from utility-preserving reconstruction and selects candidates with adversarial privacy and utility-retention checks. We evaluate AURA on real-user interview transcripts using re-identification attacks carried out by web-search agents, along with a utility evaluation based on interviewee-profile facts, codebook facts, and the joint contextual utility grid. Our results show that AURA improves the privacy-utility frontier by using adaptive privacy scope to strengthen resistance to agentic re-identification and using a mask-reconstruct anonymization method to better preserve contextual utility under fixed privacy scope.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/PEACH-Research-Lab/AURA",
+      "submittedBy": "Aaron43"
+    },
+    "2606.01317": {
+      "title": "SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces",
+      "authors": [
+        "Qi Hu",
+        "Yifeng Tang",
+        "Qinghua Wang",
+        "Lanyang Zhao",
+        "Pengji Zhang",
+        "Yuhao Qing",
+        "Xin Yao",
+        "Dong Huang",
+        "Lin Zhang",
+        "Zhuoran Ji"
+      ],
+      "summary": "Large language models are increasingly deployed as coding agents, shifting safety from individual responses to action sequences. Existing benchmarks, however, primarily assess whether models refuse unsafe prompts, leaving impacts on stateful workspaces largely unexamined. We present SABER, a benchmark for environment-aware operational safety that places models in realistic agent-style projects and evaluates safety from the final environment state after a sequence of actions. Beyond binary safety-violation reports, SABER categorizes violations by cause, enabling analysis of model-specific safety profiles. Our evaluations show that even the best-performing model has more than a 54% harmful safety-violation rate (HSR), suggesting that current alignment remains insufficient for realistic project environments. SABER further reveals distinct safety profiles across models. Our benchmark is publicly available at https://github.com/sssr-lab/saber.",
+      "upvotes": 0,
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/sssr-lab/saber",
+      "submittedBy": "lingfengzhe"
+    },
+    "2606.05833": {
+      "title": "Learning Geometric Representations from Videos for Spatial Intelligent Multimodal Large Language Models",
+      "authors": [
+        "Haibo Wang",
+        "Lifu Huang"
+      ],
+      "summary": "Multimodal Large Language Models (MLLMs) excel at 2D semantic understanding but lack intrinsic 3D awareness, resulting in representations that fail to maintain geometric and spatial consistency across video frames. Given the scarcity of large-scale 3D data, we present GeoVR, a novel framework that learns geometric representations using purely 2D video sequences. This approach effectively restructures the semantic latent space within MLLMs to unlock spatial intelligence. Rather than employing superficial feature mixing, GeoVR reshapes the internal representations of the MLLM by distilling geometry knowledge from pre-trained 3D foundation models. This is accomplished through a multi-objective learning strategy driven by four complementary geometric targets: (1) estimating inter-frame camera poses to embed varying viewpoint dynamics, (2) regressing dense depth maps to anchor physical distances, (3) predicting a metric scale factor for real-world calibration, and (4) distilling multi-scale 3D features to align the intermediate feature space. Guided by these explicit physical and geometric constraints, the model's internal representations naturally develop strong 3D awareness. Extensive experiments on spatial reasoning benchmarks demonstrate that GeoVR achieves state-of-the-art performance, establishing a new paradigm for endowing foundation models with spatial intelligence.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/WHB139426/GeoVR-MLLM",
+      "submittedBy": "WHB139426"
+    },
+    "2606.06155": {
+      "title": "AffordanceVLA: A Vision-Language-Action Model Empowering Action Generation through Affordance-Aware Understanding",
+      "authors": [
+        "Qize Yu",
+        "Jiadi You",
+        "Yuran Wang",
+        "Jiaqi Liang",
+        "Bowen Ping",
+        "Yang Tian",
+        "Yue Chen",
+        "Minghong Cai",
+        "Zeying Gong",
+        "Ruihai Wu",
+        "Yinchuan Li",
+        "Junwei Liang",
+        "Yingcong Chen"
+      ],
+      "summary": "Vision-Language-Action (VLA) models leverage the rich world knowledge of pretrained vision-language models (VLMs) to enable instruction-following robotic manipulation. However, the structural mismatch between VLM semantic spaces and embodied control policies often hinders the learning of precise perception--action mappings. To address this challenge, we propose AffordanceVLA, a unified framework that introduces structured affordance forecasting as a task-oriented intermediate representation to establish a more precise and robust perception--action mapping. Specifically, we progressively model manipulation priors through three complementary components: 1) Which2Act for object-centric grounding via visual latent prediction to suppress distractions; 2) Where2Act for 2D interaction localization via affordance map estimation; and 3) How2Act for 3D geometric reasoning to guide manipulation policies. These affordance cues provide spatially grounded, semantically conditioned, and action-coupled intermediate representations, thereby naturally bridging vision, language and action. We integrate these modules into a Mixture-of-Transformer (MoT) architecture with specialized experts and train the model using a three-stage training strategy with a progressive data curriculum. To overcome the scarcity of dense affordance labels in robotic datasets, we also develop a robust automated data augmentation pipeline. Extensive experiments on simulation and real-world demonstrate that AffordanceVLA achieves strong performance across diverse manipulation scenarios.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/Skywalker-yqz/AffordanceVLA",
+      "submittedBy": "Skywalker0410"
+    },
+    "2606.06492": {
+      "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
+      "authors": [
+        "Liliana Hotsko",
+        "Yinxi Li",
+        "Yuntian Deng",
+        "Pengyu Nie"
+      ],
+      "summary": "Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolving codebases. We introduce Code2LoRA, a hypernetwork framework that generates repository-specific LoRA adapters, effectively injecting repository knowledge with zero inference-time token overhead. Code2LoRA supports two usage scenarios: Code2LoRA-Static converts a single repository snapshot into an adapter, suitable for comprehension of stable codebases; while Code2LoRA-Evo maintains an adapter backed by a GRU hidden state updated per code diff, suitable for active development of evolving codebases. To evaluate Code2LoRA against parameter-efficient fine-tuning baselines, we build RepoPeftBench, a benchmark of 604 Python repositories with two tracks: a static track with 40K training and 12K test assertion-completion tasks, and an evolution track with 215K commit-derived training and 87K commit-derived test tasks. On the static track, Code2LoRA-Static achieves 63.8% cross-repo and 66.2% in-repo exact match, matching the per-repository LoRA upper bound; on the evolution track, Code2LoRA-Evo achieves 60.3% cross-repo exact match (+5.2 pp over a single shared LoRA). Code2LoRA's code can be found at https://anonymous.4open.science/r/code2lora-6857; the model checkpoints and RepoPeftBench datasets can be found at https://huggingface.co/code2lora.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "lilianahotsko"
+    },
+    "2606.05557": {
+      "title": "AURA: Intent-Directed Probing for Implicit-Need Surfacing in Situated LLM Agents",
+      "authors": [
+        "Yang Li",
+        "Jiaxiang Liu",
+        "Jiang Cai",
+        "Mingkun Xu"
+      ],
+      "summary": "A situated query like \"where is Lin Wei?\" often encodes more than its literal content: the user may also want to know whether Lin Wei is free, in a good mood, or worth interrupting now. Standard tool-use agents answer the literal question and stop. AURA inserts an inference step between scene perception and tool use that produces an IntentFrame: a structured estimate of the implicit need with a scalar gap score that controls per-query probe budget and tool selection. On a 100-query four-scene implicit-intent benchmark, AURA improves implicit-need coverage over ReAct-style probing (Delta = +0.07, p < 10^-6); three of four scenes are individually significant, the gain reproduces on a second backbone, and a prompt ablation attributes the lift to gap calibration rather than answer memorisation. On factual lookup the controller trades raw accuracy for 82% fewer probes and zero forbidden-tool violations on a privacy-sensitive slice; scope conditions are detailed in Limitations. Code, simulator, and benchmark are released at https://github.com/innovation64/AURA.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/innovation64/AURA",
+      "submittedBy": "innovation64"
+    },
+    "2606.03645": {
+      "title": "The Shape of Addition: Geometric Structures of Arithmetic in Large Language Models",
+      "authors": [
+        "Liuyuan Wen",
+        "Xun Zhu",
+        "Lihao Huang",
+        "Wenbin Li",
+        "Yang Gao"
+      ],
+      "summary": "Large Language Models exhibit paradoxical fragility in fundamental arithmetic, implying a disconnect between internal computation and discrete output. By analyzing the residual stream geometry during multi-operand addition, we identify the Iso-Raw-Sum Trajectory (IRST), a geometric structure where representations are anchored by semantic digits and modulated by continuous carry fibers. We propose the Noisy Quantization Model to explain this geometry, framing arithmetic errors as Geometric Slippages caused by internal neural noise pushing a continuous, latent Carry Potential across quantization thresholds. This geometric framework further elucidates Probe Versatility, explaining how lightweight probes can disentangle coexisting latent signals (such as ground truth versus hallucination) from a single activation vector. Finally, we validate these insights through a geometric consistency check method that effectively detects and corrects these quantization failures during inference. Our code is available at https://github.com/RL-MIND/Shape-of-Addition.",
+      "upvotes": 0,
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/RL-MIND/Shape-of-Addition",
+      "submittedBy": "FlushWen"
+    },
+    "2606.06462": {
+      "title": "Benchmark Everything Everywhere All at Once",
+      "authors": [
+        "Shiyun Xiong",
+        "Dongming Wu",
+        "Peiwen Sun",
+        "Yuang Ai",
+        "Bokang Yang",
+        "Wencheng Han",
+        "Xiao-Hui Li",
+        "Xiangyu Yue"
+      ],
+      "summary": "Benchmarks are fundamental for evaluating and advancing LLMs and MLLMs by providing standardized and explicit measures of performance. However, their construction is labor-intensive and hard to reuse, raising concerns about sustainability and scalability. Moreover, existing benchmarks often quickly reach performance saturation after their release, resulting in insufficient discrimination among state-of-the-art models. To address these challenges, we introduce Benchmark Agent, a fully autonomous agentic system designed for benchmark building. Our framework orchestrates the complete benchmark construction pipeline, from user query analysis and subtask design to data annotation and quality control. To assess Benchmark Agent, we implement it to produce 15 representative benchmarks, spanning diverse evaluation scenarios, including text understanding, multimodal understanding, and domain-specific reasoning. Extensive experiments, including human evaluation, LLM-as-a-judge assessment, and consistency checks, demonstrate Benchmark Agent can generate high-quality benchmark samples with minimal human involvement. More importantly, through continual evaluation, we observe several insightful findings, including that current models struggle with certain domain-specific reasoning tasks. We believe that rapidly evolving benchmarks can contribute significantly to the research community. The preview and code will be publicly available at the demo page and code repository.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "https://github.com/Shiyun-x/Benchmark-Agent",
+      "submittedBy": "Christinexx"
+    },
+    "2606.06443": {
+      "title": "Revising Context, Shifting Simulated Stance: Auditing LLM-Based Stance Simulation in Online Discussions",
+      "authors": [
+        "Xinnong Zhang",
+        "Wanting Shan",
+        "Hanjia Lyu",
+        "Zhongyu Wei",
+        "Jiebo Luo"
+      ],
+      "summary": "Large language models are increasingly used to simulate social media users and infer how individuals may respond to online discussions. However, it remains unclear whether these simulations reflect precise user-specific beliefs or whether they are highly sensitive to semantically independent changes in conversational contexts. In this work, we study counterfactual context revision as a framework for auditing LLM-based stance simulation. Given an original online conversation, we first infer a target user's stance toward a specific topic. We then apply controlled revision strategies to the conversational context and simulate the user's stance again under the revised context. We compare text-only revision strategies with a multimodal one that incorporates meme-based context and evaluate two main effectiveness metrics, i.e., average directional stance shift and stance transition rate. The results reveal effective and robust stance transitions in both text-only and multimodal strategies across different polarization-preference mechanisms. Our study contributes an evaluation framework for understanding the context sensitivity of LLM-based stance simulation. More broadly, it highlights both the promise and risk of using LLMs to simulate online opinion dynamics.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "brucelyu"
+    },
+    "2606.00644": {
+      "title": "ForeSci: Evaluating LLM Agents for Forward-Looking AI Research Judgment",
+      "authors": [
+        "Qiuyu Tian",
+        "Haojie Yin",
+        "Yingce Xia",
+        "Youyong Kong",
+        "Zequn Liu"
+      ],
+      "summary": "AI research often requires decisions before future evidence exists: which bottleneck to attack, which direction to pursue, or where a project should be positioned. We introduce ForeSci, a temporally controlled benchmark for evaluating whether LLM agents can make such forward-looking research judgements from historical evidence. ForeSci contains 500 tasks across four fast-moving AI domains and four decision families. Each task is paired with a cutoff-aligned offline knowledge base; post-cutoff papers are hidden during generation and used only for validation. To avoid random future-event prediction, tasks are derived from pre-cutoff taxonomy branches and evidence signals, and answer-generation backbones are selected to precede the task cutoffs. We evaluate native LLMs, Hybrid RAG, and three research-agent adaptations across four backbones. Results show that explicit evidence organization improves traceability and factual support, but gains depend strongly on the decision family. Diagnostics reveal a recurring evidence-decision decoupling: agents may cite relevant evidence while forecasting the wrong research object. ForeSci turns forward-looking AI research judgement into a controlled benchmark for evaluating research agents as decision-making systems.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "brucelyu"
+    },
+    "2606.01886": {
+      "title": "Absorbing Complexity: An Interaction-Native Knowledge Harness for Financial LLM Agents",
+      "authors": [
+        "Ailiya Borjigin",
+        "Igor Stadnyk",
+        "Ben Bilski",
+        "Maksym Chikita",
+        "Dmytro Kyrylenko",
+        "Sofiia Pidturkina",
+        "Julia Stadnyk"
+      ],
+      "summary": "Financial AI agents often fail for a simple reason: they make users carry the complexity. A user must repeatedly restate goals, risk preferences, portfolio context, past judgments, and shifting market assumptions, while the agent answers, retrieves, acts, and forgets. In finance, this is not just inconvenient. In tasks such as market analysis, copy-trading review, and trade preparation, forgotten context and stale memory can create latency, repeated errors, weak auditability, and unsafe decisions.\n  We propose the interaction-native knowledge harness (InKH), an architecture for financial LLM agents that absorbs complexity into the system. InKH converts user, market, portfolio, and tool events into structured operational knowledge. It uses passive knowledge injection to assemble a bounded working context buffer before the main model step, temporal graph memory for low-latency retrieval, a wiki audit surface for human-readable governance, and background extraction with maturity, decay, and write-time invalidation.\n  We evaluate InKH on a reproducible controlled synthetic benchmark with 24 random seeds, 4 rounds, 80 episodes per round, and 6 baselines, producing 46,080 baseline-conditioned evaluations. InKH achieves mean task quality of 0.815 at 900 ms latency. Compared with agent-driven wiki-walk memory, it reduces latency by 82.95 percent, token cost by 82.29 percent, and stale-knowledge usage by 96.58 percent, while improving quality by 0.108 and traceability by 0.461. Compared with a temporal-graph system without invalidation, it improves quality by 0.050 and reduces stale-memory usage by 96.58 percent with comparable serving cost.\n  The results support a design thesis for financial AI: adoption happens when complexity is absorbed by the system rather than transferred to the user. The benchmark validates architecture-level behavior, not live trading performance.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-05T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "pidturkina"
     }
   },
   "dates": [
+    "2026-06-06",
     "2026-06-05",
     "2026-06-04",
     "2026-06-03",
