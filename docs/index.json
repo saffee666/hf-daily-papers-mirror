@@ -1,7 +1,149 @@
 {
-  "date": "2026-06-12",
+  "date": "2026-06-13",
   "count": 50,
   "papers": [
+    {
+      "id": "2606.00467",
+      "title": "On the Limits of LLM Adaptability: Impact of Model-Internalized Priors on Annotation Task Performance",
+      "authors": [
+        "Etienne Casanova",
+        "Rafal Kocielnik",
+        "R. Michael Alvarez"
+      ],
+      "summary": "Large Language Models (LLMs) are increasingly used for zero-shot annotation and LLM-as-a-judge tasks, yet their reliability hinges on how model-internalized priors interact with user-provided instructions. We investigate three dimensions of this interaction: (1) how an LLM's familiarity with data and task definitions affects performance, (2) the extent to which additional information in prompts can correct zero-shot errors (\"decision stickiness\"), and (3) model susceptibility to misaligned task definitions. Through experiments on toxicity detection across diverse datasets (spanning social media, gaming, news, and forums) using both dense and mixture-of-experts models, we find that nearly two-thirds of zero-shot errors are resistant to correction, with an overall rescue rate (fraction of initial errors corrected by prompting) of only 34.8%. High-confidence errors prove especially resistant to correction. When given misaligned definitions, LLMs follow them while maintaining confidence levels unchanged from the aligned condition. Crucially, we introduce Definition-Specific Familiarity (DSF), which measures alignment between a model's internal concept and the task definition. After controlling for dataset-level confounds, DSF shows a positive association with model performance (partial r = +0.41), while three distinct memorization metrics (ROUGE-L, BERTScore, and embedding cosine similarity) all fail to show a positive association. These findings show the limitations of prompt-based correction in annotation tasks, highlighting the importance of definition alignment over text-level memorization.",
+      "upvotes": 0,
+      "publishedAt": "2026-05-30T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.00467",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.00467",
+      "githubRepo": null
+    },
+    {
+      "id": "2606.12730",
+      "title": "Rethinking Psychometric Evaluation of LLMs: When and Why Self-Reports Predict Behavior",
+      "authors": [
+        "Rafal Kocielnik",
+        "Pengrui Han",
+        "Peiyang Song",
+        "Myrl G. Marmarelis",
+        "Ramit Debnath",
+        "Dean Mobbs",
+        "Anima Anandkumar",
+        "R. Michael Alvarez"
+      ],
+      "summary": "Anticipating LLM behavioral tendencies from low-cost psychometric probes is critical for safe deployment, but only if self-reports (SR) reliably predict behavior. Recent work documented substantial SR-behavior dissociation in LLMs, but relied on broad personality traits (Big 5) that predict specific behaviors weakly, even in humans. Furthermore, the isolation of conversational sessions combined with weak context matching left open whether LLMs truly lack coherence or whether the conditions needed to detect such coherence were not met. We contrast Big 5 with the Theory of Planned Behavior (TPB), which measures intention targeted to a specific behavior and predicts human behavior substantially better than broad traits. We run experiments across four behavioral tasks and 11 frontier LLMs, while also varying session context and identity induction. We find that SR-behavior coherence exists but is selective. 1) Within a shared conversation, the Theory of Planned Behavior reaches human-level coherence; Big 5 does not. 2) Across separate conversations, coherence survives only for behaviors anchored outside the immediate prompt, such as implicit bias shaped by training, and collapses when behavior is strongly primed by context, as with sycophancy. 3) Persona prompting makes self-reports more consistent across conversations, but does not bring behavior into alignment. These findings suggest that coarse personality frameworks, such as Big 5 may not be the best tools for testing deployment behavior. More task- and behavior-specific instruments are needed, and even these must be evaluated across tasks and contexts.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.12730",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.12730",
+      "githubRepo": "https://github.com/psychology-of-AI/Rethinking-Pyschometric-Eval-LLMs"
+    },
+    {
+      "id": "2606.13594",
+      "title": "See What I See, Know What I Think: Dense Latent Communication Across Heterogeneous Agents",
+      "authors": [
+        "Siyi Chen",
+        "Xiaoyan Zhang",
+        "Meng Wu",
+        "Jonathan Tremblay",
+        "Valts Blukis",
+        "Stan Birchfield",
+        "Rene Vidal",
+        "Alvaro Velasquez",
+        "Sijia Liu",
+        "Qing Qu"
+      ],
+      "summary": "Multi-agent systems communicate mostly through text, paying a lossy and expensive decode and re-encode cost. KV-cache communication is a promising alternative, yet most prior work is homogeneous, using duplicate copies of the same model, and avoids the central challenge of cross-model latent alignment; existing heterogeneous methods are also restrictive, typically assuming shared input and using transferred caches mainly for steering. We study a more fundamental question: can heterogeneous agents be aligned well enough to perform real \"mind reading\" and transfer both what one agent sees and how it thinks? Our information-structure analysis reveals a duality: context-aware transfer is driven by sparse reasoning signals, while context-unaware transfer, where the receiver sees no input, requires dense contextual knowledge preservation. Motivated by this, we propose dense alignment for heterogeneous KV-cache communication via a lightweight cross-model cache transformation and two-phase training: reconstruction followed by generation. Across all six directions of {Qwen3-4B, 8B, 14B} and six in-domain and out-of-domain benchmarks, our method outperforms prior heterogeneous baselines, matches or exceeds text communication in context-aware settings at roughly 2 to 3 times lower compute, and remains effective in context-unaware transfer where prior methods collapse.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.13594",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.13594",
+      "githubRepo": null
+    },
+    {
+      "id": "2606.13174",
+      "title": "Getting Better at Working With You: Compiling User Corrections into Runtime Enforcement for Coding Agents",
+      "authors": [
+        "Yujun Zhou",
+        "Kehan Guo",
+        "Haomin Zhuang",
+        "Xiangqi Wang",
+        "Yue Huang",
+        "Zhenwen Liang",
+        "Pin-Yu Chen",
+        "Tian Gao",
+        "Nuno Moniz",
+        "Nitesh V. Chawla",
+        "Xiangliang Zhang"
+      ],
+      "summary": "Interactive LLM agents are becoming part of daily work, but they do not reliably become easier to work with over time: a correction remembered in one session may still be violated in the next. We study this gap between preference access and preference compliance. In tasks derived from anonymized real-user friction cases, Mem0 memory still leaves 57.5% of applicable preference checks violated. We introduce Test-time Rule Acquisition and Compiled Enforcement (TRACE), a drop-in skill-layer pipeline for coding-agent runtimes that mines user corrections, rewrites them as atomic rules, and compiles them into runtime checks that must pass before an agent completes future tasks. Unlike runtime checks written ahead of time by developers, TRACE skills come from the user's own chat corrections. We evaluate TRACE with simulated user-in-the-loop experiments on ClawArena coding-agent tasks and MemoryArena-derived memory-intensive tasks. On ClawArena, TRACE reduces held-out preference violation from 100.0% to 37.6% on in-distribution tasks and from 100.0% to 2.0% on out-of-distribution tasks. On MemoryArena-derived tasks, TRACE reduces in-distribution violation from 100.0% to 60.5% while matching or exceeding the strongest memory baseline on task pass. These results suggest that compiling corrections into runtime enforcement can address a repeated-friction failure mode that memory alone does not reliably solve, reducing the need for users to restate the same correction across future sessions. Experiment code is available at https://github.com/YujunZhou/TRACE_exp, and the deployable skill is available at https://github.com/YujunZhou/tellonce.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.13174",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.13174",
+      "githubRepo": "https://github.com/YujunZhou/tellonce"
+    },
+    {
+      "id": "2606.10423",
+      "title": "WebChallenger: A Reliable and Efficient Generalist Web Agent",
+      "authors": [
+        "Jayoo Hwang",
+        "Xiaowen Zhang",
+        "Vedant Padwal"
+      ],
+      "summary": "Autonomous web navigation remains challenging for LLM agents, and the strongest generalist systems rely on proprietary reasoning models whose inference cost is prohibitive for the repetitive tasks where such agents would be most useful. We argue this gap stems not from insufficient model capability but from agent architectures that fail to replicate three human cognitive advantages: selective attention to relevant page regions, persistent memory of website structure, and procedural fluency with common interaction patterns. We introduce WebChallenger, a web agent framework that addresses each gap through architecture design rather than model scale, built around PageMem: a structured page representation deterministically constructed from the DOM that exposes each page as a hierarchy of semantic sections with short summaries. On this shared substrate we build three mechanisms that mirror the three cognitive advantages: a divide-and-conquer observation pipeline that lets the agent skim section summaries and extract details only from task-relevant regions; a lightweight exploration and memory system that traverses each website once to build a reusable map of pages and element behaviors; and compound action workflows that collapse common multi-step interactions into single agent actions, handling partial state changes automatically. Because all three operate over PageMem, the framework generalizes across websites without site-specific adapters. Using off-the-shelf open-weight models without fine-tuning, our system achieves 56.3% on WebArena, 48.7% on VisualWebArena, 51.0% on Online-Mind2Web, and 70.9% on WorkArena, approaching frontier proprietary systems at a fraction of the cost. Our code is released at https://github.com/jayoohwang1/webchallenger",
+      "upvotes": 0,
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.10423",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.10423",
+      "githubRepo": "https://github.com/jayoohwang1/webchallenger"
+    },
+    {
+      "id": "2606.07867",
+      "title": "The Cold-Start Safety Gap in LLM Agents",
+      "authors": [
+        "Chung-En Sun",
+        "Linbo Liu",
+        "Tsui-Wei Weng"
+      ],
+      "summary": "Are tool-calling LLM agents equally safe throughout a conversation? We discover they are not: agents are most vulnerable at the very start of a session and become substantially safer after a few regular agentic tasks -- a phenomenon we term the cold-start safety gap. To study this systematically, we introduce Safety Over Depth for Agents (SODA), a benchmark that controls how many regular agentic tasks the agent completes before encountering a safety threat, supporting up to 20 preceding tasks. Evaluating 7 models from 4 families, safety improves by 9--52% as the number of preceding regular agentic tasks increases from zero to twenty. Representation analysis confirms that model hidden states gradually shift toward a safety-aligned region as more preceding tasks are present. By systematically studying which part of the preceding conversation matters most, we find that the regular agentic tasks themselves are the primary driver of safety, while the agent's own prior responses have less effect on safety but are essential for preserving later utility. This conclusion is further supported by evaluation on open-source safety benchmarks (AgentHarm, Agent Safety Bench) and utility benchmarks (BFCL, API-Bank), confirming that warming up the agent with regular agentic tasks before deployment makes it safer and preserves full capability. Based on these findings, we recommend a simple deployment strategy: having the agent complete a few regular agentic tasks before possible exposure to safety-critical requests mitigates the cold-start safety gap. Our code is available at https://github.com/Trustworthy-ML-Lab/Agent-Cold-Start-Safety-Gap",
+      "upvotes": 0,
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.07867",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.07867",
+      "githubRepo": "https://github.com/Trustworthy-ML-Lab/Agent-Cold-Start-Safety-Gap"
+    },
+    {
+      "id": "2606.11409",
+      "title": "Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models",
+      "authors": [
+        "Malikeh Ehghaghi",
+        "Boglárka Ecsedi",
+        "Marsha Chechik",
+        "Colin Raffel"
+      ],
+      "summary": "Adversarial robustness evaluations of large language models (LLMs) typically report attack success rate (ASR) under fixed query budgets, implicitly treating all attacks as equally costly. In practice, the computational expense of different attack strategies can vary by orders of magnitude. Consequently, ASR at a fixed budget can obscure the true effort required to jailbreak a model, thereby making it hard to determine whether an attack's cost justifies its payoff to the attacker. We propose a compute-aware evaluation framework based on computational pressure, measured in cumulative floating-point operations (FLOPs), as a proxy for adversarial effort. We introduce risk-compute curves, which map compute budgets to attack risk, and derive two metrics that summarize the average pressure required for a given attack to succeed. Across ten models spanning three families and four different stages in language model training and alignment, evaluated with three attack strategies (gradient-based, iterative refinement, and template-based) on two jailbreak robustness benchmarks, we find: (1) alignment training has non-monotonic effects on compute-space robustness; (2) scaling model size reduces gradient-based attack effectiveness but has limited impact on cheaper template-based attacks; (3) gradient-based attacks optimized on a surrogate model can transfer to a separate target model, providing a way to reduce attacker costs; (4) compute cost varies by up to {approx}5{times} across harm categories within a single model; and (5) safety-aligned RL increases aggregate cost while leaving some categories disproportionately accessible. We release our framework to enable compute-aware risk assessment and evaluation.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.11409",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.11409",
+      "githubRepo": "https://github.com/r-three/risk-under-pressure"
+    },
+    {
+      "id": "2606.12451",
+      "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+      "authors": [
+        "Ashutosh Hathidara",
+        "Sai Shruthi Sistla",
+        "Sebastian Schreiber",
+        "Sahil Bansal"
+      ],
+      "summary": "Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture specialized tool semantics, parametric tool retrieval addresses this by encoding each tool as a virtual token appended to the LLM vocabulary, fine-tuned in two stages (memorization then retrieval SFT) to use the LLM as a retriever, achieving strong performance on standard ToolBench retrieval benchmarks. Yet these benchmarks use verbose, fully-specified queries, and their evaluation applies constrained decoding that restricts outputs to valid token paths, neither reveals whether the model actually understands its tools. We introduce ToolSense, an open-source LLM-powered diagnostic framework that takes any tool catalog as input and automatically generates three benchmarks: a Realistic Retrieval Benchmark (RRB) with queries at three ambiguity tiers, an MCQ probing benchmark, and a QA probing benchmark. Applying ToolSense to ToolBench (~47k tools) and evaluating five parametric model training configurations reveals a knowledge-retrieval dissociation: on RRB queries, several configurations collapse by ~50-64 percentage points compared to fully-specified ToolBench benchmarks, falling below the embedding-model baseline. Additionally, despite strong retrieval performance, some models score near-random on factual probes, suggesting a knowledge-retrieval dissociation. We open-source the ToolSense framework and the ToolBench diagnostic benchmarks at https://github.com/SAP/toolsense.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.12451",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.12451",
+      "githubRepo": "https://github.com/SAP/toolsense"
+    },
     {
       "id": "2606.12488",
       "title": "A Stationary (and Therefore Compatible) Representation is All You Need",
@@ -823,148 +965,6 @@
       "publishedAt": "2026-06-05T00:00:00.000Z",
       "arxivUrl": "https://arxiv.org/abs/2605.11212",
       "arxivPdfUrl": "https://arxiv.org/pdf/2605.11212",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.04511",
-      "title": "SparDA: Sparse Decoupled Attention for Efficient Long-Context LLM Inference",
-      "authors": [
-        "Yaosheng Fu",
-        "Guangxuan Xiao",
-        "Xin Dong",
-        "Song Han",
-        "Oreste Villa"
-      ],
-      "summary": "Sparse attention reduces compute and memory bandwidth for long-context LLM inference. However, two key challenges remain: (1) KV cache capacity still grows with sequence length, and offloading to CPU memory introduces a PCIe transfer bottleneck; (2) the sparse selection step itself retains O(T^2) complexity and can dominate attention cost at long contexts. We propose SparDA, a decoupled sparse attention architecture that introduces a fourth per-layer projection, the Forecast, alongside Query, Key, and Value. The Forecast predicts the KV blocks needed by the next layer, enabling lookahead selection that overlaps CPU-to-GPU prefetch with current-layer execution. Because Forecast is decoupled from the attention query, our GQA implementation uses one Forecast head per GQA group, reducing selection overhead versus the original multi-head selector. SparDA adds <0.5% parameters and trains only the Forecast projections by matching the original selector's attention distribution. On two sparse-pretrained 8B models, SparDA matches or slightly improves accuracy and delivers up to 1.25times prefill speedup and 1.7times decode speedup over the sparse-attention offload baseline. By enabling larger feasible batch sizes on a single GPU, SparDA further reaches up to 5.3times higher decode throughput than the non-offload sparse baseline. Our source code is available at https://github.com/NVlabs/SparDA.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.04511",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.04511",
-      "githubRepo": "https://github.com/NVlabs/SparDA"
-    },
-    {
-      "id": "2606.11553",
-      "title": "APEX: A Network-Native Time-Series Foundation Model for Forecasting and Anomaly Detection for Wireless Edge Operations",
-      "authors": [
-        "Swadhin Pradhan",
-        "Niloo Bahadori",
-        "Peiman Amini"
-      ],
-      "summary": "Generic time-series foundation models transfer poorly to wireless network telemetry whose signals are bursty, zero-inflated, and coupled across protocol layers. We present APEX, a network-native, decoder-only transformer for forecasting enterprise AP telemetry, and evaluate it on DHCP degradation as a representative network task. APEX is pre-trained on 10-channel multivariate telemetry from ~4,500 production wireless networks (~100K AP time series, 34 metrics per AP), and is available as APEX-Large (269M, cloud) and APEX-Edge (10.5M, edge). On a 192-step (4-day) DHCP degradation benchmark, APEX-Large reduces MAE by 18% over the strongest foundation-model baseline (Toto) and 38% over SARIMA, with anomaly-detection F1 = 0.93, while APEX-Edge enables sub-second, privacy-preserving inference on AP-class edge hardware. These results suggest network-native pre-training is a practical foundation for proactive wireless operations.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-10T01:23:24.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.11553",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.11553",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.10587",
-      "title": "Towards Diverse Scientific Hypothesis Search with Large Language Models",
-      "authors": [
-        "Haorui Wang",
-        "Parshin Shojaee",
-        "Kazem Meidani",
-        "Kunyang Sun",
-        "José Miguel Hernández-Lobato",
-        "Teresa Head-Gordon",
-        "Jiajun He",
-        "Chandan K. Reddy",
-        "Chao Zhang",
-        "Yuanqi Du"
-      ],
-      "summary": "Large language models (LLMs) are on the rise for accelerating scientific discovery, most recently in advanced tasks such as generating valid scientific hypotheses. Yet in many discovery settings, the goal is not to identify a single best hypothesis since validation can be noisy and expensive, and scientists benefit from a set of high-quality alternative hypotheses that hedge against downstream uncertainty for the best solutions. Nevertheless, commonly used evolutionary search recipes tend to prioritize optimization over exploration in hypothesis generation, and the resulting selection pressure during the search process leads to diversity collapse. Motivated by these limitations, we formulate hypothesis search as a sampling problem, where the objective is to efficiently produce diverse, high-quality hypotheses under a fixed validation budget. Building on this perspective, we propose \\ours, an evolutionary framework inspired by the classical parallel tempering algorithm that searches hypotheses at multiple temperature levels and enables principled information exchange across temperatures to improve exploration without disrupting convergence. Across domains including molecular discovery, equation discovery, and algorithm discovery, our approach consistently improves both hypothesis quality and diversity under the same validation budget, and produces candidates that remain robust under more expensive downstream computational validations.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-09T08:52:49.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.10587",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.10587",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.05758",
-      "title": "DRIFT: A Residual Flow Adapter for Decoding Continuous Outputs in Vision-Language Models",
-      "authors": [
-        "Zhuoming Liu",
-        "Jinhong Lin",
-        "Kwan Man Cheng",
-        "Lin Zhang",
-        "Shayok Bagchi",
-        "Yin Li"
-      ],
-      "summary": "Many modern vision-language models (VLMs) build on autoregressive decoding of discrete tokens. While text-based output interfaces enable scalable pretraining and strong zero-shot generalization across diverse tasks, they are poorly suited for problems that require precise continuous outputs, such as localizing temporal boundaries of events or generating robotic control actions. To address this challenge, we propose DRIFT, a general framework for adapting pretrained VLMs to continuous decoding tasks. DRIFT combines a base predictor, which provides a coarse estimate of the target output, with a generative refinement module based on flow matching that iteratively improves the prediction. This residual formulation transforms the generative modeling problem from learning a global output distribution to modeling a localized residual distribution around a strong prior, substantially simplifying optimization. We evaluate DRIFT on both perception and planning tasks, including visual grounding and robotic control. Across multiple tasks and architectures spanning MLLMs, VLAs, and WAMs, DRIFT consistently outperforms a strong set of regression- and generative-based solutions.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-04T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.05758",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.05758",
-      "githubRepo": "https://github.com/dragonlzm/DRIFT"
-    },
-    {
-      "id": "2606.12412",
-      "title": "Reroute, Don't Remove: Recoverable Visual Token Routing for Vision-Language Models",
-      "authors": [
-        "Cheng-Yu Yang",
-        "Shao-Yuan Lo",
-        "Yu-Lun Liu"
-      ],
-      "summary": "Vision-language models (VLMs) project images into hundreds to thousands of visual tokens, making decoder inference expensive in both attention computation and KV-cache memory. Existing visual-token reduction methods largely follow a rank-and-remove paradigm: they score visual tokens, keep a compact subset, and permanently discard the rest. We show that this irreversible action is fragile because visual-token importance changes across decoder depth; tokens ranked low at one stage may become relevant in later layers, especially for grounding-sensitive queries. We propose Reroute, a training-free plug-in that replaces removal with recoverable routing. At each routing stage, selected vision tokens pass through decoder blocks, while deferred tokens bypass the stage and re-enter the candidate pool at the next routing decision. Reroute reuses existing attention-score ranking rules and stage-wise schedules, preserving the theoretical TFLOPs and KV-cache budget class of the pruning method it augments. Across FastV, PDrop, and Nüwa variants on LLaVA-1.5 and Qwen backbones, reroute improves grounding under aggressive token reduction while maintaining general VQA performance. These results suggest that VLM token reduction should not be viewed only as irreversible pruning, but also as recoverable routing. The code can be found here: https://github.com/elmma/mllm-reroute/",
-      "upvotes": 0,
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.12412",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.12412",
-      "githubRepo": "https://github.com/elmma/mllm-reroute"
-    },
-    {
-      "id": "2606.12203",
-      "title": "Adaptive Multi-Resolution Procedural Knowledge Compression for Large Language Models",
-      "authors": [
-        "Changyue Wang",
-        "Weihang Su",
-        "Qingyao Ai",
-        "Yichen Tang",
-        "Runzhong Qiao",
-        "Xuancheng Li",
-        "Min Zhang",
-        "Yiqun Liu"
-      ],
-      "summary": "Large language models (LLMs) are widely used to tackle complex tasks with autonomous workflows. Recently, reusable natural language skills have emerged as a popular paradigm to inject procedural knowledge into LLM applications. Since popular skills are often invoked repeatedly, placing their full text in every context significantly increases prefill cost and latency. While text compression techniques have the potential to solve this problem, most existing methods are designed to compress factual knowledge in documents instead of procedural knowledge, making them insufficient for skill compression. In this paper, we argue that an effective skill compression method should: 1) preserve logical dependencies among workflows and tool protocols, 2) enable lightweight, offline compression for frequently updated community skills, and 3) be adaptable to varying complexities across skills. To address this, we present SKIM (SKIll coMpression), an adaptive multi-resolution soft token compression framework for procedural skills. Depending on the complexity of each skill, SKIM creates different numbers of soft tokens that not only improve the efficiency of LLM inference, but also preserve the effectiveness of skill usage. Experiments indicate that SKIM compresses skills to 30 to 60 percent of their original token length while preserving task performance better than existing compression methods.We have released our code at https://github.com/bebr2/SKIM .",
-      "upvotes": 0,
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.12203",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.12203",
-      "githubRepo": "https://github.com/bebr2/SKIM"
-    },
-    {
-      "id": "2606.10156",
-      "title": "τ-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
-      "authors": [
-        "Bharath Sivaram Narasimhan",
-        "Karthik R Narasimhan"
-      ],
-      "summary": "As recommender systems transition toward agentic, multi-turn conversational interfaces, evaluation paradigms have struggled to keep pace. Current benchmarks often rely on \"LLM-as-a-judge\" evaluations, which introduce subjectivity, high costs and inconsistency. We present τ-Rec, a benchmark for agentic recommender systems that replaces subjective evaluation with verifiable rewards and a reveal-tagged elicitation (RTE) mechanism that controls how task constraints surface during dialogue. By testing agents against structured catalog predicates and employing a pass^k reliability metric, τ-Rec provides a systematic test for consistent reasoning. Our evaluation of nine configurations across five model families -- GPT-5.4, Claude Sonnet 4.6, Gemini 2.5 Flash, DeepSeek V4 Flash, Qwen3-32B and GPT-5 mini -- reveals a steep reliability cliff, where even the best model achieves only ~57% at pass^1 and ~38% at pass^4, highlighting a critical gap in current conversational agent deployment. All code and data are publicly available at https://github.com/nbharaths/tau-rec.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.10156",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.10156",
-      "githubRepo": "https://github.com/nbharaths/tau-rec"
-    },
-    {
-      "id": "2606.12364",
-      "title": "On Subquadratic Architectures: From Applications to Principles",
-      "authors": [
-        "Anamaria-Roberta Hartl",
-        "Levente Zólyomi",
-        "David Stap",
-        "Pieter-Jan Hoedt",
-        "Niklas Schmidinger",
-        "Lukas Hauzenberger",
-        "Sebastian Böck",
-        "Günter Klambauer",
-        "Sepp Hochreiter"
-      ],
-      "summary": "Transformers dominate modern sequence modeling, but their quadratic attention incurs substantial computational cost. Subquadratic architectures offer a scalable alternative. However, it remains unclear which designs yield the most effective sequence models. We compare three leading approaches: xLSTM, Mamba-2, and Gated DeltaNet. We evaluate these models on tasks with complex dependencies: (1) code-model pre-training, (2) distillation of code models from large language models, and (3) pre-training of time-series foundation models. Across these settings, xLSTM delivers the strongest overall performance. To explain xLSTM's advantage, we present a unified formulation and analyze the underlying architectural mechanisms, focusing on state tracking and memory dynamics. Our results show that xLSTM enables more flexible and stable memory correction via its gating scheme. We corroborate these findings on controlled synthetic length-generalization tasks. Overall, our findings indicate that xLSTM's gains on complex tasks stem from robust state tracking and accumulation.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-10T17:33:55.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.12364",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.12364",
       "githubRepo": null
     }
   ]
