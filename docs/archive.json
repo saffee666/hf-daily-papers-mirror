@@ -15127,9 +15127,135 @@
       "submittedOnDailyAt": "2026-06-18T00:00:00.000Z",
       "githubRepo": "",
       "submittedBy": "RuishanFang"
+    },
+    "2606.20529": {
+      "title": "LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents",
+      "authors": [
+        "Md Nayem Uddin",
+        "Amir Saeidi",
+        "Eduardo Blanco",
+        "Chitta Baral"
+      ],
+      "summary": "Policy-adherent tool-calling agents in customer-service domains must maintain task states across turns while calling tools and obeying domain policies. Task states consist of relevant facts, identifiers, constraints, and conditions observed through user interaction and tool calls. In standard agents, task states are not represented separately. Observations, tool returns, and policy instructions are placed in the prompt, leaving agents to reconstruct the relevant states from the prompt each time they decide what to do next. This design makes state management implicit, creating two common failure modes. An agent may retrieve the right facts but later ground its decision in stale, missing, or incorrect information; and a syntactically valid tool call may still violate a domain policy that depends on the current task state. We introduce LedgerAgent, an inference-time method for tool-calling agents that maintains observed task states in a separate ledger and renders the states into the prompt. The ledger is also used to check state-dependent policy constraints before environment-changing tool calls are executed, blocking policy violations. Across four customer-service domains and a mixed panel of open- and closed-weight models, LedgerAgent improves average passk over a standard prompt-based tool-calling approach, with the largest gains under stricter multi-trial consistency metrics.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-18T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-19T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "sahsaeedi"
+    },
+    "2606.17053": {
+      "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+      "authors": [
+        "Peiyang Xu",
+        "Bangzheng Li",
+        "Sijia Liu",
+        "Karthik R. Narasimhan",
+        "Pramod Viswanath",
+        "Prateek Mittal",
+        "Xingyu Fu"
+      ],
+      "summary": "Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle detail in an image. We propose ContextRL, a context-aware reinforcement learning (RL) method that improves long-horizon reasoning and multimodal performance through an indirect auxiliary objective. Instead of supervising only the final answer, ContextRL presents the model with a query, an answer, and two highly similar contexts, and rewards it for selecting the context that supports the query--answer pair, thereby encouraging fine-grained grounding. We construct contrastive context data in two domains: for coding agents, trajectories serve as contexts, yielding 1k pairs built via condition filtering; for multimodal reasoning, images serve as contexts, yielding 7K pairs built via generative editing and similarity search. ContextRL achieves average gains of +2.2% over standard GRPO on 5 long-horizon benchmarks, and +1.8% across 12 diverse visual question answering benchmarks. To disentangle the effect of the proposed objective from that of additional data, we compare against data-augmentation baselines that repurpose the same contrastive contexts as standard query--context--answer examples. These baselines provide little to no improvement, showing that the gains arise from the proposed context-selection objective rather than from the contrastive data alone.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-15T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-19T00:00:00.000Z",
+      "githubRepo": "https://github.com/xupy2003/ContextAwareRL",
+      "submittedBy": "xupy21"
+    },
+    "2606.19334": {
+      "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
+      "authors": [
+        "Denis Peskoff",
+        "Joe Barrow",
+        "Christopher Vu",
+        "Diag Davenport"
+      ],
+      "summary": "Progress in legal AI increasingly depends on access to authoritative legal text at scale. Yet one of the most consequential layers of American law remains largely absent from existing machine-readable corpora: local ordinances. Local codes govern zoning, housing, business licensing, public health, noise, animal control, and many other domains of everyday regulation, but they are fragmented across vendor platforms designed for human browsing rather than bulk research access. We introduce LOCUS - the Local Ordinance Corpus for the United States - a comprehensive corpus and county-harmonized access layer for U.S. municipal and county ordinance codes. The raw corpus, available for release to researchers, represents nearly all publicly available municipal and county ordinance codes. The resulting raw corpus contains codes from 9,239 cities and counties. A smaller county-harmonized LOCUS access layer provides coverage for the largest 2,309 of 3,144 U.S. counties, accounting for a majority of the population. We use OCR to handle the myriad of document formats that have kept the law from being a public resource. We release the corpus with coverage metadata to support reproducibility, downstream legal AI research, and the incremental expansion of machine-readable access to local law. We train a collection of ModernBERT-based classifiers and scorers to facilitate analyzing U.S. local law among several dimensions, such as opacity and paternalism, that have not previously been studied at this scale. LOCUS-v1 and its derivative models are available at: https://huggingface.co/datasets/LocalLaws/LOCUS-v1",
+      "upvotes": 0,
+      "publishedAt": "2026-06-17T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-19T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "jbarrow"
+    },
+    "2603.24624": {
+      "title": "ReSyn: A Generalized Recursive Regular Expression Synthesis Framework",
+      "authors": [
+        "Seongmin Kim",
+        "Hyunjoon Cheon",
+        "Su-Hyeon Kim",
+        "Yo-Sub Han",
+        "Sang-Ki Ko"
+      ],
+      "summary": "Existing Programming-By-Example (PBE) systems often rely on simplified benchmarks that fail to capture the high structural complexity of real-world regexes, such as deeper nesting and frequent use of union operations. To overcome the resulting performance drop, we propose ReSyn, a synthesizer-agnostic divide-and-conquer framework that decomposes complex synthesis problem into manageable sub-problems. We also introduce Set2Regex, a parameter-efficient synthesizer capturing the permutation invariance of examples. Experimental results demonstrate that ReSyn significantly boosts accuracy across various synthesizers, and its combination with Set2Regex establishes a new state-of-the-art on challenging real-world benchmark. The complete source code, datasets, and pre-trained model checkpoints are publicly available at https://github.com/mrseongminkim/ReSyn.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-13T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-19T00:00:00.000Z",
+      "githubRepo": "https://github.com/mrseongminkim/ReSyn",
+      "submittedBy": "mrseongminkim"
+    },
+    "2606.18021": {
+      "title": "LegalHalluLens: Typed Hallucination Auditing and Calibrated Multi-Agent Debate for Trustworthy Legal AI",
+      "authors": [
+        "Lalit Yadav",
+        "Akshaj Gurugubelli"
+      ],
+      "summary": "AI systems deployed in legal workflows hallucinate at rates that aggregate metrics report at ~52%, but this average conceals where errors concentrate and in which direction they run, leaving compliance officers without an actionable signal for trustworthy deployment. We present LegalHalluLens, an auditing framework with three components: typed hallucination profiles across four legally-motivated claim categories (numeric, temporal, obligation/entitlement, factual) over CUAD (Hendrycks et al., 2021); a Risk Direction Index (RDI) that reduces omission-versus-invention bias to a single deployment-comparable scalar; and a typed debate pipeline calibrated to both magnitudes and directions. Across 510 contracts and 249,252 clause-level instances we measure a within-model gap of approximately 38-40 pp between obligation/numeric and temporal claims that aggregate reporting hides, and show that two systems with matched 52% rates can carry opposite RDIs. The debate pipeline reduces fabricated detections by 45% with per-category gains tracking the diagnosis, matching commercial APIs with a substantially smaller backbone (4B active parameters). Typed profiles and RDI surface failure modes that aggregate metrics hide; we further show these diagnostics serve as calibration inputs for multi-agent debate pipelines, where Skeptic challenges and asymmetric gates targeted at measured failure modes outperform generically-tuned debate. The framework supports direction-aware procurement, accountability, and agent design for legal AI deployed in the wild.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-19T00:00:00.000Z",
+      "githubRepo": "https://github.com/lalitdv9/LegalHallulens",
+      "submittedBy": "lalitdv9"
+    },
+    "2606.19602": {
+      "title": "Configurable Clinical Information Extraction with Agentic RAG: What Works, What Breaks, and Why",
+      "authors": [
+        "Osman Alperen Çinar-Koraş",
+        "Marie Bauer",
+        "Sameh Khattab",
+        "Merlin Engelke",
+        "Moon Kim",
+        "Stephan Settelmeier",
+        "Shigeyasu Sugawara",
+        "Fabian Freisleben",
+        "Felix Nensa",
+        "Jens Kleesiek"
+      ],
+      "summary": "Patient contexts span hundreds of heterogeneous documents and thousands of structured data points, yet the document-level metadata that AI systems need for retrieval and triage is absent or incomplete. Standard retrieval-augmented generation fails on this data, mishandling temporal reasoning, cross-document dependencies, and missing metadata. We deploy ACIE (Agentic Clinical Information Extraction) at University Medicine Essen: an on-premise agentic RAG pipeline that reasons over complete patient contexts and grounds every answer in source passages for clinician verification. We quantify the metadata gap, trace the architectural decisions it shaped, and evaluate extraction alongside an independent retrospective lymphoma registry study, in which nuclear-medicine physicians verify every extracted value against its cited sources. Across 7,326 judgments, clinicians accepted 96.5\\% of extractions, with per-type acceptance ranging from 80\\% to 99\\%.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-17T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-19T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "osmalpkoras"
+    },
+    "2606.15760": {
+      "title": "The Data Manifold under the Microscope",
+      "authors": [
+        "Marios Koulakis",
+        "Constantin Seibold"
+      ],
+      "summary": "A significant gap exists between theory and practice in deep learning. Generalization and approximation error bounds are often derived for simplified models or are too loose to be informative. Many rely on the manifold hypothesis and on geometric regularity such as intrinsic dimension, curvature, and reach. Progress requires insight into data-manifold geometry and suitable benchmarks, yet existing options are polarized: analytic manifolds with known geometry but limited applicability, or real-world datasets where geometry is only coarsely estimable. We introduce a benchmarking framework for studying data geometry. We repurpose and extend dSprites and COIL-20 with additional transformation dimensions and dense, axis-aligned sampling, and pair them with finite-difference estimators that recover curvature, reach, and volume at near-ground-truth accuracy in a regime where general-purpose estimators are unreliable or difficult to deploy. The framework is intended as a controlled testbed, useful as a calibration environment for geometric estimators and a sandbox for probing theoretical assumptions. To illustrate its use, we present two application studies, namely assessing the scaling behavior of the bounds of Genovese et al. and Fefferman et al., and tracking the layer-wise geometry of a β-VAE, highlighting the behavior of current bounds and the value of controlled benchmarks for guiding and validating future theory.\n  A reference implementation is available at https://github.com/koulakis/manifold-microscope.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-14T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-19T00:00:00.000Z",
+      "githubRepo": "https://github.com/koulakis/manifold-microscope",
+      "submittedBy": "koulakis"
+    },
+    "2606.20536": {
+      "title": "The FID Lottery: Quantifying Hidden Randomness in Generative-Model Evaluation",
+      "authors": [
+        "Nicolas Dufour",
+        "Alexei A. Efros",
+        "Patrick Pérez"
+      ],
+      "summary": "The Frechet Inception Distance (FID) is the de facto arbiter of image generation, yet most papers report just a single number from a single trained model using a single sampling seed. How reproducible is that number if we retrain the model, or merely resample from it? In this paper, we treat FID as a random variable on a two-axis panel of training and generation seeds, and measure its variance directly on several hundred SiT networks trained on class-conditional ImageNet 256x256. We report surprising findings: (a) Retraining the model using the same recipe with a different seed moves FID 3.2x more (in Inception feature space) than redrawing samples from a fixed network. (b) That gap is driven by three factors: random initialisation, data ordering, and the per-step Gaussian noise of the flow-matching loss. (c) Increasing compute or model size barely tightens the spread, holding the FID coefficient of variation (CoV) inside a 1-2% band. (d) Per-cell classifier-free-guidance tuning halves the spread but reshuffles which seeds work best, and a lucky training seed reaches the same FID with up to 2x less compute than an unlucky one. Based on these findings, we recommend a new FID evaluation protocol: evaluate under per-cell optimal guidance, treat any FID gap below the empirically measured ~1.3% CoV as inconclusive, and report an error bar over several training seeds rather than a single FID number.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-18T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-19T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "nicolas-dufour"
     }
   },
   "dates": [
+    "2026-06-20",
     "2026-06-19",
     "2026-06-18",
     "2026-06-17",

@@ -1,7 +1,140 @@
 {
-  "date": "2026-06-19",
+  "date": "2026-06-20",
   "count": 50,
   "papers": [
+    {
+      "id": "2606.20529",
+      "title": "LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents",
+      "authors": [
+        "Md Nayem Uddin",
+        "Amir Saeidi",
+        "Eduardo Blanco",
+        "Chitta Baral"
+      ],
+      "summary": "Policy-adherent tool-calling agents in customer-service domains must maintain task states across turns while calling tools and obeying domain policies. Task states consist of relevant facts, identifiers, constraints, and conditions observed through user interaction and tool calls. In standard agents, task states are not represented separately. Observations, tool returns, and policy instructions are placed in the prompt, leaving agents to reconstruct the relevant states from the prompt each time they decide what to do next. This design makes state management implicit, creating two common failure modes. An agent may retrieve the right facts but later ground its decision in stale, missing, or incorrect information; and a syntactically valid tool call may still violate a domain policy that depends on the current task state. We introduce LedgerAgent, an inference-time method for tool-calling agents that maintains observed task states in a separate ledger and renders the states into the prompt. The ledger is also used to check state-dependent policy constraints before environment-changing tool calls are executed, blocking policy violations. Across four customer-service domains and a mixed panel of open- and closed-weight models, LedgerAgent improves average passk over a standard prompt-based tool-calling approach, with the largest gains under stricter multi-trial consistency metrics.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-18T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.20529",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.20529",
+      "githubRepo": null
+    },
+    {
+      "id": "2606.17053",
+      "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+      "authors": [
+        "Peiyang Xu",
+        "Bangzheng Li",
+        "Sijia Liu",
+        "Karthik R. Narasimhan",
+        "Pramod Viswanath",
+        "Prateek Mittal",
+        "Xingyu Fu"
+      ],
+      "summary": "Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle detail in an image. We propose ContextRL, a context-aware reinforcement learning (RL) method that improves long-horizon reasoning and multimodal performance through an indirect auxiliary objective. Instead of supervising only the final answer, ContextRL presents the model with a query, an answer, and two highly similar contexts, and rewards it for selecting the context that supports the query--answer pair, thereby encouraging fine-grained grounding. We construct contrastive context data in two domains: for coding agents, trajectories serve as contexts, yielding 1k pairs built via condition filtering; for multimodal reasoning, images serve as contexts, yielding 7K pairs built via generative editing and similarity search. ContextRL achieves average gains of +2.2% over standard GRPO on 5 long-horizon benchmarks, and +1.8% across 12 diverse visual question answering benchmarks. To disentangle the effect of the proposed objective from that of additional data, we compare against data-augmentation baselines that repurpose the same contrastive contexts as standard query--context--answer examples. These baselines provide little to no improvement, showing that the gains arise from the proposed context-selection objective rather than from the contrastive data alone.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-15T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.17053",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.17053",
+      "githubRepo": "https://github.com/xupy2003/ContextAwareRL"
+    },
+    {
+      "id": "2606.19334",
+      "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
+      "authors": [
+        "Denis Peskoff",
+        "Joe Barrow",
+        "Christopher Vu",
+        "Diag Davenport"
+      ],
+      "summary": "Progress in legal AI increasingly depends on access to authoritative legal text at scale. Yet one of the most consequential layers of American law remains largely absent from existing machine-readable corpora: local ordinances. Local codes govern zoning, housing, business licensing, public health, noise, animal control, and many other domains of everyday regulation, but they are fragmented across vendor platforms designed for human browsing rather than bulk research access. We introduce LOCUS - the Local Ordinance Corpus for the United States - a comprehensive corpus and county-harmonized access layer for U.S. municipal and county ordinance codes. The raw corpus, available for release to researchers, represents nearly all publicly available municipal and county ordinance codes. The resulting raw corpus contains codes from 9,239 cities and counties. A smaller county-harmonized LOCUS access layer provides coverage for the largest 2,309 of 3,144 U.S. counties, accounting for a majority of the population. We use OCR to handle the myriad of document formats that have kept the law from being a public resource. We release the corpus with coverage metadata to support reproducibility, downstream legal AI research, and the incremental expansion of machine-readable access to local law. We train a collection of ModernBERT-based classifiers and scorers to facilitate analyzing U.S. local law among several dimensions, such as opacity and paternalism, that have not previously been studied at this scale. LOCUS-v1 and its derivative models are available at: https://huggingface.co/datasets/LocalLaws/LOCUS-v1",
+      "upvotes": 0,
+      "publishedAt": "2026-06-17T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.19334",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.19334",
+      "githubRepo": null
+    },
+    {
+      "id": "2603.24624",
+      "title": "ReSyn: A Generalized Recursive Regular Expression Synthesis Framework",
+      "authors": [
+        "Seongmin Kim",
+        "Hyunjoon Cheon",
+        "Su-Hyeon Kim",
+        "Yo-Sub Han",
+        "Sang-Ki Ko"
+      ],
+      "summary": "Existing Programming-By-Example (PBE) systems often rely on simplified benchmarks that fail to capture the high structural complexity of real-world regexes, such as deeper nesting and frequent use of union operations. To overcome the resulting performance drop, we propose ReSyn, a synthesizer-agnostic divide-and-conquer framework that decomposes complex synthesis problem into manageable sub-problems. We also introduce Set2Regex, a parameter-efficient synthesizer capturing the permutation invariance of examples. Experimental results demonstrate that ReSyn significantly boosts accuracy across various synthesizers, and its combination with Set2Regex establishes a new state-of-the-art on challenging real-world benchmark. The complete source code, datasets, and pre-trained model checkpoints are publicly available at https://github.com/mrseongminkim/ReSyn.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-13T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2603.24624",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2603.24624",
+      "githubRepo": "https://github.com/mrseongminkim/ReSyn"
+    },
+    {
+      "id": "2606.18021",
+      "title": "LegalHalluLens: Typed Hallucination Auditing and Calibrated Multi-Agent Debate for Trustworthy Legal AI",
+      "authors": [
+        "Lalit Yadav",
+        "Akshaj Gurugubelli"
+      ],
+      "summary": "AI systems deployed in legal workflows hallucinate at rates that aggregate metrics report at ~52%, but this average conceals where errors concentrate and in which direction they run, leaving compliance officers without an actionable signal for trustworthy deployment. We present LegalHalluLens, an auditing framework with three components: typed hallucination profiles across four legally-motivated claim categories (numeric, temporal, obligation/entitlement, factual) over CUAD (Hendrycks et al., 2021); a Risk Direction Index (RDI) that reduces omission-versus-invention bias to a single deployment-comparable scalar; and a typed debate pipeline calibrated to both magnitudes and directions. Across 510 contracts and 249,252 clause-level instances we measure a within-model gap of approximately 38-40 pp between obligation/numeric and temporal claims that aggregate reporting hides, and show that two systems with matched 52% rates can carry opposite RDIs. The debate pipeline reduces fabricated detections by 45% with per-category gains tracking the diagnosis, matching commercial APIs with a substantially smaller backbone (4B active parameters). Typed profiles and RDI surface failure modes that aggregate metrics hide; we further show these diagnostics serve as calibration inputs for multi-agent debate pipelines, where Skeptic challenges and asymmetric gates targeted at measured failure modes outperform generically-tuned debate. The framework supports direction-aware procurement, accountability, and agent design for legal AI deployed in the wild.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.18021",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.18021",
+      "githubRepo": "https://github.com/lalitdv9/LegalHallulens"
+    },
+    {
+      "id": "2606.19602",
+      "title": "Configurable Clinical Information Extraction with Agentic RAG: What Works, What Breaks, and Why",
+      "authors": [
+        "Osman Alperen Çinar-Koraş",
+        "Marie Bauer",
+        "Sameh Khattab",
+        "Merlin Engelke",
+        "Moon Kim",
+        "Stephan Settelmeier",
+        "Shigeyasu Sugawara",
+        "Fabian Freisleben",
+        "Felix Nensa",
+        "Jens Kleesiek"
+      ],
+      "summary": "Patient contexts span hundreds of heterogeneous documents and thousands of structured data points, yet the document-level metadata that AI systems need for retrieval and triage is absent or incomplete. Standard retrieval-augmented generation fails on this data, mishandling temporal reasoning, cross-document dependencies, and missing metadata. We deploy ACIE (Agentic Clinical Information Extraction) at University Medicine Essen: an on-premise agentic RAG pipeline that reasons over complete patient contexts and grounds every answer in source passages for clinician verification. We quantify the metadata gap, trace the architectural decisions it shaped, and evaluate extraction alongside an independent retrospective lymphoma registry study, in which nuclear-medicine physicians verify every extracted value against its cited sources. Across 7,326 judgments, clinicians accepted 96.5\\% of extractions, with per-type acceptance ranging from 80\\% to 99\\%.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-17T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.19602",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.19602",
+      "githubRepo": null
+    },
+    {
+      "id": "2606.15760",
+      "title": "The Data Manifold under the Microscope",
+      "authors": [
+        "Marios Koulakis",
+        "Constantin Seibold"
+      ],
+      "summary": "A significant gap exists between theory and practice in deep learning. Generalization and approximation error bounds are often derived for simplified models or are too loose to be informative. Many rely on the manifold hypothesis and on geometric regularity such as intrinsic dimension, curvature, and reach. Progress requires insight into data-manifold geometry and suitable benchmarks, yet existing options are polarized: analytic manifolds with known geometry but limited applicability, or real-world datasets where geometry is only coarsely estimable. We introduce a benchmarking framework for studying data geometry. We repurpose and extend dSprites and COIL-20 with additional transformation dimensions and dense, axis-aligned sampling, and pair them with finite-difference estimators that recover curvature, reach, and volume at near-ground-truth accuracy in a regime where general-purpose estimators are unreliable or difficult to deploy. The framework is intended as a controlled testbed, useful as a calibration environment for geometric estimators and a sandbox for probing theoretical assumptions. To illustrate its use, we present two application studies, namely assessing the scaling behavior of the bounds of Genovese et al. and Fefferman et al., and tracking the layer-wise geometry of a β-VAE, highlighting the behavior of current bounds and the value of controlled benchmarks for guiding and validating future theory.\n  A reference implementation is available at https://github.com/koulakis/manifold-microscope.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-14T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.15760",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.15760",
+      "githubRepo": "https://github.com/koulakis/manifold-microscope"
+    },
+    {
+      "id": "2606.20536",
+      "title": "The FID Lottery: Quantifying Hidden Randomness in Generative-Model Evaluation",
+      "authors": [
+        "Nicolas Dufour",
+        "Alexei A. Efros",
+        "Patrick Pérez"
+      ],
+      "summary": "The Frechet Inception Distance (FID) is the de facto arbiter of image generation, yet most papers report just a single number from a single trained model using a single sampling seed. How reproducible is that number if we retrain the model, or merely resample from it? In this paper, we treat FID as a random variable on a two-axis panel of training and generation seeds, and measure its variance directly on several hundred SiT networks trained on class-conditional ImageNet 256x256. We report surprising findings: (a) Retraining the model using the same recipe with a different seed moves FID 3.2x more (in Inception feature space) than redrawing samples from a fixed network. (b) That gap is driven by three factors: random initialisation, data ordering, and the per-step Gaussian noise of the flow-matching loss. (c) Increasing compute or model size barely tightens the spread, holding the FID coefficient of variation (CoV) inside a 1-2% band. (d) Per-cell classifier-free-guidance tuning halves the spread but reshuffles which seeds work best, and a lucky training seed reaches the same FID with up to 2x less compute than an unlucky one. Based on these findings, we recommend a new FID evaluation protocol: evaluate under per-cell optimal guidance, treat any FID gap below the empirically measured ~1.3% CoV as inconclusive, and report an error bar over several training seeds rather than a single FID number.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-18T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.20536",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.20536",
+      "githubRepo": null
+    },
     {
       "id": "2603.11273",
       "title": "Duration Aware Scheduling for ASR Serving Under Workload Drift",
@@ -873,155 +1006,6 @@
       "arxivUrl": "https://arxiv.org/abs/2606.13802",
       "arxivPdfUrl": "https://arxiv.org/pdf/2606.13802",
       "githubRepo": "https://github.com/Tej-55/NAPE"
-    },
-    {
-      "id": "2606.11877",
-      "title": "LLM-Enabled NWDAF: A Step Toward AI-Native 6G Network Intelligence",
-      "authors": [
-        "Henok Daniel",
-        "Omar Alhussein",
-        "Cheng Li",
-        "Jie Liang",
-        "Ernesto Damiani"
-      ],
-      "summary": "The Network Data Analytics Function (NWDAF) is central to enabling zero-touch network management in fifth-generation (5G) networks by supporting real-time analytics and closed-loop automation. Despite its critical role, open-source NWDAF implementations remain limited in scope and accessibility. In this paper, we develop an open-source NWDAF, compatible with the open-source core network Free5GC, that collects network data via subscriptions to Network Functions (NFs), and also includes an integrated Large Language Model (LLM) interface that enables natural language interaction with human operators. The interface processes user intents, encodes them using a semantic embedding model, and maps them to one of seven predefined intent categories to trigger analytics queries or event subscription commands. This architecture abstracts the complexity of traditional interfaces, allowing non-expert users to manage network analytics and subscriptions with ease. The system supports Access and Management Function (AMF) and Session Management Function (SMF) event subscriptions, real-time monitoring, and analytics retrieval via Prometheus, all accessible through a conversational interface. By bridging AI-driven intent recognition with standardized network analytics, our implementation enhances operator usability and provides a foundation towards AI-native 6G networks. The source code and datasets generated during the current study are available in the github repository, https://github.com/HenokDanielbfg/testbed.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.11877",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.11877",
-      "githubRepo": "https://github.com/HenokDanielbfg/testbed"
-    },
-    {
-      "id": "2606.19236",
-      "title": "STARE: Surprisal-Guided Token-Level Advantage Reweighting for Policy Entropy Stability",
-      "authors": [
-        "Haipeng Luo",
-        "Qingfeng Sun",
-        "Songli Wu",
-        "Can Xu",
-        "Wenfeng Deng",
-        "Han Hu",
-        "Yansong Tang"
-      ],
-      "summary": "Reinforcement Learning with Verifiable Rewards algorithms like GRPO have emerged as the dominant post-training paradigm for complex reasoning in LLMs, yet commonly suffer from policy entropy collapse during training. We conduct a first-order gradient analysis of token-level entropy dynamics under GRPO and identify a token-level credit assignment mismatch: the per-token entropy variation decomposes into the product of the trajectory-level advantage and an entropy sensitivity function over the next-token distribution, yielding an advantage-surprisal four-quadrant structure and a near-criticality property. Motivated by it, we propose STARE (Surprisal-guided Token-level Advantage Reweighting for policy Entropy stability), which identifies entropy-critical token subsets via batch-internal surprisal quantiles, selectively reweights their effective advantages, and incorporates a target-entropy closed-loop gate for stable entropy regulation. Across model scales from 1.5B to 32B and three task families (Short CoT, Long CoT, and Multi-Turn Tool Use), STARE sustains stable RL training over thousands of steps while maintaining policy entropy within the target band. On AIME24 and AIME25, STARE outperforms DAPO and other competitive baselines by 4%-8% in average accuracy, with reflection tokens and response length growing in tandem, indicating sustained exploration-exploitation balance that further unlocks RL training potential.Code is available at https://github.com/hp-luo/STARE.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.19236",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.19236",
-      "githubRepo": "https://github.com/hp-luo/STARE"
-    },
-    {
-      "id": "2606.18717",
-      "title": "Morpheus: A Morphology-Aware Neural Tokenizer and Word Embedder for Turkish",
-      "authors": [
-        "Tolga Şakar"
-      ],
-      "summary": "Turkish is agglutinative: meaning is carried by morphemes, yet the subword tokenizers that drive modern language models split words by corpus statistics, fragmenting semantically loaded suffixes and -- in the case of WordPiece and rule-based analyzers -- failing to decode their output back to the original text. This paper presents Morpheus, a neural morpheme-boundary model for Turkish that is at once a lossless, morphology-aware tokenizer and a word-embedding producer. A differentiable Poisson-binomial dynamic program turns per-character boundary probabilities into soft morpheme memberships during training and exact segments at inference, with no string normalization, so decode(encode(w)) = w holds by construction. Because the model is neural, the same forward pass that tokenizes also emits a structured word embedding. Among reversible tokenizers -- the only ones valid for generation -- Morpheus attains the lowest bits-per-character (1.425), roughly doubles the gold morphological alignment of the subword family (MorphScore macro-F1 0.61 vs.\\ {sim}0.32), and uses {sim}19% less GPU memory than 64K-vocabulary subword tokenizers. As an embedder, frozen Morpheus vectors lead on lexical retrieval (root-family MAP 0.85) and same-root verification (ROC-AUC 1.00), surpassing the multilingual retriever BGE-M3 and BERTurk; on context- and inflection-dependent tasks (NER, case/number probing) the heavier contextual encoders remain ahead -- a trade-off we attribute to Morpheus's root-centric geometry. Code: https://github.com/lonewolf-rd/TurkishMorpheus; model: https://huggingface.co/lonewolflab/Morpheus-TR-50K; interactive demo: https://huggingface.co/spaces/lonewolflab/morpheus-tr-demo.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.18717",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.18717",
-      "githubRepo": "https://github.com/lonewolf-rd/TurkishMorpheus"
-    },
-    {
-      "id": "2606.17682",
-      "title": "From Trainee to Trainer: LLM-Designed Training Environment for RL with Multi-Agent Reasoning",
-      "authors": [
-        "Chao Chen",
-        "Chengzu Li",
-        "Zhiwei Li",
-        "Yinhong Liu",
-        "Zhijiang Guo"
-      ],
-      "summary": "Reinforcement learning pipelines for Large Language Model (LLM) training often rely on manually redesigned environments between stages, requiring practitioners to heuristically infer which configuration will best improve the current policy. To automate this process, we propose the LLM-as-Environment-Engineer framework in which the current policy model analyzes failure trajectories together with contextual information and proposes modifications to the next-stage training environment configuration. We also introduce MAPF-FrozenLake, a controllable testbed whose generator exposes multi-dimensional environment configurations, making it suitable for studying and benchmarking environment redesign. On this testbed, we condition the environment engineer on structured summaries of policy behavior, failure cases, and environment statistics, from which it produces the configuration for the next training stage. With Qwen3-4B as the backbone, our framework achieves the strongest aggregate performance on our benchmarks, outperforming larger proprietary LLMs (e.g., GPT, Gemini) and fixed-environment training baselines. We further analyze which forms of context are most effective, finding that successful environment updates rely on failure evidence and preserve configurations that already work. Interestingly, the current RL checkpoint serves as a better environment engineer than the original base model, suggesting that policy learning improves the model's ability to diagnose its remaining weaknesses.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-16T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.17682",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.17682",
-      "githubRepo": "https://github.com/LARK-AI-Lab/Trainee-to-Trainer"
-    },
-    {
-      "id": "2606.18967",
-      "title": "EfficientRollout: System-Aware Self-Speculative Decoding for RL Rollouts",
-      "authors": [
-        "Minseo Kim",
-        "Minjae Lee",
-        "Seunghyuk Oh",
-        "Kevin Galim",
-        "Donghoon Kim",
-        "Coleman Hooper",
-        "Harman Singh",
-        "Amir Gholami",
-        "Hyung Il Koo",
-        "Wonjun Kang"
-      ],
-      "summary": "Reinforcement learning (RL) has become a representative post-training paradigm for LLMs, enabling strong reasoning and agentic capabilities. However, rollout generation remains a dominant latency bottleneck because autoregressive sampling decodes responses sequentially and a small number of long-tailed generations often determine completion time. Speculative decoding (SD) offers a natural way to address this bottleneck, as it is a well-established technique for serving fixed LLMs that reduces latency by rapidly drafting tokens and accepting them through parallel verification while preserving the target-model distribution. However, its practical speedups do not directly carry over to RL rollouts: (i) the evolving target policy makes any fixed drafter increasingly mismatched with the policy's output distribution; and (ii) active batch sizes shrink throughout rollout decoding, shifting decoding from compute-bound to memory-bound regimes where parallel verification can exploit underutilized compute. Therefore, accelerating RL rollouts requires both a drafter that remains effective under long, high-temperature generations from an evolving policy and system-aware use of SD that avoids compute-bound regimes. We present EfficientRollout, a system-aware self-SD framework designed to address this gap for RL rollouts. EfficientRollout induces a quantized drafter from the target model (i.e. self-speculative decoding), keeping it coupled to the evolving policy without separate drafter pretraining or online adaptation. It further coordinates a system-aware SD toggle policy with acceptance-aware draft-length adaptation, enabling speculation only in beneficial regimes while matching the drafting budget to evolving drafter quality. EfficientRollout reduces rollout and end-to-end latency by up to 19.6% and 12.7%, respectively, over an accelerated AR rollout baseline, while preserving final model quality.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.18967",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.18967",
-      "githubRepo": "https://github.com/furiosa-ai/EfficientRollout"
-    },
-    {
-      "id": "2606.05985",
-      "title": "Beyond Alignment: Value Diversity as a Collective Property in Multicultural Agent Systems",
-      "authors": [
-        "Shaoyang Xu",
-        "Jingshen Zhang",
-        "Long P. Hoang",
-        "Jinyuan Li",
-        "Wenxuan Zhang"
-      ],
-      "summary": "Multicultural multi-agent systems are increasingly deployed in globally diverse settings, where different agents are grounded in different cultural backgrounds. Existing cultural evaluation focuses on value alignment: how closely a single agent matches a target culture. Yet alignment is a per-agent property and cannot reveal whether a system, taken as a whole, preserves the cultural plurality it is meant to represent. We propose value diversity as a system-level evaluation axis for multicultural agent systems, defined through the dissimilarity between culturally conditioned agents' responses on a shared value survey. Using the World Values Survey, we evaluate 19 cultures and 18 backbone models across a wide range of system configurations. We find that diversity is largely uncorrelated with alignment, indicating that the two capture complementary system properties, and that current multicultural agent systems fall substantially below human societies in value diversity. Mixed-backbone systems narrow this gap but do not close it, and the gap persists across culture compositions and agent scales. Social interaction further erodes diversity by driving agents toward consensus, and a participatory budgeting case study shows that this homogenization narrows the breadth of collective decision-making. Together, our results establish value diversity as a distinct evaluation axis for multicultural multi-agent systems and reveal a persistent homogenization tendency in current LLM-based societies. Our code and data are publicly available at https://github.com/iNLP-Lab/MultiAgent-Diversity.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-04T10:26:33.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.05985",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.05985",
-      "githubRepo": "https://github.com/iNLP-Lab/MultiAgent-Diversity"
-    },
-    {
-      "id": "2606.15872",
-      "title": "SciOrch: Learning to Orchestrate Expert LLMs for Solving Frontier Multimodal Scientific Reasoning Tasks",
-      "authors": [
-        "Jingru Guo",
-        "Xiangyuan Xue",
-        "Lian Zhang",
-        "Wanghan Xu",
-        "Siki Chen",
-        "Philip Torr",
-        "Wanli Ouyang",
-        "Lei Bai",
-        "Zhenfei Yin"
-      ],
-      "summary": "Frontier scientific reasoning remains a major challenge for large language models (LLMs), where even the strongest commercial systems fall short of expert-level performance. A closer look at model behavior reveals substantial complementarity that single-model evaluation hides: different frontier models excel on different question types, and no single model captures the full picture. We present SciOrch, a framework that trains a lightweight 8B model to orchestrate frontier LLMs for scientific reasoning. The orchestrator decomposes each question, delegates sub-problems to selected commercial models through API calls, and synthesizes a final answer. Training such an orchestrator is fundamentally harder than conventional agentic RL: each action triggers an API call that is expensive in both dollar cost and latency, making standard online rollouts infeasible. We address this with MCTS-based approach, producing diverse orchestration trajectories, extracting per-node single-turn samples, and optimizing the orchestrator with GRPO-style training. On a 240-question test set spanning SGI-Reasoning and Scientists' First Exam, SciOrch reaches 56.66% average accuracy, outperforming the strongest single commercial model by 3.74% and the strongest multi-agent baseline by 3.33%. It also attains the best accuracy on both SGI and SFE with less than half the API cost of typical multi-agent methods.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-14T15:45:34.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.15872",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.15872",
-      "githubRepo": "https://github.com/llexieguo/SciOrch"
-    },
-    {
-      "id": "2606.19341",
-      "title": "Native Active Perception as Reasoning for Omni-Modal Understanding",
-      "authors": [
-        "Zhenghao Xing",
-        "Ruiyang Xu",
-        "Yuxuan Wang",
-        "Jinzheng He",
-        "Ziyang Ma",
-        "Qize Yang",
-        "Yunfei Chu",
-        "Jin Xu",
-        "Junyang Lin",
-        "Chi-Wing Fu",
-        "Pheng-Ann Heng"
-      ],
-      "summary": "Passive models for long video understanding typically rely on a \"watch-it-all\" paradigm, processing frames uniformly regardless of query difficulty, causing computational cost to grow with video duration. Although interactive frameworks have emerged, they often rely on global pre-scanning, and their context cost still scales with video length. We propose OmniAgent, the first native omni-modal agent that formulates video understanding as a POMDP-based iterative Observation-Thought-Action cycle. OmniAgent executes on-demand actions to selectively distill audio-visual cues into a persistent textual memory, effectively decoupling reasoning complexity from raw video duration. To operationalize this, we introduce (1) Agentic Supervised Fine-Tuning to bootstrap native active perception via best-of-N trajectory synthesis with dual-stage quality control, and (2) Agentic Reinforcement Learning with TAURA (Turn-aware Adaptive Uncertainty Rescaled Advantage), which leverages turn-level entropy to steer credit assignment toward pivotal discovery turns. Crucially, OmniAgent exhibits positive test-time scaling, where performance improves as the number of reasoning turns increases, validating the efficacy of active perception. Empirical results across ten benchmarks (e.g., VideoMME, LVBench) demonstrate that OmniAgent achieves state-of-the-art performance among open-source models. Notably, on LVBench, our 7B agent outperforms the 10times larger Qwen2.5-VL-72B (50.5% vs. 47.3%).",
-      "upvotes": 0,
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.19341",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.19341",
-      "githubRepo": "https://github.com/harryhsing/OmniAgent"
     }
   ]
 }
