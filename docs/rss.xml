@@ -5,8 +5,92 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-06-21</lastBuildDate>
+    <lastBuildDate>2026-06-22</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG</title>
+      <link>https://arxiv.org/abs/2606.18381</link>
+      <guid isPermaLink="false">2606.18381</guid>
+      <description>Amirhossein Abaskohi, Issam H. Laradji, Peter West — Retrieval-augmented generation (RAG) systems must balance retrieval granularity with contextual coherence, a challenge that existing methods address through LLM-guided chunking, single-level context expansion, or hierarchical summarization. These approaches variously depend on costly LLM calls during indexing or retrieval, limit context aggregation to a single granularity level, or introduce information loss through summarization. We present SproutRAG, an attention-guided hierarchical RAG framework that addresses this trade-off by organizing sentence-level chunks into progressively larger but semantically coherent units, using learned inter-sentence attention to construct a binary chunking tree. Unlike prior approaches that rely on external LLMs, fixed context expansion, or lossy summariza</description>
+      <pubDate>2026-06-16T18:28:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval</title>
+      <link>https://arxiv.org/abs/2606.18508</link>
+      <guid isPermaLink="false">2606.18508</guid>
+      <description>Amirhossein Abaskohi, Raymond Li, Gaetano Cimino — Retrieval-augmented generation (RAG) systems depend critically on how documents are chunked and searched. Fine-grained chunks can improve retrieval precision but expand the search space, increasing latency and cost; larger chunks reduce the number of candidates but make dense similarity less reliable, as the representation for each chunk mixes multiple topics and introduces more semantic noise. This trade-off becomes especially limiting in deep research tasks, where retrieval must be both fast and precise across large, heterogeneous corpora. We introduce MCompassRAG, a metadata-guided retrieval framework that uses topic-level signals as a semantic compass for selecting relevant evidence. Instead of relying only on cosine similarity between queries and noisy chunk embeddings, MCompassRAG en</description>
+      <pubDate>2026-06-16T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs</title>
+      <link>https://arxiv.org/abs/2606.20527</link>
+      <guid isPermaLink="false">2606.20527</guid>
+      <description>Shaghayegh Kolli, Timo Cavelius, Nafiseh Nikeghbal — Multimodal large language models (MLLMs) are increasingly deployed in personally and societally consequential settings, yet the visual cues that shape how these models judge people remain poorly understood. Prior work often compares different (groups of) individuals, making it difficult to separate appearance effects from identity differences. We introduce StylisticBias, a controlled benchmark for evaluating attribute-level social bias in MLLMs. We generate 500 photorealistic base faces and create about 50 single-attribute variations per face, producing about 25K images. This design keeps identity fixed and changes one visual attribute at a time. It lets us measure how specific cues shift model judgments. We evaluate six MLLMs across 25 binary social judgment scenarios. We find that age an</description>
+      <pubDate>2026-06-18T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision</title>
+      <link>https://arxiv.org/abs/2606.17162</link>
+      <guid isPermaLink="false">2606.17162</guid>
+      <description>Ye Jin, Yangyang Xu, Jun Zhu — Personalized presentation generation requires more than conditioning on a current prompt or template: agents must preserve stable user preferences across tasks, retain newly introduced preferences and constraints during multi-turn revision, and carry out local edits reliably. We propose MemSlides, a hierarchical memory framework for personalized presentation agents that separates long-term memory from working memory and further divides long-term memory into user profile memory and tool memory. User profile memory stores intent-conditioned profiles for round-0 personalization, working memory carries active preferences and session constraints across revision rounds, and tool memory stores reusable execution experience for reliable localized editing. MemSlides pairs this memory design with sc</description>
+      <pubDate>2026-06-15T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Multi-Turn Reflective Masking Elicits Reasoning in Mask Diffusion Models</title>
+      <link>https://arxiv.org/abs/2606.16700</link>
+      <guid isPermaLink="false">2606.16700</guid>
+      <description>Yanming Zhang, Yihan Bian, Jingyuan Qi — While reasoning on autoregressive (AR) models is often performed by chain-of-thought reasoning and reflection, their refinement of previous outputs still relies on fully sequential generation, even when only local edits are needed. In contrast, the masking mechanism in Mask Diffusion Models (MDMs) naturally supports explicit local edits on previous outputs, allowing selective refinement without discarding previous answers and generating another from scratch. While this property more closely aligns with how humans correct mistakes by iterative local refinement, existing MDMs do not support multi-turn masking and denoising. We propose Reflective Masking (RM), which elicits such an intrinsic reasoning capability in MDMs via lightweight post-training. RM provides a native test-time scaling, wh</description>
+      <pubDate>2026-06-15T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning</title>
+      <link>https://arxiv.org/abs/2606.17480</link>
+      <guid isPermaLink="false">2606.17480</guid>
+      <description>Haoyu Wang, Guoqing Ma, Zeyu Zhang — Generalist vision-language-action systems need object-centric 3D evidence and reusable manipulation experience to plan reliable robot trajectories. GeneralVLA provides a hierarchical interface for converting language and RGB-D observations into 3D end-effector paths, but two bottlenecks remain. First, monocular SAM3D-style object reconstruction can hallucinate pose and unseen geometry, while manipulation benefits from stable object shape when calibrated multi-view observations are available. Second, the original KnowledgeBank mainly retrieves semantically similar snippets and appends new knowledge, which makes it difficult to control memory quality, conflicts, confidence, and geometric relevance. To address the first challenge, we introduce GeoFuse-MV3D, a geometry-prior-guided MV-SAM3D re</description>
+      <pubDate>2026-06-16T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>SpatialAvatar-0: High-Quality 4D Head Avatar with Multi-Stage Reconstruction</title>
+      <link>https://arxiv.org/abs/2606.15659</link>
+      <guid isPermaLink="false">2606.15659</guid>
+      <description>Yiran Wang, Zeyu Zhang, Yuanming Li — High-quality 4D head avatars from one or a few source portraits are central to telepresence, AR/VR, and digital-human interaction. 3D Gaussian Splatting (3DGS) has emerged as the dominant representation, with two complementary regimes (generalizable feed-forward predictors and per-subject refiners) maturing in parallel. However, existing feed-forward predictors are trained on a single dataset family with a hard-coded source count, inheriting the corresponding domain bias. Per-subject refiners require 300K--600K iterations and rely on adaptive densification that destroys upstream Gaussian layouts, preventing the two regimes from sharing a representation end-to-end. To bridge both regimes we propose SpatialAvatar-0 on a shared FLAME-mesh-bound Gaussian representation: a feed-forward generato</description>
+      <pubDate>2026-06-14T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Distilling Examples into Task Instructions: Enhanced In-Context Learning for Real-World B2B Conversations</title>
+      <link>https://arxiv.org/abs/2606.15641</link>
+      <guid isPermaLink="false">2606.15641</guid>
+      <description>Guy Rotman, Adi Kopilov, Danit Berger Zalmanson — In-context learning (ICL) is the standard method for low-resource classification, yet its efficacy in specialized domains remains largely unexplored. We address the challenge of classifying semantically complex, multi-party B2B conversations, where traditional ICL encounters significant limitations, especially as context length increases due to the concatenation of multiple few-shot examples. We introduce the Call Playbook dataset, featuring five classification tasks derived from real-world B2B conversations targeting core sales concepts. To bridge the gap between performance and practical utility, we propose novel knowledge extraction methods that distill verbose examples into compact, interpretable representations of structured classification criteria and precise task descriptions. Our a</description>
+      <pubDate>2026-06-14T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents</title>
+      <link>https://arxiv.org/abs/2606.18829</link>
+      <guid isPermaLink="false">2606.18829</guid>
+      <description>Zhe Ren, Yibo Yang, Yimeng Chen — Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied. In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall. We introduce GateMem, a benchmark for multi-principal shared-memory agents. GateMem jointly evaluates utility for legitimate long-horizon requests with state updates, access control across contextual authorization boundaries, and agent-facing active forgetting after explicit deletion requests. It spans medical, office, education, and household domains, with long-form multi-party episodes, incremental memory injection, hidden checkpoints, stru</description>
+      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>BrainG3N: A Dual-Purpose Tokenizer for Controllable 3D Brain MRI Generation</title>
+      <link>https://arxiv.org/abs/2606.19651</link>
+      <guid isPermaLink="false">2606.19651</guid>
+      <description>Max Van Puyvelde, Ibrahim Gulluk, Wim Van Criekinge — Three-dimensional (3D) brain MRI is central to clinical neurology and neuro-oncology, where generative models could augment under-represented cohorts, simulate disease trajectories, and support privacy-preserving data sharing. Latent diffusion has been the go-to solution for modeling imaging data, but it places two competing demands on the tokenizer: encoder embeddings must retain the clinical information that downstream tasks act on, and the decoder must reconstruct anatomically faithful volumes. Existing reconstruction-driven tokenizers achieve the second at the expense of the first. To address this, we introduce a fully volumetric masked-autoencoder (MAE) based tokenizer for 3D brain MRI latent diffusion, decoupling encoder and decoder: a frozen 3D MAE encoder produces clinically inform</description>
+      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents</title>
+      <link>https://arxiv.org/abs/2606.18847</link>
+      <guid isPermaLink="false">2606.18847</guid>
+      <description>Yehang Zhang, Jianchong Su, Haojian Huang — To assist humans over extended periods in real homes, embodied agents must remember user routines, world states, and past interactions. Existing long-term memory benchmarks mainly evaluate language-centric retrieval and question answering, while embodied benchmarks often focus on short-horizon task execution without testing long-term memory use in dynamic environments. We introduce WorldLines, a project-driven benchmark for long-horizon embodied household assistance. It constructs temporally extended household traces with dialogues, actions, execution feedback, object and device state changes, and converts them into evidence-linked samples for Memory QA and Embodied Task Planning. We further propose ObsMem, an observer-grounded memory framework that maintains visibility-aware memories and </description>
+      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models</title>
+      <link>https://arxiv.org/abs/2606.19534</link>
+      <guid isPermaLink="false">2606.19534</guid>
+      <description>Yueyi Sun, Yuhao Wang, Jason Li — Multimodal large language models (MLLMs) have achieved remarkable progress in visual understanding tasks. However, most existing MLLMs rely on autoregressive generation, which limits their efficiency for perception tasks that require captioning multiple regions. In this work, we propose PerceptionDLM, a multimodal diffusion language model optimized for efficient parallel region perception. Built upon PerceptionDLM-Base, a strong foundational baseline that achieves state-of-the-art performance among open-source diffusion MLLMs, our architecture fully leverages the parallel decoding nature of DLMs. Specifically, we introduce efficient prompting and structured attention masking to enable simultaneous perception of multiple masked regions, allowing the model to generate region descriptions in </description>
+      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents</title>
       <link>https://arxiv.org/abs/2606.20529</link>
@@ -273,97 +357,6 @@
       <guid isPermaLink="false">2606.15514</guid>
       <description>Hassan Ismkhan, Hamid Bouchahcia — Robotic systems perceive the world through multiple input modalities -- including visual camera streams and natural language instructions -- and must select appropriate actions based on these signals. However, assuming the permanent availability of all input devices is unrealistic, as sensors may fail, become occluded, or drop out entirely during deployment. Robust handling of such missing-modality scenarios is therefore essential for real-world robot operation. This paper introduces RL4IL, a reinforcement learning guided method for imitation learning that selects the most suitable action for a given observation by identifying the most relevant expert demonstrations from a training library. A reinforcement learning policy, trained via Proximal Policy Optimisation over Breadth-First Search </description>
       <pubDate>2026-06-13T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>When Does Trajectory-Level Supervision Permit Efficient Offline Reinforcement Learning?</title>
-      <link>https://arxiv.org/abs/2606.18531</link>
-      <guid isPermaLink="false">2606.18531</guid>
-      <description>Xuanfei Ren, Tengyang Xie — Offline reinforcement learning is typically analyzed under process-level reward supervision, yet many sequential decision datasets
-  record only trajectory-level outcomes. We develop a statistical theory for offline policy optimization from such outcome-level
-  supervision. We first study the canonical setting where the target remains the expected cumulative reward, but each offline trajectory
-  provides only a scalar label whose conditional mean is the cumulative return. We propose OPAC, a pessimistic actor-critic algorithm
-  that learns a latent reward model and optimizes a policy from trajectory-level labels. We prove a high-probability guarantee of order
-  widetilde O(H^2C_{sa(π^star)/n}) and a matching lower bound, characterizing the sharp statistical cost of replacing
-  process-level</description>
-      <pubDate>2026-06-16T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>HiLo-Token: Input-Adaptive High-Low Frequency Token Compression for Efficient Image Editing</title>
-      <link>https://arxiv.org/abs/2606.13898</link>
-      <guid isPermaLink="false">2606.13898</guid>
-      <description>Haoran You, Yotam Nitzan, Lingzhi Zhang — Creative image editing tools, such as Photoshop&apos;s Remove or Generative Fill buttons, are central to everyday customer use and account for a major share of traffic in Photoshop and Lightroom. However, current generative AI models face significant latency challenges, which become even more pronounced when transitioning from convolution-based U-Nets to Diffusion Transformers (DiTs). In our evaluation on hundreds of representative image editing samples spanning a wide range of mask ratios, the DiT module alone accounts for an average of 73% of the total model latency, even after being distilled from 50 timesteps down to 8 timesteps. To tackle this challenge, we propose HiLo-Token, an input-adaptive token compression framework that allocates more token budget to high-frequency, rich-context reg</description>
-      <pubDate>2026-06-11T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>The Reward Was in Your Data All Along: Correcting Flow Matching with Discriminator-Guided RL</title>
-      <link>https://arxiv.org/abs/2606.19162</link>
-      <guid isPermaLink="false">2606.19162</guid>
-      <description>Nicolas Beltran-Velez, Felix Friedrich, Zhang Xiaofeng — Score- and flow-matching models often rely on preference-based reinforcement learning for two purposes: aligning with subjective preferences and, surprisingly, recovering properties such as visual realism and coherent object structure that matching-based training is intended to learn from the data itself. We argue that this reflects a structural mismatch. Matching losses measure ell_2 regression error on the velocity or score field under training-time marginals, a proxy poorly aligned with the visual and semantic properties that determine sample quality at inference. Given a reward aligned with these properties, RL sidesteps the mismatch by evaluating the model on its own samples and following the reward landscape directly. The challenge is to obtain such a reward without relying on human </description>
-      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>MaineCoon: Pursuing A Real-Time Audio-Visual Social World Model</title>
-      <link>https://arxiv.org/abs/2606.17800</link>
-      <guid isPermaLink="false">2606.17800</guid>
-      <description>Lichen Bai, Tianhao Zhang, Shitong Shao — As an increasing majority of global video content is consumed on social platforms for interactive social purposes, video generation models built for social worlds are important but largely overlooked by previous studies. In this work, we define the position of social world models and build a prototype model as the first step towards this goal. While previous world models successfully simulate physical environments or gaming world exploration, they remain fundamentally detached from human-centric social dynamics. To bridge this gap as the first step to social world models, we present MaineCoon, the first real-time audio-visual autoregressive model that has 22B parameters and is capable of real-time streaming generation and sub-second interaction, with a record-breaking frame rate of up to 4</description>
-      <pubDate>2026-06-16T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Seeing Before Reasoning: Decoupling Perception and Reasoning for Shortcut-Resilient Multimodal On-Policy Self-Distillation</title>
-      <link>https://arxiv.org/abs/2606.19120</link>
-      <guid isPermaLink="false">2606.19120</guid>
-      <description>Sihan Wang, Xiyao Liu, Lianqing Liu — On-policy self-distillation (OPSD) trains a model on its own rollouts and uses a frozen copy to provide dense token-level targets conditioned on a reference target. This works well for LLM reasoning, but a direct extension to multimodal large language models (MLLMs) can create a shortcut: the privileged target may guide tokens mainly based on the text reference target rather than the image. We propose ViGOS, a visually grounded OPSD framework for MLLM post-training. The student first writes a visual description and then reasons toward the final answer. For valid rollouts, an image-only perception teacher supervises the description, while a privileged reasoning teacher supervises the reasoning and final answer on the same student prefix. A reference teacher is used only for invalid rollouts</description>
-      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction</title>
-      <link>https://arxiv.org/abs/2606.18558</link>
-      <guid isPermaLink="false">2606.18558</guid>
-      <description>Jianing Zhang, Chenhao Zheng, Yajun Yang — Motion forecasting is central to visual intelligence: agents must anticipate how objects will move in order to plan actions, reason about physical interactions, and synthesize realistic futures. We argue that 3D points in world coordinates provide a general representation that is class-agnostic, view-stable, compact, and directly useful for downstream tasks. We formalize the task of goal-conditioned 3D point motion forecasting: given a short visual history, a set of 3D query points on an object of interest, and a language description of the intended goal, the model predicts the future 3D trajectory of each point. We introduce a full stack to study this task at scale: (1) MolmoMotion-1M is a large corpus of action-described, object-grounded 3D point trajectories annotated from 1.16M unconst</description>
-      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>ViT-Up: Faithful Feature Upsampling for Vision Transformers</title>
-      <link>https://arxiv.org/abs/2606.14024</link>
-      <guid isPermaLink="false">2606.14024</guid>
-      <description>Krispin Wandel, Jingchuan Wang, Hesheng Wang — Vision Transformers (ViTs) have become a dominant architecture for visual representation learning, providing exceptionally strong and broadly reusable backbone features. However, ViTs are commonly operated on relatively small patch-token grids due to the quadratic cost of global self-attention, which creates a persistent bottleneck for dense prediction tasks such as semantic segmentation and depth estimation. This has motivated the development of task-agnostic feature upsamplers. While recent state-of-the-art methods produce visually sharp dense representations, their reliance on shallow image encoders for guided upsampling can introduce feature leakage, fragmentation, and blur. We introduce ViT-Up, an implicit feature upsampling framework that replaces external image guidance with layer-w</description>
-      <pubDate>2026-06-12T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Bag of Dims: Training-Free Mechanistic Interpretability via Dimension-Level Sign Patterns</title>
-      <link>https://arxiv.org/abs/2606.12629</link>
-      <guid isPermaLink="false">2606.12629</guid>
-      <description>Varun Reddy Nalagatla — We show the standard basis of transformer hidden states already provides a training-free, architecture-general feature basis. Individual dimensions encode semantic content via their signs (+/-1) and confidence via their magnitudes, acting as independent binary registers; a feature is a subset of dimensions with a consistent sign pattern, read by counting sign agreements with no learned rotation. We validate this Bag of Dims framework across seven models spanning language (Qwen 3.5-4B, Gemma 3-4B, Mistral 7B, Qwen3-32B), vision (DINOv2, ViT-Base), and audio (AST).
-  Signs alone carry predictive content: unit-magnitude sign patterns preserve 60-93% top-5 next-token accuracy through the LM head, and decoder-free Hamming scoring reaches 80-90% top-4096. From a single-token cache (one forward p</description>
-      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>iOSWorld: A Benchmark for Personally Intelligent Phone Agents</title>
-      <link>https://arxiv.org/abs/2606.09764</link>
-      <guid isPermaLink="false">2606.09764</guid>
-      <description>Lawrence Keunho Jang, Mareks Woodside, Geronimo Carom — A useful phone agent needs to be personally intelligent. It should reason over a user&apos;s identity, history, and preferences as they exist on the device, not just follow isolated instructions in an impersonal sandbox. Existing mobile agent benchmarks lack this kind of personalization. We introduce iOSWorld, the first interactive native iOS simulator benchmark built around a persistent user identity spanning 26 newly built iOS apps. These apps contain connected data such as transactions, messages, travel records, social relationships, and financial activity. iOSWorld includes 133 tasks across three increasingly difficult categories. Single-app tasks (27) test one app, multi-app tasks (60) span 2 to 8 apps, and memory and personalization tasks (46) require agents to infer patterns from persona</description>
-      <pubDate>2026-06-08T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>MyPCBench: A Benchmark for Personally Intelligent Computer-Use Agents</title>
-      <link>https://arxiv.org/abs/2606.16748</link>
-      <guid isPermaLink="false">2606.16748</guid>
-      <description>Lawrence Keunho Jang, Andrew Keunwoo Jang, Jing Yu Koh — Current benchmarks for computer-use agents evaluate models in impersonal environments. This leaves a gap between evaluation and deployment where personal assistants are expected to work across a user&apos;s whole digital life, including their context, historical data, and logged-in accounts. This gap is widest on web tasks, where live web evaluations cannot exercise sites that require logging in or personal information, the kind of site a real personal assistant has to drive. We introduce MyPCBench, which tests computer-use agents as personal assistants on a Linux desktop populated with 17 simulated real-world web applications and a full desktop stack, all seeded for one canonical persona, Michael Scott from The Office. We define 184 tasks in this environment, each inspired by a real request dr</description>
-      <pubDate>2026-06-15T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>RODS: Reward-Driven Online Data Synthesis for Multi-Turn Tool-Use Agents</title>
-      <link>https://arxiv.org/abs/2606.19047</link>
-      <guid isPermaLink="false">2606.19047</guid>
-      <description>Ruishan Fang, Siyuan Lu, Chenyi Zhuang — Multi-turn tool-use RL is bottlenecked by the rapid depletion of informative samples in static datasets. We observe that the gradient signal in GRPO concentrates on tasks with the highest rollout reward variance, a consequence of the Popoviciu upper bound. Consequently, samples near the agent&apos;s capability boundary -- where successes and failures are roughly balanced -- contribute disproportionately large policy gradients. As training progresses, this boundary continuously shifts, which gradually depletes the pool of informative samples in a static dataset. We propose RODS (Reward-driven Online Data Synthesis) to resolve this depletion. RODS closes the loop between RL training and data generation by repurposing the progress reward variance as a practical, zero-cost boundary detector that re</description>
-      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>A Benchmark and Framework for Evaluating Next Action Predictions in Spreadsheets</title>
-      <link>https://arxiv.org/abs/2606.13802</link>
-      <guid isPermaLink="false">2606.13802</guid>
-      <description>Tejas Agrawal, Vu Le, Sumit Gulwani — Predictive code completion greatly accelerates how quickly developers work. In spreadsheets, despite being much more common, such auto-completion features are virtually non-existent. To address this gap, we introduce a benchmark for systems that observe a sequence of user actions in a spreadsheet and predict future actions. Two challenges are (1) the absence of edit histories in public spreadsheet corpora and (2) the complex space of spreadsheet actions (spatial, temporal, composite). To address (1), we manually curate 52 sequences of 12K actions that recreate spreadsheets from public corpora, seeded by parametrized heuristics and LLM refinement. To address (2), we propose an online evaluation that expects a prediction after each user action, accepts or rejects that prediction, updates the</description>
-      <pubDate>2026-06-11T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
