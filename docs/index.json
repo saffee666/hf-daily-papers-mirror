@@ -1,7 +1,226 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-27",
   "count": 50,
   "papers": [
+    {
+      "id": "2606.23835",
+      "title": "ABACUS: Adapting Unified Foundation Model for Bridging Image Count Understanding and Generation",
+      "authors": [
+        "Anindya Mondal",
+        "Sauradip Nag",
+        "Anjan Dutta"
+      ],
+      "summary": "ABACUS is a unified vision-language model that handles object counting, crowd counting, referring-expression counting, and count-faithful image generation without any benchmark-specific training required. Our model is built on existing 3B-parameter unified foundation model and is adapted for object localization tasks using three key innovations: density-aware adaptive zooming with objectness maps for spatial grounding; a boundary-aware count policy via GRPO to eliminate crop-boundary errors; and a cycle-consistent GRPO strategy where the understanding branch self-critiques generated outputs, closing the understanding-generation gap without any external annotations. ABACUS achieves state-of-the-art results across seven benchmarks, outperforming both task-specific specialists and larger generalist models.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.23835",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.23835",
+      "githubRepo": null
+    },
+    {
+      "id": "2606.26080",
+      "title": "Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents",
+      "authors": [
+        "Changdae Oh",
+        "Wendi Li",
+        "Seongheon Park",
+        "Samuel Yeh",
+        "Tanwi Mallick",
+        "Sharon Li"
+      ],
+      "summary": "Process reward models enable fine-grained, step-level evaluation of LLMs, yet building them for agentic settings remains prohibitively difficult: long-horizon interactions, irreversible actions, and stochastic environment feedback make both human annotation and Monte Carlo estimation infeasible at scale. In this work, we show that reinforcement learning (RL) post-training already provides the ingredients for effective step-level scoring, eliminating the need for dedicated reward model training altogether. Concretely, we derive an implicit advantage under a general stochastic Markov decision process, which we term progress advantage -- log-probability ratio between the RL-trained policy and its reference policy exactly recovers the optimal advantage function. This formulation makes the resulting signal annotation-free, domain-agnostic, and available as a byproduct of the standard RL post-training pipeline. We validate the effectiveness of the progress advantage across three different applications: test-time scaling, uncertainty quantification, and failure attribution on five benchmarks and four model families. Across all settings, it consistently outperforms confidence-based baselines and, despite requiring no task-specific training, surpasses dedicated trained reward models. We complement these results with deeper analyses on characteristics of progress advantage, offering practical guidance for adoption in real-world agentic systems.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-24T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.26080",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.26080",
+      "githubRepo": "https://github.com/deeplearning-wisc/progress-advantage"
+    },
+    {
+      "id": "2606.26875",
+      "title": "Information-Aware KV Cache Compression for Long Reasoning",
+      "authors": [
+        "Jushi Kai",
+        "Zhuiri Xiao",
+        "Alexandra Birch",
+        "Zhouhan Lin"
+      ],
+      "summary": "Reasoning capability has advanced rapidly in large language models (LLMs), leading to an increasing size of key-value (KV) cache in both prefilling and decoding stages. Existing KV cache compression methods mainly rely on attention weights to estimate token importance. While attention effectively captures contextual relevance, it overlooks complementary information-theoretic signals related to predictive uncertainty and token informativeness. In this paper, we revisit token importance from a forward-looking perspective and introduce Forward Influence, a metric that measures how compressed tokens affect future contexts. Our analysis reveals that tokens selected by attention scores mainly influence nearby contexts, whereas tokens associated with high predictive uncertainty exhibit substantially stronger influence on distant future contexts. Based on the observation, we propose InfoKV, an entropy-aware KV cache compression framework that incorporates information-theoretic signals. It combines token-level predictive uncertainty with layer-wise representation evolution and integrates the resulting entropy scores with attention scores during reasoning. Experiments on long-context reasoning benchmarks with Llama-3.1, Llama-3.2, and DeepSeek-R1 demonstrate that InfoKV consistently outperforms existing attention-based KV compression methods in both long prefilling and decoding scenarios.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.26875",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.26875",
+      "githubRepo": null
+    },
+    {
+      "id": "2606.27277",
+      "title": "EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting",
+      "authors": [
+        "Junwei Luo",
+        "Shuai Yuan",
+        "Zhenya Yang",
+        "Yansheng Li",
+        "Zhe Liu",
+        "Hengshuang Zhao"
+      ],
+      "summary": "Earth Observation (EO) forecasting aims to predict future Earth surface dynamics from satellite observations under changing meteorological conditions. In this paper, we view this task as a partially observed, weather-driven world modeling problem, in which weather acts as a conditioning signal, while forecasting remains uncertain due to sparse observations and unobserved land-surface states. However, existing methods do not fully capture this setting: deterministic models collapse uncertainty into a single future prediction, while diffusion-based methods typically treat weather variables as undifferentiated conditioning signals, and existing benchmarks focus mainly on reconstruction accuracy rather than whether forecasts respond correctly to changed weather forcing.We introduce EO-WM, a video diffusion transformer for multispectral EO forecasting. EO-WM incorporates a physically informed conditioning framework that represents meteorological forcing through a climatological baseline, weather anomalies, and cumulative physical stress signals. Specifically, it separates baseline and anomaly through distinct conditioning pathways, and accumulates anomalous forcing over time to capture sustained heat and drought stress. To evaluate weather-response behavior beyond standard metrics, we introduce two diagnostic benchmarks: an Extreme Summer Benchmark for severity-aware prediction of vegetation degradation under extreme weather, and a Seasonal Matched-Pair Benchmark for testing response fidelity under changed weather forcing. Experiments show that EO-WM reduces the error in predicted Normalized Difference Vegetation Index (NDVI) decline amplitude by a relative 5.63% and improves directional hit rate by a relative 7.80%, while remaining competitive on standard pixel-level metrics. The benchmarks and model will be made open-source at https://github.com/Luo-Z13/EO-WM.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.27277",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.27277",
+      "githubRepo": "https://github.com/Luo-Z13/EO-WM"
+    },
+    {
+      "id": "2606.27192",
+      "title": "LISA: Likelihood Score Alignment for Visual-condition Controllable Generation",
+      "authors": [
+        "Yanghao Wang",
+        "Hongxu Chen",
+        "Jiazhen Liu",
+        "Zhenqi He",
+        "Rui Liu",
+        "Zhen Wang",
+        "Long Chen"
+      ],
+      "summary": "The prevalent dual-branch paradigm, i.e., training a side network to encode visual conditions and fusing its intermediate-layer features to a frozen pretrained main network, has shown remarkable success in visual-condition controllable generation. Despite its widespread adoption, the role of the side branch and its training efficiency remain underexplored. In this paper, we first revisit this mainstream paradigm through the lens of score-based generative modeling: 1) The main network preserves visual perceptual quality by providing a prior unconditional score. 2) The side network steers conditional control by implicitly contributing a likelihood score. Guided by this perspective, we propose LIkelihood Score Alignment (LISA), an effective regularization method that explicitly aligns the intermediate feature of the side network with an approximated likelihood score. Specifically, we first hook features from a designated layer of the side network and project them into the score latent space by a lightweight decoder. Then, we construct an approximated likelihood score target and calculate the distance between the decoder's output and this target as an additional regularization loss. Finally, we jointly optimize the side network and decoder with both standard diffusion loss and our regularization loss. Experiments across various image/video tasks, architectures, and diffusion/flow models demonstrated that LISA can not only consistently accelerate the training convergence and improve final synthetic results, but also encourage the side network's features to be more disentangled for conditional modeling with negligible additional training cost and zero extra inference cost.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.27192",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.27192",
+      "githubRepo": "https://github.com/HKUST-LongGroup/LISA"
+    },
+    {
+      "id": "2606.14397",
+      "title": "Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments",
+      "authors": [
+        "Mykola Vysotskyi",
+        "Runqi Lin",
+        "Grzegorz Biziel",
+        "Michal Zakrzewski",
+        "Sebastian Montagna",
+        "Damian Rynczak",
+        "Shreyansh Padarha",
+        "Kumail Alhamoud",
+        "Zihao Fu",
+        "William Lugoloobi",
+        "Kai Rawal",
+        "Hanna Yershova",
+        "Xander Davies",
+        "Taras Rumezhak",
+        "Guohao Li",
+        "Fazl Barez",
+        "Baoyuan Wu",
+        "Arkadiusz Drohomirecki",
+        "Yarin Gal",
+        "Chris Russell",
+        "Christopher Summerfield",
+        "Adam Mahdi",
+        "Volodymyr Karpiv",
+        "Philip Torr",
+        "Adel Bibi"
+      ],
+      "summary": "As agentic systems continue to evolve and are widely deployed in real-world scenarios, there is a growing demand to faithfully evaluate their capabilities. However, current benchmarks are typically built on popular applications with relatively simple tasks and focus on a narrow set of capabilities while overlooking broader dimensions, resulting in saturated performance on modern agents and failing to probe their limitations. To this end, we introduce GauntletBench, a web-based benchmark for evaluating agent generalisation in challenging scenarios, focusing on three underexplored capabilities (temporal perception, graphical understanding, and 3D reasoning), across five less-covered professional applications (Video Editor, Workflow Builder, 3D Modeller, Flight Analyser, and Circuit Designer), each with 20 vision-intensive tasks (100 in total). Our benchmark provides a modular pipeline that comprises an environment compatible with both open- and closed-source agent frameworks, a controlled web-based application, a well-structured task suite, and an automated evaluation engine with diverse metrics. Contrary to widespread expectations, our empirical results reveal that frontier agentic systems remain far from achieving human-level performance. Even the state-of-the-art agent achieves only a 19.1% success rate on our GauntletBench, highlighting the limitations in these overlooked capabilities and generalisation. By comparison, non-expert human annotators achieve over 80% success on our challenging yet feasible tasks, revealing the substantial gap between current agent capabilities and those required for complex real-world scenarios.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.14397",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.14397",
+      "githubRepo": "https://github.com/gauntlet-benchmark/evaluation-harness"
+    },
+    {
+      "id": "2606.27288",
+      "title": "When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models",
+      "authors": [
+        "Josef Chen"
+      ],
+      "summary": "Multi-model LLM systems such as routing, voting, cascades, fusion, and mixture-of-agents are used to beat single-model accuracy. We show that their gain is capped by a quantity the field rarely reports. For any policy whose output is one member model answer, accuracy cannot exceed one minus beta, where beta is the rate at which every model is wrong on the same query. In contrast, the usual diagnostic, average pairwise error correlation rho, cannot identify beta: error laws with identical marginals and pairwise correlations can have different all-wrong rates. A Clopper-Pearson bound on beta gives a finite-sample certificate on the largest gain any router, vote, or cascade could deliver before training a router.\n  Across 67 models from 21 providers, a tetrachoric-calibrated single-factor model still underprices the all-wrong tail: on open-ended mathematics, observed beta is 0.052 versus 0.023 under the full 67-model Gaussian copula, about 2.5 times underpricing, with 90 percent CI 1.7 to 3.4 and k equals 17. The effect recurs on execution-graded code, where beta is 0.079. Re-asking the same GPQA-Diamond questions in free-response rather than multiple-choice form reopens the tail, with beta 0.127 and a five-judge panel with kappa 0.73 to 0.92, locating co-failure in answer format rather than subject. At matched quality, low-rho heterogeneous ensembles beat high-rho Self-MoA, but on checkable tasks in our pool, combining models rarely beats the single best model without a strong query-level routing signal. Gains come from models failing on different questions, not from adding more models.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.27288",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.27288",
+      "githubRepo": null
+    },
+    {
+      "id": "2606.16613",
+      "title": "CoffeeBench: Benchmarking Long-Horizon LLM Agents in Heterogeneous Multi-Agent Economies",
+      "authors": [
+        "Issa Sugiura",
+        "Daichi Hattori",
+        "Kazuo Araragi",
+        "Keita Ogawa",
+        "Shota Onose",
+        "Taro Makino",
+        "Teppei Usuki",
+        "Takashi Ishida"
+      ],
+      "summary": "As LLM agents become capable of increasingly long-horizon tasks, evaluating their performance in economic systems is becoming increasingly important. Unlike existing benchmarks that primarily evaluate a single agent interacting with a passive environment, economic systems are inherently multi-agent, requiring autonomous agents to communicate, negotiate, and transact while pursuing their own objectives over extended periods. We introduce CoffeeBench, a benchmark for evaluating LLM agents in a long-horizon multi-agent economy composed of heterogeneous firms. In CoffeeBench, two farmers, two roasters, and two retailers autonomously operate their businesses over a 90-day simulation, each seeking to maximize cumulative net income through communication and transactions while managing cash, inventory, and pricing. The evaluated model controls one coffee roaster, while the remaining firms are controlled by fixed reference agents. Across several recent open-weight and proprietary LLMs, all models outperform a passive baseline that takes no actions, with most achieving positive net income. Analysis of agent behavior reveals substantial differences in long-horizon economic interaction: higher-performing models communicate more actively with other firms, whereas Claude~Haiku~4.5 exhibits an idle-drift failure mode, repeatedly choosing inaction despite producing coherent assessments and plans. We release our code and agent trajectories to support future research.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-15T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.16613",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.16613",
+      "githubRepo": "https://github.com/SakanaAI/CoffeeBench"
+    },
+    {
+      "id": "2606.21795",
+      "title": "Discretizing Reward Models",
+      "authors": [
+        "Vijay Viswanathan",
+        "Shiqi Wang",
+        "Devamanyu Hazarika",
+        "Chirag Nagpal",
+        "Tongshuang Wu",
+        "Graham Neubig",
+        "Yuning Mao"
+      ],
+      "summary": "Despite their widespread use, the role of reward models in shaping reinforcement learning is poorly understood. Reward models offer a tempting promise: they automatically estimate response quality in the absence of verifiers or human judges. Unlike \"verifiable rewards\" which typically produce binary scores, reward models typically produce continuous scores, allowing them to be sensitive to fine-grained differences in responses. However, we show this apparent strength is a serious weakness: many popular reward models are oversensitive, assigning different scores to equally good responses. Theoretically, we show that seemingly perfect reward models can be highly oversensitive; empirically, this oversensitivity can lead to bad policies. In place of existing notions of \"reward model accuracy,\" we propose evaluating reward models using distinct measures of \"discriminative ability\" and \"specificity\" (the complement of oversensitivity). As a solution, we describe a training-free algorithm that uses Monte Carlo dropout on any neural reward model to produce discrete reward clusters. Theoretically, we prove there exist discretizations that reduce oversensitivity at minimal expense of discriminative ability; empirically we show, in both controlled and natural RL settings, that discretizing rewards leads to less reward hacking and better policies than training on the original rewards.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-19T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.21795",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.21795",
+      "githubRepo": null
+    },
+    {
+      "id": "2606.18394",
+      "title": "JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting",
+      "authors": [
+        "Lanxiang Hu",
+        "Zhaoxiang Feng",
+        "Yulun Wu",
+        "Haoran Yuan",
+        "Yujie Zhao",
+        "Yu-Yang Qian",
+        "Bojun Wang",
+        "Peng Zhao",
+        "Daxin Jiang",
+        "Yibo Zhu",
+        "Tajana Rosing",
+        "Hao Zhang"
+      ],
+      "summary": "Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs) by drafting multiple tokens and verifying them in parallel, but it faces a scaling limitation: increasing the draft budget improves speed only when acceptance remains high and drafting overhead stays low. This ceiling has been difficult to break because prior head-based SD methods face a causality-efficiency dilemma. Autoregressive drafters produce path-conditioned candidates that are effective for tree speculative decoding with higher acceptance length, but their drafting cost grows with tree depth. Bidirectional block-diffusion drafters generate all positions in one pass, but their branch-agnostic marginals can form individually plausible yet mutually inconsistent trees, wasting budget and reducing acceptance. We propose JetSpec, a head-based SD framework that combines one-forward drafting efficiency with branch-wise causal conditioning. JetSpec trains a causal parallel draft head over fused hidden states from the frozen target model, producing candidate trees whose scores align with the target model's autoregressive factorization. This enables JetSpec to convert larger draft budgets into longer accepted prefixes and higher end-to-end speedup. Across math, coding, and chat benchmarks on dense and MoE Qwen3 models, JetSpec consistently outperforms bidirectional-head and tree-based SD baselines. On H100 GPUs, JetSpec achieves up to 9.64x speedup on MATH-500 and 4.58x on open-ended conversational workloads, with further latency gains demonstrated through vLLM integration under realistic serving loads. Our code and models are available at https://github.com/hao-ai-lab/JetSpec.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.18394",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.18394",
+      "githubRepo": "https://github.com/hao-ai-lab/JetSpec"
+    },
+    {
+      "id": "2606.16517",
+      "title": "How Post-Training Shapes Biological Reasoning Models",
+      "authors": [
+        "Lukas Fesser",
+        "Hanlin Zhang",
+        "Michelle M. Li",
+        "Eric Wang",
+        "Bryan Perozzi",
+        "Shekoofeh Azizi",
+        "Sham M. Kakade",
+        "Marinka Zitnik"
+      ],
+      "summary": "Scientific reasoning models for biology combine language models with foundation models trained on multimodal biological data, including DNA, RNA, and proteins. These models are built through post-training, yet how each stage shapes reasoning and generalization remains poorly understood. We study when post-training improves performance and when it induces over-specialization. Across genomics, transcriptomics, and proteins, we train and evaluate more than 100 biological reasoning models under controlled variation in backbone, continued pre-training (CPT), supervised fine-tuning (SFT), and reinforcement learning (RL), measuring both in-domain (ID) and out-of-domain (OOD) performance. We find that each post-training stage reshapes generalization in a distinct way rather than contributing uniform gains. CPT improves downstream performance by aligning models with biological language. SFT consistently increases ID performance but causes OOD performance to peak early and decline as models fit the training distribution. RL, when applied to strong SFT checkpoints with aligned rewards, improves OOD performance and partially recovers generalization. These results show that biological reasoning does not improve monotonically with additional supervision or compute. Instead, performance depends on how training stages are composed. Under fixed post-training budgets, the strongest ID-OOD trade-off comes from brief SFT, larger RL allocations, and asymmetric adaptation capacity across stages.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-15T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2606.16517",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2606.16517",
+      "githubRepo": null
+    },
     {
       "id": "2606.27326",
       "title": "Hallucination in World Models is Predictable and Preventable",
@@ -767,246 +986,6 @@
       "arxivUrl": "https://arxiv.org/abs/2606.26058",
       "arxivPdfUrl": "https://arxiv.org/pdf/2606.26058",
       "githubRepo": "https://github.com/HKUST-C4G/DomainShuttle"
-    },
-    {
-      "id": "2606.24937",
-      "title": "The Hitchhiker's Guide to Agentic AI: From Foundations to Systems",
-      "authors": [
-        "Haggai Roitman"
-      ],
-      "summary": "The Hitchhiker's Guide to Agentic AI is a comprehensive practitioner's reference for building autonomous AI systems. The book covers the full stack from first principles to production deployment, organized around a central thesis: building great agentic systems requires understanding every layer of the pipeline, not just one. The book opens with the LLM substrate -- transformer architecture, GPU systems, training and fine-tuning (SFT,LoRA, MoE), model compression, and inference optimization -- treated as essential foundations rather than the primary focus. It then develops the alignment and reasoning layer: reinforcement learning from human feedback (RLHF), PPO, DPO and its variants, GRPO, reward modeling, and RL for large reasoning models including chain-of-thought and test-time scaling. The second half is devoted to agentic AI proper. Topics include agentic training and trajectory-based RL, retrieval-augmented generation (RAG and Agentic RAG), memory systems (in-context, external, episodic, and semantic), agent harness design and context management, and a taxonomy of agent design patterns. Inter-agent coordination is covered in depth: the Model Context Protocol (MCP), agent skills and tool use, the Agent-to-Agent (A2A) communication protocol, and multi-agent architectures spanning centralized, decentralized, and hierarchical topologies. The book concludes with agent development frameworks, agentic UI design, evaluation methodology for agentic tasks, and production deployment. Each chapter pairs rigorous theoretical foundations with implementation guidance, code examples, and references to the primary literature.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-22T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.24937",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.24937",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.24033",
-      "title": "RoPE-Aware Bit Allocation for KV-Cache Quantization",
-      "authors": [
-        "Fengfeng Liang",
-        "Yuechen Zhang",
-        "Jiaya Jia"
-      ],
-      "summary": "Existing low-bit KV-cache quantizers often treat each cached key as a flat vector. Under RoPE, however, a key's contribution to a future attention logit decomposes into a position-dependent sum over two-dimensional frequency blocks. This makes key-cache quantization a block-wise bit-allocation problem: high-energy RoPE blocks are more sensitive to quantization error and should receive more bits. We introduce Block-GTQ, a RoPE-aware bit allocator for key-cache quantization built on TurboQuant-MSE(TQ-MSE). For each layer and KV head, Block-GTQ computes a label-free energy score for each RoPE block and greedily allocates integer bit widths by marginal gain. Under matched K/V bit budgets, Block-GTQ better preserves RoPE query-key logits on a ten-model diagnostic panel, cutting per-layer MAE by 32-80% at 2 and 3 b/dim K-only quantization and winning all 367/367 layer comparisons against uniform TQ-MSE. These fidelity gains translate to stronger downstream long-context retrieval, understanding, and reasoning. At K2V2 on Llama-3.1-8B-Instruct, Block-GTQ raises the six-task NIAH average from 70.6 to 97.4, and the LongBench-EN average from 36.87 to 53.31. On AIME 2024/2025 with DeepSeek-R1-Distill-Qwen-7B, without an fp16 recent-key buffer, Block-GTQ at K3V2 scores 51.7/37.5, close to fp16's 54.2/37.9, whereas uniform TQ-MSE collapses to 0.0/0.0. We further implement a packed-cache serving path. On a single H800 GPU with Qwen2.5-3B-Instruct, packed K3V3 achieves 3.24x KV-cache compression with fp16-comparable quality, runs 1.34x faster than fp16 FlashAttention2 at 128K context, reduces peak memory from 56.31 GB to 19.85 GB, and remains feasible at 256K and 512K where fp16 OOMs. Code is available at https://github.com/JIA-Lab-research/blockgtq.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.24033",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.24033",
-      "githubRepo": "https://github.com/JIA-Lab-research/blockgtq"
-    },
-    {
-      "id": "2606.25331",
-      "title": "Improved Large Language Diffusion Models",
-      "authors": [
-        "Shen Nie",
-        "Qiyang Min",
-        "Shaoxuan Xu",
-        "Zihao Huang",
-        "Yuxuan Song",
-        "Yong Shan",
-        "Yankai Lin",
-        "Wayne Xin Zhao",
-        "Chongxuan Li",
-        "Ji-Rong Wen"
-      ],
-      "summary": "Modern large language models are predominantly trained with autoregressive factorization and causal attention. We present iLLaDA, an 8B masked diffusion language model trained from scratch with fully bidirectional attention. iLLaDA keeps the masked diffusion objective throughout pre-training and supervised fine-tuning (SFT), scaling pre-training to 12T tokens and fine-tuning on a 25B-token instruction corpus for 12 epochs. We further use variable-length generation for efficiency and introduce confidence-based scoring for multiple-choice evaluation. Compared with LLaDA, iLLaDA improves broadly across general, mathematical, and code benchmarks; for example, iLLaDA-Base improves by 21.6 points on BBH and 14.9 points on ARC-Challenge, while iLLaDA-Instruct improves by 14.5 points on MATH and 16.5 points on HumanEval. Despite its non-autoregressive training, iLLaDA also remains competitive with Qwen2.5 7B on several benchmarks. These results show that fully bidirectional diffusion training from scratch is a competitive path toward strong language models. Model weights and codes: https://github.com/ML-GSAI/LLaDA.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-24T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.25331",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.25331",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.25473",
-      "title": "Causal-rCM: A Unified Teacher-Forcing and Self-Forcing Open Recipe for Autoregressive Diffusion Distillation in Streaming Video Generation and Interactive World Models",
-      "authors": [
-        "Kaiwen Zheng",
-        "Guande He",
-        "Min Zhao",
-        "Jintao Zhang",
-        "Huayu Chen",
-        "Jianfei Chen",
-        "Chen-Hsuan Lin",
-        "Ming-Yu Liu",
-        "Jun Zhu",
-        "Qianli Ma"
-      ],
-      "summary": "Autoregressive video diffusion with causal diffusion transformers has emerged as a major paradigm for real-time streaming video generation and action-conditioned interactive world models. In this work, we extend rCM, an advanced diffusion distillation framework, to autoregressive video diffusion. The core philosophy of rCM lies in the complementarity between forward and reverse divergences, represented by consistency models (CMs) and distribution matching distillation (DMD), respectively, in diffusion distillation. This philosophy naturally carries over to the autoregressive setting, where teacher-forcing (TF) provides an offline, forward-divergence causal training paradigm, while self-forcing (SF) corresponds to an on-policy, reverse-divergence refinement.\n  Our contributions are: (1) through extensive experiments, we show that teacher-forcing CM is currently the best complement to self-forcing DMD as an initialization strategy (2) we present the first implementation of teacher-forcing-based continuous-time CMs (e.g., sCM/MeanFlow) for autoregressive video diffusion, enabled by our custom-mask FlashAttention-2 JVP kernel, achieving 10times faster convergence compared to discrete-time CMs (dCMs) (3) we introduce Causal-rCM, a leading, unified, and scalable algorithm-infrastructure open recipe for diffusion distillation and causal training (4) we achieve state-of-the-art streaming video generation performance in both frame-wise and chunk-wise settings, using only synthetic data for training.\n  Notably, our distilled 2-step causal Wan2.1-1.3B model achieves a VBench-T2V score of 84.63 with only 1 or 2 sampling steps. We further apply Causal-rCM to Cosmos 3, an advanced omnimodal world foundation model for physical AI with action-conditioned generation capability, enabling an interactive world model.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-24T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.25473",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.25473",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.15932",
-      "title": "Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence",
-      "authors": [
-        "Xuanle Zhao",
-        "Qiushi Sun",
-        "Jingyu Xiao",
-        "Xuexin Liu",
-        "Haoyue Yang",
-        "Qiaosheng Chen",
-        "Xianzhen Luo",
-        "Jing Huang",
-        "Yufeng Zhong",
-        "Lei Chen",
-        "Shuai Fu",
-        "Zhenlin Wei",
-        "Jinhe Bi",
-        "Lei Jiang",
-        "Haibo Qiu",
-        "Siqi Yang",
-        "Peng Shi",
-        "Jian Hu",
-        "Zhixiong Zeng"
-      ],
-      "summary": "While Large Language Models (LLMs) have substantially advanced text-to-code synthesis, many real programming tasks specify intent through visual artifacts such as screenshots, charts, vector drawings, videos, and interactive states. These tasks require models to connect visual perception to executable programs, because correctness depends not only on syntax but also on layout, data semantics, interaction behavior, and domain-specific constraints that apply after execution. This survey examines Multimodal Code Intelligence, covering systems that generate, edit, refine, or reason with code under visually grounded inputs and outputs. We first formulate the field by the role that code plays in each task, distinguishing code as a rendered artifact, an editable symbolic structure, a scientific representation, an intermediate reasoning trace, or an executable policy or tool interface. We then organize benchmarks and methods into four domains: Graphical User Interface, Scientific Visualization, Structured Graphics, and Frontier Tasks and Frameworks. This taxonomy connects mature artifact-generation problems to emerging agentic and unified settings and allows us to compare how different tasks treat evidence of correctness. Looking ahead, we argue that future research may benefit from four verification-centered directions. Multi-signal validation can combine complementary evidence of correctness, multi-state verification can test behavior across execution trajectories, cross-task transfer testing can probe reusable visual-code skills, and verifiable agent traces can reveal whether agent actions are grounded in visual evidence. Together, these directions may move this field from single-output imitation toward evidence-grounded executable systems. An ongoing project and resources are available on https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code{GitHub}.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-16T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.15932",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.15932",
-      "githubRepo": "https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code"
-    },
-    {
-      "id": "2606.24849",
-      "title": "IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation",
-      "authors": [
-        "Zixuan Li",
-        "Haokun Lin",
-        "Yicheng Xiao",
-        "Zhiwei Li",
-        "Xinyang Song",
-        "Zelong Zheng",
-        "Yong He",
-        "Heng Yao",
-        "Ke Ding",
-        "Chao Yu",
-        "Chuan Yuan",
-        "Qi Li",
-        "Zhenan Sun"
-      ],
-      "summary": "Unified multi-modal large language models (MLLMs) have achieved strong text-to-image generation quality, but still struggle with structure-aware prompt following, where object counts, spatial relations, attribute bindings, and coarse layouts must be preserved. We attribute this limitation in part to the entanglement of structural planning and appearance rendering within a single conditioning stream. To address this issue, we propose Implicit Visual Chain-of-Thought (IV-CoT), a latent visual reasoning framework for query-conditioned image generation. IV-CoT decomposes the visual conditioning queries into a structural-to-semantic cascade, where structural queries first form a latent visual plan and semantic queries then render appearance conditioned on this plan. To guide the structural queries, we introduce training-only sketch supervision, which encourages them to capture structure from sketches without requiring sketch extraction or intermediate decoding at inference time. IV-CoT performs implicit CoT reasoning in a single forward pass and achieves superior results on GenEval and T2I-CompBench. Visualizations and analyses demonstrate that the learned structural and semantic queries play complementary roles in structure-aware generation.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.24849",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.24849",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.24484",
-      "title": "Advancing WordArt-Oriented Scene Text Recognition: Datasets and Methods",
-      "authors": [
-        "Xingsong Ye",
-        "Yongkun Du",
-        "Jiaxin Zhang",
-        "Haojie Zhang",
-        "Chong Sun",
-        "Chen Li",
-        "Jing Lyu",
-        "Zhineng Chen"
-      ],
-      "summary": "WordArt (artistic text) features highly customized fonts, textures, and layouts, making WordArt-oriented scene TExt Recognition (WATER) substantially more challenging than general Scene Text Recognition (STR). Existing STR datasets and methods, typically built around regular scene text and fixed-template inputs, struggle to scale to WATER. Thus, we aim to advance this task from both data and model perspectives. On the data side, we construct a 2M synthetic dataset, WATER-S, with the scale improved by hundreds of times compared to existing artistic text data. WATER-S consists of two complementary subsets. One rendered by an upgraded rendering pipeline (SynthWordArt), which provides highly accurate and controllable synthetic WordArt data. The other is generated by combining Qwen3-VL for prompt mining and Z-Image for image synthesis, which improves the coverage of realistic and diverse data. On the model side, we propose WATERec. It adopts an visual encoder supporting arbitrary-shaped inputs and an autoregressive decoder to model complex layouts, structurally breaking the bottleneck of fixed-template STR on WordArt. Experiments show that this architecture outperforms prior STR methods, achieving state-of-the-art performance on irregular texts such as WordArt. Together with WATER-R, carefully reorganized from existing real STR data, our strong baseline with the new synthetic data and model design reaches 90.40% accuracy on WordArt-Bench, surpassing both general-purpose and OCR-specialized vision-language models by a large margin. Code and data are available at https://github.com/YesianRohn/WATER.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.24484",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.24484",
-      "githubRepo": "https://github.com/YesianRohn/WATER"
-    },
-    {
-      "id": "2606.25041",
-      "title": "Wan-Streamer v0.1: End-to-end Real-time Interactive Foundation Models",
-      "authors": [
-        "Lianghua Huang",
-        "Zhifan Wu",
-        "Wei Wang",
-        "Yupeng Shi",
-        "Mengyang Feng",
-        "Junjie He",
-        "Chenwei Xie",
-        "Yu Liu",
-        "Jingren Zhou",
-        "Ang Wang",
-        "Bang Zhang",
-        "Baole Ai",
-        "Chen Liang",
-        "Cheng Yu",
-        "Chongyang Zhong",
-        "Jinwei Qi",
-        "Kai Zhu",
-        "Pandeng Li",
-        "Peng Zhang",
-        "Wenyuan Zhang",
-        "Xinhua Cheng",
-        "Yitong Huang",
-        "Yun Zheng",
-        "Zoubin Bi"
-      ],
-      "summary": "We present Wan-Streamer, a native-streaming, end-to-end interactive foundation model designed from the ground up for real-time, low-latency, full-duplex audio-visual interaction. Wan-Streamer seamlessly models language, audio, and video as both input and output within a single Transformer, where the sequence is represented as interleaved visual, audio, and text input tokens together with visual, audio, and text output tokens, coordinated by block-causal attention for incremental streaming. Unlike cascaded interactive systems that rely on separate VAD, ASR, language, TTS, audio-driven animation, or video-generation modules, Wan-Streamer does not rely on external language, speech, avatar, or video-generation modules: perception, reasoning, generation, response timing, turn management, and cross-modal synchronization are learned jointly within one unified model, reducing pipeline latency and error accumulation. To support natural audio-visual responsiveness, we redesign the entire stack around streamability, including causal encoders, causal decoders, block-causal attention, and low-latency multimodal token scheduling, enabling streaming units as short as 160 ms at 25 fps. Wan-Streamer achieves approximately 200 ms model-side response latency and approximately 550 ms total interaction latency when combined with 350 ms bidirectional network latency, supporting sub-second duplex audio-visual communication. These results position Wan-Streamer as a unified, end-to-end, multimodal interactive foundation model for low-latency streaming interaction.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.25041",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.25041",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.24595",
-      "title": "MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery",
-      "authors": [
-        "Enze Ma",
-        "Yufan Zhou",
-        "Wei-Chieh Huang",
-        "Jie Yang",
-        "Huanhuan Ma",
-        "Zixuan Wang",
-        "Chengze Li",
-        "Chunyu Miao",
-        "Philip S. Yu",
-        "Zhen Wang"
-      ],
-      "summary": "Long-term memory promises LLM agents that grow more capable across sessions, maintaining an accurate, evolving understanding of the user that interaction forms. In practice, however, this memory is evaluated mostly through downstream behavior, such as later answers, personalization quality, or task success, which tests that understanding only indirectly and leaves the memory artifact itself largely unaudited. We argue that long-term memory should instead be evaluated as an auditable post-interaction artifact: after ordinary assistance, what structured user state can be reconstructed from the memory the agent leaves behind? We instantiate this view in MEMPROBE, a benchmark in which a memory-equipped agent assists simulated users, each carrying a hidden, taxonomy-anchored user-state bank, across a trajectory of leak-controlled tasks, after which that bank is reconstructed from the agent's resulting memory under both full-store and top-k access. Built on synthetic ground truth for efficient, scalable measurement, MEMPROBE spans 50 simulated users with 31 hidden dimensions each (1,550 recovery targets) and tests 5 representative memory systems. Testing state-of-the-art memory agents, we find that successful assistance and recoverable memory behave as distinct capabilities. Task completion nearly saturates, even for a memoryless baseline, while category-balanced recovery stays moderate (about 0.6) and drops further under top-k retrieval. MEMPROBE is the first benchmark to study memory recovery directly, reconstructing the user state a system retains and scoring it against ground truth. We see recovery as a concrete objective for future memory agents to optimize, and MEMPROBE as a step toward an environment where agents are trained to remember their users, growing more faithful the longer they know them.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.24595",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.24595",
-      "githubRepo": null
-    },
-    {
-      "id": "2606.23543",
-      "title": "VeriEvol: Scaling Multimodal Mathematical Reasoning via Verifiable Evol-Instruct",
-      "authors": [
-        "Haoling Li",
-        "Kai Zheng",
-        "Jie Wu",
-        "Can Xu",
-        "Qingfeng Sun",
-        "Han Hu",
-        "Yujiu Yang"
-      ],
-      "summary": "Scaling reinforcement learning for visual mathematical reasoning requires more than generating harder questions: as data volume grows, the reward labels themselves must remain reliable. Yet existing data pipelines scale supervision while trusting the labeller, and policy-side methods assume the underlying answers are already correct. We instead treat scaling as a verifiable data-construction problem and decouple two axes before any policy update: prompt difficulty, expanded by route-specific evolution operators, and answer reliability, enforced by offline hypothesis-test falsification. We instantiate this as VeriEvol, an iterative framework with two extensible components: a type-aware evolution module that rewrites low-difficulty image-question seeds into harder, image-grounded prompts; and HTV-Agent, a verifier that accepts an answer only after multi-source counter-evidence has failed to refute it. The resulting verified data scales in volume, extends by adding evolution routes or verifier channels, and plugs directly into existing GRPO-style RL recipes. On a five-benchmark visual-math suite, scaling evolved SFT data from 10K to 250K samples raises the mean accuracy from 35.42 to 54.73; then, with backbone, SFT initialization, and GRPO recipe held fixed, VeriEvol adds a cumulative +3.88 over an un-evolved RL baseline, of which +1.82 comes from evolved prompts and +2.06 from the HTV-Agent verifier. We release the prompts, data, models, code, and the full verifier trace of every sample, so that downstream work can scale and audit the pipeline rather than only inspect its outputs.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-22T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.23543",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.23543",
-      "githubRepo": "https://github.com/RobertMarton/verievol"
-    },
-    {
-      "id": "2606.23991",
-      "title": "Critique of Agent Model",
-      "authors": [
-        "Eric Xing",
-        "Mingkai Deng",
-        "Jinyu Hou"
-      ],
-      "summary": "What is an agent? What constitutes agency? With the rise of Large Language Model (LLM) systems marketed as ``coding agents'', ``AI co-scientists'', and other ``agentic\" tools that promise to drive up productivity, and at the same time, ``existential\" concerns such as AI escaping human control with destructive power under a speculative ``machine agency\" against humans, it has become essential to clarify where automation ends and agency begins, both for building capable systems and for understanding whether and what to fear. Drawing on Descartes' grounding of agency in independent thought, and on portrayals of autonomous beings in science fiction, we survey the current landscape of AI agents, and analyze agent architectures along five dimensions: goal, identity, decision-making, self-regulation, and learning. Specifically, we argue that genuine agency requires these structures to be internalized within the system itself rather than assembled through external scaffolding. This distinction between agentic systems, whose competence resides in engineered workflows, and agentive systems, whose capabilities (including social interaction) arise endogenously, defines the boundary between systems designed for prescribed tasks, and those capable of operating in the open world with true autonomy. Building on this analysis, we propose the Goal-Identity-Configurator (GIC) architecture for a general-purpose agent model, combining hierarchical goal decomposition, identity evolution, simulative reasoning grounded in a separately trained world model, learned self-regulation, and self-directed learning from both real and simulated experience. Furthermore, we share insight on the auditability, controllability, and safety of agentive systems that possess greater autonomy and ``agency\", but remain under human oversight.",
-      "upvotes": 0,
-      "publishedAt": "2026-06-22T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2606.23991",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2606.23991",
-      "githubRepo": null
     }
   ]
 }
