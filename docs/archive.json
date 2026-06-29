@@ -18208,9 +18208,233 @@
       "submittedOnDailyAt": "2026-06-26T00:00:00.000Z",
       "githubRepo": "",
       "submittedBy": "hlzhang109"
+    },
+    "2606.26519": {
+      "title": "Boundary-Aware Context Grounding for A Low-Channel EEG Agent",
+      "authors": [
+        "Zhiyuan Xu",
+        "Yueqing Dai",
+        "Junling Li",
+        "Junwen Luo"
+      ],
+      "summary": "Large language models (LLMs) can make scientific software easier to use. However, a general model does not automatically know which measurements a particular sensor can support, which algorithms are implemented in the current software, or which conclusions are justified by a computed result. These distinctions are especially important for low-channel electroencephalography (EEG), where sparse spatial coverage and variable signal quality make plausible but unsupported interpretations easy to produce. We present NeuraDock Agent, an open-source architecture that separates a deterministic local EEG engine from a hardware-aware language layer. The numerical engine parses recordings, performs quality control, executes reviewed spectral workflows, and writes machine-readable artifacts. The LLM receives only a compact, allowlisted summary and a versioned context pack. The context describes the seven-channel hardware, reviewed workflows, result fields, implementation boundaries, scientific limits, and reference cases. Raw EEG and dense per-sample arrays remain local\n  We evaluate the system at three levels. First, 12 recordings produced identical structured results over ten numerical repetitions, and a complete Rest/Task run produced identical result, report, and figure hashes over three repetitions. Second, request-capture and failure-injection experiments confirmed the tested data boundary and preservation of local artifacts under HTTP, malformed-output, and connection failures. Third, a boundary-awareness benchmark tested 36 ordinary and adversarial questions under four context ablations and two LLMs, yielding 288 outputs.These results support hardware- and implementation-aware grounding as a practical mechanism for calibrating what an EEG agent accepts, qualifies, or refuses; they do not establish clinical validity or a validated absolute cognitive-load index.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "https://github.com/Neuradock/eeg-workstation-agent",
+      "submittedBy": "dfhgljw"
+    },
+    "2606.28133": {
+      "title": "Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots",
+      "authors": [
+        "Sijin Chen",
+        "Kaixuan Jiang",
+        "Haixin Shi",
+        "Yanhui Wang",
+        "Weiheng Zhong",
+        "Haosheng Li",
+        "Bo Jiang",
+        "Yuxiao Liu",
+        "Xihui Liu"
+      ],
+      "summary": "We study whether we can learn novel manipulation skills from human actions to a bi-manual robot with parallel grippers. Human action data is cheap, abundant, and diverse, making it one of the most promising resources for scaling up robot learning. Yet transferring skills from humans to robots remains hard: most prior work treats humans as just another bi-manual 6DoF embodiment, where hand-pose estimates are noisy and the contact patterns of human fingers differ fundamentally from those of a parallel gripper. We argue that learning rotation-inclusive action signals from human data is therefore sub-optimal, and instead propose a bridging action representation: the relative wrist translation within the initial head-camera frame, an action space shared by humans and robots. To handle the potential absence of certain action components in different embodiments, we build a π_0-like vision-language-action model with interleaved action tokens and attention masking. On a suite of novel bi-manual manipulation tasks, our bridging action transfers human manipulation knowledge to robots far more effectively than noisy 6DoF human actions and scales with the amount of human data.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-26T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "CH3COOK"
+    },
+    "2606.27974": {
+      "title": "ProMSA:Progressive Multimodal Search Agents for Knowledge-Based Visual Question Answering",
+      "authors": [
+        "ZhengXian Wu",
+        "Hangrui Xu",
+        "Kai Shi",
+        "Zhuohong Chen",
+        "Yunyao Yu",
+        "Chuanrui Zhang",
+        "Zirui Liao",
+        "Jun Yang",
+        "Zhenyu Yang",
+        "Haonan Lu",
+        "Haoqian Wang"
+      ],
+      "summary": "Knowledge-based Visual Question Answering (KB-VQA) requires models to combine image understanding with external knowledge. Most prior methods use a fixed retrieve-then-generate pipeline with a pre-selected retriever and a static top-k setting, which is not adaptive during reasoning. We propose ProMSA, a progressive multimodal search agent for KB-VQA. Given an image-question pair, the agent iteratively chooses image search, text search, or stop, under explicit tool-call budgets and with deduplication to avoid redundant retrieval. For training, we first use rejection-sampling SFT to learn valid tool-use formats, then optimize the agent with TN-GSPO, a sequence-level RL objective that normalizes updates by both generation length and tool-interaction depth. Experiments on E-VQA and InfoSeek show consistent gains over strong RAG and agent baselines, and improved retrieval and end-to-end accuracy. The code is available at https://github.com/DingWu1021/Promsa.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-26T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "https://github.com/DingWu1021/Promsa",
+      "submittedBy": "zx-Wu"
+    },
+    "2606.27595": {
+      "title": "Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents",
+      "authors": [
+        "Minbyul Jeong"
+      ],
+      "summary": "Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth, exhaustively enumerating a closed set and filling each item's attributes, is barely evaluated, especially outside English. Breadth is also hard to build: certifying that a gold set is complete and every cell correct is far costlier than checking a single answer. I introduce Ko-WideSearch, a Korean breadth-search benchmark built by an automated synthesize-and-verify pipeline. Each task names a set-parent entity -- a TV season, a dynasty, a league, an administrative region, an election -- and asks for its full membership plus a per-item attribute table, graded by Item-, Column-, and Row-F1. It spans 228 tables over 190 entities and sixteen categories across three difficulty tiers, set by two structural knobs I dial independently -- table width and a 2-D composite key -- so cross-product membership climbs from 0\\% to 100\\% across the tiers. A single normalization-aware comparator is shared between gold construction and grading, so stable date and count columns are not over-dropped on formatting alone. Across twenty web agents, the failure is consistent: agents recover the set but not the rows (e.g.\\ Item-F1 92.8 against Row-F1 53.7), accuracy falls steadily as the knobs harden, and neither more search nor more spend closes the gap. Broken down by cell, the hard part is finding the right value, not formatting it: open-ended free-text cells fail most, while cells with a standard answer such as a date or a name usually come out right.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "Minbyul"
+    },
+    "2606.27771": {
+      "title": "NormGuard: Reward-Preserving Norm Constraints in Flow-Matching Reinforcement Learning",
+      "authors": [
+        "Tianlin Pan",
+        "Lianyu Pang",
+        "Cheng Da",
+        "Huan Yang",
+        "Changqian Yu",
+        "Kun Gai",
+        "Wenhan Luo"
+      ],
+      "summary": "Reinforcement learning (RL) post-training improves the reward alignment of flow-based generators, but often degrades perceptual quality in ways that are not captured by the reward proxy. We identify a simple structural signature of this drift: across three post-training methods (NFT, AWM, DPO), RL fine-tuning inflates the per-step velocity norm |v_θ| by 5% to 15% relative to the reference. A form of norm inflation has been studied in classifier-free guidance (CFG), where rescaling the velocity back to a reference norm at inference time can mitigate the resulting artifacts. However, this inference-time correction does not transfer cleanly to RL: rescaling v_θ to match |v_{ref}| at inference time neither improves reward nor fixes the quality degradation, because the inflation is co-adapted into the model weights. Furthermore, an adjoint sensitivity analysis shows that velocity magnitude rescaling carries no coherent first-order reward signal at the batch level, indicating that suppressing norm inflation is unlikely to remove a consistently reward-carrying component. Since inference-time renormalization fails while norm suppression carries no reward cost, training-time intervention is the appropriate strategy. Together, these findings motivate \\methodname, a hinge penalty that activates only when |v_θ| exceeds |v_{ref}| and composes additively with any velocity-local base loss. Across two base models, three post-training methods, and two reward proxies, \\methodname consistently improves MLLM-judged image quality and forensic realism while preserving reward, with gains that amplify under few-step inference and are not explained by early stopping.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-26T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "ldiex"
+    },
+    "2606.22873": {
+      "title": "SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning",
+      "authors": [
+        "SingGuard Team"
+      ],
+      "summary": "Vision-language models (VLMs) are increasingly deployed in consumer, medical, financial, and enterprise applications. This broad deployment expands the safety surface: risks can arise from multimodal question answering, assistant responses, and cross-modal composition, while moderation policies may vary across products, regions, and deployment stages. Most existing guardrails either rely on fixed taxonomies or target only a narrow set of interaction settings, which limits their adaptability when safety rules change at deployment time. We present SingGuard, a policy-adaptive multimodal guardrail model family for safety assessment in multimodal conversations. SingGuard treats the active policy as a runtime input: given natural-language rules, it checks the target content against the active policy rule by rule and predicts both the safety label and the triggered rule. To balance efficiency and interpretability, SingGuard supports fast, hybrid, and slow inference regimes along a fast-to-slow reasoning spectrum, ranging from direct safety judgments to policy-grounded deliberation. We further optimize this behavior with fast--slow decoupled reinforcement learning. We also introduce SingGuard-Bench, a multimodal guardrail benchmark with 56{,}340 examples spanning 80+ fine-grained risk types across multimodal QA, adversarial attack, and dynamic-rule evaluation settings, including cross-modal joint-risk cases where each modality is harmless in isolation but their composition implies unsafe intent. Across six benchmark families (35 datasets), SingGuard achieves state-of-the-art average F1 in every family. Dynamic-rule evaluation further shows improved policy-following accuracy from 0.6465 to 0.7415 under runtime policy shifts. Our code is available at https://github.com/inclusionAI/Sing-Guard.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "https://github.com/inclusionAI/Sing-Guard",
+      "submittedBy": "echoxvf"
+    },
+    "2606.27608": {
+      "title": "Qwen-Image-2.0-RL Technical Report",
+      "authors": [
+        "Yixian Xu",
+        "Kaiyuan Gao",
+        "Yuxiang Chen",
+        "Yilei Chen",
+        "Zecheng Tang",
+        "Zihao Liu",
+        "Zikai Zhou",
+        "Deqing Li",
+        "Hao Meng",
+        "Kuan Cao",
+        "Jiahao Li",
+        "Jie Zhang",
+        "Liang Peng",
+        "Lihan Jiang",
+        "Ningyuan Tang",
+        "Shengming Yin",
+        "Tianhe Wu",
+        "Xiaoyue Chen",
+        "Yan Shu",
+        "Yanran Zhang",
+        "Yi Wang",
+        "Yu Wu",
+        "Yujia Wu",
+        "Zekai Zhang",
+        "Zhendong Wang",
+        "Xiao Xu",
+        "Kun Yan",
+        "Chenfei Wu"
+      ],
+      "summary": "We present Qwen-Image-2.0-RL, a post-training pipeline that applies reinforcement learning from human feedback (RLHF) and on-policy distillation (OPD) to improve both the visual quality and instruction-following capability of the Qwen-Image-2.0 diffusion model. To provide reliable reward signals, we construct task-specific composite reward models by fine-tuning vision-language models with a pointwise scoring paradigm and chain-of-thought reasoning. For text-to-image generation, the reward models cover alignment, aesthetics, and portrait fidelity dimensions. For image editing tasks, the reward system addresses instruction-following accuracy and face identity preservation. Building on this reward system, we develop a scalable GRPO-based RL training framework, incorporating a hybrid classifier-free guidance (CFG) strategy to preserve pre-trained knowledge, prompt curation via intra-group reward range filtering, and per-category reward weight calibration. To merge the task-specialized RL policies for T2I and editing, we propose on-policy distillation as the final training stage, which consolidates multiple teachers into a single student model through trajectory-level velocity matching. Extensive evaluation shows that Qwen-Image-2.0-RL achieves 57.84 overall score on Qwen-Image-Bench (+2.61 over the base model), Elo ratings of 1193 in text-to-image arena (+78) and 1349 in image edit arena (+93), demonstrating consistent gains in aesthetic quality, prompt adherence, and editing accuracy.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-25T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "taesiri"
+    },
+    "2606.27378": {
+      "title": "Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs",
+      "authors": [
+        "Fahd Seddik",
+        "Fatemeh Fard"
+      ],
+      "summary": "We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprising metrics that are independent of downstream benchmark scores and reveal representational failures that benchmark accuracy masks. Existing evaluations conflate representation quality with model capacity. Therefore, failures cannot be attributed to the representation rather than to the model that processes it. We formalize four functional axioms (Causality, Minimality, Separability, and Stability) and define a quantitative measure for each, computed directly on the representation independently of downstream accuracy. We audit open-weight LLMs across 23 reasoning tasks (e.g., Spatial Reasoning, Factual QA). We find that no candidate satisfies all four axioms simultaneously, that the representations distinguish task type reliably but cannot distinguish between two questions within the same task, and that the representations encode little information beyond what is already present in the input embedding. The failure is consistent across dense, reasoning-distilled, and RL-trained model families, indicating that the gap is structural rather than a property of model size or training procedure.",
+      "upvotes": 0,
+      "publishedAt": "2026-05-07T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "https://github.com/fard-lab/formalize-thoughts",
+      "submittedBy": "FahdSeddik"
+    },
+    "2606.28277": {
+      "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
+      "authors": [
+        "Rajesh Jayaram",
+        "Drew Tyler",
+        "David Woodruff",
+        "Corinna Cortes",
+        "Yossi Matias",
+        "Vahab Mirrokni",
+        "Vincent Cohen-Addad"
+      ],
+      "summary": "Artificial intelligence is driving a revolution in scientific discovery, accelerating everything from hypothesis generation to mathematical theorem proving. However, this rapid acceleration is creating a systemic challenge: traditional human peer review cannot scale to match the influx of AI-assisted science. Ultimately, to resolve this tension, we must also deploy AI to accelerate the verification and review process itself. To frame the discussion around this transition, we propose a taxonomy consisting of four progressive levels of AI-human collaboration in scientific evaluation, and discuss various trade-offs involved with each.\n  As a step toward this future, we introduce the Paper Assistant Tool (PAT), an agentic AI framework built for deep scientific review and verification. PAT ingests full scientific manuscripts and produces a comprehensive evaluation, checking theoretical results, validating experiments, suggesting improvements, and identifying potential flaws. By utilizing inference scaling techniques, PAT is able to identify deeper issues than a single model call alone, achieving a 34% improvement over zero-shot recall on mathematical errors in the SPOT benchmark. Pilot deployments of PAT as a pre-submission tool for authors at two major Computer Science conferences -- STOC and ICML -- demonstrate its ability to identify critical errors and suggest substantive improvements to research papers. By catching errors early, PAT eases the cognitive burden placed on referees, while preserving their control over the outcomes of the review process.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-26T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "taesiri"
+    },
+    "2606.28276": {
+      "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+      "authors": [
+        "Nadun Ranawaka",
+        "Josiah Wong",
+        "Wei-Lin Pai",
+        "Wei-Teng Chu",
+        "Tianyuan Dai",
+        "Masoud Moghani",
+        "Hang Yin",
+        "Yunfan Jiang",
+        "Wesley Durbano",
+        "Brandon Huynh",
+        "Yu Fang",
+        "Linxi Fan",
+        "Danfei Xu",
+        "Ruohan Zhang",
+        "Li Fei-Fei",
+        "Bowen Wen",
+        "Ajay Mandlekar",
+        "Yuke Zhu"
+      ],
+      "summary": "Training and evaluating robot policies in the real world is costly and difficult to scale. We introduce SimFoundry, a modular and automated system for zero-shot real-to-sim scene construction from a video. SimFoundry generates sim-ready digital twins and supports object, scene, and task editing, enabling the automated generation of diverse digital cousins: affordance-preserving variations of reconstructed real-world scenes. Policies trained on SimFoundry data transfer zero-shot to challenging real tasks involving multi-step manipulation, articulated object interaction, and bimanual interaction, and its digital cousins (variations of the original scene, objects, and tasks) facilitate generalization to new real-world conditions. Across 7 manipulation tasks and 5 policy architectures, SimFoundry simulation evaluations strongly predict real-world performance, with mean Pearson correlation 0.911 and mean maximum ranking violation 0.018. When evaluating sim-trained policies zero-shot in the real world, policies trained with object, scene, and task cousins in simulation show average task success rate improvements of 17%, 21%, and 40%, respectively. Additional details at https://research.nvidia.com/labs/gear/simfoundry/ .",
+      "upvotes": 0,
+      "publishedAt": "2026-06-26T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "taesiri"
+    },
+    "2606.28128": {
+      "title": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+      "authors": [
+        "Peiwen Zhang",
+        "Yufan Deng",
+        "Shangkun Sun",
+        "Juncheng Ma",
+        "Duomin Wang",
+        "Jonas Du",
+        "Zilin Pan",
+        "Ye Huang",
+        "Hao Liang",
+        "Songyan Huang",
+        "Ruihua Zhang",
+        "Enze Xie",
+        "Ming-Yu Liu",
+        "Daquan Zhou"
+      ],
+      "summary": "Video generation models have emerged as a promising paradigm for embodied world simulation. However, both general-domain video generators and robot-specific data fine-tuned models can still produce physically implausible manipulations, including discontinuous motion trajectories and inconsistent robot-object interactions, which limits their reliability as world simulators. Through extensive experiments, we find that such physical instability mainly arises from two factors: deformation of moving objects and implausible spatio-temporal correlations among interacting entities, particularly during contact. Building on this observation, we propose PhysisForcing, a scalable training framework that strengthens physical consistency by focusing supervision on physics-informative regions through joint optimization of pixel-level and semantic-level features. The framework consists of a pixel-level trajectory alignment loss, which supervises DiT features using reference point trajectories, and a semantic-level relational alignment loss, which aligns DiT features with inter-region relations extracted from a frozen video understanding encoder. Extensive experiments on R-Bench, PAI-Bench, and EZS-Bench show that PhysisForcing consistently improves embodied video generation over strong baselines, improving the Wan2.2-I2V-A14B and Cosmos3-Nano base models on R-Bench by 22.3\\% and 9.2\\% (7.1\\% and 3.7\\% over vanilla finetuning), with the Cosmos3-Nano variant attaining the best overall score. Beyond generation, as a world model under the WorldArena action-planner protocol it raises the closed-loop success rate from 16.0\\% to 24.0\\% and further improves downstream policy success, indicating that physically aligned video models yield stronger representations for robotic manipulation.",
+      "upvotes": 0,
+      "publishedAt": "2026-06-26T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-06-29T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "taesiri"
     }
   },
   "dates": [
+    "2026-06-29",
     "2026-06-28",
     "2026-06-27",
     "2026-06-26",
