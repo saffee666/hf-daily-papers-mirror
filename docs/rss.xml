@@ -5,8 +5,92 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-07-03</lastBuildDate>
+    <lastBuildDate>2026-07-04</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Scaling Laws for Grid-Based Approximate Nearest Neighbor Search in High Dimensions</title>
+      <link>https://arxiv.org/abs/2607.01283</link>
+      <guid isPermaLink="false">2607.01283</guid>
+      <description>Matthew J Liu, Wei Hang Zheng, Vidhan Purohit — Grid-based approaches to approximate nearest neighbor (ANN) search have been absent from modern scaling analyses. We present a systematic characterization of a multiprobe grid algorithm with respect to dataset size N and dimensionality d. Our experiments reveal a previously unreported d-scaling crossover on the GloVe embedding family, in which multiprobe grid search maintains an approximately constant dimensional scaling exponent while other graph-, tree-, and partitioning-based methods exhibit degrading throughput. The advantage comes with near-linear query scaling in N, but also with lower indexing cost than competing ANN methods. Our results suggest that grid-based methods such as multiprobe grid may be competitive in rebuild-heavy or high-dimensional settings where indexing cost and di</description>
+      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Parameter-Efficient Quantum-Inspired Fast Weight Programmers for Traffic-Matrix Forecasting</title>
+      <link>https://arxiv.org/abs/2606.27821</link>
+      <guid isPermaLink="false">2606.27821</guid>
+      <description>Kuo-Chung Peng, Jiun-Cheng Jiang, Chun-Hua Lin — Traffic matrices (TMs) capture network-wide origin-destination demand and are central to traffic engineering, yet accurate whole-matrix forecasting remains challenging when prediction must be performed under the memory, update, and training-budget constraints of online network control. This paper investigates whether compact quantum-inspired recurrent models can provide effective TM forecasts without relying on dedicated graph, transformer, or diffusion modules. We adapt gated quantum-inspired Kolmogorov-Arnold network fast-weight programmers (QKAN-FWPs) to direct multi-step Abilene TM forecasting, where each model predicts the next 20 five-minute frames of a 144-channel origin-destination (OD) matrix from a two-hour history. We benchmark three QKAN placement variants against a matched-siz</description>
+      <pubDate>2026-06-26T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>WARP: Weight-Space Analysis for Recovering Training Data Portfolios</title>
+      <link>https://arxiv.org/abs/2607.01686</link>
+      <guid isPermaLink="false">2607.01686</guid>
+      <description>Tzu-Heng Huang, Aditya Goyal, John Cooper — Foundation models are routinely released to the public, yet the data recipes used to train them -- such as domain mixture weights that determine how different sources are sampled -- are rarely disclosed. This creates an access asymmetry: researchers study the resulting models but lack visibility into the training distribution that produces them. Prior works for inferring training data, such as membership inference, detect at the level of individual samples and thus cannot characterize the global composition of the training corpus. We introduce WARP, a framework that recovers a fine-tuned model&apos;s training mixtures directly from its released weights. WARP interpolates between the base and fine-tuned models using model merging, generating pseudo-checkpoints that approximate the missing traini</description>
+      <pubDate>2026-07-02T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>AutoMem: Automated Learning of Memory as a Cognitive Skill</title>
+      <link>https://arxiv.org/abs/2607.01224</link>
+      <guid isPermaLink="false">2607.01224</guid>
+      <description>Shengguang Wu, Hao Zhu, Yuhui Zhang — Memory expertise is a learned skill: knowing what to encode, when to retrieve, and how to organize knowledge--a capacity known in cognitive science as metamemory. We bring this perspective to LLMs by treating memory management as a trainable skill. We promote file-system operations to first-class memory actions alongside task actions, letting the model itself decide how to manage its memory. This memory skill improves along two axes: the structure that supports it (prompts, file schemas, action vocabulary), and the proficiency of the model exercising it. Both axes resist manual optimization: episodes in long-horizon tasks run for thousands of steps, and a single memory mistake can hide long before it surfaces, making human review of full trajectories impractical. We introduce AutoMem, a fr</description>
+      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>DuoMem: Towards Capable On-Device Memory Agents via Dual-Space Distillation</title>
+      <link>https://arxiv.org/abs/2606.29961</link>
+      <guid isPermaLink="false">2606.29961</guid>
+      <description>Peyman Hosseini, Ondrej Bohdal, Ahmed Alajrami — Large Language Model (LLM)-based agents can solve complex procedural tasks by interacting with environments over multiple turns, but this ability typically depends on large models, long contexts, and repeated inference calls. This makes advanced memory-augmented agents difficult to deploy on resource-constrained devices. We introduce DuoMem, a dual-space distillation framework that transfers procedural problem-solving ability from a large teacher model to compact student models. DuoMem distils in two complementary spaces: (1)context-space distillation, which replaces student-generated memories with higher-quality teacher-generated procedural memories prepended to the student&apos;s input, and (2)parameter-space distillation, which fine-tunes lightweight LoRA adapters on successful teacher traje</description>
+      <pubDate>2026-06-29T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Logit-Contribution Scoring Identifies Non-Literal Retrieval Heads</title>
+      <link>https://arxiv.org/abs/2607.01002</link>
+      <guid isPermaLink="false">2607.01002</guid>
+      <description>Aryo Pradipta Gema, Beatrice Alex, Pasquale Minervini — In long-context use, large language models frequently synthesize answers from the meaning of a relevant context span rather than literally copy-pasting them. Identifying which attention heads perform this synthesis matters for interpreting long-context model behavior. Yet existing detectors miss these heads by construction: they reward heads whose attended token matches the generated token, a literal-copy criterion that captures where a head reads but not what it writes through its output-value (OV) circuit, the very mechanism that carries non-literal retrieval. We introduce Logit-Contribution Scoring (LOCOS), a write-aware detector that scores each head by the projection of its OV-circuit output onto the answer-token unembedding direction, contrasting needle and off-needle source position</description>
+      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>AGVBench: A Reliability-Oriented Benchmark of Data Augmentation for Vein Recognition</title>
+      <link>https://arxiv.org/abs/2607.02271</link>
+      <guid isPermaLink="false">2607.02271</guid>
+      <description>Haiyang Li, Yuming Fu, Qun Song — Vein recognition is a secure biometric technology often constrained by limited annotated data and imaging variations. While data augmentation mitigates this, strategies designed for natural images may disrupt the fine-grained topology and textures essential for identity discrimination. We present AGVBench, which evaluates 30 representative augmentation strategies on five public palm- and finger-vein datasets with seven backbone architectures, covering classic CNNs, vision transformers, and vein-specific recognition models. Our results show that multi-image mixing methods (e.g., MixUp, PuzzleMix, StarMixup) generally provide the strongest recognition performance. However, they are often poorly calibrated and vulnerable to adversarial perturbations, revealing a clear inconsistency between cl</description>
+      <pubDate>2026-07-02T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR</title>
+      <link>https://arxiv.org/abs/2606.25178</link>
+      <guid isPermaLink="false">2606.25178</guid>
+      <description>Yongjin Yang, Jiarui Liu, Yinghui He — Reinforcement learning with verifiable rewards (RLVR) has been extended from single-domain training to multi-domain reasoning suites spanning mathematics, programming, and science. However, the training curriculum (how often each domain is sampled) is typically fixed or hand-tuned, even though reasoning skills transfer unevenly across domains. Existing learnability-based curricula adapt to where the policy is currently improving, but are blind to whether a gradient step on the selected domain benefits the remaining domains. In this paper, we propose Transfer-Aware Curriculum (TAC), a bandit-style online curriculum that prioritizes domains whose updates broadly benefit the rest of the training suite. TAC repurposes signals already produced by RL training: per-domain advantages capture local</description>
+      <pubDate>2026-06-27T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>InstanceControl: Controllable Complex Image Generation without Instance Labeling</title>
+      <link>https://arxiv.org/abs/2606.31924</link>
+      <guid isPermaLink="false">2606.31924</guid>
+      <description>Xiaoyu Liu, Huan Wang, Fan Li — Controllable image generation methods, such as ControlNet, have demonstrated a remarkable capacity to introduce visual conditions(e.g., depth maps) to guide image generation. However, these methods often struggle with complex multi-instance scenes, frequently leading to attribute confusion among instances. While recent approaches attempt to mitigate this via manual instance labeling, such requirements are labor-intensive. In this paper, we propose InstanceControl, a novel multi-instance controllable generation method that eliminates the need for instance labeling. We identify the primary bottleneck in existing methods as the inability to accurately associate instance descriptions with their corresponding regions within visual conditions. To address this, we leverage the Vision-Language Mod</description>
+      <pubDate>2026-06-30T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning</title>
+      <link>https://arxiv.org/abs/2606.31825</link>
+      <guid isPermaLink="false">2606.31825</guid>
+      <description>Junha Jung, Minbyul Jeong, Suhyeon Lim — Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correctness or sequence-level preferences. This suffers from sparse credit assignment, making it difficult to optimize the reasoning process essential for clinical applications. Our analysis reveals that cascading errors from early-stage reasoning failures are a leading cause of incorrect predictions in medical visual question answering (VQA) benchmarks. Motivated by this, we propose Medical Reasoning-aware Policy Optimization (MRPO), an RL algorithm that incorporates step-wise process rewards. When the final answer is incorrect, MRPO assigns exponentially larger penalties to tokens in earlier invali</description>
+      <pubDate>2026-06-30T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments</title>
+      <link>https://arxiv.org/abs/2607.02440</link>
+      <guid isPermaLink="false">2607.02440</guid>
+      <description>Zhilin Wang, Han Song, Runzhe Zhan — Autonomous agents are increasingly expected to improve executable policies through feedback, yet existing evaluations often collapse this process into a final score or confound it with open-ended software-engineering progress. We introduce Autonomous Policy Evolution, a controlled evaluation setting in which a harness-model agent repeatedly edits an executable policy system under a fixed interaction budget. We instantiate this setting in EvoPolicyGym, a benchmark built from compact interactive RL environments that evaluates how agents iteratively improve explored policies. On the EvoPolicyGym suite, GPT-5.5 achieves the strongest aggregate rank score and top-two performance on all 16 environments. Beyond leaderboard results, EvoPolicyGym also provides trajectory-level diagnostics that dist</description>
+      <pubDate>2026-07-02T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents</title>
+      <link>https://arxiv.org/abs/2607.02255</link>
+      <guid isPermaLink="false">2607.02255</guid>
+      <description>Xiangchen Cheng, Yunwei Jiang, Jianwen Sun — Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see. The simplest contract appends past observations, tool calls, and reflections to every prompt, which makes prior context easy to access but also turns it into a jumbled mixture in which the effect of any single memory component is hard to isolate. We introduce and instrument an alternative bounded contract: every decision is made from a fresh user message assembled by typed retrieval, with no raw cross-decision transcript appended. The prompt thus stays bounded across runs of any length, and any single layer can be ablated in isolation. We instantiate the contract in Slay the Spire 2, a closed-rule stochastic deck-building game whose runs require hundreds of tactical and strategic decisions.</description>
+      <pubDate>2026-07-02T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>From SRA to Self-Flow: Data Augmentation or Self-Supervision?</title>
       <link>https://arxiv.org/abs/2607.02508</link>
@@ -271,91 +355,6 @@
       <link>https://arxiv.org/abs/2607.01218</link>
       <guid isPermaLink="false">2607.01218</guid>
       <description>Giovanni Monea, Nathan Godey, Kianté Brantley — Transformers use the same forward computation stream to both predict the next token and store useful state for future token predictions. We formulate the state-prediction separation hypothesis: disentangling the two roles yields better language modeling performance. We design a Transformer variant that uses two computation streams to separate the two functions, and conduct pretraining experiments across various scales. Our experiments show that state-prediction separation consistently offers better data and compute efficiencies, improving validation loss and outperforming standard Transformers by 2--3 percentage points on average on downstream tasks. We also conduct extensive empirical analysis that rules out potential confounders and demonstrates the fundamental difference in the gradient</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Perceive-to-Reason: Decoupling Perception and Reasoning for Fine-Grained Visual Reasoning</title>
-      <link>https://arxiv.org/abs/2607.01191</link>
-      <guid isPermaLink="false">2607.01191</guid>
-      <description>Hongxing Li, Xiufeng Huang, Dingming Li — Fine-grained visual reasoning remains challenging for vision-language models, especially when small but critical visual cues are buried in high-resolution images. Existing approaches rely on repeated cropping or test-time visual search to introduce local evidence, but they typically do not explicitly distinguish perception from reasoning. In this paper, we propose Perceive-to-Reason (P2R), a unified framework that formulates fine-grained visual reasoning as a two-stage process: the model first localizes question-relevant evidence as a Perceiver, and then answers the question as a Reasoner based on the annotated image and cropped regions. To better align training with this decoupled formulation, we further introduce Perception-Reasoning Alternating GRPO (PRA-GRPO), a role-aware reinforcemen</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>TurboServe: Serving Streaming Video Generation Efficiently and Economically</title>
-      <link>https://arxiv.org/abs/2606.19271</link>
-      <guid isPermaLink="false">2606.19271</guid>
-      <description>Youhe Jiang, Haoxu Wang, Haotong Bao — Streaming video generation is emerging as a new serving workload in which users interact with long-lived sessions that generate video progressively, chunk by chunk. Unlike offline video generation or typical LLM serving, streaming video generation must preserve session state across active and idle periods, repeatedly schedule ongoing sessions, and deliver each chunk under a tight latency target. This creates two key serving challenges in multi-user, multi-GPU environments: session duration heterogeneity, where long-running sessions make placement decisions suboptimal over time, and temporal user-demand heterogeneity, where the number of active sessions fluctuates sharply across bursts and idle periods.
-  We present TurboServe, the first serving system designed specifically for streaming vi</description>
-      <pubDate>2026-06-17T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>AutoTrainess: Teaching Language Models to Improve Language Models Autonomously</title>
-      <link>https://arxiv.org/abs/2606.31551</link>
-      <guid isPermaLink="false">2606.31551</guid>
-      <description>Zhaojian Yu, Penghao Yin, Shuzheng Gao — Training language models (LMs) remains a highly human-intensive process, even as frontier language model agents become increasingly capable at software engineering and other long-horizon tasks. A central challenge is that autonomous post-training is not just a coding problem: it requires the agent to repeatedly plan iterations, construct benchmark-aligned data, run stable training jobs, evaluate checkpoints, and preserve experiment state across many hours of interaction. We present AutoTrainess, a LM agent that exposes these operations as a repository of agent-computer interfaces for planning, data preparation, training, evaluation, and logging. Rather than leaving the agent to operate in a raw CLI environment with an underspecified action space, AutoTrainess externalizes prior human exper</description>
-      <pubDate>2026-06-30T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>CausalMix: Data Mixture as Causal Inference for Language Model Training</title>
-      <link>https://arxiv.org/abs/2607.01104</link>
-      <guid isPermaLink="false">2607.01104</guid>
-      <description>Zinan Tang, Yukun Zhang, Shaomian Zheng — In Large Language Model (LLM) training, data mixing plays a pivotal role in determining model performance. Recent methods optimize mixture weights via proxy models, but they rely on the assumption of static data distributions. As a result, when the underlying data pool shifts, these methods require costly retraining from scratch. This limitation restricts their ability to scale seamlessly from small settings to larger data pools and model sizes. In this paper, we propose CausalMix to address this limitation by casting data mixture optimization as a causal inference problem. We formulate the statistical features of the data pool as covariates and the domain mixture as the treatment. After fitting a causal model on 512 runs of Qwen2.5-0.5B to estimate the Conditional Average Treatment Effect</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Domain Arithmetic: One-Shot VLA Adaptation under Environmental Shifts</title>
-      <link>https://arxiv.org/abs/2607.00666</link>
-      <guid isPermaLink="false">2607.00666</guid>
-      <description>Taewook Kang, Taeheon Kim, Donghyun Shin — Vision-Language-Action (VLA) models often fail to perform the same learned tasks under environmental shifts, such as changes in camera pose and shifts to a different but similar robot (e.g., from Panda to UR5e). Adapting these models to the shifted environment (i.e., target domain) often requires training on multiple demonstrations for each task, which are costly to collect. To reduce the burden of data curation and training, we propose an analogy-based method that adapts VLA models under environmental shifts through weight vector arithmetic with domain-specific information addition, named Domain ARiThmetic (DART). Unlike prior approaches, DART requires collecting only a single demonstration, enabling efficient adaptation. To accurately isolate domain-specific information for addition, DAR</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>ABot-M0.5: Unified Mobility-and-Manipulation World Action Model</title>
-      <link>https://arxiv.org/abs/2607.00678</link>
-      <guid isPermaLink="false">2607.00678</guid>
-      <description>Ronghan Chen, Yandan Yang, Zuojin Tang — Mobile manipulation is a key capability for general-purpose robots, yet remains challenging for current embodied learning methods. VLA policies are typically reactive and lack explicit world modeling, while existing World Action Models (WAMs) are still poorly aligned with the structure of mobile manipulation: they operate on coarse video chunks, model entangled navigation-manipulation actions, and train inverse dynamics under supervision that does not match autoregressive inference. As a result, they often miss fine-grained contact dynamics, suffer from action-distribution conflicts, and accumulate errors over long-horizon rollouts. We propose ABot-M0.5, a new WAM built on the insight that mobile manipulation requires alignment at three levels: temporal granularity, action space, and train</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Valdi: Value Diffusion World Models</title>
-      <link>https://arxiv.org/abs/2607.00917</link>
-      <guid isPermaLink="false">2607.00917</guid>
-      <description>Christopher Lindenberg, Kashyap Chitta — World models can enable Model Predictive Control (MPC), but this requires dynamics prediction that is both fast enough for online use and expressive enough to represent uncertain futures. Diffusion models offer a natural mechanism for modeling uncertain dynamics, yet their iterative inference procedure makes them difficult to use for low-latency latent planning. We bridge this gap with Value Diffusion World Models (Valdi), combining end-to-end online training for MPC with a latent diffusion dynamics model. In preliminary experiments on the CarRacing environment, we show that Valdi, using a single diffusion step at both training and inference, matches a deterministic MLP baseline. Our experiments expose a trade-off between predictive multimodality and control performance in this setup. Code</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Autonomous Scientific Discovery via Iterative Meta-Reflection</title>
-      <link>https://arxiv.org/abs/2607.01131</link>
-      <guid isPermaLink="false">2607.01131</guid>
-      <description>Bingchen Zhao, Sara Beery, Oisin Mac Aodha — Autonomous scientific discovery systems offer the potential to accelerate research by automating the process of hypothesis generation and validation. However, current systems operate within constrained search spaces or require predefined research questions, limiting their capacity for true open-ended inquiry. Furthermore, while they generate hypotheses iteratively, they largely lack the ability to explicitly synthesize their own accumulated findings to uncover complex, interconnected phenomena. We introduce DiscoPER, an autonomous large language model-powered framework that conducts open-ended research by dynamically generating and executing code to explore datasets without pre-specified research objectives. To ensure rigorous scientific validity, every proposed discovery must pass statist</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>BioInsight: Multi-Agent Orchestration for Interactive Biomedical Knowledge Discovery</title>
-      <link>https://arxiv.org/abs/2606.20997</link>
-      <guid isPermaLink="false">2606.20997</guid>
-      <description>Jieyi Wang, Bingxuan Li, Nanyi Jiang — Biomedical researchers increasingly use AI-generated analyses and reports to interpret protein-level signals, but static outputs are often insufficient for research decision-making, where users need to inspect evidence, assess uncertainty, compare mechanisms, and refine hypotheses. We present BioInsight, a multi-agent system that moves from static biomedical report generation to interactive evidence-centered interactive interface generation. Given a disease name, a protein association table, and optional cohort metadata, BioInsight organizes disease-specific evidence through typed intermediate artifacts, including ranked pathways, literature evidence packets, protein-level reasoning notes, citation-grounded reports, dashboard schemas, and rendered interactive interfaces. The system decompo</description>
-      <pubDate>2026-06-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>AtomiMed: Hierarchical Atomic Fact-Checking for Universal Clinical-Aware Medical Report Evaluation</title>
-      <link>https://arxiv.org/abs/2606.31292</link>
-      <guid isPermaLink="false">2606.31292</guid>
-      <description>Yuan Wang, Wanxing Chang, Songtao Jiang — Traditional metrics for Medical Report Generation (MRG) predominantly rely on surface-level n-gram overlap, which fails to capture clinical factual accuracy and often overlooks catastrophic diagnostic errors. We address this fundamental limitation by proposing AtomiMed, a universal, modality-agnostic evaluation framework that decomposes complex medical narratives into a standardized, multi-level hierarchy of Atomic Clinical Facts, encompassing Disease-level entities and Attribute-level descriptors, including location, morphology, and severity. By implementing an Agentic Cross-Verification loop between ground-truth and predicted reports, AtomiMed simulates a multi-radiologist peer-review process to verify clinical consistency, thus enabling the decoupled assessment of diagnostic detection a</description>
-      <pubDate>2026-06-30T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>VideoSearch-R1: Iterative Video Retrieval and Reasoning via Soft Query Refinement</title>
-      <link>https://arxiv.org/abs/2607.00446</link>
-      <guid isPermaLink="false">2607.00446</guid>
-      <description>Seohyun Lee, Seoung Choi, Dohwan Ko — As video corpora continue to expand in both scale and task complexity, there is increasing demand for approaches that retrieve relevant videos from large-scale corpora (inter-video reasoning) and subsequently perform fine-grained, query-conditioned tasks (intra-video reasoning) within the retrieved content, such as temporal grounding. However, existing approaches typically treat retrieval as a preprocessing step, and consequently, when the initial retrieval fails, there is no mechanism to refine the search, leading to the failure of subsequent fine-grained intra-video reasoning. Moreover, while recent agentic frameworks have advanced video understanding, they typically assume that the query-relevant video is already given, focusing exclusively on intra-video reasoning tasks. To address the</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>RepoRescue: An Empirical Study of LLM Agents on Whole-Repository Compatibility Rescue</title>
-      <link>https://arxiv.org/abs/2607.01213</link>
-      <guid isPermaLink="false">2607.01213</guid>
-      <description>Zhihao Lin, Mingyi Zhou, Zhensu Sun — Open-source libraries and tools are widely reused, but compatibility maintenance is expensive. Once maintainers leave, useful repositories can stop working as runtimes and dependencies evolve. We study whether LLM agents can adapt old repositories to modern environments, a task we call compatibility rescue. Unlike bug repair, compatibility rescue starts from a repository that worked in its original environment but fails after ecosystem drift. RepoRescue gives agents only the repository and its failing modern environment; the agent must diagnose the failure, locate affected code, and produce a source-code rescue that restores the historical test suite. We build RepoRescue from 193 Python and 122 Java repositories, each verified to pass historically and fail after modernization. We evaluate </description>
       <pubDate>2026-07-01T00:00:00.000Z</pubDate>
     </item>
   </channel>
