@@ -5,8 +5,36 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-07-05</lastBuildDate>
+    <lastBuildDate>2026-07-06</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming</title>
+      <link>https://arxiv.org/abs/2606.31227</link>
+      <guid isPermaLink="false">2606.31227</guid>
+      <description>Yong Yang, Xing Zheng, Huiyu Wu — The fast growth of open-source AI infrastructure, from model serving engines and agent platforms to the Model Context Protocol (MCP) ecosystem and the language models themselves, has outpaced the security tooling available to defend it. We present AI-Infra-Guard, an open-source framework that organizes AI red teaming around a single observation: the attack surface of an AI agent is stratified across layers (infrastructure, protocol/tool, agent behavior, and model), and no single detection paradigm fits all of them. The framework therefore matches a paradigm to each layer, from deterministic rule matching over 75+ AI components and 1{,}400+ vulnerability rules, through LLM-driven agentic auditing of MCP servers and agent-skill packages and multi-turn black-box agent red teaming, to a jailbr</description>
+      <pubDate>2026-06-30T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation</title>
+      <link>https://arxiv.org/abs/2607.00052</link>
+      <guid isPermaLink="false">2607.00052</guid>
+      <description>Bao Long Nguyen Huu, Atsushi Hashimoto — GraphRAG is an extension of retrieval-augmented generation (RAG) that supports large language models (LLMs) by referring to graph-structured data as external knowledge. While this technique ideally captures intricate relationships, it often struggles with graph representations for LLMs, particularly for frozen LLMs, due to the misalignment between graph-based and text-based latent features. We tackle this issue by introducing the {\it Adaptive-masking for Graph Embedding (AGE)}. AGE employs a Transformer in a mask-based self-supervised learning (SSL) approach. We designed the architecture similar to text embedding encoders, addressing the latent feature misalignment. In contrast to natural language texts, graphs are concise representations, and there exist {\it key nodes} that hold dominan</description>
+      <pubDate>2026-06-30T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>The Mirage of Optimizing Training Policies: Monotonic Inference Policies as the Real Objective for LLM Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2606.29526</link>
+      <guid isPermaLink="false">2606.29526</guid>
+      <description>Jing Liang, Hongyao Tang, Yi Ma — Reinforcement learning (RL) has gained growing attention in large language model (LLM) post-training, yet RL training remains fragile and can suffer from instability or collapse. One vital cause is training-inference mismatch: LLM adopts separate inference and training engines for generation efficiency and training precision, which in practice exhibits inconsistent probabilities for the same trajectories on training and inference sides, even with synchronized model parameters. This naturally induces a special type of off-policyness ever existing and poisoning the training. Prior works have made various efforts in addressing the off-policyness to stabilize the training policies under the mismatch. In this paper, we point out the objective misalignment neglected by existing works that an eff</description>
+      <pubDate>2026-06-28T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots</title>
+      <link>https://arxiv.org/abs/2607.02501</link>
+      <guid isPermaLink="false">2607.02501</guid>
+      <description>Ling Xu, Chuyu Han, Borui Li — Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do not satisfy the runtime contract of embodied deployment: multi-rate execution inside closed-loop control, latency-first batch-1 inference on heterogeneous hardware, and extensible embodied interfaces beyond fixed token I/O. We present Embodied.cpp, a portable C++ inference runtime for embodied models. Based on an architectural analysis of representative VLA models and WAMs, Embodied.cpp captures a shared execution path and organizes it </description>
+      <pubDate>2026-07-02T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>Scaling Laws for Grid-Based Approximate Nearest Neighbor Search in High Dimensions</title>
       <link>https://arxiv.org/abs/2607.01283</link>
@@ -328,34 +356,6 @@
       <guid isPermaLink="false">2607.00248</guid>
       <description>Bytedance Seed — We present Seed2.0, a model series that takes a meaningful step toward solving complex, real-world tasks. Our approach begins with identifying users&apos; genuine needs and constructing a reliable, forward-looking evaluation system by selecting and abstracting benchmarks grounded in these needs and in realistic, complex scenarios. Guided by this evaluation system, Seed2.0 targets two persistent challenges, long-tail knowledge and complex instruction following, substantially improving the model&apos;s reliability on intricate, long-horizon tasks. Beyond these, Seed2.0 delivers world-leading reasoning intelligence, visual understanding, and search capabilities that address the most common needs of a broad user base. Through extensive real-world use cases documented in this model card, we demonstrate t</description>
       <pubDate>2026-06-30T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>ASPIRE: Agentic /Skills Discovery for Robotics</title>
-      <link>https://arxiv.org/abs/2607.00272</link>
-      <guid isPermaLink="false">2607.00272</guid>
-      <description>Runyu Lu, Yubo Wu, Ethan Kou — Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tasks, simulation and real-world settings, and embodiments. It operates in an open-ended loop with three components: (1) a closed-loop robot execution engine that exposes fine-grained multimodal traces, enabling autonomous failure diagnosis, repair synthesis, and validation; (2) a continually expanding</description>
-      <pubDate>2026-06-30T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>MemSyco-Bench: Benchmarking Sycophancy in Agent Memory</title>
-      <link>https://arxiv.org/abs/2607.01071</link>
-      <guid isPermaLink="false">2607.01071</guid>
-      <description>Zhishang Xiang, Zerui Chen, Yunbo Tang — Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benchmarks primarily evaluate whether memories are correctly stored, retrieved, or updated, while overlooking how retrieved memories influence downstream reasoning and decision-making. To bridge this gap, we propose MemSyco-Bench, a comprehensive benchmark for evaluating memory-induced sycophancy in agent systems. MemSyco-Bench measures when memory should influence a decision and how valid memory shou</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors</title>
-      <link>https://arxiv.org/abs/2606.32029</link>
-      <guid isPermaLink="false">2606.32029</guid>
-      <description>Yuqing Yang, Qi Zhu, Zhen Han — While large language models (LLMs) perform well on table tasks, they still make data referencing errors (DREs), i.e., incorrectly citing or omitting table values, despite understanding the table structure. Beyond final-answer accuracy, DREs directly compromise the correctness and reliability of intermediate reasoning steps. Yet prior studies have only offered limited, small-scale analyses. In this work, we present the first systematic evaluation of tabular data referencing errors across different models and tasks. Our results show that DREs occur across all tested models (1.7B to 20B parameters). Furthermore, we demonstrate that incorporating data referencing as a critic significantly improves answer accuracy up to 12.0%, through critic-based filtering and rejection sampling. Finally, we t</description>
-      <pubDate>2026-06-30T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>The State-Prediction Separation Hypothesis</title>
-      <link>https://arxiv.org/abs/2607.01218</link>
-      <guid isPermaLink="false">2607.01218</guid>
-      <description>Giovanni Monea, Nathan Godey, Kianté Brantley — Transformers use the same forward computation stream to both predict the next token and store useful state for future token predictions. We formulate the state-prediction separation hypothesis: disentangling the two roles yields better language modeling performance. We design a Transformer variant that uses two computation streams to separate the two functions, and conduct pretraining experiments across various scales. Our experiments show that state-prediction separation consistently offers better data and compute efficiencies, improving validation loss and outperforming standard Transformers by 2--3 percentage points on average on downstream tasks. We also conduct extensive empirical analysis that rules out potential confounders and demonstrates the fundamental difference in the gradient</description>
-      <pubDate>2026-07-01T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
