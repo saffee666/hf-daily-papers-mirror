@@ -5,8 +5,71 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-07-10</lastBuildDate>
+    <lastBuildDate>2026-07-11</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents</title>
+      <link>https://arxiv.org/abs/2607.08716</link>
+      <guid isPermaLink="false">2607.08716</guid>
+      <description>Yifan Wu, Lizhu Zhang, Yuhang Zhou — In long-horizon tasks, decision-relevant state is often scattered across an expanding trajectory, while the action agent must surface it and act. As trajectories grow, task requirements, environment facts, prior attempts, diagnoses, and open subgoals can be buried in the context window or pushed beyond it, failing to influence decisions when needed. We call this failure mode &quot;behavioral state decay&quot;. We study memory as an active intervention mechanism rather than passive retrieval. A separate memory agent runs alongside an unmodified action agent, updating a structured memory bank from the recent trajectory and deciding whether to inject a memory-grounded reminder or remain silent. The module is plug-and-play with frontier action agents and existing agent harnesses. Across Terminal-Bench 2</description>
+      <pubDate>2026-07-09T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>PAST-TIDE: Prototype-Anchored Statement Tuning with Topic-Invariant Normalization for Stance Detection</title>
+      <link>https://arxiv.org/abs/2607.04690</link>
+      <guid isPermaLink="false">2607.04690</guid>
+      <description>Md. Shakhoyat Rahman Shujon, MD Jahid Hasan Jim, Md. Milon Islam — We introduce PAST-TIDE, our stance detection system addressing both subtasks of the StanceNakba Shared Task at NakbaNLP@LREC-COLING 2026. The main idea is statement tuning. We redefine stance as cloze-style masked language modeling (MLM), letting a verbalizer map label words to stance categories through the pre-trained MLM head rather than appending a randomly initialized classification head. We complement this with prototypical contrastive learning, which uses learnable class prototypes for batch-size independent contrastive training, and topic-conditional layer normalization for cross-topic Arabic stance detection. PAST-TIDE achieves macro-F1 scores of 0.75 for Subtask A and 0.74 for Subtask B on the official leaderboard, indicating that minimal architectural additions to a pre-trained m</description>
+      <pubDate>2026-07-06T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>SAM-MT: Real-Time Interactive Multi-Target Video Segmentation</title>
+      <link>https://arxiv.org/abs/2607.08688</link>
+      <guid isPermaLink="false">2607.08688</guid>
+      <description>Ruiqi Shen, Chang Liu, Henghui Ding — Modern Video Object Segmentation (VOS) involves tracking and segmenting user-specified targets. While recent approaches have achieved remarkable performance in single-target scenarios, extending them to multi-target settings typically involves replicating the single-target processing for each individual object, resulting in reduced frame rates (FPS) with unbounded latency as target count increases. Built upon Segment Anything 2 (SAM2), we propose SAM-MT, which addresses this by transforming the model into an interactive framework for real-time Multi-Target video segmentation. SAM-MT uses explicit queries to represent different individual targets, in parallel with a shared representation for global context. It employs decoupled masked attention to keep individual identities distinct from cr</description>
+      <pubDate>2026-07-09T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>A Sparse and Truncated State Vector Simulator for Peaked Circuits</title>
+      <link>https://arxiv.org/abs/2607.07816</link>
+      <guid isPermaLink="false">2607.07816</guid>
+      <description>Diogo R. Ferreira — In a class of quantum circuits known as peaked circuits, the goal is to predict the most probable bit string at the output of the circuit. Since these circuits are designed to have a sharp peak in their output distribution, in principle it should be possible to simulate them using a truncated state vector with a limited number of terms, or a fraction of the total probability mass. This approximate simulation can be carried out on a classical computer with a sparse representation that stores only the nonzero amplitudes of the state vector, in contrast to the dense representations that are common in most quantum simulators. For efficiency, all operations on the state vector should be vectorized to the furthest possible extent and, if available, hardware acceleration can also be used. This wo</description>
+      <pubDate>2026-07-08T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing</title>
+      <link>https://arxiv.org/abs/2607.07953</link>
+      <guid isPermaLink="false">2607.07953</guid>
+      <description>Tommaso Cerruti, Tim Rieder, George Rowlands — Self-attention lets each token retrieve information from the full context, but its quadratic cost in sequence length limits training and inference at long context. This paper presents a comparative study of softmax attention and four recent recurrent linear-attention architectures: DeltaNet, Gated DeltaNet, Kimi Delta Attention, and Gated DeltaNet-2. We express these mechanisms in a common recurrent-memory notation, making explicit how they differ in expressivity, memory decay, erase and write control, training throughput, and implementation complexity. Our experiments center on 350M-parameter models trained for 15B tokens, and include optimizer and learning-rate comparisons, hybrid-versus-pure stack comparisons, sequence-length runtime measurements, larger DeltaNet runs at 1.3B and 3B par</description>
+      <pubDate>2026-07-08T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>DrugGen 2: A disease-aware language model for enhancing drug discovery</title>
+      <link>https://arxiv.org/abs/2607.08404</link>
+      <guid isPermaLink="false">2607.08404</guid>
+      <description>Ali Motahharynia, Mohammadreza Ghaffarzadeh-Esfahani, Mahsa Sheikholeslami — Current computational approaches for drug design typically focus on generating molecules conditioned on specific targets or general molecular properties, often neglecting the influence of disease context on target behavior and therapeutic outcomes. To address this gap, we introduce DrugGen-2, a novel generative model that designs small molecules conditioned on both disease ontology and target protein sequences. DrugGen-2 was developed by fine-tuning a pre-trained GPT-2 model on a curated dataset of approved drugs linked to their diseases and targets, using a two-step strategy of supervised fine-tuning followed by reinforcement learning via group relative policy optimization (GRPO). This process was guided by reward functions optimizing for chemical validity, novelty, diversity, and high pr</description>
+      <pubDate>2026-07-09T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with Video Diffusion Models</title>
+      <link>https://arxiv.org/abs/2607.08770</link>
+      <guid isPermaLink="false">2607.08770</guid>
+      <description>Cheng-De Fan, Chun-Wei Tuan Mu, Chen-Wei Chang — Recovering high-quality video from sparse event streams is a challenging task. Regression methods often blur textures, while existing generative models struggle with long-term stability. We propose LongE2V, a novel approach that leverages pre-trained video diffusion priors to jointly handle event-based video reconstruction, prediction, and frame interpolation. By fine-tuning a foundational video model, our approach achieves high data efficiency and superior perceptual quality. We introduce Autoregressive Unrolling and Adaptive Context Switching to mitigate temporal drift in extremely long sequences. We also propose Reencoding Alignment with Cross Residual Correction to ensure precise bidirectional consistency during frame interpolation. Furthermore, Event Voxel Density Augmentation ensures</description>
+      <pubDate>2026-07-09T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Enhancing In-context Panoramic Generation via Geometric-aware Pretraining</title>
+      <link>https://arxiv.org/abs/2607.08765</link>
+      <guid isPermaLink="false">2607.08765</guid>
+      <description>Haoran Feng, Ruiyang Zhang, Longyi Zhang — In this work, we present Canvas360, a two-stage framework for in-context panoramic generation that combines geometry-aware pretraining with downstream task-specific fine-tuning. To address the lack of large-scale, high-quality training data tailored to in-context panoramic tasks, we propose Canvas360Dataset, a collection of 1M high-quality paired panoramic samples for style transfer, inpainting, outpainting, and editing, enabling effective supervision across diverse in-context generation scenarios. On the modeling side, Canvas360 enhances text-to-panorama generation through parallel depth generation, velocity circular padding, and similarity loss regularization, enabling the model to learn geometry-aware representations, capture object distortion details, and improve geometric consistency </description>
+      <pubDate>2026-07-09T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>A Quantized Native Runtime for On-Device Semantic Audio Generation</title>
+      <link>https://arxiv.org/abs/2607.08526</link>
+      <guid isPermaLink="false">2607.08526</guid>
+      <description>Matteo Spanio, Antonio Rodà — Semantic audio applications increasingly require controllable generation on commodity and embedded hardware rather than through framework-heavy datacenter stacks. We present aria, a dependency-free native runtime that runs the complete text-to-music pipeline of Stable Audio~3 (SA3) on ordinary GPUs, CPU-only machines, and a Raspberry~Pi~5, with no Python or deep-learning framework underneath. Our main contribution is a study of quantization: running the model at lower numerical precision to fit tight memory budgets, saving memory in place rather than adding to it. Because the runtime owns every internal tensor, it also exposes activation steering, a low-cost way to steer what the model generates. We judge the quality cost with three independent measures of the output (prompt adherence, ove</description>
+      <pubDate>2026-07-09T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>Why Can&apos;t I Open My Drawer? Mitigating Object-Driven Shortcuts in Zero-Shot Compositional Action Recognition</title>
       <link>https://arxiv.org/abs/2601.16211</link>
@@ -292,69 +355,6 @@
       <link>https://arxiv.org/abs/2607.06065</link>
       <guid isPermaLink="false">2607.06065</guid>
       <description>Ruoyu Wang, Jierun Chen, Shaowei Wang — Coding agents increasingly generate pull requests (PRs) for real-world software issues, yet one-shot PR generation remains open-loop: the PR is proposed without systematic review, diagnosis, or revision. We introduce SWE-Review, a framework for closing this loop with agentic code review. Given an issue and an AI-generated PR, a reviewer agent explores the repository, decides whether the PR should be accepted, and provides structured feedback for revision. We evaluate this setting with our proposed SWE-Review-Bench to measure both review correctness and downstream revision usefulness. We further curate SWE-Review-Traj dataset to study broader applications of agentic review and fill the data-scarcity gap for open reviewer training. Experiments show that agentic review continuously improves P</description>
-      <pubDate>2026-07-07T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Rank-Then-Act: Reward-Free Control from Frame-Order Progress</title>
-      <link>https://arxiv.org/abs/2607.01897</link>
-      <guid isPermaLink="false">2607.01897</guid>
-      <description>Yuriy Maksyuta, George Bredis, Ruslan Rakhimov — We introduce Rank-Then-Act (RTA), a framework for learning control policies from expert video demonstrations without environment rewards. RTA trains a Vision-Language Model (VLM) offline as a progress-based ordinal scorer, using a Group Relative Policy Optimization (GRPO) objective over shuffled frame sequences, which forces the model to recover temporal ordering from visual semantics rather than trivial time cues. Importantly, instead of using the scorer directly as a scalar reward model, we propose a correlation-based reward function for reinforcement learning: at each interaction window, we compute the Spearman rank correlation between predicted progress rankings and true temporal indices, yielding a bounded, scale-invariant learning signal. This design decouples reward learning from ab</description>
-      <pubDate>2026-07-02T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>SiamJEPA: On the Role of Siamese Student Encoders in JEPA</title>
-      <link>https://arxiv.org/abs/2607.04044</link>
-      <guid isPermaLink="false">2607.04044</guid>
-      <description>Makoto Yamada — Recently, Joint Embedding Predictive Architectures (JEPAs) have attracted significant attention in the computer vision and machine learning communities as a promising framework for self-supervised representation learning. Unlike masked autoencoders that reconstruct pixels, JEPA models learn representations by predicting latent embeddings of masked regions. Existing JEPA-based methods, such as I-JEPA and V-JEPA, typically employ a single encoder in the student network. In contrast, using Siamese encoders for student network is more naturally aligned with brain-inspired representation learning frameworks, yet their role in JEPA models remains largely unexplored. In this paper, we investigate the effect of Siamese student encoders in JEPA-based representation learning. To this end, we propose</description>
-      <pubDate>2026-07-04T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>HunyuanOCR-1.5: Making Lightweight OCR VLMs Faster and Better</title>
-      <link>https://arxiv.org/abs/2607.04884</link>
-      <guid isPermaLink="false">2607.04884</guid>
-      <description>Gengluo Li, Xingyu Wan, Shangpin Peng — We present HunyuanOCR-1.5, a lightweight end-to-end OCR-specialized vision-language model. HunyuanOCR unifies document parsing, text spotting, information extraction, text-image translation, and multi-image document understanding within a single end-to-end VLM. Building upon the lightweight architecture of HunyuanOCR-1.0, HunyuanOCR-1.5 does not redesign the backbone, but systematically improves both efficiency and capability. For efficiency, we adapt DFlash to OCR decoding, significantly reducing the latency of long structured outputs such as dense documents, tables, and formulas while preserving output distribution. Powered by DFlash, HunyuanOCR-1.5 achieves a 6.37x Transformer inference speedup and a 2.14x speedup under vLLM, delivering the fastest inference among lightweight OCR VLMs. </description>
-      <pubDate>2026-07-06T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Where to cut, how deep: BPE and Unigram-LM on chemistry SMILES</title>
-      <link>https://arxiv.org/abs/2607.05691</link>
-      <guid isPermaLink="false">2607.05691</guid>
-      <description>Hunter Heidenreich — Every chemical language model reading SMILES begins with a tokenizer, yet the field has inherited byte-pair encoding (BPE) from natural language with little scrutiny. In natural language, BPE&apos;s principal alternative, Unigram-LM, is known to build structurally different vocabularies. Whether that contrast survives in chemistry was open. We report a controlled comparison of BPE and Unigram-LM over a fixed 165-token chemistry base, at the small vocabulary sizes where token embeddings are learnable, across three corpus typologies (diverse, drug-like, natural-products) and both pre-tokenization boundary policies. The two do not converge. In all 22 matched conditions they build near-disjoint subword vocabularies: cross-algorithm Jaccard overlap on the learned pieces never exceeds 0.161, and at m</description>
-      <pubDate>2026-07-06T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>CanvasAgent: Enabling Complex Image Creation and Editing via Visual Tool Orchestration</title>
-      <link>https://arxiv.org/abs/2607.05465</link>
-      <guid isPermaLink="false">2607.05465</guid>
-      <description>Hairui Zhu, Yiying Yang, Tengjin Weng — Complex image creation and editing often require more than a single generation or editing model. A user request may involve synthesizing images, localizing objects, segmenting regions, editing selected content, compositing intermediate assets, reading text, and enhancing the final result. Such tasks shift multimodal agents from perception-augmented reasoning to manipulation-centered visual creation, where tools must actively transform visual states rather than merely inspect them. However, existing multimodal tool-use agents are mostly optimized for perception, search, or domain-specific editing, and lack large-scale supervision for executable image-creation trajectories. In this paper, we introduce CanvasCraft, a large-scale multimodal tool-use dataset for complex image creation and editi</description>
-      <pubDate>2026-07-06T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Bibby AI: An Editor-Native Agentic Platform for Academic Research, Writing, and Publishing</title>
-      <link>https://arxiv.org/abs/2607.05435</link>
-      <guid isPermaLink="false">2607.05435</guid>
-      <description>Nilesh Jain — Academic output is produced across a fragmented toolchain: literature discovery in one application, reference management in another, writing in a LaTeX editor, formatting against venue templates by hand, and submission through yet another portal. Each boundary between tools forces a context switch, a format conversion, or a manual copy-paste step, and the cumulative cost dominates the time researchers spend on activities that are not research. We present Bibby AI, an editor-native platform that collapses this toolchain into a single Research-Write-Publish pipeline built around a cloud LaTeX editor. Unlike assistants that attach to an existing editor through a browser extension, Bibby AI owns the full document state, compilation pipeline, and revision history, which allows its agents to per</description>
-      <pubDate>2026-07-03T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>From Foundation to Application: Improving VLA Models in Practice</title>
-      <link>https://arxiv.org/abs/2607.06403</link>
-      <guid isPermaLink="false">2607.06403</guid>
-      <description>Wei Wu, Fangjing Wang, Fan Lu — Despite recent progress of VLA foundation models, the disparity between laboratory conditions and real-world applications continues to impede their practical implementation. To bridge this gap, we present LingBot-VLA 2.0, which advances LingBot-VLA through improvements in three functional domains. (1) Generalization across tasks and embodiments. Compared to the previous version, we revamp the data processing pipeline and curate around 60,000 hours of data for pretraining, including 50,000 hours of robot trajectories spanning 20 robot configurations and 10,000 hours of egocentric human videos. (2) Expanded action space in addition to dual-arm hardware platforms. In particular, our system accommodates degrees of freedom for the heads, waists, mobile bases, and dexterous hands, thereby empowe</description>
-      <pubDate>2026-07-07T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator</title>
-      <link>https://arxiv.org/abs/2607.05765</link>
-      <guid isPermaLink="false">2607.05765</guid>
-      <description>Zihan Wang, Seungjun Lee, Yinghao Xu — Embodied navigation aims to build agents that interpret multimodal goals, reason in 3D space, and reach target destinations reliably in the real world. However, progress remains constrained by the lack of scalable, high-fidelity, and physically grounded interactive environments. Although real-world scanned datasets offer visual realism, they are limited by scale. In contrast, synthetic simulators scale more easily but often exhibit large sim-to-real gaps. We introduce Image2Sim, a real-time neural simulation framework that constructs high-quality interactive environments from posed RGB-D image sequences. The central idea is to decouple 3D spatial anchoring from photorealistic observation synthesis. For scene construction, Image2Sim uses a feed-forward feature Gaussian model that lifts pose</description>
-      <pubDate>2026-07-07T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages</title>
-      <link>https://arxiv.org/abs/2607.05992</link>
-      <guid isPermaLink="false">2607.05992</guid>
-      <description>Daryna Dementieva, Nikolay Babakov, Kathy Hämmerl — Mathematical reasoning has become a central task for evaluating and tuning reasoning Large Language Models (LLMs), yet existing benchmarks remain heavily biased toward high-resource languages, with English and Chinese dominating both pre-training corpora and evaluation suites. The recently released PolyMath (Wang et al., 2025) dataset represents a significant step forward, yet its coverage is still limited to 18 only high-resource languages. To address this gap, we introduce PluraMath, an extension of PolyMath to 18 additional {underrepresented languages spanning 6 language families -- ranging from mid-resource to extreme low-resource settings. We constructed the dataset through a human-curated pipeline, where native speakers thoroughly validated pre-computed translations. Using PluraMath,</description>
       <pubDate>2026-07-07T00:00:00.000Z</pubDate>
     </item>
   </channel>
