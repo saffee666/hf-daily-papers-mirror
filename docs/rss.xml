@@ -5,8 +5,106 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-07-24</lastBuildDate>
+    <lastBuildDate>2026-07-25</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenForgeRL: Train Harness-native Agents in Any Environment</title>
+      <link>https://arxiv.org/abs/2607.21557</link>
+      <guid isPermaLink="false">2607.21557</guid>
+      <description>Xiao Yu, Baolin Peng, Ruize Xu — Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness&apos;s model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any e</description>
+      <pubDate>2026-07-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Dataset Distillation by Influence Matching</title>
+      <link>https://arxiv.org/abs/2607.16859</link>
+      <guid isPermaLink="false">2607.16859</guid>
+      <description>Haoru Tan, Wang Wang, Sitong Wu — We revisit dataset distillation from an outcome-centric perspective. Rather than aligning process surrogates (per-step gradients or training trajectories), Influence Matching (Inf-Match) aligns the final outcome of training: it learns a compact synthetic set whose effect on the converged parameters matches that of the full dataset. Concretely, we introduce a fully differentiable, sample-level influence estimator that quantifies parameter shifts from adding or removing data, without time-consuming inverse-Hessian products or convexity assumptions. The estimator runs in linear time by unrolling the optimization dynamics and applying a first-order Taylor approximation. We then learn the synthetic set by minimizing the mismatch between its influence and that of the real dataset, yielding outco</description>
+      <pubDate>2026-07-18T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Multi-Turn On-Policy Distillation with Prefix Replay</title>
+      <link>https://arxiv.org/abs/2607.04763</link>
+      <guid isPermaLink="false">2607.04763</guid>
+      <description>Baohao Liao, Hanze Dong, Christof Monz — We study on-policy distillation (OPD) for agentic tasks, where an LLM agent interacts with an environment over multiple turns and a student imitates a teacher over these multi-turn interaction histories. Fully online OPD is costly because each update requires fresh student rollouts through the environment and teacher queries at visited histories. We propose Replayed-Prefix On-Policy Distillation (ReOPD), an off-environment alternative that reuses pre-collected teacher trajectories as replayed prefixes: the student acts at selected steps, while the teacher provides dense per-step supervision without executing new environment interactions. We show that multi-turn OPD introduces a prefix trap: making histories more student-on-policy improves relevance to the student, but can query the teacher</description>
+      <pubDate>2026-07-16T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</title>
+      <link>https://arxiv.org/abs/2607.21553</link>
+      <guid isPermaLink="false">2607.21553</guid>
+      <description>Junsong Chen, Jincheng Yu, Yitong Li — We introduce SANA-Video 2.0, a hybrid video diffusion transformer instantiated at 5B and 14B scales under a unified architecture. Designed to generate high-quality video up to 720p on a single GPU, SANA-Video 2.0 matches full-softmax video DiTs in quality while retaining the favorable long-sequence scaling of linear attention. To avoid quadratic attention throughout, Hybrid Linear-Softmax Attention combines gated linear attention for O(N)-dominated mixing with periodic gated-softmax anchors at a 3:1 ratio, restoring the full-rank token interactions that pure linear attention lacks. To propagate these refreshed representations across depth, Block Attention Residuals (AttnRes) route completed block summaries into later linear layers, enabling anchor-feature reuse and boosting deep-layer effe</description>
+      <pubDate>2026-07-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents</title>
+      <link>https://arxiv.org/abs/2607.19238</link>
+      <guid isPermaLink="false">2607.19238</guid>
+      <description>Xianfu Cheng, Shiwei Zhang, Jiyu Zhao — Agentic Reasoning has become a transformative force in financial analysis due to its ability to integrate large-scale information and generate reliable and accurate content. However, when handling complex real-world problems, different agents still show significant performance variation. In this work, we design Finance-LaTeX SKILL, a skill for synthesizing financial documents with complex layouts based on expert knowledge. Using an agent workflow built on this skill, we generate 2,000 professional financial documents along with 6,000 high-quality question-answer pairs. To evaluate the overall capability of agents, we introduce FinanceComplexQA, a comprehensive open-ended generation benchmark for financial documents that closely resembles real-world scenarios. It contains 2,026 deep researc</description>
+      <pubDate>2026-07-21T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Self-Supervised Learning of Structured Dynamics from Videos</title>
+      <link>https://arxiv.org/abs/2607.21576</link>
+      <guid isPermaLink="false">2607.21576</guid>
+      <description>Lukas Knobel, Andrew Zisserman, Yuki M. Asano — Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remained underexplored in representation learning, partly because these factors are tightly coupled in natural videos and difficult to supervise separately. Yet recovering it is important for learning robust motion representations that separate meaningful object dynamics from camera-induced variation. We study whether such structured motion representations can be recovered from frozen features of a pretrained image vision transformer. We propose the Structured Dynamics Model (SDM), which explicitly separates the dominant source of temporal change from residual dynamics through future-feature predict</description>
+      <pubDate>2026-07-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs</title>
+      <link>https://arxiv.org/abs/2605.09635</link>
+      <guid isPermaLink="false">2605.09635</guid>
+      <description>Hao Liang, Qihan Lin, Zhaoyang Han — Large language models are increasingly used in K-12 education, but existing benchmarks mainly test exam question answering rather than understanding how curriculum knowledge is structured and visually presented. We call this capability curriculum cognition. It covers prerequisite chains, concept taxonomies, experiment-concept links, pedagogical sequencing, and visual grounding. We introduce K12-KGraph, a curriculum-aligned knowledge graph extracted from official People&apos;s Education Press textbooks in mathematics, physics, chemistry, and biology across primary, middle, and high school. It contains nine node types and fourteen relation types covering curriculum structure and visual grounding. From this graph, we derive K12-Bench, a 23,640-question multi-select benchmark with five task familie</description>
+      <pubDate>2026-07-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Sample-Efficient Learning from Agent Experience</title>
+      <link>https://arxiv.org/abs/2607.21051</link>
+      <guid isPermaLink="false">2607.21051</guid>
+      <description>Chenhui Gou, Haoqin Tu, Yunhao Fang — Real-world agent learning is often constrained by costly environment interactions, such as running time-consuming experiments or obtaining human feedback. In-context learning offers a highly sample-efficient way for agents to learn from their own interaction histories, but its gains disappear once that experience is removed from the context. Separately, context distillation provides a mechanism for internalizing contextual information into model weights. However, applying it to agents&apos; interaction histories without sacrificing environment sample efficiency remains underexplored. We term this problem Experience Distillation and develop an implementation that requires no further environment interaction beyond the collected experience. Experiments on 749 curated software-engineering tasks and</description>
+      <pubDate>2026-07-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Color Pass-Through via Camera-Display Coupling</title>
+      <link>https://arxiv.org/abs/2607.12746</link>
+      <guid isPermaLink="false">2607.12746</guid>
+      <description>Ruikang Li, Molin Li, Jiarui Wu — When a real-world scene is captured by a smartphone camera and viewed on its screen, the displayed image often differs noticeably from the original scene in color, brightness, and contrast. This gap persists despite substantial advances in both modern cameras and displays. A key reason is that most pipelines factor the high-dimensional capture-to-display process into two separately calibrated camera and display stages, and then connect them through low-dimensional color transforms, leading to information bottlenecks and inevitable error accumulation. To address this systemic challenge, we propose Color Pass-Through, an end-to-end learned framework that operates directly on captured images. Our key insight is to treat the camera and display as a coupled system rather than calibrating them i</description>
+      <pubDate>2026-07-14T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>LLMs Get Lost in Evolving User Intent</title>
+      <link>https://arxiv.org/abs/2607.20734</link>
+      <guid isPermaLink="false">2607.20734</guid>
+      <description>Jihoon Tack, Philippe Laban, Jennifer Neville — As LLMs become more capable, they are increasingly deployed as collaborative agents, taking on user-delegated tasks through iterative interaction. Yet genuine interaction is inherently dynamic: users rarely specify their intent upfront, instead disclosing, revising, and reshaping it as the conversation unfolds. Despite this, LLMs are still predominantly evaluated or trained in single-turn, fully-specified settings, leaving open a fundamental question: how well do LLMs track and act on user intent as it evolves over the course of a conversation? To study this, we introduce a framework that transforms static, single-turn tasks into dynamic multi-turn conversations in which the user&apos;s intent evolves across turns--incrementally revealed, revised, and at times redirected mid-conversation--while</description>
+      <pubDate>2026-07-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Show, Don&apos;t Tell: Evaluating Spatial Cognition in Generative Pixels Rather Than LLM Text</title>
+      <link>https://arxiv.org/abs/2607.21072</link>
+      <guid isPermaLink="false">2607.21072</guid>
+      <description>Xu Wang, Kaixiang Yao, Miao Pan — Spatial intelligence is essential for agents to move from static semantic understanding toward interacting with the physical world. Many spatial tasks are grounded in continuous visual scenes, where locations, regions, and paths are more naturally expressed by pointing, marking, or drawing than by reporting precise coordinates or discrete textual symbols. Yet existing spatial reasoning benchmarks usually require coordinates, options, or text, creating an answer-interface mismatch for image-generation models. This makes it difficult to evaluate image-generation models under the same task semantics as text-output VLMs, despite their ability to externalize spatial judgments directly in pixel space. We propose ProVisE (Protocolized Visual Evaluation), a benchmark-agnostic framework that elicit</description>
+      <pubDate>2026-07-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Recurrent Sinusoidal INRs for Efficient High-Fidelity Representation</title>
+      <link>https://arxiv.org/abs/2607.21485</link>
+      <guid isPermaLink="false">2607.21485</guid>
+      <description>Hyunmin Cho, Jaejun Yoo, Kyong Hwan Jin — We study sinusoidal recurrence as an iterative mechanism for harmonic spectral enrichment in implicit neural representations (INRs). Our analysis reveals that sinusoidal activations induce a harmonic line spectrum, providing a spectral account of how recurrent unrolling enriches the effective spectral support. We realize this principle with a shared sinusoidal block that iteratively refines the latent representation. We empirically validate the resulting spectral behavior against feed-forward INRs, non-sinusoidal recurrent variants, and equilibrium-style sinusoidal models. Complementing this analysis, we evaluate the proposed architecture across image and 3D representation tasks. On RGB image benchmarks, our method achieves higher fidelity than feed-forward baselines with fewer parameters </description>
+      <pubDate>2026-07-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Visual Contrastive Self-Distillation</title>
+      <link>https://arxiv.org/abs/2607.21556</link>
+      <guid isPermaLink="false">2607.21556</guid>
+      <description>Yijun Liang, Yunjie Tian, Yijiang Li — On-policy self-distillation (OPSD) is promising as it removes the external teacher required by on-policy distillation (OPD), yet it still needs asymmetric information between teacher and student to ensure that the self-teacher provides a stronger learning signal than the student. Existing methods create this asymmetry either through privileged answers or visual evidence. We ask whether both can be removed, yielding a simpler form of OPSD driven purely by input conditioning. For this purpose, we propose Visual Contrastive Self-Distillation, namely VCSD, which converts image-content removal into an on-policy self-distillation signal. At each student-generated response prefix, the EMA teacher produces two next-token distributions under the same prompt and prefix -- one conditioned on the orig</description>
+      <pubDate>2026-07-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Robostral Navigate</title>
+      <link>https://arxiv.org/abs/2607.20785</link>
+      <guid isPermaLink="false">2607.20785</guid>
+      <description>Arjun Majumdar, Avinash Sooriyarachchi, Benjamin Tibi — Deploying navigation systems at scale requires a recipe that minimizes sensor assumptions, generalizes across robot embodiments, and trains efficiently. Yet, today&apos;s best systems depend on depth sensors, multi-camera rigs, or pre-built maps, limiting the hardware they support and increasing deployment cost. We introduce Robostral Navigate, an 8B vision-language model built around this scalability objective. The model consumes only a stream of monocular RGB images - the most ubiquitous sensor across robotic platforms and predicts waypoints by pointing to the next target location in the current camera view. Operating purely in image space, rather than robot-specific coordinates, makes the policy naturally robust to changes in camera intrinsics and scene scale, enabling deployment across whee</description>
+      <pubDate>2026-07-22T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>ReferTrack: Referring Then Tracking for Embodied Visual Tracking</title>
       <link>https://arxiv.org/abs/2607.20061</link>
@@ -259,106 +357,6 @@
       <link>https://arxiv.org/abs/2607.18529</link>
       <guid isPermaLink="false">2607.18529</guid>
       <description>Jia-Kai Dong, Yi-Cheng Lin, Hung-yi Lee — Teaching videos are becoming a major medium for education, creating a growing need for scalable evaluation of their pedagogical quality. Existing automatic judges do not fully address this setting because teaching quality depends on multimodal evidence and should be evaluated with respect to the intended learner rather than as a universal property. We present EduPanel, a rubric-grounded, learner-conditioned LLM judge that decomposes evaluation across specialized agents to produce interpretable assessments for different aspects of teaching quality. Across expert studies, architecture ablations, and learner-persona analyses, EduPanel achieves reliability comparable to a median human expert. In expert evaluation, its feedback improves scoring accuracy (MAE 0.87 to 0.73), while experts remain </description>
-      <pubDate>2026-07-20T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Generative World Renderer at the Speed of Play</title>
-      <link>https://arxiv.org/abs/2607.18703</link>
-      <guid isPermaLink="false">2607.18703</guid>
-      <description>Guixu Lin, Zheng-Hui Huang, Siqi Yang — Generative world renderer AlayaRenderer receives structured world states exported from physics engines and synthesizes RGB frames. Unlike models that generate frames from text/control-hints prompts, AlayaRenderer preserves scene structure without altering the underlying world dynamics. This demonstrates an alternative path toward interactive world modeling and user-controllable play. However, the original AlayaRenderer is too computationally expensive for real-time deployment. This technical report introduces AlayaRenderer-Flash, a real-time-oriented generative forward world renderer that pushes AlayaRenderer from 0.56 FPS to 31.54 FPS, reaching the speed of play. AlayaRenderer-Flash reformulates the original renderer as a few-step autoregressive streaming model and introduces lightweight </description>
-      <pubDate>2026-07-21T04:54:24.000Z</pubDate>
-    </item>
-    <item>
-      <title>AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents</title>
-      <link>https://arxiv.org/abs/2607.18754</link>
-      <guid isPermaLink="false">2607.18754</guid>
-      <description>Kunlun Zhu, Xuyan Ye, Zhiguang Han — LLM agent failures are difficult to debug because the step where an error surfaces is often not the one that caused it. Existing observability tools replay execution traces but provide little support for identifying the root cause or translating diagnosis into recovery. We present AgentDebugX, an open-source debugging framework that organizes debugging as a closed loop of Detect, Attribute, Recover, and Rerun. At its core, DeepDebug performs multi-turn root-cause diagnosis through global trajectory understanding, structure-guided investigation, and cross-examination. On the Who and When benchmark, DeepDebug achieves the best strict attribution accuracy among the evaluated methods on both tested open-weight backbones, reaching 28.8 percent exact agent-and-step accuracy on qwen3.5-9b versus </description>
-      <pubDate>2026-07-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers</title>
-      <link>https://arxiv.org/abs/2607.19139</link>
-      <guid isPermaLink="false">2607.19139</guid>
-      <description>Maohua Li, Qirui Li, Yanke Zhou — Text-to-image diffusion transformers (DiTs) jointly process text and image tokens, yet their internal computation during denoising remains poorly understood. We introduce a causal interpretability framework for modern large-scale DiTs that combines attention decomposition with targeted interventions across token spans, heads, and layers. Using it to separate prompt-content tokens from structural template tokens, we find that the structural tokens carry little prompt-specific information at the encoder output. Yet surprisingly, they emerge as dominant image-to-text attention sinks and causally maintain object identity inside the DiT, acting as implicit semantic registers. We show that they acquire this identity indirectly, with prompt semantics first injected into the image latents and then</description>
-      <pubDate>2026-07-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>ISO: An RLVR-Native Optimization Stack</title>
-      <link>https://arxiv.org/abs/2607.19331</link>
-      <guid isPermaLink="false">2607.19331</guid>
-      <description>Hanqing Zhu, Wenyan Cong, Zhizhou Sha — Reinforcement learning with verifiable rewards (RLVR) is rapidly advancing the reasoning capabilities of language models, yet the optimization layer that converts reward feedback into weight-space updates remains poorly understood. Building on our prior analysis (Zhu et al., 2025), we study this missing layer through the singular structure of model weights and identify spectral inheritance: RLVR can reuse the base model&apos;s weight spectra while acquiring new behavior through changes in the associated input and output singular frames.
-  We operationalize spectral inheritance as Isospectral Optimization (ISO), an RLVR-native, fixed-spectrum optimization framework with complementary offline and online instantiations. Offline, ISO-Merger combines the frame changes of shared-base specialists into</description>
-      <pubDate>2026-07-21T17:51:36.000Z</pubDate>
-    </item>
-    <item>
-      <title>ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU</title>
-      <link>https://arxiv.org/abs/2607.19191</link>
-      <guid isPermaLink="false">2607.19191</guid>
-      <description>Fan Jiang, Zhaoxu Sun, Mengchao Wang — We present ABot-World-0, an action-conditioned video world model for real-time, long-horizon closed-loop interaction, supported by a multi-source data infrastructure spanning AAA games, simulation engines, and internet videos to learn controllable world dynamics. WorldExplorer performs agent-driven collection guided by training feedback, while a unified pipeline applies 14 deterministic quality checks, VLM-based assessment, and synchronized action and text annotation. We progressively distill a bidirectional action-conditioned teacher into a causal student through teacher forcing and ODE distillation, and introduce LongForcing to align long student self-rollouts with an extended-horizon teacher, mitigating accumulated distribution shift and autoregressive drift. Raw keyboard actions provid</description>
-      <pubDate>2026-07-21T15:26:50.000Z</pubDate>
-    </item>
-    <item>
-      <title>Trajectory-aware Cross-view Geo-localization with Sequential Observations</title>
-      <link>https://arxiv.org/abs/2607.15491</link>
-      <guid isPermaLink="false">2607.15491</guid>
-      <description>Tianyi Gao, Jiayu Lin, Danielle Beaulieu — Cross-view geo-localization matches ground-level observations against geo-tagged satellite imagery. Recent methods show that sequential queries such as video clips yield richer spatiotemporal cues than single images, yet they overlook a complementary sequential modality: route descriptions -- which capture the same trajectory at a higher level of abstraction and are often the only input available (e.g., a user directing an autonomous vehicle to a pickup point). To bridge this gap, we introduce SeqGeo-VL, a dataset of sim39K video-text-satellite triplets, and TrajLoc, a unified framework capable of processing both video clips and route descriptions. By leveraging both dense visual and abstract linguistic semantics, TrajLoc enables these modalities to mutually reinforce cross-view matching. </description>
-      <pubDate>2026-07-16T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>HPD-Parsing: Hierarchical Parallel Document Parsing</title>
-      <link>https://arxiv.org/abs/2607.18839</link>
-      <guid isPermaLink="false">2607.18839</guid>
-      <description>Shu Wei, Jingjing Wu, Lingshu Zhang — Efficient teamwork typically combines global coordination with parallel execution, a principle not yet fully reflected in unified Vision-Language Model (VLM)-based document parsers. Existing unified parsers process an entire page jointly but generate its output through a single token-by-token autoregressive trajectory, creating a sequential bottleneck that grows with document length. Such full-page sequential generation overlooks a key property of document parsing: layout must be analyzed globally, whereas block content can be parsed in parallel. Based on this observation, we introduce HPD-Parsing, which replaces full-page autoregressive generation with a Hierarchical Parallel Decoding paradigm. A main layout branch organizes the overall document structure and dynamically assigns block-lev</description>
-      <pubDate>2026-07-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Two-Level Meta-Rubrics for Evaluating Open-Ended Generation: GAMUT, a Benchmark for Factual Completeness</title>
-      <link>https://arxiv.org/abs/2607.19322</link>
-      <guid isPermaLink="false">2607.19322</guid>
-      <description>Xilun Chen, Zhaleh Feizollahi, Ross Goodwin — Evaluating the factuality of long-form generations has focused predominantly on precision, measuring whether the claims a model makes are correct. The dominant decompose-search-verify pipeline catches incorrect claims well but says little about whether a response contains all the information it should. Measuring factual completeness, the missing half of factuality, is harder: it requires enumerating the full set of facts a complete answer should contain, and these facts rarely form a flat list. They often involve open-ended sets where coverage is what matters, ordered processes, and relationships among facts that a list of independent boolean checks fails to capture. We introduce a two-level meta-rubric framework for evaluating open-ended generation, and instantiate it as Gamut (Grounded A</description>
-      <pubDate>2026-07-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>AlayaWorld: Interactive Long-Horizon World Modeling -- Full Technical Report</title>
-      <link>https://arxiv.org/abs/2607.18367</link>
-      <guid isPermaLink="false">2607.18367</guid>
-      <description>AlayaWorld Team, Kaipeng Zhang, Chuanhao Li — Unlike conventional video game development, which relies on labor-intensive pipelines for asset production, animation, physics, and programming, video world models generate interactive environments from user inputs instantly. It enable us to create customized, explorable, and continuously evolving virtual world from text, an image, or video. Realizing this vision requires four tightly coupled capabilities: interaction, persistent spatiotemporal consistency, stable long-horizon generation, and efficient response. We present AlayaWorld, an interactive long-horizon video world model that generates 24-fps video at 540p and 720p. Built on a 15B video diffusion transformer, AlayaWorld generates short latent chunks autoregressively under camera trajectories and switchable text prompts. Its bounde</description>
-      <pubDate>2026-07-20T17:15:41.000Z</pubDate>
-    </item>
-    <item>
-      <title>DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines</title>
-      <link>https://arxiv.org/abs/2607.16617</link>
-      <guid isPermaLink="false">2607.16617</guid>
-      <description>Runming He, Zhen Hao Wong, Hao Liang — Large language models (LLMs) are increasingly used to automate data-processing workflows, yet coding agents typically produce scripts that are not automatically materialized as persistent, editable platform artifacts. We call this disconnect the NL2Pipeline gap. To bridge it, we introduce DataFlow-Harness, a platform that guides an LLM agent to construct platform-native directed acyclic graphs (DAGs) through typed, incremental mutations rather than free-form scripts. The platform combines DataFlow-Skills for procedural guidance, a Model Context Protocol (MCP) layer that exposes the live operator registry and current pipeline state, and DataFlow-WebUI, which synchronizes conversational authoring with a visual DAG editor. On a 12-task data-engineering benchmark, DataFlow-Harness achieves a 9</description>
-      <pubDate>2026-07-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Stale but Stable: Staleness-Adaptive Trust Regions for Stabilizing Asynchronous Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2607.18722</link>
-      <guid isPermaLink="false">2607.18722</guid>
-      <description>Junyao Yang, Yucheng Shi, Zongxia Li — Asynchronous reinforcement learning improves throughput by decoupling rollout generation from optimization, but staleness is an inevitable byproduct compounded by policy lag, engine delays, and mixture-of-experts routing. From a trust-region perspective, this mismatch is critical: training-inference divergence governs approximation error in finite-horizon bounds, whereas PPO clipping only gates sampled outward updates, acting as a sampled surrogate rather than a full-policy constraint. As a result, high-staleness updates remain weakly controlled in the asynchronous regime where stale rollouts matter most.
-  We introduce the Staleness-Adaptive Trust Region (SAT), which uses the detached sampled log-ratio as a practical staleness proxy, identifies high-mismatch tails within each batch via st</description>
-      <pubDate>2026-07-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>SciForma: Structure-Faithful Generation of Scientific Diagrams</title>
-      <link>https://arxiv.org/abs/2607.18091</link>
-      <guid isPermaLink="false">2607.18091</guid>
-      <description>Yuxuan Luo, Peng Zhang, Xinjie Zhang — Structural fidelity is essential to scientific methodology diagrams. To communicate research logic, these diagrams must faithfully render components, directional relations, and textual annotations. Since a single error, such as a reversed arrow or an unreadable equation, can invalidate the entire figure, structural fidelity is inherently conjunctive: correctness on one axis cannot compensate for failure on another. Current open-source models fail to satisfy this criterion. Supervised fine-tuning (SFT) learns plausible layouts but cannot reliably ensure structural correctness, while scalar reward-based post-training obscures which structural dimension has failed. To address this, we introduce SciForma, a framework for the structure faithful generation of scientific methodology diagrams. Spe</description>
-      <pubDate>2026-07-20T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing</title>
-      <link>https://arxiv.org/abs/2607.19064</link>
-      <guid isPermaLink="false">2607.19064</guid>
-      <description>Xinjie Zhang, Peng Zhang, Shicheng Zheng — Large-scale visual generators are increasingly capable but costly to train, fine-tune, and deploy. We introduce Mage-Flow, a compact 4B-scale generative stack for efficient text-to-image generation and instruction-based image editing. The stack is built from two co-designed components: Mage-VAE, a lightweight high-fidelity latent tokenizer, and a Native-Resolution Multimodal Diffusion Transformer trained with rectified flow matching. Mage-VAE uses one-step diffusion-style encoding and decoding with anchor-latent regularization, preserving the reconstruction quality of strong public VAEs while reducing tokenization cost by more than an order of magnitude. Together with native-resolution packing and stack-level CUDA kernel fusion, the stack supports flexible-resolution training and improves </description>
-      <pubDate>2026-07-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>ConsiSpace: Learning Geometric Consistency Matters for Video Spatial Reasoning</title>
-      <link>https://arxiv.org/abs/2607.17599</link>
-      <guid isPermaLink="false">2607.17599</guid>
-      <description>Ting Huang, Zhenyu Zhang, Wenyuan Huang — Video spatial reasoning is essential for navigation-oriented perception and long-video question answering, where models must infer spatial relations across long horizons under changing viewpoints. However, existing multimodal large language models (MLLMs) remain largely semantic-centric, and often fail to reliably aggregate consistent spatial evidence from redundant video observations, leading to inefficient or unstable reasoning. To address these issues, we propose ConsiSpace, a geometry-consistency-aware framework for geometry-sensitive video spatial reasoning that turns spatial consistency into both an evidence organization principle and an explicit post-SFT learning signal. We build a geometry-consistent memory (GCM) including implicit evidence tokens and explicit geometric cues, and l</description>
       <pubDate>2026-07-20T00:00:00.000Z</pubDate>
     </item>
   </channel>
