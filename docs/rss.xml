@@ -5,8 +5,71 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-08-02</lastBuildDate>
+    <lastBuildDate>2026-08-03</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Enhancing Rubric-based RL via Self-Distillation</title>
+      <link>https://arxiv.org/abs/2607.18082</link>
+      <guid isPermaLink="false">2607.18082</guid>
+      <description>Mingxuan Xia, Yuhang Yang, Chao Ye — Rubric-based RL has recently shown promise in improving LLMs on open-ended tasks. A widely recognized limitation of rubric-based RL is limited exploration: criteria that no rollout manages to satisfy (Unexplored Criteria, UC) receive no optimization signal. Recent methods address this by incorporating rubric information as external guidance during rollout, yet they introduce a train-inference mismatch: the policy is optimized on rollouts produced under external guidance while this guidance is absent at inference time, causing error accumulation through autoregressive decoding. Moreover, these exploration-focused approaches overlook a fundamentally different failure mode that we term Suppressed Criteria (SC) -- criteria that are satisfied by some rollouts yet whose learning signals are lost</description>
+      <pubDate>2026-07-21T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Evaluation-Verification Reward for Consistent Multi-Reference Image Editing</title>
+      <link>https://arxiv.org/abs/2607.29025</link>
+      <guid isPermaLink="false">2607.29025</guid>
+      <description>Yingmao Miao, Pengfei Zhang, Xiaochen Lv — While recent image editing models have made rapid progress, multi-reference editing remains challenging, particularly in maintaining visual consistency across references and ensuring overall visual harmony. Reinforcement learning has proven highly effective for text-to-image generation and single-image editing, but its extension to multi-reference editing is hindered by the absence of suitable reward models that capture multi-image relational constraints. Moreover, naively using multimodal large language models(MLLMs) as zero-shot evaluators faces a key tension between hallucination-prone long-form reasoning and the limited deductive power of short-form judgments. We address these issues with a Multi-dimensional Evaluation-Verification Reward(EVR). EVR decomposes evaluation into distinct v</description>
+      <pubDate>2026-07-31T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</title>
+      <link>https://arxiv.org/abs/2607.29677</link>
+      <guid isPermaLink="false">2607.29677</guid>
+      <description>Boyang Zhang, Adrian Lyjak, Eli Stewart — Enterprise workflows increasingly rely on agents for schema-guided extraction: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence as grounding metadata. We present ExtractBench, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. The evaluation system contains 4,869 pages across 370 enterprise documents, 8 business domains, and 67 document types, with clear tags differentiating their challenge scenarios. The scalable schema and ground-truth curation pipeline combines independent-system agreement for real documents, known values for synthetic lists, and human verification for forms. We report o</description>
+      <pubDate>2026-07-31T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Meshy T2: Fast Native Mesh Generation with Flow Matching</title>
+      <link>https://arxiv.org/abs/2607.28675</link>
+      <guid isPermaLink="false">2607.28675</guid>
+      <description>Jiale Xu, Rendong Liang, Yuhao Long — Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high-quality meshes with artist-style topology is essential for film, gaming, and interactive 3D applications. Mainstream approaches serialize a mesh into a token sequence and decode it autoregressively, which is slow at inference and sensitive to error accumulation, making them impractical for interactive asset creation. We present Meshy T2, a fast native mesh generation framework built on flow matching. At its core is a vertex-set mesh VAE that encodes a mesh into one continuous latent token per vertex and decodes vertices, edge connectivity, and face winding order in a single pass, preserving high-precision geometry and artist-authored topology without vertex quantization or welding. Generati</description>
+      <pubDate>2026-07-28T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Scaling Properties of Text Conditioning in Visual Generation</title>
+      <link>https://arxiv.org/abs/2607.29679</link>
+      <guid isPermaLink="false">2607.29679</guid>
+      <description>Zilong Chen, Chaorui Deng, Kunchang Li — We study empirical scaling properties for text conditioning in visual generation. Such properties have rarely been measured because diffusion loss does not scale with the number of tokens in natural-language prompts. Surprisingly, we find that the converged diffusion loss scales with the amount of structured language in the prompt. To quantify structured language, we adapt two complementary measures: a white-box likelihood metric (GPG) and a black-box attribute metric (ED). Across controlled training runs, the converged diffusion loss decreases approximately linearly with GPG and follows a power law with ED. Guided by these scaling properties, we improve diffusability by constructing structured prompts with semantic and geometric annotations derived from images, and improve promptability b</description>
+      <pubDate>2026-07-31T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>QQWorld: Quantile-Quantile Matching for World Model Regularization</title>
+      <link>https://arxiv.org/abs/2607.28415</link>
+      <guid isPermaLink="false">2607.28415</guid>
+      <description>Zhoushun Yu, Xiaoyu Hu, Xiangyu Xu — Latent world models enable efficient planning by predicting future states in a compact representation space, but their performance depends critically on the quality of the learned latent distribution. LeWorldModel (LeWM) regularizes its latents toward an isotropic Gaussian using the Epps-Pulley (EP) objective. We show that the corrective gradients of EP rapidly vanish for isolated tail samples, leaving heavy-tailed deviations insufficiently controlled. To address this limitation, we propose QQWorld, which replaces EP with a quantile-quantile matching objective that directly aligns projected latent samples with rank-matched Gaussian quantiles, thereby maintaining effective corrective gradients in the tails. We further develop cross-batch QQ, which enlarges the effective ranking pool using d</description>
+      <pubDate>2026-07-30T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens</title>
+      <link>https://arxiv.org/abs/2607.23782</link>
+      <guid isPermaLink="false">2607.23782</guid>
+      <description>NeoteAI Team, Fudan TEAI Team — We present N_0-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Building on current vision-based backbones, we propose a training recipe for tactile integration consisting of visuo-tactile pre-training, staged tactile-pathway integration, and advantage-conditioned offline policy improvement. During pre-training, the policy learns broad contact priors from NeoData, our large-scale visuo-tactile robot dataset; to our knowledge, N_0-VTLA is the first VTLA model pretrained on tactile data at scale. During post-training, we augment the policy with a predictive tactile pathway that distills the contact patterns l</description>
+      <pubDate>2026-07-26T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement</title>
+      <link>https://arxiv.org/abs/2607.23802</link>
+      <guid isPermaLink="false">2607.23802</guid>
+      <description>Qinsi Wang, Jing Shi, Huazheng Wang — Reinforcement Learning with Verifiable Rewards (RLVR) has driven recent progress in reasoning-oriented large language models (LLMs) by enabling large-scale optimization. However, its applicability remains largely limited to domains such as mathematics and coding, where correctness can be deterministically verified. Open-ended tasks instead often rely on human preferences, reward models, or LLM-based judges, introducing evaluation bias, judge capability bottlenecks, and additional inference costs.Drawing on the principle of self-supervised learning, which constructs pretext tasks to derive supervision from the data itself, we propose Reinforcement Learning with Self-Verifiable Rewards (RLSVR), a task-transformation-based training paradigm for extending RLVR to open-ended tasks. RLSVR transf</description>
+      <pubDate>2026-07-26T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>AISPA: User-Centric System Prompt Auditing for Large Language Model Applications</title>
+      <link>https://arxiv.org/abs/2607.28617</link>
+      <guid isPermaLink="false">2607.28617</guid>
+      <description>Xiangning Lin, Shenzhe Zhu, Shu Yang — System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications. They are used throughout commercial AI products, but are rarely disclosed to the public or regulators, creating a serious trust and accountability gap in the wide deployment of AI systems. In this paper, we introduce Artificial Intelligence System Prompt Assurance (AISPA), a user-centric framework for systematically auditing system prompts in AI systems. AISPA examines specific parts of a system prompt and evaluates them along eight dimensions that matter to users. We then use this framework to review 3,249 instructions from system prompts in 88 commercial AI products, classifying each instruction as either protective (of users) or problematic. Our audit surfaces four c</description>
+      <pubDate>2026-07-30T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>OmniScope: Modality-Decoupled Token Compression for Omnimodal Large Language Models</title>
       <link>https://arxiv.org/abs/2607.23193</link>
@@ -293,71 +356,6 @@
       <guid isPermaLink="false">2607.27146</guid>
       <description>Yihao Chen, Shi Chang, Khaled Chawa — Coding agents have made substantial progress on software engineering tasks that modify existing codebases, including bug fixing and feature implementation. However, constructing a complete program from scratch remains a major challenge: even the frontier models evaluated on ProgramBench fully resolve fewer than 1% of tasks. One obstacle is the lack of scalable training environments for this from-scratch setting, spanning the whole software engineering life cycle, as existing environment-construction frameworks focus only on a single phase in software development. To address this gap, we introduce MindForge, an automated pipeline that converts open-source command-line programs into source-free environments that expose only a compiled reference executable and its documentation. Using MindFor</description>
       <pubDate>2026-07-29T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>DistillAlign: Coordinating Mode Covering and Mode Seeking in Autoregressive Video Distillation</title>
-      <link>https://arxiv.org/abs/2607.26811</link>
-      <guid isPermaLink="false">2607.26811</guid>
-      <description>Jiaxing Li, Kai Zou, Cindy Zhou — Existing autoregressive video distillation methods commonly adopt a Distribution Matching Distillation (DMD)-based multi-stage pipeline. However, they typically decouple the initialization and DMD stages -- which then pursue different target distributions -- and judge the intermediate student mainly by visual scores such as VBench. In this paper, we revisit this design from a distributional perspective. Given the mode-seeking nature of the distribution matching loss, a good initialization should match the mode coverage of the target DMD teacher, rather than merely pursuing high quality. To analyze this, we introduce a distributional evaluation protocol that measures precision and coverage between student and teacher distributions in a shared latent space. It exposes differences hidden by v</description>
-      <pubDate>2026-07-29T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Voice Memory for Agentic Speech Recognition</title>
-      <link>https://arxiv.org/abs/2607.26410</link>
-      <guid isPermaLink="false">2607.26410</guid>
-      <description>Chao-Han Huck Yang, Zih-Ching Chen, Piotr Zelasko — We present Voice Memory, a inference-only scheme for agentic speech recognition: at stream time, a frozen corrector reads a single per-domain memory.md and decides per utterance whether to act on the hypothesis or abstain and keep the 1-best. Asynchronously, a score-gated optimizer revises that file through bounded edits, accepting an edit only when it strictly improves a held-out score. Extended from classical ASR-LM framework, we refer this split the listener-thinker architecture; the two roles are coupled only through the memory, so no weights change and the learned skill stays auditable and portable. Restraint turns out to be the operative skill this loop discovers: unconstrained generative error correction (GER) over-corrects, breaking correct tokens on up to 64% of its edits on finan</description>
-      <pubDate>2026-07-29T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>πR^2: Reactive Real-time Flow Policies</title>
-      <link>https://arxiv.org/abs/2607.26055</link>
-      <guid isPermaLink="false">2607.26055</guid>
-      <description>Sungjae Park, Shubham Tulsiani — Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones. Such chunks run open-loop, so the policy cannot react to sensory input arriving mid-execution, sacrificing reactivity. Replanning more often would restore it, but the perception-to-action pipeline (a large backbone plus multiple denoising steps) is too slow: this latency forbids frequent replanning and leaves committed actions stale, making such policies ill-suited for dynamic, closed-loop control. We present πR^2, which makes these policies reactive and real-time while retaining large backbones, expressive multi-modal policies, and multi-action prediction. Built on the per-position noise schedule of diffusion forcing, πR^2 contributes two ideas. First, it split</description>
-      <pubDate>2026-07-28T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Memory for Large Language Models</title>
-      <link>https://arxiv.org/abs/2607.25380</link>
-      <guid isPermaLink="false">2607.25380</guid>
-      <description>Sining Zhoubian, Dan Zhang, Evgeny Kharlamov — Memory has evolved into a foundational architectural dimension in large language models (LLMs), shifting from an implicit byproduct of computation to a spectrum of explicit, controllable mechanisms. While recent advances introduce diverse strategies---spanning transient attention, recurrent state dynamics, parameter-efficient adaptations, and scalable lookup storage---this rapid evolution has led to a highly fragmented research landscape. In this survey, we present a systematic, architecture-centric taxonomy of memory in LLMs. Our framework characterizes memory along three orthogonal axes: representation (implicit versus explicit), update dynamics (offline versus online), and persistence (short-term versus long-term). We further formalize the granular mechanisms dictating memory writing, r</description>
-      <pubDate>2026-07-28T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>CADENCE: Closing the Reasoning Gap via Coverage-Adaptive On-Policy Distillation</title>
-      <link>https://arxiv.org/abs/2607.16955</link>
-      <guid isPermaLink="false">2607.16955</guid>
-      <description>Satyam Kumar, Saurabh Jha — On-policy knowledge distillation transfers reasoning from large teachers to compact students, but existing approaches suffer three compounding failure modes: (i) cold-start collapse, where a fresh student assigns near-zero mass to teacher-preferred tokens; (ii) state-agnostic divergence scheduling, where time-only forward/reverse-KL interpolation ignores the student&apos;s coverage state; and (iii) binary reward sparsity, where pass/fail signals discard information from partially correct traces.
-  We present CADENCE, a unified framework with a targeted fix for each. Its DRIFT mechanism schedules a per-token convex mixture of forward-KL and reverse-KL surrogate objectives on student-sampled trajectories (per-token surrogates, not sequence-level KL gradient estimators). Six components extend it: </description>
-      <pubDate>2026-07-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation</title>
-      <link>https://arxiv.org/abs/2607.26754</link>
-      <guid isPermaLink="false">2607.26754</guid>
-      <description>Zijun Lin, Zeqing Wang, Cheston Tan — Recent game world models can generate visually realistic and interactive environments conditioned on player actions. However, games are not defined by pixels alone; they are governed by explicit mechanics, namely state-dependent rules that control health reduction, skill activation, and game termination. These mechanics depend on precise internal states, such as health points, skill meters, and timers, which are tightly coupled with visual observations and determine how gameplay evolves. Without modeling these state dynamics, existing game world models may generate visually plausible rollouts but violate the underlying game rules. In this paper, we propose StatePlay, a novel state-aware game world model that jointly predicts visual content and game states to promote mechanics-consistent ge</description>
-      <pubDate>2026-07-29T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>SecRespond: Benchmarking AI Agents for Real-World Post-Compromise Incident Response</title>
-      <link>https://arxiv.org/abs/2607.26791</link>
-      <guid isPermaLink="false">2607.26791</guid>
-      <description>Lehan Wang, Boli Chen, Ruixue Ding — Large Language Model (LLM) agents are increasingly adopted in real-world security operations with access to host artifacts and command-line interfaces (CLIs), making it critical to thoroughly assess their security capabilities. However, existing cybersecurity benchmarks focus on pre-compromise settings where agents are placed in a clean and idealized environment before an attack occurs. This leaves the post-compromise setting underexplored. To address this gap, we introduce SecRespond, the first benchmark for evaluating LLM agents on the post-compromise incident-response workflow. Given a forensic disk snapshot of a compromised host together with the alerts, vulnerability scans, and baseline checks reported by a host security product, agents are required to produce forensic reports on intr</description>
-      <pubDate>2026-07-29T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Grading the Narrators: An Isnad-Rijal Framework for Claim-Level Provenance in Multi-Agent Knowledge Systems</title>
-      <link>https://arxiv.org/abs/2607.24117</link>
-      <guid isPermaLink="false">2607.24117</guid>
-      <description>Ali Zahid Raja — Modern multi-agent knowledge systems increasingly accumulate knowledge through chains of autonomous transformations rather than direct retrieval. Existing provenance work records what happened - execution traces, tool calls, evidence links - and source-reliability estimation is long established (truth discovery, reputation systems). What is missing is an operational framework that attaches graded, per-domain transmitter reliability to claim-level transmission chains, with completeness semantics, transformation-typed aggregation, decoupled content criticism, and serve/review/quarantine routing.
-  Classical Islamic hadith science confronted a structurally similar problem: deciding whether knowledge transmitted through chains of human narrators should be accepted. Over centuries it developed </description>
-      <pubDate>2026-07-27T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>CLBench-V: Evaluating Multimodal Context Learning from Grounding to Knowledge Acquisition</title>
-      <link>https://arxiv.org/abs/2607.25294</link>
-      <guid isPermaLink="false">2607.25294</guid>
-      <description>Lai Wei, Chengqi Li, Jiapeng Li — Real-world tasks often require models to learn from task-specific context rather than relying only on pre-trained knowledge. While recent work has highlighted this capability as context learning, existing evaluations mainly focus on textual contexts. In many practical settings, however, the context to be learned from is multimodal: scientific findings are conveyed through figures and tables, financial indicators are scattered across converted reports, and spatial decisions depend on maps, scenes, or web pages. We introduce CLBench-V, a benchmark for multimodal context learning that addresses the difficulty of localizing where context use breaks down by organizing tasks around three dimensions: context grounding, new information application, and new knowledge learning. CLBench-V combines co</description>
-      <pubDate>2026-07-28T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
