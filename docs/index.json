@@ -1,7 +1,382 @@
 {
-  "date": "2026-08-07",
+  "date": "2026-08-08",
   "count": 50,
   "papers": [
+    {
+      "id": "2608.01492",
+      "title": "GaussianSelector: Lightweight Human-Guided Object Selection in 3D Gaussian Splatting with Graph Optimization",
+      "authors": [
+        "Baihan Yang",
+        "Tiexin Li",
+        "Yuheng Liu",
+        "Xin Lin",
+        "Xinke Li",
+        "Xiaohui Xie",
+        "Truong Nguyen"
+      ],
+      "summary": "Selecting a complete 3D object from a reconstructed scene with minimal user effort is essential for practical scene editing and embodied interaction. Existing 3DGS-based methods either retrain the Gaussian representation to embed per-object labels, or build dense multi-view SAM observations, both requiring heavy computation and dense viewpoint coverage that is rarely available in practice. We present GaussianSelector, a training-free framework for interactive 3D object selection from sparse views and sparse scribble guidance. Operating directly on native Gaussian primitives, we coarsen dense Gaussians into geometrically coherent superpoints and construct a continuity-weighted graph using appearance and spatial cues. Sparse user scribbles are lifted into 3D via visibility-aware transmittance coverage, and selection is solved as a global graph-cut energy minimization that propagates sparse evidence to a complete 3D object. This design naturally supports multi-round refinement, where users iteratively correct the selection from additional viewpoints to progressively improve the result. Experiments demonstrate that GaussianSelector achieves competitive selection quality against state-of-the-art multi-view SAM-based methods, while requiring significantly fewer interaction views and substantially lower computational overhead. These properties make it well suited for human-in-the-loop 3D scene editing and 3D asset extraction in real-world deployment scenarios.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-02T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.01492",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.01492",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.01851",
+      "title": "Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills",
+      "authors": [
+        "Gaytri Jena",
+        "Kapil Wanaskar",
+        "Vinija Jain",
+        "Aman Chadha",
+        "Vasu Sharma",
+        "Amitava Das"
+      ],
+      "summary": "Robot learning is splitting into two bets: policies that bake competence into frozen weights (vision-language-action, or VLA, models), and agents that write and refine their own executable skills as code. This survey organises the field around that axis of weights versus skills. Its central analytical contribution is a deep-dive that arranges code-as-policy methods by their degree of self-improvement, from zero-shot program synthesis, through closed-loop self-repair and persistent skill memory, to the sparsely populated cell in which execution feedback, skill memory, and evolutionary search combine into one open-ended loop; only a few very recent systems (for example ASPIRE, ENPIRE, and RoboClaw) occupy that cell. We map the complementary \"skills\" pole, from unsupervised reinforcement-learning skill discovery to large-language-model skill libraries, and show that the word \"skill\" is used in at least five distinct senses, of which only the code sense self-improves without gradient updates. We then connect the taxonomy to the emerging skill economy: commercial robot-skill marketplaces now distribute one-tap skills across robots but ship only static playback, which surfaces open problems of adaptation, cross-embodiment portability, provenance, safety verification, composition, and standardisation. This is a deliberately focused survey. Rather than cataloguing the field exhaustively, it examines 77 representative systems across six technique families through one taxonomy and a set of contrast tables, and it supplies operational definitions of the self-improvement mechanisms together with a statement of what each family cannot do.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.01851",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.01851",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.01049",
+      "title": "FactorJEPA: Factorizing Monolithic Futures into Layout-Agent-Interaction Channels for Crowded and Chaotic Global South Urban Worlds",
+      "authors": [
+        "Kapil Wanaskar",
+        "Gaytri Jena",
+        "Aman Chadha",
+        "Vinija Jain",
+        "Vasu Sharma",
+        "Amitava Das"
+      ],
+      "summary": "World models have attracted significant attention for their ability to capture and predict the structure and dynamics of the physical world. In this emerging landscape, Joint Embedding Predictive Architectures (JEPA) offer a particularly compelling direction.\n  We study a largely unexplored regime: populous, crowded, and chaotic Global South urban environments, which we call DENSEWORLD. Unlike the lower-density, lane-structured settings that dominate existing evaluations, these scenes exhibit soft spatial boundaries, extreme agent heterogeneity, persistent occlusion, and rapid social negotiation under mixed traffic. We introduce the first large-scale dataset for this regime: 1,000 hours of drive-through, walk-through, and aerial video across 22 cities. Existing JEPA formulations struggle to preserve dense interaction dynamics under heterogeneity and partial observability.\n  We introduce FactorJEPA, which makes world structure a first-class predictive primitive. Rather than encoding the future in a monolithic latent, it composes layout, entities, and interactions, using a visibility gate and separated subspaces to preserve partially observed agents and discourage cross-factor shortcuts. FactorJEPA improves (i) future-latent accuracy (Future-frame L1), (ii) intervention-sensitive prediction (Causal L1), and (iii) robustness to reduced visual evidence (Mask-ratio slope), while exposing (iv) a reproducible motion-information trade-off (Motion cosine). Method rankings replicate across 2B and 1B V-JEPA 2.1 backbones, with rho = 0.895 to 0.978.\n  We publicly release the DENSEWORLD-115k dataset (https://huggingface.co/datasets/anonymousML123/denseworld-115k) and the surgery-trained FactorJEPA checkpoints (https://huggingface.co/datasets/anonymousML123/factorjepa-outputs/tree/main/outputs/full/vjepa_2_1_vitg_1B/train/m09c_surgery_3stage_DI_diheavy_encoder).",
+      "upvotes": 0,
+      "publishedAt": "2026-08-02T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.01049",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.01049",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.05798",
+      "title": "KVAE: Family of Tokenizers for Multimodal Generative Models",
+      "authors": [
+        "Andrey Shutkin",
+        "Denis Parkhomenko",
+        "Ivan Kirillov",
+        "Kirill Chernyshev",
+        "Kirill Malakhov",
+        "Ilia Vasiliev",
+        "Ilia Trushkin",
+        "Valeriya Kobenko",
+        "David Chikovani",
+        "Alexander Ivanov",
+        "Azat Saginbaev",
+        "Egor Silvestrov",
+        "Ivan Mikheev",
+        "Konstantin Zakharov"
+      ],
+      "summary": "Latent diffusion modeling (LDM), a prominent paradigm, utilizes tokenizers to map input signal to compressed representation. This dependency positions tokenizer as an integral part of generation process itself, since it affects learning speed, quality of synthesized samples and lay foundation for later applications. This report presents series of KVAE tokenizers for audio, image and video, all designed for subsequent text-conditioned generation: KVAE-Audio, a continuous full-band 48 kHz tokenizer with a 50 Hz latent of 64 channels; KVAE-3D -- two causal video tokenizers for 4x16x16 and 4x8x8 compression; KVAE-2D, an image model, compressing input by factor of 8 with 32 channels. We demonstrate that reconstruction (PSNR, LPIPS, PESQ, etc.) and generation results on objective (Frechet Distance, CLIP score, CLAP score, etc.) and subjective (side-by-side evaluation) metrics matches or surpasses frontier opensource tokenizers, such as VAEs from Wan-2.2, HunyuanVideo-1.5, FLUX.2, MovieGen, StableAudio and MMAudio. Considering difficulty of development, we share with community training details, model selection method and ablation on design choices. The code is publicly available at https://github.com/kandinskylab/kvae and https://github.com/kandinskylab/kvae-audio.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.05798",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05798",
+      "githubRepo": "https://github.com/kandinskylab/kvae"
+    },
+    {
+      "id": "2608.05784",
+      "title": "Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay",
+      "authors": [
+        "Nossa Iyamu"
+      ],
+      "summary": "Computer-use agents pay full frontier inference to re-derive routines their user has already performed, because an agent's memory today records what the user said, not what the user did. We compile passively captured screen activity into agent memory with a deterministic, zero-model pipeline: it segments a local capture stream into typed activity frames, bounded episodes carrying application, site, timing, input volume, and evidence pointers back to the raw rows, with no model in the loop, so the output is byte-identical, cacheable, and mechanically auditable. On one professional's single-user corpus of 128,756 frames over 51 active days, the compiler reduces a day of raw capture to a prompt-ready context block 86x smaller in 68 ms, and an agent reading that block answers questions about the day at 98.4% accuracy (Wilson 95% CI 91.7-99.7%) against an independent oracle, versus 66-80% for an LLM summary of the same capture, a mid-tier model reading the block matching a frontier one.\n  The same compiler doubles as a demand-side cost instrument. Read off passive, pre-delegation human activity rather than agent rollouts, it supplies two parameters that agent-cost models assume but, to our knowledge, have not measured: the Routine Overhead Ratio R and the routine recurrence h. We report first values of R, a modeled upper bound, at 60-343x, and a delegable recurrence of 9.0% in-sample and 7.7% out-of-sample, for a realistic all-fleet token ceiling near 8%; a compiled routine replays deterministically with the model out of the loop, demonstrated live at zero model tokens on a guard-matched hit. Schema, compiler, and evaluation harness are open.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.05784",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05784",
+      "githubRepo": "https://github.com/nossa-y/activity-frames"
+    },
+    {
+      "id": "2608.03451",
+      "title": "DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces",
+      "authors": [
+        "Boyan Li",
+        "Zhuowen Liang",
+        "Yupeng Xie",
+        "Xiaotian Lin",
+        "Tianqi Luo",
+        "Xinyu Liu",
+        "Yizhang Zhu",
+        "Zhangyang Peng",
+        "Yuan Li",
+        "Zhengxuan Zhang",
+        "Jiayi Zhang",
+        "Nan Tang",
+        "Guoliang Li",
+        "Yuyu Luo"
+      ],
+      "summary": "Data agents enable natural-language analytics over organizational workspaces, where relevant evidence may be scattered across databases, structured files, long documents, and multimedia. Existing benchmarks largely isolate structured querying, retrieval, or open-ended analysis, leaving heterogeneous evidence discovery, complete tabular outputs, and deterministic evaluation insufficiently unified. We introduce DataSpace, a benchmark in which data agents produce verifiable tabular results from task-local heterogeneous workspaces. It contains 410 cross-language tasks and 7,439 artifacts totaling 15.01 GB across CSV, JSON, SQLite, Markdown, PDF, and video. DataSpace also served as the official evaluation benchmark for the KDD Cup 2026 Data Agents for Complex Data Analysis competition. Each agent receives only a question and workspace and returns the complete requested tabular result. We construct DataSpace with DataSpace-Builder, an execution-grounded framework comprising cross-language transformation, constraint-aware relational sampling, modality routing and artifact rendering, and human review and task repair by 11 domain experts. A deterministic evaluator performs header-invariant column alignment, type- and precision-aware normalization, and order-aware row comparison. Across six recently released frontier multimodal models and five widely used agent harnesses, the best accuracy reaches 66.34%, while harness choice creates a 15.36-point spread with the backbone fixed. Multimodal evidence integration and joins consistently reduce accuracy across all six backbones. These results show that DataSpace remains unsaturated and identify key challenges for improving data-agent reliability.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.03451",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.03451",
+      "githubRepo": "https://github.com/HKUSTDial/DataSpace"
+    },
+    {
+      "id": "2608.01481",
+      "title": "Interpretable MEG Decoding of Perceived Speech: Cortical Sources and the Stimulus Features That Drive Retrieval",
+      "authors": [
+        "Ilia Semenkov",
+        "Daria Kleeva",
+        "Ivan Dakhtin",
+        "Zarina Maksudova",
+        "Alex Ossadtchi"
+      ],
+      "summary": "Short segments of perceived speech can be retrieved from non-invasive magnetoencephalographic (MEG) recordings by deep networks trained with a CLIP-style objective against wav2vec 2.0 audio embeddings. Yet their weights do not map onto electrophysiological quantities, and it remains unclear which speech properties drive retrieval.\n  We build on a high-performing MEG-to-audio retrieval architecture but redesign both its front end and decoder. Its spatial attention operates on a flattened sensor layout; we replace it with spherical harmonics defined on the three-dimensional MEG helmet geometry. We reduce the subject-specific representation from 270 to 25 branches, add a temporal filter to each branch to match it to a neuronal source in space and time, and make the convolutional decoder shallower. Ocular and cardiac components are removed before training to reduce the risk of stimulus-locked shortcuts.\n  On MEG-MASC, the model reaches 39.75 +/- 0.34% Top-1 accuracy among 1005 candidates across six trained solutions, with about 20 times fewer decoder parameters. Its weights map to source space, recovering generators consistent with the speech-perception network, while left-lateralized branches carry higher-frequency rhythmic components not evident on the right. Paired MEG occlusion shows that 15 of 19 stimulus features contribute, with the largest effects for silence, sound intensity, vowels, and acoustic onsets. Random word lists behave oppositely: substituting narrative MEG into them improves retrieval, indicating that activity without narrative structure carries less recoverable information than activity during coherent speech. The wav2vec target can be reduced to about twelve learned feature dimensions without loss of accuracy, whereas strong temporal compression causes a clear loss.\n  Together, source mapping and input interventions reveal what drives retrieval.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-02T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.01481",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.01481",
+      "githubRepo": "https://github.com/ivsemenkov/LISA"
+    },
+    {
+      "id": "2608.05850",
+      "title": "MameLoshnLM: Yiddish Language Model and Evaluation Benchmark",
+      "authors": [
+        "Uri Katz",
+        "Omer Goldman",
+        "Tomasz Limisiewicz",
+        "Reut Tsarfaty",
+        "Noah A. Smith"
+      ],
+      "summary": "We present MameLoshnLM, the first open-source 8B-parameter language model built specifically for Yiddish. Despite Yiddish's rich textual tradition, its limited digital presence and the scarcity of reliable evaluation resources have constrained progress in Yiddish language modeling. Existing multilingual corpora and benchmarks are often poor proxies for the language, containing substantial amounts of noisy, machine-translated, and misclassified text. We address these gaps by introducing Oytser, a high-quality Yiddish pretraining corpus that combines contemporary web-native sources with literary materials, and Kashes, a multi-task benchmark spanning translation, linguistic analysis, information extraction, and language understanding. Using these resources, we continue pretraining Llama 3.1 8B to obtain MameLoshnLM. Across the tasks in the benchmark, MameLoshnLM outperforms open baselines of similar scale. Our analyses show that these gains are not only quantitative: relative to general-purpose multilingual models, MameLoshnLM better captures language-defining lexical and morphological patterns, pointing to a broader failure mode of noisy web-scale multilingual data for low-resource languages. Our results provide both a foundation for Yiddish NLP and a practical template for language model development in historically rich but digitally underrepresented languages.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.05850",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05850",
+      "githubRepo": "https://github.com/katzurik/MameLoshnLM"
+    },
+    {
+      "id": "2608.06216",
+      "title": "Continual Learning in Transition",
+      "authors": [
+        "Zhiyan Hou",
+        "Dan Zhang",
+        "Tao Feng",
+        "Liyuan Wang",
+        "Wei Li",
+        "Xiangzhao Hao",
+        "Hongyan An",
+        "Junfeng Fang",
+        "Haokai Ma",
+        "Zhaohui Xu",
+        "Haiyun Guo",
+        "Jinqiao Wang",
+        "Tat-Seng Chua"
+      ],
+      "summary": "Classical continual learning (CL) has primarily focused on enabling models to update and retain knowledge through parameter-centric mechanisms, e.g., training strategies, architectural designs, and weight adaptation. However, emerging paradigms are reshaping the scope of CL beyond this traditional model adaptation view. For instance, on-policy learning broadens the space of update mechanisms; test-time training extends CL from the training phase to inference; and external harness components such as memory, skill libraries, and interaction protocols extend the evolutionary boundaries of model capabilities far beyond the static parameter space. Collectively, these developments indicate a transition from parameter-centric learning toward system-level adaptation. To characterize this transition, we examine the evolution of continual learning through three dimensions: When, How, and Where learning occurs. The How dimension encompasses off-policy, on-policy, and beyond-gradient optimization mechanics. The When dimension captures evolution across pre-training, post-training, and inference-time stages. The Where dimension delineates updates occurring within internal parameters versus external structural constraints. Anchored by this tri-axial framework, we systematically survey representative methods, trace the ongoing transition of continual learning, and discuss the key challenges, broader implications, and future directions arising from this paradigm shift.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.06216",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.06216",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.05785",
+      "title": "Task-Conditional Flow Matching for Balanced Multilingual Text Embedding Adaptation",
+      "authors": [
+        "Tirth Bhatt",
+        "Naren Kumar S",
+        "Mayank Singh"
+      ],
+      "summary": "Multilingual text embedding models are commonly adapted using a single training objective across diverse tasks, despite different tasks requiring fundamentally different optimization strategies. We introduce Task-Conditional Flow Matching (TCFM), a multilingual embedding adaptation framework that selectively applies Flow Matching to translation tasks while optimizing retrieval, classification, and pair-classification tasks with objectives better aligned to their learning dynamics. TCFM further combines teacher-guided representation preservation with a three-stage curriculum to enable stable adaptation. Evaluated on the Indic Massive Text Embedding Benchmark, TCFM establishes a new state-of-the-art, consistently improving embedding quality across a diverse set of multilingual tasks and generalizing across embedding model families. We will publicly release the codebase and datasets upon acceptance of the paper.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.05785",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05785",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.05138",
+      "title": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
+      "authors": [
+        "Ayoub Kirouane",
+        "Christos Petrocheilos"
+      ],
+      "summary": "Modern Greek is absent from NVIDIA's Nemotron retrieval models and from major multilingual retrieval benchmarks, despite being important for retrieval-augmented generation (RAG) in legal, energy, financial, and medical applications. We present an end-to-end adaptation of the Nemotron retrieval stack for Modern Greek, including corpus mining, synthetic supervision, retrieval model training, reranker adaptation, reader fine-tuning, and a new benchmark called HERA. Our study shows that a parameter-free BM25 baseline outperforms several off-the-shelf multilingual dense retrieval models on specialist Greek corpora. After fine-tuning on 65,773 Greek retrieval pairs, a Nemotron 1B embedder improves nDCG@10 from 0.362 to 0.835 and substantially outperforms its unadapted counterpart. The learned language competence transfers to general-domain Greek, although the advantage over BM25 remains domain-dependent. We further adapt a cross-encoder reranker and demonstrate consistent improvements across specialist domains. Finally, we LoRA-tune a Nemotron 30B-A3B mixture-of-experts reader for grounded generation, increasing judged answer correctness from 29.4% to 66.9% while significantly improving faithfulness and citation quality. We also introduce HERA, the first large-scale Greek benchmark for retrieval-augmented generation, and release our adapted models and benchmark to support future research on Greek-language RAG systems.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-05T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.05138",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05138",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.06020",
+      "title": "From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models",
+      "authors": [
+        "Jiale Han",
+        "Xiang Li",
+        "Jing Qian",
+        "Wenyuan Gu",
+        "Pin Gao",
+        "Ye Luo",
+        "Hongyuan Zha",
+        "Dacheng Tao",
+        "Benyou Wang",
+        "Lin William Cong"
+      ],
+      "summary": "Economic World Models (EWMs) are generative economic models that simulate how economies evolve from within by modeling heterogeneous agents, their beliefs and actions, and the market and institutional mechanisms through which their interactions produce aggregate outcomes. This paper develops an implementation roadmap for building economic world models as generative engines in which heterogeneous agents act, interact, adapt, and co-evolve with markets and institutions, thereby producing economic dynamics from the inside. We organize EWM systems into a six-level capability ladder, from fixed rule-based agent worlds to adaptive and LLM-based agent worlds, self-evolving agents, evolving institutional worlds, and sim-to-real economic twins aligned with real observations. A systematic literature survey across these levels reveals that existing work remains concentrated in lower-level agent and simulation environments, while systems with self-evolving agents, endogenous institutions, persistent empirical alignment, and validated economic mechanisms remain rare. By translating the EWM agenda into an implementation blueprint, this paper aims to accelerate the development of the next generation of economic simulation environments that can serve as high-fidelity sandboxes for human decision-makers and as training, planning, evaluation, and safety substrates for AI agents. We release a curated paper list and related resources to support future research.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.06020",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.06020",
+      "githubRepo": "https://github.com/FreedomIntelligence/Awesome-Economic-World-Models"
+    },
+    {
+      "id": "2608.06257",
+      "title": "MASS: Multiplayer World Models with Authoritative Shared State",
+      "authors": [
+        "Ziqi Cai",
+        "Siqi Yang",
+        "Yimu Wang",
+        "Zixian Gao",
+        "Yunheng Liu",
+        "Shuchen Weng",
+        "Erwin Wu",
+        "Kaipeng Zhang",
+        "Boxin Shi"
+      ],
+      "summary": "Current video world models struggle in multiplayer environments because they entangle world state with view-dependent visual latents, leading to redundant compute, view inconsistencies, and poor scalability. We propose MAS (Multiplayer world models with Authoritative Shared State) to resolve this limitation. Inspired by multiplayer game architectures, MAS disentangles world dynamics and view rendering. A learned Logic Engine advances a global, authoritative typed state from joint actions without any hand-written transition function, acting as the sole recurrent memory and synchronization reference. From this shared state, a learned Rendering Engine generates independent and consistent views for any requested camera on demand. This explicit disentangling allows MAS to achieve superior state accuracy and lower cross-view inconsistency compared to state-of-the-art multi-view baselines on a matched multiplayer Snake benchmark. It advances predicted worlds with 1,024 concurrent players for 10,000 recurrent steps. Our results show that explicit, authoritative state modeling provides a practical foundation for scalable and consistent multi-agent world simulation.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.06257",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.06257",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.04956",
+      "title": "ContextMaster: Interactive Multi-Shot Video Creation via Fixed-Budget Sparse Context Routing",
+      "authors": [
+        "Xu Guo",
+        "Zhengxuan Wei",
+        "Xinghui Li",
+        "Hanzhuo Huang",
+        "Xinyu Liu",
+        "Xiangyang Luo",
+        "Min Wei",
+        "Yiran Zhu",
+        "Qiulin Wang",
+        "Yulong Xu",
+        "Xintao Wang",
+        "Pengfei Wan",
+        "Qi Fan",
+        "Xiangwang Hou"
+      ],
+      "summary": "Recent video models increasingly support generation, reference conditioning, and editing within a single model, yet typically expose them as separate operations over fixed inputs. Practical creation unfolds across multiple shots, requiring one model to generate from text, follow a reference, or edit source footage while maintaining shared history. We formalize this setting as interactive multi-shot video creation (IMVC) and introduce ContextMaster, a unified model with a role-aware context representation for these operations. An interactive model must retain access to an expanding history without allowing the context read cost at each denoising step to grow. ContextMaster combines reusable clean context states with fixed budget sparse context routing and uses ConstraintSink to keep task constraints visible. To address the dual challenges of sparse context access and inference with few denoising steps, we propose a two-stage privileged context distillation framework, which transfers full context behavior from a dense teacher through consistency distillation and then refines deployment rollouts with distribution matching. Experiments on the three primitive tasks demonstrate improved task fulfillment and consistency across shots over specialized baselines. User studies further validate flexibly composed workflows, while the model reaches 16 FPS on a single GPU.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-05T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.04956",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.04956",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.05565",
+      "title": "EffectLearner: World-Aware Object-Effect Reasoning for Real-World Video Object Removal",
+      "authors": [
+        "Feier Wu",
+        "Wanke Xia",
+        "Xu He",
+        "Zilang Zhou",
+        "Si Chen",
+        "Dongxia Liu",
+        "Liyang Chen",
+        "Qimeng Wu",
+        "Zhengbo Zhang",
+        "Wenming Yang",
+        "Zhiyong Wu"
+      ],
+      "summary": "Video object removal must eliminate not only the target object but also its induced effects while maintaining high-fidelity and spatiotemporally coherent restoration. Existing methods mainly learn object-effect correspondences implicitly from predefined effect categories and fixed data distributions, limiting their generalization to complex real-world scenes involving compositional effects, spatially detached or weakly correlated effects, long-tail physical phenomena, and dynamically evolving interactions. We propose EffectLearner, a semantic-reasoning-enhanced framework that combines a VLM-based Object-Effect Reasoner with a DiT-based Video Eraser. Guided by a structured effect-analysis prompt, the Reasoner performs cross-modal reasoning over a target-highlighted video and extracts compact effect-aware context, which guides the Video Eraser toward comprehensive object-effect removal. Motion-aware mask guidance and motion-consistency supervision further improve removal coverage and spatiotemporal stability under object motion and evolving scene dynamics. To fully exploit the framework in challenging real-world scenarios, we further construct EffectWorld, a paired video dataset specifically designed for complex object-induced effects, and introduce a progressive training curriculum that combines common supervision with complex-effect data. On the standard ROSE-Bench, EffectLearner outperforms existing baselines on most metrics and achieves clear advantages on both EffectWorld-Eval and the challenging EffectWorld-Wild, demonstrating its ability to deliver high-quality video object removal in complex real-world scenes.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.05565",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05565",
+      "githubRepo": null
+    },
+    {
+      "id": "2608.05424",
+      "title": "Invisible Shortcuts: Why Vision Encoders Know Your Camera",
+      "authors": [
+        "Vladan Stojnić",
+        "Ryan Ramos",
+        "Giorgos Kordopatis-Zilos",
+        "Noa Garcia",
+        "Giorgos Tolias"
+      ],
+      "summary": "Deep vision models exploit shortcuts, relying on cues that correlate with supervision signals. Prior work has focused on visible biases, such as object-background or texture correlations. We identify a different source of shortcut learning: invisible metadata traces embedded at the pixel level, for metadata such as image processing and photo acquisition. We hypothesize that large-scale semantic supervision, whether through categorical labels (ImageNet) or billion-scale captions (LAION), naturally induces metadata-semantics correlations during pretraining, leading models to convert low-level signals into predictive features. By introducing controlled metadata-semantics correlations, we show that stronger ones produce systematically higher sensitivity to metadata traces and larger performance degradation under metadata distribution shifts. We further explore mitigation strategies applied during and after pretraining that reduce sensitivity not only to targeted metadata but also to unseen ones, without sacrificing performance on downstream tasks. Metadata sensitivity also has a positive side: it partly explains the strong generated-image detection ability of some encoders, while its mitigation can improve out-of-distribution generalization. Code: https://github.com/ryan-caesar-ramos/visual-encoder-traces",
+      "upvotes": 0,
+      "publishedAt": "2026-08-05T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.05424",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05424",
+      "githubRepo": null
+    },
+    {
+      "id": "2607.28609",
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "authors": [
+        "Qiushi Sun",
+        "Kanzhi Cheng",
+        "Yian Wang",
+        "Bowen Yang",
+        "Hang Yan",
+        "Liheng Chen",
+        "Fangzhi Xu",
+        "Zichen Ding",
+        "Nuo Chen",
+        "Jialin Cao",
+        "Xingdong Gong",
+        "Zehao Li",
+        "Kaiming Jin",
+        "Xinfeng Yuan",
+        "Zhoumianze Liu",
+        "Jingyang Gong",
+        "Zhangyue Yin",
+        "Jiahui Gao",
+        "Zhiyong Wu",
+        "Tianbao Xie",
+        "Jianbing Zhang",
+        "Ben Kao",
+        "Lingpeng Kong"
+      ],
+      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone unexamined: are these VLM judges reliable enough? To study it systematically, we introduce OSReward, a realistic, high-quality benchmark that evaluates VLM judges on CUA trajectories. The trajectories come from diverse agent backbones executing human-verified instructions across platforms, then rigorously labeled with ground-truth verdicts through multi-stage human annotation. Building on it, we derive OSReward-Hard, a challenge set concentrating genuinely hard cases, and OSReward-Multi for fine-grained efficiency and alignment scoring. The most comprehensive evaluation of VLM judges to date finds even state-of-the-art models fall short of an ideal judge, sharing a systematic leniency bias that mislabels failed runs as successes. The few reliable enough to trust are too expensive to run at scale, while affordable open models trail far behind. To close this gap, we construct and release OS-Shepherd-100K, an open corpus of reasoning-annotated trajectory judgments for the CUA community. On it, we train OS-Shepherd (9B and 35B), open reward models that supply low-cost, stable, and reliable reward signals, matching commercial judges at 30-60% lower cost than the frontier. Extensive analyses further inform the design of reliable CUA reward at scale. Our code, benchmark, dataset, and model checkpoints are available at https://os-copilot.github.io/OSReward-Home/.",
+      "upvotes": 0,
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2607.28609",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2607.28609",
+      "githubRepo": "https://github.com/OS-Copilot/OSReward"
+    },
+    {
+      "id": "2608.06146",
+      "title": "PaDoc: Layout-Grounded Parallel Decoding for Document Parsing",
+      "authors": [
+        "Hao Yu",
+        "Jiabo Zhan",
+        "Kang Liu",
+        "Linnan Zhao",
+        "Dongxu Yue",
+        "Rui Chen",
+        "Jinglin Wang",
+        "Chong Sun",
+        "Chen Li",
+        "Jing Lyu",
+        "Chun Yuan"
+      ],
+      "summary": "End-to-end document parsers provide a unified interface, but serialize page layouts and regional contents into one autoregressive sequence. This formulation forces independent regions onto a decoding path whose length grows with the total content, whereas crop-based two-stage parsers expose region-level parallelism at the cost of repeated visual prefills and fragmented page context. To retain full-page context while removing dependencies, we propose PaDoc, a layout-grounded parser that treats the predicted layout as a branching structure over a shared page representation. Under a region-sufficiency assumption, we derive a prefix-conditioned factorization in which the layout stream and regional content branches advance concurrently, reducing the decoding depth to the longest layout-content path. We realize this factorization within a single MLLM: packed variable-length ancestor attention preserves the visibility under standard next-token training, while masked parallel decoding creates branches that the evaluated vLLM backend serves as concurrent requests with cache-resident shared-prefix reuse. On OmniDocBench Full, PaDoc attains an Overall layout F1 of 91.1 and, among end-to-end parsers, a top-tier Overall score of 94.24 together with the best Text Edit (0.038) and Formula CDM (95.59). On a 384-page subset and one A800 GPU, it is the fastest end-to-end parser at five concurrency levels, improving valid-page throughput by 67.4-118% and reducing P95 latency by 39.2-54.9% relative to a same-backbone Sequential SFT baseline. Code is available at https://github.com/Longin-Yu/Padoc",
+      "upvotes": 0,
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2608.06146",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2608.06146",
+      "githubRepo": "https://github.com/Longin-Yu/Padoc"
+    },
     {
       "id": "2608.05369",
       "title": "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
@@ -23,7 +398,7 @@
       "publishedAt": "2026-08-05T00:00:00.000Z",
       "arxivUrl": "https://arxiv.org/abs/2608.05369",
       "arxivPdfUrl": "https://arxiv.org/pdf/2608.05369",
-      "githubRepo": null
+      "githubRepo": "https://github.com/yyyyu120/W2-VLA"
     },
     {
       "id": "2608.06197",
@@ -716,336 +1091,6 @@
       "arxivUrl": "https://arxiv.org/abs/2608.04964",
       "arxivPdfUrl": "https://arxiv.org/pdf/2608.04964",
       "githubRepo": null
-    },
-    {
-      "id": "2608.05013",
-      "title": "OneDayAgent: Towards a Long-Horizon Harness for Autonomous Agents",
-      "authors": [
-        "Jingsheng Zheng",
-        "Xinyuan Fang",
-        "Jintian Zhang",
-        "Zhengke Gui",
-        "Huajun Chen",
-        "Ningyu Zhang"
-      ],
-      "summary": "LLM agents are increasingly applied to open-ended everyday requests that span work, study, and life. These tasks are long-horizon, cross-environment, and multimodal, forcing the agent to preserve goals and constraints across many steps while navigating heterogeneous tools and attachments. While prior work has addressed individual failure modes such as goals drift, states loss, and context overflow, whether a single harness can manage them jointly and remain effective across backends has received less study. We present OneDayAgent, a long-horizon harness for autonomous agents. OneDayAgent turns an open-ended request into a managed execution process that decomposes tasks into bounded subtasks, maintains execution memory under context pressure, and verifies and repairs the final deliverable. We evaluate OneDayAgent on AgentIF-OneDay across 104 tasks. With the GLM-5.2 backend, OneDayAgent sets a new state of the art with an overall score of 0.821. The same harness runs across five backend LLMs from three model families, indicating the harness generalizes across backends without tuning, even as different models induce distinct execution styles under the same workflow.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.05013",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05013",
-      "githubRepo": "https://github.com/zjunlp/OneDayAgent"
-    },
-    {
-      "id": "2608.03632",
-      "title": "When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation",
-      "authors": [
-        "Yinuo Jiang",
-        "Yongjie Ye",
-        "Zhou Tao",
-        "Xiang Zhuang",
-        "Qiang Zhang",
-        "Huajun Chen",
-        "Tiankai Li"
-      ],
-      "summary": "On-Policy distillation (OPD) transfers teacher capabilities by supervising student-sampled trajectories with dense token-level teacher signals. Recent selective OPD methods improve this process by prioritizing signals that are confident, informative, or learnable. However, the assumptions overlook a fundamental failure mode of language models: their token-level judgments can be driven by input-agnostic language priors, formatting conventions, or stereotyped reasoning templates rather than task-specific evidence. We refer to such optimization-relevant but weakly input-grounded supervision as spurious signals in OPD, which may produce large gradients while contributing little task-improving direction. To mitigate this issue, we propose SA-OPD, a Spurious-Signal-Aware On-Policy Distillation framework that identifies and filters misleading token-level supervision based on input-groundedness and optimization impact. SA-OPD introduces a lightweight input-groundedness proxy estimating whether a token-level distillation signal truly depends on the input. It then filters only tokens that simultaneously exhibit low input-groundedness and extreme distillation divergence, thereby removing high-impact spurious updates and achieving fine-grained OPD optimization. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that SA-OPD consistently outperforms Vanilla OPD and competitive selective methods. These results establish input-groundedness as a key dimension for OPD supervision selection and offer a simple, effective strategy for mitigating spurious updates.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.03632",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.03632",
-      "githubRepo": "https://github.com/jjjyinuo/SA-OPD"
-    },
-    {
-      "id": "2608.04570",
-      "title": "The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads",
-      "authors": [
-        "Yushi Sun",
-        "Yanjie Zhang",
-        "Rui Sheng"
-      ],
-      "summary": "Personalized LLMs with persistent memory are increasingly deployed, yet the faithfulness of their user models remains unexamined. We study over-inference (OI): the phenomenon where LLMs fabricate user attributes beyond what evidence supports. We introduce MirageBench, comprising 150 personas balanced across stereotypical, counter-stereotypical, and neutral profiles, 6 personalization tasks spanning an ``imagination gradient'', a four-way faithfulness taxonomy operationalized by an independent judge (validated against a blind human annotator on 400 claims: Cohen's kappa = 0.863 four-class, kappa = 0.900 binary), and a leaderboard of 12 models across 7 families on 143616 judged claims. We find that over-inference is pervasive: every one of the 12 models over-infers 35%--49% of its claims (cross-model mean 41.6%; claim-weighted 41.8%), with no model in this evaluation escaping it. Most strikingly, we surface a Self-Monitoring Inversion: at the model-selection level, models' self-assessed OI is negatively rank-correlated with their judge-measured OI (rho = -0.60, p = 0.044; exploratory, wide bootstrap CI [-0.90, +0.06], n = 12). The models that report the least over-inference tend to be flagged as fabricating the most, so self-reported confidence is a misleading signal for comparing models, even though within a single model self-audit still ranks that model's own claims moderately well (AUROC 0.58--0.83). We further show that OI is task-dependent (27%--59%) and that, in a multi-turn pilot, inferred attributes accumulate approximately linearly with little revision. MirageBench positions external verification, rather than model self-report, as a more reliable foundation for trustworthy personalization.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.04570",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.04570",
-      "githubRepo": null
-    },
-    {
-      "id": "2608.05139",
-      "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
-      "authors": [
-        "Yinghui He",
-        "Ling Yang",
-        "Jiarui Liu",
-        "Yongjin Yang",
-        "Lechen Zhang",
-        "Yingcheng Wu",
-        "Zhenfei Yin",
-        "Mengdi Wang",
-        "Sanjeev Arora"
-      ],
-      "summary": "Long-horizon reasoning in recent LLMs demands that the model switch between distinct skills inside a reasoning chain, such as first doing a math derivation, then using the result to plan a schedule. We call such problems cross-skill long-horizon tasks: multi-step tasks whose steps require different reasoning skills and depend on earlier outputs. Existing benchmarks often evaluate individual skills, lacking a principled way to measure how well a model switches between skills. We address this gap from both the evaluation and training sides. We introduce Skill Entropy, a measure of the difficulty of switching from one skill to another. We then propose Skill^2-Bench, a benchmark of cross-skill long-horizon tasks built over 558 skills across 9 verifiable and open-ended domains. Each task is assigned a task-level skill-entropy score and grouped into three difficulty levels. Evaluating 8 frontier and 4 open-source models on Skill^2-Bench reveals a skill-switching gap: accuracy decreases on higher-entropy tasks. We then turn skill entropy from a benchmark scale into a training signal. We propose Skill-Entropy RL, an RL framework where the model predicts not only the answer at each step but also the skill used to produce it. The reward combines step-level correctness with a skill-entropy reward that measures the alignment between the model-predicted skill sequence and the gold skill sequence. On Qwen3-4B-Instruct and Qwen3-1.7B, Skill-Entropy RL improves the Skill^2-Bench score from 34.4% to 68.4% and from 14.6% to 40.1%, respectively, outperforming competitive baselines. The same pipeline can be applied to off-the-shelf training data such as OpenR1-Math, indicating that skill entropy is a reusable training signal. Code available at: https://github.com/Gen-Verse/Skill-Entropy-RL",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.05139",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05139",
-      "githubRepo": "https://github.com/Gen-Verse/Skill-Entropy-RL"
-    },
-    {
-      "id": "2608.04574",
-      "title": "When Memory Lies: An Empirical Study of Spatial Memory Staleness in VLM Agents",
-      "authors": [
-        "Yushi Sun",
-        "Yanjie Zhang"
-      ],
-      "summary": "Memory-augmented VLM agents act on persistent spatial knowledge, yet that knowledge silently goes stale as the environment changes. We ask what happens when an agent must reconcile a confident memory claim with a contradicting observation, and whether current models can catch the conflict before it becomes a safety-relevant mistake. Using a dynamic FrozenLake testbed, we pair a staleness-detection task with a downstream navigation task across three closed-source models and three open-weight VLMs under both text and image inputs (1,800 detection runs, and 12,000 text-mode navigation episodes over four LLM navigators at a shared 50-seed scale). Three findings emerge. First, text solvability does not imply visual grounding: models that flag stale entries reliably from text nonetheless span vision F1 from 0.887 down to 0.067 on the identical grids, and the weakest keeps making fluent, confident decisions that ignore the image. Second, consuming stale memory without an audit is a safety liability: in our primary GPT-4o setting, an agent that trusts raw memory dies more than twice as often as the same agent given no memory at all. Third, auditing helps but does not close the gap: a transparent read-time filter removes much of the safety cost in text mode, yet even oracle stale labels bring no further significant gain on the current grid size, and when visual auditing is unreliable, filtering yields no consistent benefit. Together these results frame spatial-memory staleness as a safety failure mode and isolate reliable visual grounding and action selection under memory--observation conflict as the central open challenges for memory-augmented agents.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.04574",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.04574",
-      "githubRepo": null
-    },
-    {
-      "id": "2608.04397",
-      "title": "NOLLI: A Difficulty-Calibrated Puzzle Benchmark for Diagnosing the English-Korean Performance Gap",
-      "authors": [
-        "Dasol Choi",
-        "Joonyong Park",
-        "Daegon Yu",
-        "Soo Yong Kim",
-        "Youngsook Song",
-        "Seunghyeok Hong"
-      ],
-      "summary": "We introduce NOLLI, a procedurally generated English-Korean puzzle benchmark designed to diagnose where Korean performance gaps arise. It comprises 15 puzzle types (25 tasks; 7,500 items), with every instance seed-regenerable, verified to have a unique solution, and scored deterministically. Rather than equating harder with bigger, we calibrate difficulty behaviorally, tuning each generator until a fixed reference model lands in target accuracy bands. Its three-level design combines matched direct translations, script adaptations over Hangul jamo (sub-syllabic letters), and Korean-only tasks grounded in Korean culture or orthography. We evaluate 15 frontier, open-weight, and Korean-developed models; among the 12 above a 3% overall-accuracy floor, matched English-Korean accuracy is statistically equivalent within a +/- 10 pp margin (TOST), suggesting little cost from presentation language alone. Writing-system-intensive tasks show sharper gaps: Korean Cipher falls behind English by up to 68.7 pp, whereas Cryptarithmetic over the same jamo shows no systematic penalty, and Jamo Composition accuracy predicts Korean Cipher accuracy. These contrasts are diagnostic rather than causal, consistent with difficulty in multi-step sub-syllabic execution. Korean-only tasks separate rule-application deficits, which vary in sign, from a Kinship deficit positive in all 12. Finally, a salient size measure fails to grow from Easy to Hard in 7 of 15 types, making structural size an unreliable proxy for empirical difficulty.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.04397",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.04397",
-      "githubRepo": "https://github.com/HAE-RAE/NOLLI"
-    },
-    {
-      "id": "2607.28048",
-      "title": "SKILL-KD: Contrastive Skill Distillation for LLM Agents",
-      "authors": [
-        "Qiming Shi",
-        "Yibo Dou",
-        "Jiawen Zhu",
-        "Yulong Tao",
-        "Linbo Jin",
-        "Zhaolu Kang",
-        "Yunfan Zhou",
-        "Di Weng"
-      ],
-      "summary": "Skill-based prompting has become a practical mechanism for improving large language model (LLM) agents, yet existing skill acquisition methods often treat skills as experience summaries, memory entries, or direct summaries of successful demonstrations. This creates a mismatch for weaker student agents: when a student fails because it lacks task knowledge or operational strategy, its failed trajectory may not contain enough evidence to infer the missing behavior, while the teacher trajectory may be too implicit to be internalized as reusable guidance. We propose SKILL-KD, a contrastive skill distillation framework that treats skills as an explicit distillation medium between agents of different capabilities. Given a student failure and the teacher trajectory on the same task, SKILL-KD distills their actionable discrepancy into a textual skill patch, evaluates the patch by re-running the student, and iteratively refines the patch when the student still fails. To prevent repeated local updates from causing skill drift, SKILL-KD further maintains trace-linked edit histories and performs Drift-Aware Skill Consolidation, deciding whether each patch should add a new rule, delete or modify an existing rule, or be skipped. Across five agent benchmarks and two student settings, SKILL-KD consistently improves frozen student agents over fixed-model adaptation baselines.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2607.28048",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2607.28048",
-      "githubRepo": null
-    },
-    {
-      "id": "2608.04701",
-      "title": "UniWorld-View: Large-Baseline View Synthesis via Video Diffusion Models",
-      "authors": [
-        "Haiyang Zhou",
-        "Wangbo Yu",
-        "Chaoran Feng",
-        "Xunyu Zhou",
-        "Yonghong Tian",
-        "Li Yuan"
-      ],
-      "summary": "The abundance of casually captured monocular videos and images on social media provides a valuable source for immersive content creation, where generating novel views from such sparse observations can greatly enhance user experiences. However, producing photorealistic and geometrically consistent views with precise camera control remains challenging when input coverage is extremely limited. Reconstruction-based approaches such as NeRF and 3D Gaussian Splatting (3DGS) deteriorate severely under sparse inputs and fail to explicitly handle occlusions. Generative methods ease data requirements but still struggle with large-baseline view synthesis due to inaccurate or implicit geometric guidance. To overcome these limitations, we introduce UniWorld-View, a unified framework for controllable large-baseline novel view synthesis from monocular inputs. UniWorld-View integrates explicit 3D guidance with generative diffusion modeling to enable precise camera control and geometrically consistent view generation. The geometric guidance is obtained through an occlusion-aware point cloud rendering strategy that resolves visibility ambiguities and provides accurate priors for diffusion-based synthesis. By coupling this rendering strategy with powerful video diffusion backbones, UniWorld-View achieves high-fidelity novel view generation even under extreme camera motions and wide-baseline changes, and can further provide multi-view videos for downstream dynamic 3DGS reconstruction. Experiments on the WorldScore benchmark and zero-shot NVS benchmarks demonstrate the effectiveness of UniWorld-View in controllability, geometric consistency, and visual fidelity.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.04701",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.04701",
-      "githubRepo": "https://github.com/PKU-YuanGroup/UniWorld-View"
-    },
-    {
-      "id": "2608.04436",
-      "title": "ToolArtist: Tool-Using Unified Multimodal Models for Agentic Image Generation",
-      "authors": [
-        "Jiahao Zhao",
-        "Xiaomin Yu",
-        "Zhongxiang Sun",
-        "Fengwei Teng",
-        "Chengwei Qin",
-        "Xiaobin Hu",
-        "Jun Xu",
-        "Shuicheng Yan"
-      ],
-      "summary": "Text-to-image (T2I) models can produce visually compelling images, yet they remain limited on open-world tasks that require complex semantic understanding, multi-step reasoning, and the integration of external world knowledge. Existing efforts introduce agent capabilities into image generation, but they either prescribe a fixed workflow or place only a subset of the open-world image generation process under agent control. Consequently, reasoning, tool invocation, and image generation are not coordinated by a single policy. We propose ToolArtist, a fully agentic image generation model obtained by post-training a Unified Multimodal Model (UMM). ToolArtist dynamically orchestrates reasoning, external tool use, and native image generation within one unified policy. During Supervised Fine-Tuning (SFT), we equip a teacher agent with search tools alongside an image-generation tool. We then convert the collected trajectories into a UMM compatible format, where the image-generation tool is concealed while the resulting generated images are retained. During Reinforcement Learning (RL), we develop an agentic RL infrastructure for UMMs and introduce Reason-Act-Draw GRPO (RAD-GRPO), which uses complementary intent and quality rewards to jointly optimize the model. Experiments show that placing the entire open-world image-generation process under an agent policy consistently outperforms approaches with fixed pipelines or only partially agent-controlled components. We release the training data and the complete post-training infrastructure.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.04436",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.04436",
-      "githubRepo": null
-    },
-    {
-      "id": "2608.05000",
-      "title": "Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes",
-      "authors": [
-        "Junlin Han",
-        "Shengbang Tong",
-        "David Fan",
-        "Minghao Chen",
-        "Philip Torr",
-        "Filippos Kokkinos",
-        "Mike Lewis"
-      ],
-      "summary": "Vision offers a critical axis for advancing foundation models, driving a shift towards natively unified multimodal pretraining. Despite this momentum, the design space and the fundamental mechanisms of how modalities interact during unified training remain underexplored. We provide empirical clarity through a systematic exploration of multimodal pretraining. Our controlled experiments on both synthetic and large-scale real-world datasets yield four key insights into the physics of multimodal pretraining: (i) Knowledge Flow: We disentangle how language, visual understanding, and visual generation transfer knowledge across modalities, revealing distinct patterns of influence and asymmetry; (ii) Synergy vs. Competition: We show that data \"complexity\" largely determines whether modalities are synergistic, identify architectural choices that promote synergy: such as shared attention and normalization with modality-specific feed-forward layers, and find that these behaviors generalize across different visual tokenizer designs; (iii) Early Unification: Unifying modalities from the very early stages and training them jointly is shown to be more effective than late alignment or sequential training. This process uncovers a vision laziness phenomenon, where delayed integration leads models to rely on language priors; (iv) Recipes: We derive efficient pretraining recipes that achieve strong generative performance using only 5% of the compute budget. These core findings are subsequently validated at scale by training multiple 13.5B MoE models on 2T tokens. We hope this study provides a principled foundation for understanding and scaling multimodal pretraining.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.05000",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05000",
-      "githubRepo": null
-    },
-    {
-      "id": "2608.04349",
-      "title": "Poly-OPD: Heterogeneous Multi-Teacher On-Policy Distillation for Capability-Selectable Flow Models",
-      "authors": [
-        "Siming Fu",
-        "Haojun Xu",
-        "Ruizhe He",
-        "Zheming Fu",
-        "Hualiang Wang",
-        "Jie Huang",
-        "Xiaoxiao Ma",
-        "Mingchen Zhong",
-        "Weihu Huang",
-        "Xiaoxuan He",
-        "Linjiang Huang",
-        "Si Liu"
-      ],
-      "summary": "Leading open text-to-image models often carry complementary strengths: one may lead on preference-aligned aesthetics while another follows compositional instructions more faithfully. However, differences in their autoencoders and noise schedules make it difficult to transfer these strengths across models. In this paper, we present Poly-OPD, a framework that can consolidate complementary strengths of heterogeneous teachers into a single compact flow-matching student. To bridge the incompatible latent spaces of different teachers, Poly-OPD performs on-policy distillation through a pixel bridge. Each student-generated image is re-encoded by a selected teacher's encoder and refined from a noise level matched by magnitude under the teacher's noise schedule. The resulting target is further matched to the student in frozen DINOv2 space, enabling supervision across incompatible latent spaces. To retain complementary capabilities without cross-teacher interference, Poly-OPD uses a gradient compatibility diagnostic to organize its adapters: attention LoRA modules are shared across teachers, whereas feed-forward adapters remain teacher-specific. During distillation, a gap-aware curriculum devotes more training to compositional categories where the student still falls short of the teacher. As each gap narrows, training shifts toward categories with larger remaining gaps. By distilling FLUX.1-dev and Z-Image into a 2.5B SD3.5-Medium student, Poly-OPD improves GenEval from 67.3 to 73.3, surpassing both larger teachers, and raises DrawBench HPSv3 from 9.34 to 11.35, consolidating both strengths within a switchable model.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.04349",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.04349",
-      "githubRepo": null
-    },
-    {
-      "id": "2608.05070",
-      "title": "HelloWorld: Enabling Socially Interactive Characters in Video World Models",
-      "authors": [
-        "Liangyang Ouyang",
-        "Ruicong Liu",
-        "Xuangeng Chu",
-        "Kaipeng Zhang",
-        "Yoichi Sato"
-      ],
-      "summary": "Despite the remarkable recent progress of video world models, social interaction between users and the characters within these worlds remains unsupported. To fill this gap, we present HelloWorld, a video world model that enables social interaction with in-world characters. With a single button press, users can prompt the on-screen character to respond toward the camera, e.g., turning to the viewer, waving, nodding, or speaking a short greeting. To make these interactions natural, we propose a self-distillation pipeline that finetunes the video generation model on data synthesized by itself. Each synthesized clip contains both social interactions and camera motion, allowing the model to learn camera-pose conditioning without degrading interaction quality. At inference, we further introduce a training-free module that determines when the interaction occurs. Upon a button press, it modulates the cross-attention masks of the DiT so that the interaction-related text prompt attends only to the frames within the press window, temporally localizing the character's response. We further build HelloWorldBench, a 400-sample benchmark with three social interaction metrics alongside three conventional metrics, for evaluation. Experiments demonstrate that HelloWorld surpasses a variety of baselines in interaction quality, while maintaining state-of-the-art picture aesthetics and camera-pose following. Project page: https://github.com/AlayaLab/HelloWorld",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.05070",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05070",
-      "githubRepo": "https://github.com/AlayaLab/HelloWorld"
-    },
-    {
-      "id": "2608.05131",
-      "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
-      "authors": [
-        "Aniri",
-        "Jinhe Bi",
-        "Peng Liao",
-        "Zengjie Jin",
-        "Volker Tresp",
-        "Fei Shen",
-        "Yunpu Ma",
-        "Tat-Seng Chua"
-      ],
-      "summary": "On-Policy Self-Distillation (OPSD) has become a standard post-training approach for improving visual reasoning in multimodal large language models (MLLMs). Existing methods draw privileged information from diverse input sources to guide self-distillation. Yet these designs overlook Modality Imbalance, a challenge inherent to MLLM reasoning. When textual information dominates generation, the model cannot fully integrate its multimodal input. Consequently, carefully designed privileged information remains underused, limiting the effectiveness of OPSD. To examine this limitation, we construct a Positive Teacher with the Zoom-In Image and a Negative Teacher with the Mask Image, which exhibit different degrees of Modality Imbalance. Changes in their reasoning correctness and token logits reveal that Modality Balance can itself serve as privileged information. Motivated by this finding, we introduce OPD-V, a visual OPSD paradigm that instantiates such information through the Positive Teacher and Negative Teacher. Positive Modality-Balance Logits Margins define a Modality-Balance Trust Region that selects the on-policy tokens used for self-distillation. Experiments across 6 benchmarks, 4 MLLM backbones, and 5 post-training methods show that OPD-V consistently improves reasoning performance while reducing training cost.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.05131",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.05131",
-      "githubRepo": null
-    },
-    {
-      "id": "2607.22143",
-      "title": "TriGlue: a Biology-Inspired Generative Model for Generating Molecular Glue-Induced Ternary Complex",
-      "authors": [
-        "Yuliang Yan",
-        "Shuo Yan",
-        "Haochun Tang",
-        "Yiqin Sun",
-        "Enyan Dai"
-      ],
-      "summary": "Molecular glue degraders have emerged as a promising strategy for targeted protein degradation by inducing ternary complex formation between an E3 ubiquitin ligase and a target protein. Despite their therapeutic potential, computational design of molecular glues remains largely unexplored. Unlike conventional structure-based drug design, molecular glue design is governed by the unknown protein-protein interface and requires the simultaneous modeling of ligand generation, protein-protein docking, and ternary complex assembly. In this work, we formulate molecular glue design as a ternary complex generation problem and propose a biology-inspired generative framework, TriGlue. Motivated by the mechanism of molecular glue action, we decompose ternary complex generation into two coupled stages: interface estimation and interface-conditioned complex generation. First, we develop an SE(3)-equivariant interface estimation module that predicts a geometrically constrained protein-protein interface from unbound monomer structures. Second, we introduce an interface-conditioned ternary flow matching network that jointly generates the molecular glue and predicts the rigid-body transformation required to assemble the ternary complex. Extensive experiments demonstrate that TriGlue generates chemically valid molecules and produces plausible ternary complexes, which highlight the potential of biology-inspired generative modeling for accelerating molecular glue discovery. Our code is available at https://github.com/yuliangyan0807/molecular-glue-design.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2607.22143",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2607.22143",
-      "githubRepo": "https://github.com/yuliangyan0807/molecular-glue-design"
-    },
-    {
-      "id": "2608.02751",
-      "title": "Search, Inspect, Fetch: Exploiting Boolean Retrieval for Deep-Research Agents",
-      "authors": [
-        "Shuai Wang",
-        "Haodong Chen",
-        "Yu Yin",
-        "Shengyao Zhuang",
-        "Bevan Koopman",
-        "Guido Zuccon"
-      ],
-      "summary": "Existing deep-research agents use a search-visit workflow that retrieves and reads whole pages, without considering the addressable structure that web sources expose through titles, headings, sections, and metadata. This prevents agents from directly constraining retrieval to document fields and often carries irrelevant page content into their context. We introduce SIEVE, a search-inspect-fetch interface driven by fielded Boolean retrieval (BQL). SIEVE filters candidates over document fields, ranks the admitted set, presents structure-rich result cards for inspection, and fetches only selected sections. Across three QA collections, SIEVE achieves higher accuracy than the most accurate conventional Search-Visit configuration on each collection while using 20.7-50.6% fewer tokens. Further analyses show that BQL filtering improves all tested rankers and that the accuracy-context advantage persists across retriever choices and agent backbones. Code and data are available at https://github.com/ielab/skim-search-agent.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-03T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.02751",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.02751",
-      "githubRepo": "https://github.com/ielab/skim-search-agent"
-    },
-    {
-      "id": "2607.00482",
-      "title": "Know When to Stop: Segment-Level Credit Assignment for Reducing Overthinking",
-      "authors": [
-        "Chia-Hsuan Lee",
-        "Sihui Dai",
-        "Mingyang Zhou",
-        "Isha Slavin",
-        "Hsuan Su",
-        "Shi-Xiong Zhang",
-        "Sambit Sahu",
-        "William Campbell"
-      ],
-      "summary": "Reasoning language models frequently overthink: generating extended chains of behaviors such as hedging, approach abandonment, and self contradiction that consume tokens without improving answers. We show that these behaviors are not merely a consequence of length; even when controlling for response length, incorrect traces exhibit higher rates of unproductive self-reflection than correct ones. Addressing this requires identifying where self-reflection helps vs hurts, but obtaining these step-level annotations is costly. We observe that intermediate answer commitments within reasoning traces can provide a cheap proxy: by comparing each final answer candidate in the trace to the ground truth, we can determine whether subsequent reflection is productive without any additional supervision. Building on this insight, we propose DASH (Drift Aware advantage SHaping), which assigns segment-level credit based on whether each reasoning segment leads toward or away from correctness. On competition-level math benchmarks, DASH achieves the highest accuracy where overthinking is prevalent (Average Accuracy: 59.45% vs. 58.1% Dr.GRPO vs. 56.95% GRPO) while reducing overthinking behaviors and achieving more productive self-correction than baselines.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2607.00482",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2607.00482",
-      "githubRepo": null
-    },
-    {
-      "id": "2608.03506",
-      "title": "When Many Answers Are Valid, Voting Fails: Symbolic Verification for Best-of-K Causal Reasoning in LLMs",
-      "authors": [
-        "Omatharv Bharat Vaidya",
-        "Connor Thomas Jerzak",
-        "Zayne Rea Sprague",
-        "Fangcong Yin",
-        "Nhat Ho"
-      ],
-      "summary": "Self-consistency assumes the most frequent answer among sampled reasoning traces is the most reliable, but this can fail in causal reasoning: samples often repeat the same confounding error, and votes fragment across multiple valid answers, letting an invalid answer win despite a valid minority trace. We introduce CALVER (Causal Axiom-Level VERification), a training-free symbolic verifier that scores structured traces against Pearl's causal criteria, including -separation, backdoor adjustment, and intervention, and selects the highest-scoring candidate without consulting a reference answer. On CLEAR find-one-valid queries that admit multiple graph-valid answers, CALVER reaches 42.1% where plurality, a reward model, an LLM judge, and model confidence remain near 30% on identical frozen pools. Scaling the judge to 72B does not close the gap. In an audited clean-core subset, 11 of 21 graph-valid CALVER selections differ from the benchmark's listed answer while still satisfying the requested predicate. The advantage widens with the sampling budget and reproduces across ten published Bayesian networks, a second model family, and settings where the model must build the graph from text. CALVER also improves thresholded average-treatment-effect decisions against exact ground truth, generalizes to logic under a truth-table checker, and scores each candidate in milliseconds on CPU. CALVER needs only a causal structure, supplied outright or built from the text; wherever that holds, selection can aggregate via causal validity.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.03506",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.03506",
-      "githubRepo": null
-    },
-    {
-      "id": "2608.02703",
-      "title": "ARCHead: Activation-Metric Residual Correction for Large Language Model Output Heads",
-      "authors": [
-        "Şuayp Talha Kocabay",
-        "Talha Rüzgar Akkuş",
-        "Kamer Ali Yuksel"
-      ],
-      "summary": "Weight-only quantization substantially reduces the storage of large language model (LLM) transformer blocks, but practical backends often retain the final language-modeling head (LM-head) in BF16 or FP16. Quantizing this projection naively can strongly perturb the vocabulary-logit distribution. We present ARCHead, a packed LM-head compressor that combines a quantized low-rank core, group-wise INT4 residuals, and a low-rank correction fitted in an activation-derived metric. ARCHead stores no dense BF16 head and reduces persistent LM-head storage by 3.7-3.9x. On Qwen3-8B-Base, it uses 25.6% of BF16 head storage while attaining 1.007 relative perplexity; storage-matched naive INT4 yields 1.14-1.16. Replacing the BF16 head left by AWQ or bitsandbytes adds only 0.006-0.007 cross-entropy, with less than 2% throughput change in our measurements. ARCHead therefore complements block quantizers by compressing the large output projection they can leave untouched. Code is available at https://github.com/suayptalha/archead.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-03T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2608.02703",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2608.02703",
-      "githubRepo": "https://github.com/suayptalha/archead"
     }
   ]
 }
