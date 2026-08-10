@@ -5,8 +5,43 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-08-09</lastBuildDate>
+    <lastBuildDate>2026-08-10</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows</title>
+      <link>https://arxiv.org/abs/2608.06714</link>
+      <guid isPermaLink="false">2608.06714</guid>
+      <description>Junbo Li, Boyi Liu, Canwen Xu — Recent systems for optimizing prompts, programs, and ML workflows typically rely on explicit outer-loop controllers such as evolutionary search, bandits, or textual-gradient methods. We ask a fundamentally different question: how much of this search policy can be internalized by a single tool-using agent? We present ReASearch, a unified framework for reasoning-driven optimization in which the agent autonomously decides what to evaluate, how to diagnose failures, which edits to make, and when to verify or restart. Rather than serving only as a proposal generator guided by hand-designed heuristics, the agent actively analyzes outcomes, allocates budget, and refines its strategy over long horizons through persistent memory. With a shared agent loop and domain-specific tools, ReASearch instant</description>
+      <pubDate>2026-08-07T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Characterizing the Quality Profile of AI-Generated C++ in Production</title>
+      <link>https://arxiv.org/abs/2608.06640</link>
+      <guid isPermaLink="false">2608.06640</guid>
+      <description>Michael Tran, Fred Lewis, Kun Yang — The widespread integration of AI coding assistants offers undeniable boosts to engineering velocity. Yet, recent studies point to a growing trade-off, revealing persistent challenges with code quality and maintainability. Industry leaders, including frontier AI labs, echo these concerns. As large language models are increasingly relied upon to author production code, understanding their impact on shipped software quality has become a critical priority. However, assessing these effects in industrial workflows remains difficult due to observability barriers. We study the impact of AI-generated code on production quality within a large enterprise operating global products relied upon by billions of users daily. Driven by this scale and user trust, the organization values code quality and has </description>
+      <pubDate>2026-08-06T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Modular TTT: Rethinking Test-Time Training as Composable Modules</title>
+      <link>https://arxiv.org/abs/2608.07110</link>
+      <guid isPermaLink="false">2608.07110</guid>
+      <description>Bohao Tang, Zhen Qin, Yuqi Pan — Test-time training (TTT) views sequence modeling as an online learning problem in which fast weights are updated by an internal learning rule. Despite the growing number of TTT variants, existing approaches typically hard-code each variant separately, which makes it difficult to design new TTT methods and to isolate the role of each component. To address this, we propose Modular TTT, a framework that represents the inner learner as a directed acyclic graph and exposes the fast-weight network, loss function, learning rate, weight decay, and normalization as explicit design dimensions. Modular TTT automatically composes primitive-level train-view forward, train-view backward, and causal query-view rules into the full graph-level TTT computation, including the fast-weight state transition. Us</description>
+      <pubDate>2026-08-07T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Skaling: Chinchilla&apos;s Exponents Meet Kaplan&apos;s Coupling</title>
+      <link>https://arxiv.org/abs/2608.07222</link>
+      <guid isPermaLink="false">2608.07222</guid>
+      <description>Mathurin Videau, Badr Youbi-Idrissi, David Lopez-Paz — Neural scaling laws are foundational for language model development, yet standard formulations systematically under- and overestimate loss at data-scarce and overtraining extremes. This failure originates in the underlying assumption that model size and training data impact the loss independently. To address this, we introduce the Skaling law, a generalized functional form that couples model capacity and data through a single interaction exponent. This simple extension reduces the Mean Absolute Percentage Error (MAPE) by 1.5-3x across both interpolation and extrapolation regimes. When paired with a sparse grid strategy restricted to low-compute regimes, the Skaling law achieves accurate full-grid extrapolation using approximately 10x less compute than uniform sweeps. By enabling reliable p</description>
+      <pubDate>2026-08-07T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Addressable Memory for Video World Models</title>
+      <link>https://arxiv.org/abs/2608.07408</link>
+      <guid isPermaLink="false">2608.07408</guid>
+      <description>Xindi Wu, Sven Elflein, James Lucas — We study visual persistence in interactive video world models. These models rely on a Key-Value (KV) cache as a growing visual memory to carry forward previously generated frames. However, we find that models can no longer reliably address stored content once rollouts extend beyond the training horizon, because temporal Rotary Positional Embeddings (RoPE) offsets then fall outside the range seen during training and the model struggles to retrieve the relevant visual information through attention. Moreover, naively compressing the cache in the RoPE-rotated space corrupts memory by averaging together incompatible positional phases. To address this, we propose WorldTrace, a training-free memory framework for long-horizon visual persistence. WorldTrace keeps compressed memory addressable by as</description>
+      <pubDate>2026-08-07T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>GaussianSelector: Lightweight Human-Guided Object Selection in 3D Gaussian Splatting with Graph Optimization</title>
       <link>https://arxiv.org/abs/2608.01492</link>
@@ -322,41 +357,6 @@
       <link>https://arxiv.org/abs/2608.04926</link>
       <guid isPermaLink="false">2608.04926</guid>
       <description>Xuehang Guo, Pengyuan Li, Tom Hope — As chart images, tabular data, and visualization code play increasingly important roles across diverse domains, cross-representation understanding across these modalities poses fundamental challenges for AI systems: the relationships across representations are inherently one-to-many, supervision is ambiguous and costly, and model optimization lacks a principled signal that is both direction-adaptive and representation-generalizable beyond task-specific objectives. We introduce CoCoEvolve to improve consistency across chart, table, and code representations. Instead of treating cross-representation mapping as a one-to-many problem, we define explicit one-to-one correspondences and optimize models using agreement between representations, without additional annotations. During training, CoCoEv</description>
-      <pubDate>2026-08-05T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data</title>
-      <link>https://arxiv.org/abs/2608.02580</link>
-      <guid isPermaLink="false">2608.02580</guid>
-      <description>Ye Wang, Pei Lin, Xiong-Hui Chen — Learning generalizable robot manipulation policies requires large-scale and diverse demonstration data. Egocentric human manipulation videos offer rich scene and task diversity, and prior work has shown that retargeting and rendering such videos into robot-format data can yield effective per-task policies at small scale. However, whether this approach can provide pretraining benefits for vision-language-action models at scale remains unexplored. We present Ego2Robot, a scalable pipeline that converts egocentric human manipulation videos into robot training data through action retargeting, robot-arm visual synthesis, and multi-level quality curation. Ego2Robot supports both curated datasets and in-the-wild videos, producing 18,561 hours of robot training data spanning 15 robot morphologies,</description>
-      <pubDate>2026-08-03T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>K-EXAONE 2.0 Technical Report</title>
-      <link>https://arxiv.org/abs/2608.04505</link>
-      <guid isPermaLink="false">2608.04505</guid>
-      <description>Eunbi Choi, Kibong Choi, Sehyun Chun — This technical report presents K-EXAONE 2.0, an open-weight multilingual foundation model developed by LG AI Research as a step in our effort toward global frontier-scale foundation models. Rather than training from scratch, we upcycle K-EXAONE and expand its architecture, yielding a Mixture-of-Experts (MoE) model with 750B total parameters and approximately 37B activated per token---more than three times the capacity of its predecessor. K-EXAONE 2.0 supports context lengths of up to 256K tokens and expands multilingual coverage from six to ten languages. Its training pipeline combines continual pre-training, difficulty-focused mid-training, and post-training to strengthen reasoning, agentic coding, multilingual capability, and safety grounded in Korean sociocultural contexts. Across nine </description>
-      <pubDate>2026-08-05T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Distill Where You Fail: Recovering Learning Signals of Negative RL-Groups from Adaptive Teacher Guidance</title>
-      <link>https://arxiv.org/abs/2608.00782</link>
-      <guid isPermaLink="false">2608.00782</guid>
-      <description>Zhuowen Han, Jinwei Xiao, Zhengxi Lu — Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for post-training large language models (LLMs). While Group Relative Policy Optimization (GRPO) is widely adopted, it suffers from sparse reward signals and loses gradients entirely when all responses within a group receive identical rewards. On-policy distillation (OPD) offers a natural remedy by providing dense, token-level supervision from a teacher model. However, naively combining GRPO with OPD leads to degraded performance, due to three underlying causes: not all samples benefit from distillation; fitting too quickly to the teacher undermines the exploratory capacity of RL; and OPD&apos;s advantages are asymmetric, suppressing most tokens. To address these challenges, we propose RSTG (Recovering Learning </description>
-      <pubDate>2026-08-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation</title>
-      <link>https://arxiv.org/abs/2608.05042</link>
-      <guid isPermaLink="false">2608.05042</guid>
-      <description>Peiyan Li, Yuze Zhu, Yixiang Chen — Leveraging pre-trained vision-language models (VLMs) to construct vision-language-action (VLA) models has emerged as a promising paradigm for 3D robot manipulation. However, existing 3D VLA methods remain data-hungry, exhibit limited generalization under distribution shifts, and lack explicit memory of past observations. These limitations hinder their application to data-scarce, open-world, and memory-dependent manipulation scenarios. Our previous work, BridgeVLA, improves data efficiency and generalization by preserving the input--output alignment of a pre-trained VLM during 3D action learning: raw point clouds are projected into multi-view images, and intermediate heatmaps are predicted before generating robot actions. In this work, we develop BridgeVLA++ by equipping BridgeVLA with a un</description>
-      <pubDate>2026-08-05T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models</title>
-      <link>https://arxiv.org/abs/2608.04964</link>
-      <guid isPermaLink="false">2608.04964</guid>
-      <description>Bohai Gu, Yueyang Yuan, Taiyi Wu — Interactive video world models are essential for long-horizon planning and exploration, yet they suffer from compounding errors. Post-training methods such as reinforcement learning (RL) can improve these models, but they hit a verification bottleneck: for arbitrary action sequences, no ground-truth future state exists to measure long-term drift. Our key insight is that reversible action cycles make this verification possible: a sequence composed with its inverse must analytically return to the initial state, yielding annotation-free supervision on long-horizon correctness. Building on this, we introduce WorldCycle, a self-verifiable RL framework that constructs closed action cycles and their repeated executions from ordinary action sequences, and optimizes two complementary rewards: a spa</description>
       <pubDate>2026-08-05T00:00:00.000Z</pubDate>
     </item>
   </channel>
