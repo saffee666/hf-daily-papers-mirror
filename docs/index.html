@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HF Daily Papers Mirror — 2026-08-16</title>
+<title>HF Daily Papers Mirror — 2026-08-17</title>
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   body{font-family:Georgia,'Noto Serif SC',serif;background:#faf9f6;color:#1a1a1a;line-height:1.6}
@@ -59,7 +59,8 @@
 </nav>
 
 <div class="archive-panel">
-  <ul><li><a href="#" data-date="2026-08-16" onclick="loadDate('2026-08-16')">2026-08-16</a></li>
+  <ul><li><a href="#" data-date="2026-08-17" onclick="loadDate('2026-08-17')">2026-08-17</a></li>
+<li><a href="#" data-date="2026-08-16" onclick="loadDate('2026-08-16')">2026-08-16</a></li>
 <li><a href="#" data-date="2026-08-15" onclick="loadDate('2026-08-15')">2026-08-15</a></li>
 <li><a href="#" data-date="2026-08-14" onclick="loadDate('2026-08-14')">2026-08-14</a></li>
 <li><a href="#" data-date="2026-08-13" onclick="loadDate('2026-08-13')">2026-08-13</a></li>
@@ -71,11 +72,85 @@
 <li><a href="#" data-date="2026-08-07" onclick="loadDate('2026-08-07')">2026-08-07</a></li>
 <li><a href="#" data-date="2026-08-06" onclick="loadDate('2026-08-06')">2026-08-06</a></li>
 <li><a href="#" data-date="2026-08-05" onclick="loadDate('2026-08-05')">2026-08-05</a></li>
-<li><a href="#" data-date="2026-08-04" onclick="loadDate('2026-08-04')">2026-08-04</a></li>
-<li><a href="#" data-date="2026-08-03" onclick="loadDate('2026-08-03')">2026-08-03</a></li></ul>
+<li><a href="#" data-date="2026-08-04" onclick="loadDate('2026-08-04')">2026-08-04</a></li></ul>
 </div>
 
 <main>
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2608.14138" target="_blank">SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation</a></h2>
+  <div class="meta">
+    <span>Jinsheng Quan, Jianhua Li, Siyi Xie, Xuanke Shi, Kewang Deng et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @taesiri</span>
+  </div>
+  <div class="summary">Spatial perception and reasoning from visual observations require recovering geometric structure, establishing correspondences, and understanding spatial relations. Existing approaches typically address these capabilities separately using task-specific architectures or external geometric modules, limiting knowledge transfer among complementary representations of the same physical scene. We introduce SPARGen, a unified multimodal framework that casts 3D reconstruction, dense correspondence, and s</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2608.14138" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2608.14138" target="_blank" class="arxiv-pdf">PDF</a>
+    
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2608.13417" target="_blank">Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development</a></h2>
+  <div class="meta">
+    <span>Yiwei Li, Wanli Yang, Hexiang Tan, Xiangzhou Huang, Zhengyu Chen et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @WenDingY</span>
+  </div>
+  <div class="summary">Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2608.13417" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2608.13417" target="_blank" class="arxiv-pdf">PDF</a>
+    
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2608.14290" target="_blank">Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning</a></h2>
+  <div class="meta">
+    <span>Kai Chen, Jifeng Ding, Ning Ding, Jiaye Ge, Lixin Gu et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @taesiri</span>
+  </div>
+  <div class="summary">We introduce Mobius-v0, an architecture that comprises a globally shared Memory (FFN) that stores knowledge vectors and multiple Reasoners (Self-Attn) that iteratively achieve compositional reasoning. Using hidden states as cache and carrier, reasoners repeatedly query memory for required knowledge-vectors, while the knowledge is transmitted back to reasoning operators. Through this knowledge-reasoning-separation architecture, Mobius achieves better knowledge compression and reasoning efficiency</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2608.14290" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2608.14290" target="_blank" class="arxiv-pdf">PDF</a>
+    
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2608.11612" target="_blank">Dion3: Full-Stack Orthogonal Updates</a></h2>
+  <div class="meta">
+    <span>Noah Amsel, Jack Zhang, Kwangjun Ahn, Ali Naeimi, Austin Feng et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @JohnLangford</span>
+  </div>
+  <div class="summary">The Muon optimizer incurs a significant overhead cost due to its cubic-time Newton-Schulz orthogonalization step. When weights are sharded, communication overhead compounds this computational cost, eroding the benefits of Muon in many settings. We present Dion3, a revision of Muon that targets this overhead at every level of the stack. Our Gram Newton-Schulz algorithm reduces the FLOP cost of orthogonalization, our CuteDSL kernels accelerate it by exploiting symmetry, and our megabatching strate</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2608.11612" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2608.11612" target="_blank" class="arxiv-pdf">PDF</a>
+    
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2608.14530" target="_blank">Marionette: Predicting World States, Rendering Geometry, Painting Appearance</a></h2>
+  <div class="meta">
+    <span>Zian Meng, Zhen Li, Chuanhao Li, Qiang Li, Kaipeng Zhang</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @taesiri</span>
+  </div>
+  <div class="summary">Interactive game world models typically autoregress visual observations directly in pixel or latent space, forcing structured properties such as pose, geometry, and occlusion to be implicitly maintained by the same generative sequence. Over long horizons, errors in these latent world properties accumulate, making consistency and controllability fragile. We explicitly model the evolving world state, delegate exact geometric computation to a fixed, zero-parameter renderer, and leave the neural mod</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2608.14530" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2608.14530" target="_blank" class="arxiv-pdf">PDF</a>
+    
+  </div>
+</article>
+
 <article class="paper">
   <h2><a href="https://arxiv.org/abs/2608.02870" target="_blank">Maglev: Sliding Recurrent Memory</a></h2>
   <div class="meta">
@@ -751,86 +826,11 @@
     <a href="https://arxiv.org/pdf/2608.10450" target="_blank" class="arxiv-pdf">PDF</a>
     <a href="https://github.com/EMI-Group/genesis" target="_blank">GitHub</a>
   </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2608.00677" target="_blank">OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution</a></h2>
-  <div class="meta">
-    <span>Yunhao Chen, Xin Wang, Yixu Wang, Yi Liu, Jie Li et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @dongdongunique</span>
-  </div>
-  <div class="summary">AI agents operate in persistent environments where early state changes can influence decisions far into the future. Unlike conventional language-model interactions, agent behavior is mediated through a shared state that is repeatedly modified and reused across long-horizon workflows. Current safety benchmarks often fail to capture these cumulative risks because they focus on short, static tasks. To address these limitations, we introduce OpenART, an open-ended arena for scalable agent red teamin</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2608.00677" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2608.00677" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/AI45Lab/OpenART" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2608.06729" target="_blank">AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models</a></h2>
-  <div class="meta">
-    <span>Guiyu Zhao, Longteng Guo, Yanghong Mei, Zilin Zhu, Yu Zhang et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @CASIA-IVAer</span>
-  </div>
-  <div class="summary">While Vision-Language-Action (VLA) models have advanced embodied AI, their fundamentally reactive paradigm severely limits performance in partially observable and long-horizon tasks. When restricted to a single wrist-mounted camera, they inevitably suffer from perception forgetting as objects exit the field of view, and temporal task-progress forgetting} during multi-step execution. To overcome these bottlenecks, we propose AtlasVLA, a novel framework that transitions from direct reactive manipu</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2608.06729" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2608.06729" target="_blank" class="arxiv-pdf">PDF</a>
-    
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2608.10708" target="_blank">Self-Geometry: GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models</a></h2>
-  <div class="meta">
-    <span>Seokhyun Youn, Dahyeon Kye, Sung-Ho Bae, Jihyong Oh</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @Seokhyun01</span>
-  </div>
-  <div class="summary">Recent Vision Foundation Models (VFMs) predict depth, camera pose, and pointmap in a single forward pass without per-scene optimization, achieving strong generalization. However, enforcing explicit multi-view geometric consistency, e.g., through bundle adjustment, is computationally costly and is thus not imposed during VFM pretraining, so such inconsistency can arise. To address this, implicit self-consistency derived from model outputs (e.g., pointmaps, features), though enforced at test-time </div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2608.10708" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2608.10708" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/CMLab-Korea/Self-Geometry" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2608.08160" target="_blank">Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives</a></h2>
-  <div class="meta">
-    <span>Yingpeng Ma, Jianhao Yan, Bei Shi, Ka Hou Kam, Runnan Wang et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @Elliott</span>
-  </div>
-  <div class="summary">The rapid advancement of Large Language Models (LLMs) is revolutionizing AI for Games by enabling open-ended and fluid interactive storytelling. However, existing research has largely overlooked the critical challenge of maintaining long-horizon logical consistency and narrative integrity against unconstrained user interventions. To address this, we formulate this challenge as Narrative Commitment Preservation (NCP), and take interactive narrative as our testbed. We introduce NCP-Bench, a benchm</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2608.08160" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2608.08160" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/yingpengma/NCP-Bench" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2608.06270" target="_blank">The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images</a></h2>
-  <div class="meta">
-    <span>Zhiheng Wang, Bo Peng, Lai Wei, Chaochao Lu</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @zhwang</span>
-  </div>
-  <div class="summary">The "thinking-with-images" paradigm equips multimodal LLMs with active visual operations such as crop-and-zoom. However, models using these operations often achieve only marginal or negative gains over direct inference at substantially higher token cost. They may also repeatedly crop irrelevant regions and fail on questions that direct inference answers correctly. We ask whether the returned visual evidence causally affects the answer. To answer this question, we formulate visual tool-use as a c</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2608.06270" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2608.06270" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/OpenCausaLab/CauAudit" target="_blank">GitHub</a>
-  </div>
 </article></main>
 
 <footer>
   <p>Papers from <a href="https://huggingface.co/papers">HuggingFace Daily Papers</a> — content on <a href="https://arxiv.org">arXiv</a></p>
-  <p>Generated 2026-08-16 · <a href="https://github.com/saffee666/hf-daily-papers-mirror">GitHub</a> · <a href="rss.xml">RSS Feed</a> · <a href="index.json">JSON API</a></p>
+  <p>Generated 2026-08-17 · <a href="https://github.com/saffee666/hf-daily-papers-mirror">GitHub</a> · <a href="rss.xml">RSS Feed</a> · <a href="index.json">JSON API</a></p>
 </footer>
 </div>
 

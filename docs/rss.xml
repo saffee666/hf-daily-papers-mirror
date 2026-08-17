@@ -5,8 +5,43 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-08-16</lastBuildDate>
+    <lastBuildDate>2026-08-17</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation</title>
+      <link>https://arxiv.org/abs/2608.14138</link>
+      <guid isPermaLink="false">2608.14138</guid>
+      <description>Jinsheng Quan, Jianhua Li, Siyi Xie — Spatial perception and reasoning from visual observations require recovering geometric structure, establishing correspondences, and understanding spatial relations. Existing approaches typically address these capabilities separately using task-specific architectures or external geometric modules, limiting knowledge transfer among complementary representations of the same physical scene. We introduce SPARGen, a unified multimodal framework that casts 3D reconstruction, dense correspondence, and spatial reasoning as instruction-conditioned generation tasks. SPARGen serializes compact structured and linguistic outputs as token sequences while generating dense geometric fields in image-aligned forms, enabling spatial supervision to jointly shape shared representations within a native multimoda</description>
+      <pubDate>2026-08-14T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development</title>
+      <link>https://arxiv.org/abs/2608.13417</link>
+      <guid isPermaLink="false">2608.13417</guid>
+      <description>Yiwei Li, Wanli Yang, Hexiang Tan — Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers:</description>
+      <pubDate>2026-08-13T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning</title>
+      <link>https://arxiv.org/abs/2608.14290</link>
+      <guid isPermaLink="false">2608.14290</guid>
+      <description>Kai Chen, Jifeng Ding, Ning Ding — We introduce Mobius-v0, an architecture that comprises a globally shared Memory (FFN) that stores knowledge vectors and multiple Reasoners (Self-Attn) that iteratively achieve compositional reasoning. Using hidden states as cache and carrier, reasoners repeatedly query memory for required knowledge-vectors, while the knowledge is transmitted back to reasoning operators. Through this knowledge-reasoning-separation architecture, Mobius achieves better knowledge compression and reasoning efficiency. Built upon Mobius-v0 architecture: 1) Our 7B model trained-from-scratch achieves similar downstream score as a 7B Transformer baseline with 62.6% of baseline&apos;s training data. 2) Our Intern-S2-Mobius, continually-pretrained from Qwen3.5-35B, achieves similar downstream score while delivering nearly</description>
+      <pubDate>2026-08-14T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Dion3: Full-Stack Orthogonal Updates</title>
+      <link>https://arxiv.org/abs/2608.11612</link>
+      <guid isPermaLink="false">2608.11612</guid>
+      <description>Noah Amsel, Jack Zhang, Kwangjun Ahn — The Muon optimizer incurs a significant overhead cost due to its cubic-time Newton-Schulz orthogonalization step. When weights are sharded, communication overhead compounds this computational cost, eroding the benefits of Muon in many settings. We present Dion3, a revision of Muon that targets this overhead at every level of the stack. Our Gram Newton-Schulz algorithm reduces the FLOP cost of orthogonalization, our CuteDSL kernels accelerate it by exploiting symmetry, and our megabatching strategy reduces communication overhead. Moreover, we propose a simple change to the update rule that cuts costs even further: selecting only a fraction of the momentum matrix&apos;s rows to orthogonalize at each step. This update rule improves on Dion (another &quot;compressed&quot; version of Muon), in both speed and </description>
+      <pubDate>2026-08-12T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Marionette: Predicting World States, Rendering Geometry, Painting Appearance</title>
+      <link>https://arxiv.org/abs/2608.14530</link>
+      <guid isPermaLink="false">2608.14530</guid>
+      <description>Zian Meng, Zhen Li, Chuanhao Li — Interactive game world models typically autoregress visual observations directly in pixel or latent space, forcing structured properties such as pose, geometry, and occlusion to be implicitly maintained by the same generative sequence. Over long horizons, errors in these latent world properties accumulate, making consistency and controllability fragile. We explicitly model the evolving world state, delegate exact geometric computation to a fixed, zero-parameter renderer, and leave the neural model to synthesize appearance. We instantiate this idea as Marionette, a world model for interactive games with articulated characters. First, a two-stage autoregressive dynamics model predicts an explicit and interpretable 276-dimensional 3D world state comprising multi-entity articulated skeletons, </description>
+      <pubDate>2026-08-14T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>Maglev: Sliding Recurrent Memory</title>
       <link>https://arxiv.org/abs/2608.02870</link>
@@ -325,41 +360,6 @@
       <guid isPermaLink="false">2608.10450</guid>
       <description>Beichen Huang, Zhenyu Liang, Bowen Zheng — Complex software systems develop over timescales that exceed the lifespan of any individual coding agent. Most agentic software systems preserve continuity through persistent sessions, memories, managers or shared context. We introduce EvoX Genesis (hereafter, Genesis), which instead makes the software project persistent while allowing local agents to remain finite-lived. Genesis represents software as a persistent recursive world: each local world is situated by an accepted version and a repository path, finite-lived agents propose local changes, recursive delegation moves work across paths, and only accepted consequences advance the persistent version history. We evaluate this organization across formation, continuation and redevelopment. Starting from a repository with no compiler imple</description>
       <pubDate>2026-08-12T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution</title>
-      <link>https://arxiv.org/abs/2608.00677</link>
-      <guid isPermaLink="false">2608.00677</guid>
-      <description>Yunhao Chen, Xin Wang, Yixu Wang — AI agents operate in persistent environments where early state changes can influence decisions far into the future. Unlike conventional language-model interactions, agent behavior is mediated through a shared state that is repeatedly modified and reused across long-horizon workflows. Current safety benchmarks often fail to capture these cumulative risks because they focus on short, static tasks. To address these limitations, we introduce OpenART, an open-ended arena for scalable agent red teaming through environment evolution. OpenART provides over 10,000 validated stateful scenarios across 50 domains, drawing from a pool of more than 500,000 tools and skills. These tasks require a median of 97 tool calls and enable unified evaluation across 75 different agent-model configurations. To syst</description>
-      <pubDate>2026-08-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models</title>
-      <link>https://arxiv.org/abs/2608.06729</link>
-      <guid isPermaLink="false">2608.06729</guid>
-      <description>Guiyu Zhao, Longteng Guo, Yanghong Mei — While Vision-Language-Action (VLA) models have advanced embodied AI, their fundamentally reactive paradigm severely limits performance in partially observable and long-horizon tasks. When restricted to a single wrist-mounted camera, they inevitably suffer from perception forgetting as objects exit the field of view, and temporal task-progress forgetting} during multi-step execution. To overcome these bottlenecks, we propose AtlasVLA, a novel framework that transitions from direct reactive manipulation to proactive reasoning through a persistent world-ego state. AtlasVLA features a dual-memory architecture: a 4D Persistent World State Memory that lifts transient 2D observations into a globally updated, voxel-hashed spatial state to resolve visual blind spots, and an Ego-Working State Memory</description>
-      <pubDate>2026-08-07T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Self-Geometry: GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models</title>
-      <link>https://arxiv.org/abs/2608.10708</link>
-      <guid isPermaLink="false">2608.10708</guid>
-      <description>Seokhyun Youn, Dahyeon Kye, Sung-Ho Bae — Recent Vision Foundation Models (VFMs) predict depth, camera pose, and pointmap in a single forward pass without per-scene optimization, achieving strong generalization. However, enforcing explicit multi-view geometric consistency, e.g., through bundle adjustment, is computationally costly and is thus not imposed during VFM pretraining, so such inconsistency can arise. To address this, implicit self-consistency derived from model outputs (e.g., pointmaps, features), though enforced at test-time in prior work, delivers inherently limited performance gain, especially on scenes where the pretrained VFM is highly inaccurate. In contrast to this implicit signal, we propose Self-Geometry, a plug-and-play test-time adaptation pipeline that directly imposes explicit multi-view geometric constraint</description>
-      <pubDate>2026-08-11T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives</title>
-      <link>https://arxiv.org/abs/2608.08160</link>
-      <guid isPermaLink="false">2608.08160</guid>
-      <description>Yingpeng Ma, Jianhao Yan, Bei Shi — The rapid advancement of Large Language Models (LLMs) is revolutionizing AI for Games by enabling open-ended and fluid interactive storytelling. However, existing research has largely overlooked the critical challenge of maintaining long-horizon logical consistency and narrative integrity against unconstrained user interventions. To address this, we formulate this challenge as Narrative Commitment Preservation (NCP), and take interactive narrative as our testbed. We introduce NCP-Bench, a benchmark of 100 narrative environments derived from movie synopses. Each environment includes a structured narrative specification (trajectory, commitments, and initial facts) that we can automatically check throughout the interaction between the player agent and the narrator agent. Experiments across st</description>
-      <pubDate>2026-08-08T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images</title>
-      <link>https://arxiv.org/abs/2608.06270</link>
-      <guid isPermaLink="false">2608.06270</guid>
-      <description>Zhiheng Wang, Bo Peng, Lai Wei — The &quot;thinking-with-images&quot; paradigm equips multimodal LLMs with active visual operations such as crop-and-zoom. However, models using these operations often achieve only marginal or negative gains over direct inference at substantially higher token cost. They may also repeatedly crop irrelevant regions and fail on questions that direct inference answers correctly. We ask whether the returned visual evidence causally affects the answer. To answer this question, we formulate visual tool-use as a causal graph that separates observation-mediated paths from action-induced shortcuts. We then audit it through interventions at the three levels: policy (comparing tool-use with direct inference), trajectory (corrupting all observations during rollout), and step (counterfactually replacing one indivi</description>
-      <pubDate>2026-08-06T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
