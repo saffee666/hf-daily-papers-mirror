@@ -5,8 +5,29 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-08-23</lastBuildDate>
+    <lastBuildDate>2026-08-24</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>InfinityEdit: Infinite Video Editing with a Lightweight Edit-Ignition Adapter</title>
+      <link>https://arxiv.org/abs/2608.20910</link>
+      <guid isPermaLink="false">2608.20910</guid>
+      <description>Yunze Tong, Mushui Liu, Canyu Zhao — With large pretrained models, existing methods have effectively improved instruction-based video editing. However, most of them rely on an in-place editing assumption. They align the edited video with the given source clip frame by frame over a fixed time span. This pattern fails for open-ended streams, e.g., restyling a live game or applying a camera move to an ongoing shot. In such cases, edits must extend to future frames as they arrive, rather than be applied to a static input clip. In this paper, we study this setting and name it infinite video editing: given a preceding segment and an edit request, a model must generate the next segment that continues the stream while applying the requested edit. This process repeats as an unbounded sequence of edit instructions arrives. This task br</description>
+      <pubDate>2026-08-21T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Beyond Correctness: Benchmarking and Aligning Response Behaviors in Hybrid-Thinking MLLMs</title>
+      <link>https://arxiv.org/abs/2608.12781</link>
+      <guid isPermaLink="false">2608.12781</guid>
+      <description>Xinming Wang, Weinong Wang, Hongming Yang — Hybrid-thinking multimodal large language models (MLLMs) allow a single model to alternate between deliberative thinking and latency-efficient non-thinking inference. Although these modes differ in reasoning budget, their delivered responses should satisfy the same user-facing standard. Correctness alone may not characterize this response quality; we therefore evaluate task accuracy and response-pattern failures as complementary outcomes. We study this gap through response-pattern alignment: whether thinking and non-thinking interfaces preserve acceptable final-response behavior. We introduce PatternEval, a failure-enriched diagnostic benchmark comprising 2,415 multimodal prompts spanning visual perception and grounding, structured image understanding, and multimodal knowledge reasoning. P</description>
+      <pubDate>2026-08-17T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Llama-Mobile: Efficient 2.7-Bit Quantization of VLMs</title>
+      <link>https://arxiv.org/abs/2608.21134</link>
+      <guid isPermaLink="false">2608.21134</guid>
+      <description>Luka Ribar, Jeevan Bhoot, Douglas Orr — Deploying vision-language models (VLMs) on mobile devices is challenging due to their significant memory and compute requirements. We present a framework for quantizing VLMs for efficient inference on resource-constrained hardware. Our approach combines a quantization pipeline that uses the model itself to generate training data and does not require access to the training setup, with a novel 2.7-bit-per-parameter format supporting efficient execution on Arm CPUs. We validate our approach by compressing the Llama 3.2 11B Vision Instruct model to 3.7 GB with 8-bit activations, preserving strong performance on a set of standard visual question answering tasks.</description>
+      <pubDate>2026-08-21T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills</title>
       <link>https://arxiv.org/abs/2607.21596</link>
@@ -335,27 +356,6 @@
       <link>https://arxiv.org/abs/2608.18171</link>
       <guid isPermaLink="false">2608.18171</guid>
       <description>Andrei Cristian Popescu, Haitz Sáez de Ocáriz Borde, Pietro Liò — Looped language models have shown promising results on reasoning benchmarks, yet their potential for agentic tool use remains largely unexplored. We study this question in compositional tool-calling settings, where models must coordinate multiple API calls, maintain intermediate state, and preserve dependencies across tool interactions. We evaluate native and retrofitted looped language models on API-Bank, BFCL, and NESTful, comparing looped and non-looped models trained under matched supervised fine-tuning recipes and varying recurrent depth at inference time. In controlled experiments, recurrent computation generally benefits compositional and dependency-aware tool use, while providing smaller and more model-dependent gains on isolated API invocation. Accuracy on multi-step tool use gene</description>
-      <pubDate>2026-08-17T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>FM-Bench: A Benchmark for Long-Horizon Management with Competing Agents</title>
-      <link>https://arxiv.org/abs/2608.18423</link>
-      <guid isPermaLink="false">2608.18423</guid>
-      <description>Tianyou Wang, Chongyang Gao, Kezhen Chen — Language model agents now execute bounded tasks reliably. Whether they can sustain effective decision-making over long horizons, where actions have cumulative consequences and the environment responds to their choices, remains largely unmeasured. FM-Bench (Football Management Benchmark) measures this. An LLM agent runs a football club for 20 in-game years through 26 tools and roughly 340 to 400 decision stops. It drafts a squad on the same budget as every rival, trades players, negotiates contracts, invests in facilities and youth, sets lineups, and answers to a board that can fire it, while a deterministic engine accumulates every year into one final score with no LLM judge or human rater. The solo track plays each of 15 frontier models against a frozen scripted world, and the Arena place</description>
-      <pubDate>2026-08-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution</title>
-      <link>https://arxiv.org/abs/2608.18933</link>
-      <guid isPermaLink="false">2608.18933</guid>
-      <description>Silin Chen, Han Li, Xiaodong Gu — Large language model (LLM) based agents have demonstrated remarkable proficiency in automated software issue resolution, yet they often struggle to resolve issues in a specific repository because they lack project-specific knowledge. Existing self-evolving approaches acquire such knowledge from repository history or online repair trajectories, but they either depend on available historical issue-resolution signals or incur substantial per-issue test-time exploration cost. In this paper, we propose SkillForge, a self-distillation framework that proactively acquires project-specific knowledge from the repository itself. Instead of waiting for real issues to expose project-specific knowledge gaps, SkillForge synthesizes project-specific issues by re-implementing test-covered core functionalit</description>
-      <pubDate>2026-08-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>The Problem Is the Problem: Towards Scalable Mathematical Discovery</title>
-      <link>https://arxiv.org/abs/2608.16977</link>
-      <guid isPermaLink="false">2608.16977</guid>
-      <description>Zeyu Zheng, Shengtong Zhang, Jeremy Avigad — AI systems are increasingly capable of contributing to mathematical research. In research practice, frontier-model reasoning is a limited resource, and expert mathematical review is even more sharply constrained. Allocating these scarce resources well is therefore central to making AI-assisted mathematical discovery efficient. In most current AI-for-math workflows, human effort is concentrated at the beginning and end, in selecting suitable research problems and later reviewing the resulting artifacts. These two stages are becoming bottlenecks for research-level mathematics. We address them by proposing a new human-AI discovery paradigm. The human input is no longer a single problem selected in advance, but a research direction in which the experts have interest and expertise. The system t</description>
       <pubDate>2026-08-17T00:00:00.000Z</pubDate>
     </item>
   </channel>
