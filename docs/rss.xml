@@ -5,8 +5,43 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-08-28</lastBuildDate>
+    <lastBuildDate>2026-08-30</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Luce: Relightable Gaussians for 3D Asset Generation</title>
+      <link>https://arxiv.org/abs/2608.23943</link>
+      <guid isPermaLink="false">2608.23943</guid>
+      <description>Mayank Singh, Michele Stoppa, Alvise Memo — High-fidelity image-to-3D generation requires a 3D representation that captures both geometry and appearance. To support relighting and integration into standard rendering pipelines, the representation should include physically based rendering (PBR) modalities such as albedo, metallic-roughness, and surface normals. We propose Luce, a 3D representation that unifies geometry and PBR materials within a voxelized multimodal Gaussian cloud, using dedicated Gaussian primitives for each modality. A variational autoencoder compresses this representation into a unified material-aware latent space. A rectified-flow transformer generates this latent from a single image, conditioned on multi-layer features from a pretrained image encoder that preserve both semantic context and fine spatial detail. Th</description>
+      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes</title>
+      <link>https://arxiv.org/abs/2608.27455</link>
+      <guid isPermaLink="false">2608.27455</guid>
+      <description>Yufan Wu, Yinghui He, Zhengyi Hu — Recent advances in inference-time scaling have significantly improved the reasoning performance of large language models (LLMs). However, these methods typically rely on repeated generation or external verification. To address this limitation, we introduce CritICL, a novel inference-time framework that improves reasoning while maintaining high efficiency. Our key insight is that LLM failure modes exhibit structured patterns across model scales within the same family. Instead of treating failures as undesirable outputs, CritICL leverages them as a source of guidance. Specifically, we utilize failure modes derived from weaker models and incorporate them into inference through critique-based in-context examples. We propose two variants: CritICL-dynamic, which adaptively predicts input-specifi</description>
+      <pubDate>2026-08-27T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>TacForcing: Streaming Action Generation with Execution-Time Tactile Feedback</title>
+      <link>https://arxiv.org/abs/2608.25798</link>
+      <guid isPermaLink="false">2608.25798</guid>
+      <description>Jianbo Zhou, Boyuan Zhao, Yuzheng Zhang — Contact-rich manipulation requires adapting to contact states that can evolve substantially within an action horizon. However, chunk-based vision-language-action models predict complete action chunks from observations collected before execution, leaving tactile conditioning stale during execution. Existing tactile-reactive approaches typically rely on separate high-frequency controllers, which increase both architectural and training complexity. In this paper, we introduce TacForcing, a streaming action-generation framework that effectively incorporates execution-time tactile feedback. Instead of employing a separate reactive controller, TacForcing replaces the standard action expert with a streaming action expert to generate actions conditioned on the evolving tactile observations acquire</description>
+      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>What Does an Evaluation License? A Commit-Bound Census of Claim-Relative Inference in Inspect Evals</title>
+      <link>https://arxiv.org/abs/2608.19269</link>
+      <guid isPermaLink="false">2608.19269</guid>
+      <description>Xi Qin — Evaluation artifacts specify a forward computation: a task, scorer, and reported metric. They do not necessarily license the claim attached to that metric because the historical evidence and alternative semantics needed to replay it may be unbound. We formalize this missing claim-replay layer through a frozen substrate D, a grounded family F, a claim query q, and the resulting identified set. We then census all 124 mechanically eligible Inspect Evals units at a pinned commit. Every unit receives a terminal disposition; 110 stop before deterministic inference because required historical evidence or semantic grounding is unavailable. Where execution closes, exact values, winners, complete orders, and pairwise relations separate by claim resolution and by primary versus review family. The aud</description>
+      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>EditaLive! Unified Character Video Editing for Live Streaming</title>
+      <link>https://arxiv.org/abs/2608.27123</link>
+      <guid isPermaLink="false">2608.27123</guid>
+      <description>Zhiyuan Li, Chi-Man Pun, Peng-Tao Jiang — Conventional video editing primarily focuses on scene-level content, whereas live streaming places greater emphasis on the human subject. However, directly applying existing video-editing methods to human-centric live streaming remains challenging, as they may introduce facial-expression inconsistencies and typically depend on multiple offline inference steps, making them unsuitable for real-time interaction. We propose EditaLive, a novel framework for real-time streaming character video editing. In detail, we start from a pretrained image animation model (Wan-Animate), which naturally decouples appearance from motion, and repurpose it as the base model for instruction-based human-centric video editing by reference frame editing and video reconstruction via the collected CharEdit-50K datas</description>
+      <pubDate>2026-08-27T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents</title>
       <link>https://arxiv.org/abs/2608.26530</link>
@@ -322,41 +357,6 @@
       <guid isPermaLink="false">2608.24909</guid>
       <description>Wentao Jiang, Youchen Xie, Haidi Fan — Existing co-speech gesture generation methods are predominantly studied in offline settings, where gestures are synthesized from complete speech segments. However, interactive digital humans in real-world scenarios are required to generate speech-synchronous gestures online, using only currently available response audio under strict latency constraints. As a result, prior methods are unsuitable for real-time interaction, as they either rely on future speech information or incur substantial inference delay. In this paper, we formulate online co-speech gesture generation for interactive digital humans and propose a real-time interactive framework that couples a streaming speech response module with an online gesture generation module. Specifically, the gesture generator is designed as a caus</description>
       <pubDate>2026-07-22T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>D^3-MOPD: Adaptive Dynamic Domain ScheDuling for Efficient Multi-Teacher Distillation</title>
-      <link>https://arxiv.org/abs/2608.24987</link>
-      <guid isPermaLink="false">2608.24987</guid>
-      <description>Zechen Sun, Zhiwei Zhang, Fei Zhao — Multi-teacher on-policy distillation (MOPD) distills several domain-expert teachers into a single student by minimizing per-domain reverse-KL divergence on the student&apos;s own rollouts. Existing approaches typically fix the per-domain data mixture before training, overlooking the fact that different domains converge at substantially different rates: some plateau early while others continue to improve throughout the training budget. A fixed mixture therefore wastes compute on fast-converging domains and undertrains slower-converging ones. To address this, we propose D^3-MOPD (Dynamic Domain ScheDuling for MOPD), a zero-overhead scheduler that repurposes the per-domain reverse-KL signal already produced during training to adapt the domain mixture online. Running asynchronously outside the trai</description>
-      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>A Programming Paradigm for Spatiotemporal Composability</title>
-      <link>https://arxiv.org/abs/2608.25512</link>
-      <guid isPermaLink="false">2608.25512</guid>
-      <description>Yifan Shi, Wei Zhang, Tianyi Cui — Modern software -- from plugin systems to self-evolving agent harnesses -- increasingly requires dynamic composition, yet its formal foundations remain underdeveloped. We identify two orthogonal dimensions of the problem: temporal composability, the ability to completely revert a component&apos;s side effects upon removal, and spatial composability, the ability to declare and reactively manage inter-component dependencies. We address the two dimensions by lifting classical effect and coeffect concepts to runtime mechanisms. In particular, we formalize revertible effects, in which every context transformation carries an inverse that the runtime holds, establishing temporal composability local to one component. We formalize reactive coeffects, in which every context change is classified against a</description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>FrontierChallenge: Evaluating Scientific Workflow Completion</title>
-      <link>https://arxiv.org/abs/2608.24979</link>
-      <guid isPermaLink="false">2608.24979</guid>
-      <description>Liangcai Su, Zhaopeng Feng, Zhuo Chen — Scientific agents increasingly analyze data, execute code, and produce research artifacts, yet most benchmarks emphasize final answers, isolated programs, or a single domain. We introduce FrontierChallenge, a cross-domain benchmark comprising 300 end-to-end scientific workflows. In this paper, we release and evaluate 97 of these tasks, spanning quantum chemistry, molecular dynamics, materials characterization, analytical chemistry, life science, and electrochemistry/environment. Each task provides fixed inputs and specifies a bundle of required scientific deliverables. We evaluate twelve frontier models with three agent scaffolds. Pass Rate measures the fraction of tasks satisfying the full-completion criterion, while Avg. Score captures partial progress. Each of the best-performing config</description>
-      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Agent-G^2: Gaussian Guidance for Agentic Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2608.23318</link>
-      <guid isPermaLink="false">2608.23318</guid>
-      <description>Zixuan Wang, Yanrui Miao, Zhengxi Lu — Hint-based reinforcement learning addresses reward sparsity in long-horizon agentic tasks by retaining a prefix of an expert trajectory before each rollout, letting the policy explore from a state closer to success. Its effectiveness hinges on the guidance depth: how much of the trajectory to keep. Existing methods treat this depth as a deterministic scalar. Scheduled approaches share one value across samples and ignore per-task heterogeneity; per-sample probing estimates it separately at the cost of extra rollouts. We find that useful guidance occupies a band of depths whose informativeness profile is approximately Gaussian around the band center, rather than concentrating at a single optimal point. We propose Agent-G^2, a Gaussian guidance framework that draws the depth per task from a G</description>
-      <pubDate>2026-08-24T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Code World Model: Coding Agent as World Brain</title>
-      <link>https://arxiv.org/abs/2608.25927</link>
-      <guid isPermaLink="false">2608.25927</guid>
-      <description>Yiwen Chen, Guosheng Lin, Chi Zhang — World models aim to simulate how complex environments evolve under actions and events, yet existing video-based world models primarily learn dynamics from visual observations, which reveal outcomes rather than the underlying knowledge, rules, and mechanisms governing world evolution. This makes it difficult to maintain persistent consequences and support coherent, open-ended evolution. We introduce Code World Model, a framework that separates world evolution from visual realization by combining the reasoning and coding capabilities of language models with the generative priors of video models. A coding agent serves as the world brain, reasoning about events and their consequences and generating executable code to maintain persistent world state and perform rule-consistent evolution. To con</description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
