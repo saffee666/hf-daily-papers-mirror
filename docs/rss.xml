@@ -5,8 +5,106 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-08-30</lastBuildDate>
+    <lastBuildDate>2026-08-31</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Paint What You See: Benchmarking Dexterous Visual Tool Use in Multimodal Agents</title>
+      <link>https://arxiv.org/abs/2608.25417</link>
+      <guid isPermaLink="false">2608.25417</guid>
+      <description>Shudong Liu, Dongyang Chen, Enci Zhang — Evaluation is shifting from static QA toward agentic settings where models act through external tools. We identify a critical yet underexplored capability within this space - dexterous visual tool use: fine-grained, closed-loop parameterized visual action in which models infer tool parameters from visual evidence, and those parameters directly govern the final result. Existing benchmarks cover web navigation, GUI operation, and software engineering, but rarely target this coupling between visual evidence and execution precision. We propose EASEL, a benchmark evaluating a controlled instance of dexterous visual tool use that adopts reference-guided visual reconstruction as its primary proxy task: the agent incrementally paints a canvas to match a reference image. EASEL additionally includes</description>
+      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>StarHarness: Evolving Harnesses with Stratified Search for Enterprise Environments</title>
+      <link>https://arxiv.org/abs/2608.24804</link>
+      <guid isPermaLink="false">2608.24804</guid>
+      <description>Esakkivel Esakkiraja, Denis Akhiyarov, Vikas Yadav — We present StarHarness, a framework for evolving environment-specific agent harnesses while keeping model weights fixed. The evolved harness can include prompt and task framing, tool interfaces, skills, MCP-backed providers, subagent structure, and agent-loop configuration. StarHarness constructs a compact evolution pool by stratifying tasks according to baseline failure behavior, separates proposer-visible search tasks from proposer-hidden selection tasks, and reserves held-out tasks for evaluating generalization. Across ITBench SRE, EnterpriseOps-Gym ITSM, and AutomationBench Finance, harness evolution improves full-benchmark performance by 20-35 percentage points over the default harness after 4-12 accepted changes per environment. These gains persist on tasks excluded from evolution an</description>
+      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>J-Zero: Unified Challenger--Solver--Judge Co-Evolution from Zero Data</title>
+      <link>https://arxiv.org/abs/2608.26582</link>
+      <guid isPermaLink="false">2608.26582</guid>
+      <description>Gyouk Chu, Myeongho Jeon, Eunho Yang — Self-evolving language models have recently emerged as a promising path toward superintelligence, with the advantage of reducing the cost of human supervision. While considerable progress has been made in verifiable domains, self-evolution in unverifiable domains remains substantially less explored. We propose Judge co-adaptation from Zero data (J-Zero), a unified Challenger--Solver--Judge co-evolution framework that supports self-improvement across both domains. The Challenger and Solver co-evolve through an adversarial interaction: the Challenger generates increasingly difficult tasks, while the Solver learns to produce higher-quality responses to them. In parallel, the Judge co-adapts using preference pairs whose ordering is known in advance from how each response was produced, i.e., th</description>
+      <pubDate>2026-08-27T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction</title>
+      <link>https://arxiv.org/abs/2608.27529</link>
+      <guid isPermaLink="false">2608.27529</guid>
+      <description>Jiarong Han, Jincheng Xiong, Yuzhou Liu — Streaming 3D reconstruction from extremely long videos requires estimating camera motion and scene geometry online under bounded memory and computation. Early streaming models achieve causal, bounded-cost inference using finite context buffers or compact recurrent states, yet their estimates often deteriorate as sequences grow. Recent methods improve long-horizon stability by coupling short-range context with persistent or multi-level long-range memory. We pursue a different route: we keep the learned temporal state strictly local and formulate predictions whose targets remain independent of sequence length. We present ABot-Recon, a simple streaming model that caches KV features from only the preceding 11 frames. It predicts a point map in the current camera coordinate system together with</description>
+      <pubDate>2026-08-27T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing</title>
+      <link>https://arxiv.org/abs/2608.24777</link>
+      <guid isPermaLink="false">2608.24777</guid>
+      <description>Zhijie Zheng, Yu Li, Chen Qian — LLM-based agents can interact with external environments through tool invocation, but this capability also introduces security risks such as file modification, information leakage, and unauthorized actions. Existing guardrails often evaluate completed trajectories, leaving pre-execution monitoring of step-level actions underexplored. We propose StepGuard, a step-level guard model that can audit completed agent trajectories and check tool actions before they are executed. To train StepGuard, we introduce StepGen, an automatic data engine that generates safe and unsafe trajectories with the same context but different actions at the risky step. To further reduce over-defense and under-defense, we propose Balance-GRPO, which dynamically balances learning between safe and unsafe actions based o</description>
+      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Rubric-to-Code Credit Assignment for Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2608.27906</link>
+      <guid isPermaLink="false">2608.27906</guid>
+      <description>Rui Jin, Jikai Chen, Yihan Chen — Interactive web application generation requires models to produce usable HTML, CSS, and JavaScript applications from natural language requests. Unlike conventional code generation, application quality depends on multiple user-facing functional requirements, each often tied to localized code regions such as event handlers, state updates, DOM fragments, or CSS selectors. Standard GRPO collapses these structured outcomes into a single sequence-level reward and applies the resulting advantage uniformly to all tokens, weakening credit assignment. We propose Rubric-to-Code Credit Assignment (RCCA), a reinforcement learning framework that converts rubric-level functional feedback into localized optimization signals over generated code. RCCA builds training tasks around explicit functional rubrics</description>
+      <pubDate>2026-08-28T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Video Generative Models as Geometry Learner</title>
+      <link>https://arxiv.org/abs/2608.28549</link>
+      <guid isPermaLink="false">2608.28549</guid>
+      <description>Haosen Yang, Jifei Song, Zhensong Zhang — Recent generative approaches to geometry estimation adapt pretrained image diffusion models and treat the task as image-conditioned generation. Leveraging off-the-shelf image diffusion models, they either (i) train task-specific geometry models (for depth and surface normal estimation) independently, losing the opportunity of exploring the intrinsic correlation of these geometric targets, or (ii) jointly fine-tune modified image diffusion backbones (e.g., altered self-attention), which typically demands substantial labeled data. To overcome these limitations in a principled fashion, we repurpose pretrained video generative models as a unified and data-efficient framework for geometry estimation, formulated innovatively as a next-frames prediction task. Our method, GeoNeXt, inherits natural</description>
+      <pubDate>2026-08-28T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>LMSM: LLM Security Framework Inspired by Linux Security Modules</title>
+      <link>https://arxiv.org/abs/2608.25697</link>
+      <guid isPermaLink="false">2608.25697</guid>
+      <description>XiuYu Zhang, Bonan Ruan, Junfeng Fang — Large language models (LLMs) are increasingly deployed with layered defenses, yet malicious prompts can still bypass them. Interpretability methods can expose model-internal signals along the generation path that could inform enforcement, but these signals are not security controls by themselves. Deployments that adapt them for safety typically couple each signal to its own calibration, policy logic, and intervention code, so each new artifact creates integration work instead of strengthening a shared defense. We present Language Model Security Modules (LMSM), a security framework that adapts the separation behind Linux Security Modules (LSM) to LLM serving. In LMSM, a selected security backend exposes calibrated evidence, a versioned policy evaluates active rules over trusted per-request </description>
+      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Training, learning and inference: unified dynamics of neural systems</title>
+      <link>https://arxiv.org/abs/2608.20965</link>
+      <guid isPermaLink="false">2608.20965</guid>
+      <description>Mian Wang — We define an atomic generation fact f=(u,tau,omega,z;rho), recording the origin, realized transformation, concrete occurrence, generated result and relation role. Compiled into a Generation-Fact Graph (GFG), these facts provide an AI-native, compilable scientific fact substrate preserving generation histories. We establish a GFG-based recursive scientific process in which analysis, intervention, replay and validation form facts for later cycles. Using nanoGPT, we establish unified training-learning dynamics. Training is the evolution of a parameter-optimizer system with state and memory: each actual training action enters the receiving state and produces a finite-amplitude nonlinear functional response conditioned by that state and target-specific update geometry. Learning is the persisten</description>
+      <pubDate>2026-08-21T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models</title>
+      <link>https://arxiv.org/abs/2608.27550</link>
+      <guid isPermaLink="false">2608.27550</guid>
+      <description>Senqiao Yang, Chengyao Wang, Yuxin Chen — Scaling robot data is crucial for building generalist Vision-Language-Action (VLA) models, yet robot trajectories are harder to scale than web-scale image-text data because embodied collection is costly and sparsely covers the physical world. This makes representation quality a central bottleneck: under a fixed robot-data budget, continued pre-training must turn limited trajectories into transferable visual-action knowledge rather than merely fit actions. We propose VLAct, a VLA-oriented VLM backbone trained on broad, heterogeneous, multi-embodiment robot data before task-specific fine-tuning. VLAct preserves the broad VLM prior and encourages shared action semantics across embodiments through VLM-prior preservation, multi-head continuous action co-supervision, and a partially unified cros</description>
+      <pubDate>2026-08-27T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control</title>
+      <link>https://arxiv.org/abs/2608.24115</link>
+      <guid isPermaLink="false">2608.24115</guid>
+      <description>Suhwan Choi, Jaeyoon Jung, Sungkyung Kim — Multimodal large language models (MLLMs) can integrate long visual histories, reason under partial observability, and infer behavior from a few examples. Yet vision-language-action (VLA) models generally inherit pretrained representations without using this contextual capacity as episode memory. Memory-dependent policies address this gap through purpose-built history mechanisms. PonderPounce instead reuses an MLLM&apos;s native causal context as robot memory. Ponder, a System2 MLLM, accumulates episode observations, demonstrations, and prior cognition in its native causal context and can generate subgoal text and demonstration reasoning for internal use. Pounce, a System1 VLA, receives the current observation, instruction, and proprioception directly; through the Ponder--Pounce interface, it as</description>
+      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning</title>
+      <link>https://arxiv.org/abs/2608.27549</link>
+      <guid isPermaLink="false">2608.27549</guid>
+      <description>Hanyang Wang, Yimo Cai, Weiliang Chen — Physical understanding and reasoning depend on forming compact and generalizable representations of the world. While modern vision-language models can recognize and explain diverse physical events, they often lack explicit representations of the underlying mechanisms-such as object states, physical parameters, and governing dynamics-needed for reliably reasoning how the world evolves and responds to interventions. In this work, we introduce Code-as-World, a paradigm that represents physical worlds through executable world representations. By expressing physical composition, dynamic evolution, and visual appearance as executable code, Code-as-World provides a compact, quantitatively grounded, and controllable abstraction of the physical world. To construct such representations from multimod</description>
+      <pubDate>2026-08-27T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Blind Men and the Elephant: Probing the Epistemic Myopia of LLMs under Long-Tail Divergent Knowledge</title>
+      <link>https://arxiv.org/abs/2608.28478</link>
+      <guid isPermaLink="false">2608.28478</guid>
+      <description>Zhuoshi Pan, Junru Lu, Yan Qian — Factual question answering (QA) typically assumes a single canonical answer, obscuring whether large language models (LLMs) retain divergent accounts of long-tail facts. To address this gap, we introduce ElephantBench, a closed-book knowledge probe comprising 1,094 questions generated through an auditable graph-based pipeline. The pipeline retrieves related documents from a low-exposure web corpus, identifies naturally occurring disagreements, and converts them into multi-account QA records. Each answer is verified against the originating documents and authoritative public web sources and is then reviewed by human annotators. Across 32 models, even the strongest model recovers both accounts on only 52.4% of questions, while on nearly all remaining questions it recalls one account but omits</description>
+      <pubDate>2026-08-28T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL</title>
+      <link>https://arxiv.org/abs/2608.28476</link>
+      <guid isPermaLink="false">2608.28476</guid>
+      <description>Zhuoshi Pan, Qizhi Pei, Junru Lu — Long-horizon agentic tasks require large language models (LLMs) to iteratively retrieve, integrate, and maintain dispersed information across multi-turn interactions, but preserving all interaction histories leads to a continuously growing working context. Recent proactive context management methods allow models to edit their own working context with specialized tools, yet they still face three key limitations: (1) a limited toolset restricted to search, deletion, and summarization, with no support for global planning, long-term memory, and adaptive compression; (2) inefficient exploration that treats context management actions uniformly despite their heterogeneous impacts on final outcomes; and (3) coarse-grained credit assignment that assigns the final trajectory-level reward to all inte</description>
+      <pubDate>2026-08-28T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>Luce: Relightable Gaussians for 3D Asset Generation</title>
       <link>https://arxiv.org/abs/2608.23943</link>
@@ -258,105 +356,6 @@
       <guid isPermaLink="false">2608.25529</guid>
       <description>Hongbo Liu, Peixian Chen, Sihan Liu — Multimodal Large Language Models (MLLMs) have shown strong performance in video understanding. However, their ability to follow instructions in this domain remains under-explored. Real-world video understanding requires models not only to interpret video content correctly, but also to satisfy diverse user-specified constraints. Existing benchmarks focus primarily on task accuracy rather than instruction adherence, leaving this capability insufficiently evaluated. To address this gap, we introduce Video-IFBench, a comprehensive benchmark for evaluating instruction following in video understanding, where models must satisfy diverse user-specified constraints, including those grounded in visual and audio content. We develop an instruction taxonomy with four templates, including single-task, m</description>
       <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>FIRM-Video: Check Before You Score for Reliable Text-to-Video Reward Modeling</title>
-      <link>https://arxiv.org/abs/2608.21839</link>
-      <guid isPermaLink="false">2608.21839</guid>
-      <description>Peiyuan Zhang, Xiangyu Zhao, Hongbo Liu — Reliable reward models are essential for text-to-video evaluation and alignment. However, the trade-off between evaluation accuracy and inference efficiency places high demands on the quality of training supervision. Existing approaches often rely on holistic judges with fixed rubrics or open-ended reasoning, leading to incomplete inspection, unfaithful justification, and entangled attribution. We introduce FIRM-Video, a unified checklist-driven data construction framework based on a check-before-score principle: construct dimension-specific checklists, verify each criterion against temporal visual evidence, and aggregate only verified decisions. For Instruction Following, FIRM-Video decomposes prompts into weighted atomic requirements; for World Coherence, it constructs prompt-calibrated,</description>
-      <pubDate>2026-08-22T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Rubrics as Visual-Repair Context for Self-Evolving UI-to-Code Generation</title>
-      <link>https://arxiv.org/abs/2608.24138</link>
-      <guid isPermaLink="false">2608.24138</guid>
-      <description>Tianyi Xiong, Zhengyuan Yang, Xiaofei Wang — Large vision-language models have shown strong progress in UI-to-code generation, yet their test-time self-evolution remains unstable. We first identify a fundamental obstacle, termed visual repair coupling: a local code edit may propagate through layout, style, and component dependencies, correcting one visual mismatch while degrading regions that were previously faithful. To address this issue, we present RubSE, a Rubric-guided Self-Evolution framework that uses rubrics to represent visual feedback as a structured visual-repair context. At each refinement round, RubSE generates typed candidate rubrics, selects one prioritized repair target, and stores previously selected rubrics as history, thereby steering each revision toward a well-scoped visual repair while discouraging repeated or o</description>
-      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Stream4D: 4D-Consistency for Streaming Autoregressive Diffusion Video Models</title>
-      <link>https://arxiv.org/abs/2608.19556</link>
-      <guid isPermaLink="false">2608.19556</guid>
-      <description>Yuanhao Ban, Jiaqi Feng, Hengguang Zhou — Streaming autoregressive diffusion models enable real-time, long-horizon video generation, but their training objectives optimize local frame prediction rather than the geometry and dynamics of a coherent world: long rollouts accumulate geometric drift and degrade into static or unnatural motion. Recent bidirectional approaches address this problem using rewards signals built upon 3D Gaussian-Splatting reconstruction. However, a single rigid 3d reconstruction cannot model a dynamic scene, so this critic penalizes genuine object motion as reconstruction error and is maximized by freezing the video. This shortcut is especially detrimental in the AR setting, where each chunk can propagate an already-static configuration. In this work, we propose Stream4D, which replaces the static critic with</description>
-      <pubDate>2026-08-20T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction</title>
-      <link>https://arxiv.org/abs/2608.26005</link>
-      <guid isPermaLink="false">2608.26005</guid>
-      <description>Zhifei Xie, Jiaqi Lang, Ze An — Conversational systems, such as duplex speech language models (SLMs), still lack a streaming, accurate, and empathetic memory system as their soul. We introduce VoiceMem, a simple memory architecture with a parallel informational left brain, an emotional right brain, and streaming memory I/O mechanisms. We further build a complete pipeline for memory-aware SLM training, long-horizon evaluation, and decoupled deployment with interchangeable memory backends. Experiments and real-world deployment show three advantages: i) Accuracy: under top-5 retrieval, the left brain outperforms classical systems such as Mem0 at top-200 by nearly 30 points; ii) Emotional &amp; Personal: the right brain, with short- and long-horizon affective attribution and dual-node persona modeling, achieves state-of-the-art </description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Gated Recurrent Transformers: Expressive Depth through Recurrent Modulation</title>
-      <link>https://arxiv.org/abs/2608.15062</link>
-      <guid isPermaLink="false">2608.15062</guid>
-      <description>Amr Hegazy, Amr Alanwar, Mostafa Elhoushi — Scaling transformer language models creates an inherent tension between expressivity and memory efficiency. While unique weights across layers preserve functional specialization---from input-grounding to abstract refinement---they incur a substantial memory footprint. Conversely, standard depth-sharing enforces uniform transformations that collapse representational diversity and degrade modeling quality. We introduce Gated Recurrent Transformer, a recurrent depth transformer where fixed-depth prelude and coda blocks bracket a single shared core iterated R times. Inspired by gated recurrent neural networks, we employ a lightweight projection and an elementwise update gate---conditioned on the hidden state, the fixed prelude output, and noise resampled at every step---to modulate the recurre</description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation</title>
-      <link>https://arxiv.org/abs/2608.24479</link>
-      <guid isPermaLink="false">2608.24479</guid>
-      <description>Zihao Wu, Hongyao Tang, Yi Ma — Massively parallel simulation changes the data regime in which off-policy reinforcement learning (RL) is trained, challenging stabilizers designed for data-limited replay. Through controlled experiments across eight benchmark families, we show that these stabilizers are data-regime-dependent: parameter normalization helps with narrow replay coverage but restricts value fitting when data are abundant, while clipped double-Q can be relaxed in high-throughput manipulation. Age-biased replay weighting improves learning efficiency across regimes, especially with limited network capacity.
-  Based on these findings, we propose WarpSAC, a regime-aware family of off-policy RL algorithms. WarpSAC uses Sample Weight Decay for efficient exploitation and provides two variants: WarpSAC-L (Norm ON, clipp</description>
-      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>MA-VLA: Multi-Arm Vision-Language-Action Model for Collaboration and Compositional Generalization</title>
-      <link>https://arxiv.org/abs/2608.25864</link>
-      <guid isPermaLink="false">2608.25864</guid>
-      <description>Zaibin Zhang, Junlan Xiao, Zhongbo Zhang — Multi-arm collaboration is becoming a core capability in embodied manipulation. Recent vision-language-action (VLA) models integrate perception, language, and control, but most represent language as a single global instruction and do not provide an explicit mechanism for assigning and composing arm-specific behaviors. This design limits transfer to collaboration patterns that differ from those observed during training. We present MA-VLA, a unified framework for multi-arm collaboration via atomic action assignment. MA-VLA decomposes cooperative behavior into mid-level atomic prompts and allocates them to individual arms, enabling explicit subgoal specification and compositional reuse across tasks. To reduce reliance on fixed execution roles, we introduce Arm Shuffle, a training-time permuta</description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>StreamPI: Streaming Multimodal Temporal Modeling for Vision-Language-Action Models</title>
-      <link>https://arxiv.org/abs/2608.26067</link>
-      <guid isPermaLink="false">2608.26067</guid>
-      <description>Zhe Liu, Jinghua Hou, Yuxiang Lu — Vision-Language-Action (VLA) models have demonstrated effectiveness in robot manipulation, yet state-of-the-art models such as pi0.5 operate under a single-frame paradigm, limiting their ability to retain past observations and develop precise spatial perception. In this paper, we propose StreamPI, a streaming multimodal temporal modeling framework that equips single-frame VLA with temporal reasoning capability without introducing any additional parameters. One core design is instruction-anchored temporal modeling. It treats each (visual observation, language instruction) pair as an atomic temporal unit: bidirectional attention within each pair enables cross-modal fusion, while causal attention across pairs preserves autoregressive streaming inference. This ensures the language instruction </description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Open-MOPD: Diagnosing and Fixing Capability Imbalance in Multi-Teacher On-Policy Distillation</title>
-      <link>https://arxiv.org/abs/2608.19098</link>
-      <guid isPermaLink="false">2608.19098</guid>
-      <description>Huan-ang Gao, Haohan Chi, Yong Yan — Multi-teacher on-policy distillation (M-OPD) has emerged as a promising paradigm for consolidating domain-specialized reinforcement learning (RL) experts into a single generalist student via dense, token-level reward supervision. Despite its practical success, the optimization dynamics governing multi-teacher capability integration remain poorly understood, and open, rigorously reproducible recipes are conspicuously lacking. In this work, we establish a controlled M-OPD benchmark on SmolLM3-3B-Base with oracle routing, isolating capability integration from routing ambiguity. Our investigation reveals a pronounced capability integration gap: standard M-OPD captures only 35.6% of the available headroom relative to a domain-routed oracle ensemble, with concise tasks such as instruction follow</description>
-      <pubDate>2026-08-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>V-Rubrics: Visual Faithfulness via Rubric-Based Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2608.25580</link>
-      <guid isPermaLink="false">2608.25580</guid>
-      <description>Shulin Tian, Minglun Li, Yuhao Dong — Vision-language models can produce fluent answers that are insufficiently grounded in the visual evidence: a single unsupported object, chart value, or intermediate inference can undermine an otherwise plausible response. We argue that this is a credit-assignment failure in multimodal post-training. Scalar outcome rewards indicate whether an answer is acceptable, but do not identify which visual facts are grounded, which reasoning steps are valid, or which instruction constraints are missed. We introduce Visual Rubrics-Based Reinforcement Learning, which decomposes reference responses into atomic propositions and scores generated answers along Visual Faithfulness (VF), Reasoning Consistency (RC), and Instruction Following (IF). The resulting rubric items provide structured partial credit a</description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution</title>
-      <link>https://arxiv.org/abs/2608.25593</link>
-      <guid isPermaLink="false">2608.25593</guid>
-      <description>Guibin Zhang, Leo Lu, Fangzhou Xie — Agent capability is not determined by the model alone. The agent harness, encompassing memory management, planning strategy, action protocol, and tool/skill orchestration, can dominate the contribution of the underlying foundation model. Yet harness design remains manual, task-specific, and fundamentally unscalable. We present JIT-Agent, a harness intelligence model trained to synthesize task-adaptive agent harnesses on the fly for arbitrary off-the-shelf agentic LLMs. We formalize the agent harness as a composable, machine-generatable artifact governed by a fixed four-module protocol, and train JIT-Agent to customize harnesses for a given task at hand, repair harnesses for stable and reliable execution, and self-evolve by distilling performance signals from an expanding archive of prior h</description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>VGI-Bench: Probing Visual Intelligence in Video Generation Models</title>
-      <link>https://arxiv.org/abs/2608.19583</link>
-      <guid isPermaLink="false">2608.19583</guid>
-      <description>Xuan He, Cong Wei, Yuhao Cheng — Recent studies suggest that video generation models can exhibit certain forms of zero-shot visual reasoning through generated frames. Yet reliable evaluation remains challenging: benchmarks should adopt inputs aligned with the visual priors of current video models, require valid evolving processes rather than only plausible final states, and calibrate task difficulty to remain challenging yet partly feasible. To this end, we introduce VGI-bench, containing 27 tasks and 810 instances, organized by a two-level taxonomy of task domains and skill tags for fine-grained evaluation of visual reasoning capabilities of video generation models. Our evaluations show that current generative systems can solve a subset of visually grounded reasoning tasks, but remain far from reliable, with even the str</description>
-      <pubDate>2026-08-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Are Android GUI Agents Robust Against Runtime Anomalies? AnTrap: Evaluating Agents in Dynamic Adversarial Environments</title>
-      <link>https://arxiv.org/abs/2608.24099</link>
-      <guid isPermaLink="false">2608.24099</guid>
-      <description>Guo Gan, Yilun Zhao, Cong Chen — GUI agents often encounter dynamic anomalies when deployed on Android devices, from unexpected pop-ups to action misuse, yet existing benchmarks lack systematic evaluation of agent robustness against runtime anomalies. We introduce AnTrap, a comprehensive benchmark that injects dynamic perturbations into agent execution trajectories. We propose a taxonomy organizing real-world anomalies into four layers (State, Thinking, Action and Round) with ten fine-grained subcategories, and develop a construction pipeline that preserves task solvability while introducing realistic adversarial conditions. Evaluating 16 leading GUI models, we reveal universal vulnerability to dynamic anomalies, with even the strongest models suffering significant performance degradation. Furthermore, we conduct GRPO tra</description>
-      <pubDate>2026-08-25T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Super Star: Towards Streaming Real-time Interactive Agents for Digital Humans</title>
-      <link>https://arxiv.org/abs/2608.24909</link>
-      <guid isPermaLink="false">2608.24909</guid>
-      <description>Wentao Jiang, Youchen Xie, Haidi Fan — Existing co-speech gesture generation methods are predominantly studied in offline settings, where gestures are synthesized from complete speech segments. However, interactive digital humans in real-world scenarios are required to generate speech-synchronous gestures online, using only currently available response audio under strict latency constraints. As a result, prior methods are unsuitable for real-time interaction, as they either rely on future speech information or incur substantial inference delay. In this paper, we formulate online co-speech gesture generation for interactive digital humans and propose a real-time interactive framework that couples a streaming speech response module with an online gesture generation module. Specifically, the gesture generator is designed as a caus</description>
-      <pubDate>2026-07-22T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
