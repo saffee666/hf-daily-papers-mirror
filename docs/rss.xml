@@ -5,8 +5,86 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-09-06</lastBuildDate>
+    <lastBuildDate>2026-09-07</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AdaptVPR: Route-Aware Hard Positive Generation for Robust Visual Place Recognition</title>
+      <link>https://arxiv.org/abs/2609.04369</link>
+      <guid isPermaLink="false">2609.04369</guid>
+      <description>Shunpeng Chen, Jingyi Zhang, Changwei Wang — Visual Place Recognition (VPR) localizes a query image by retrieving database images of the same or nearby place, yet its robustness is often degraded by domain shifts arising from illumination, weather, seasonal changes, and dynamic occlusions. One contributing factor is the limited appearance diversity of the same place in existing training data. To address this issue, we propose AdaptVPR, a route-aware generative augmentation framework that constructs same-place hard positives for robust VPR training. AdaptVPR first uses a vision language model to parse scene attributes and estimate editing feasibility, while a rule-based scheduler determines the generation route according to editability scores and risk constraints. The generation process is decomposed into three complementary routes: t</description>
+      <pubDate>2026-09-03T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization</title>
+      <link>https://arxiv.org/abs/2609.05258</link>
+      <guid isPermaLink="false">2609.05258</guid>
+      <description>Sihan Ge, Yichen Lin, Chenyu Zhou — Large language models (LLMs) are increasingly used to formulate optimization models from natural-language problem descriptions, yet realistic operations research (OR) requests are often incomplete: missing objectives, constraints, or business rules can change the resulting mathematical program. Existing evaluations largely assume a complete specification and therefore overlook whether an agent knows when clarification is needed before modeling. We introduce OR-Clarify, a benchmark for pre-formulation clarification. Each task presents a partial public problem description, withholds structured hidden slots, and evaluates agents through bounded interaction with a simulated user. The benchmark supports both openended and choice-based clarification, and measures slot recovery, stopping behavior</description>
+      <pubDate>2026-09-04T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Motion-Omni: End-to-End Joint Speech and Full-Body Motion for Spoken Dialogue</title>
+      <link>https://arxiv.org/abs/2609.04250</link>
+      <guid isPermaLink="false">2609.04250</guid>
+      <description>Chengqian Ma, Wei Tao, Haoyu Zhang — An avatar that holds a conversation should decide what to say and to move while saying it, yet these abilities live in separate model families: spoken dialogue models produce speech without motion, and co-speech motion models produce motion only from audio handed to them. The standard remedy is a cascade that first generates the spoken response and then runs a motion model over the finished audio, which requires a second full inference pass and precludes any joint optimisation between the two. We present Motion-Omni, an end-to-end framework in which a spoken dialogue model natively outputs explicit facial expression together with hand, upper-body and lower-body motion, generated directly from the hidden states that produce the speech. Joint training is not optional here: with the speech pa</description>
+      <pubDate>2026-08-28T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>When Models Edit Too Much: On the Fidelity of Minimal Code Edits</title>
+      <link>https://arxiv.org/abs/2609.04061</link>
+      <guid isPermaLink="false">2609.04061</guid>
+      <description>Tongyao Zhu, Wei Hern Lim, Min-Yen Kan — Large language models (LLMs) are increasingly used to edit existing code, but correctness alone is not enough: useful repairs should also be minimal, reviewable, and faithful to the original implementation. We study over-editing, the tendency of a model to rewrite code beyond what is required to fix a bug. We construct an evaluation framework from 400 BigCodeBench problems by injecting controlled AST-level corruptions into reference solutions, giving each repair task a known minimal patch. Across frontier LLMs, over-editing is widespread even among strong models like GPT-5.5: high Pass@1 can coexist with unnecessarily large edits and added cognitive complexity. A preservation instruction substantially reduces this behavior, lowering average excess Levenshtein distance from 0.195 to 0.131, </description>
+      <pubDate>2026-09-03T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>MaxKernel: Agentic Kernel Generation for TPUs</title>
+      <link>https://arxiv.org/abs/2609.04523</link>
+      <guid isPermaLink="false">2609.04523</guid>
+      <description>Shangkun Wang, Nina Cai, Charles Hoong — Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise. Large Language Models (LLM) can be leveraged together with real-time compiler feedback to build agentic systems for kernel generation. In this work, we present MaxKernel, a multi-agent system that implements three distinct paradigms for TPU kernel development: (1) a Human-in-the-Loop (HITL) agent for collaborative, step-by-step design; (2) an Autonomous (Auto) agent that executes a fully automated, metric/trace-driven optimization loop; and (3) a Graph-Based Autonomous Search that scales the Auto agent for global exploration of the design space. All three paradigms leverage a shared pool of specialized sub-agents to handle planning, implementation, self-de</description>
+      <pubDate>2026-09-03T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>RISE: Recursive Improvement via Self-Extrapolating Policy Distillation</title>
+      <link>https://arxiv.org/abs/2609.05295</link>
+      <guid isPermaLink="false">2609.05295</guid>
+      <description>Yang Li, Semih Yavuz, Shafiq Joty — On-policy distillation (OPD) provides dense, per-token supervision for language model post-training, but its effectiveness is bottlenecked by teacher quality: external teachers suffer from distribution mismatch, while self-distillation with privileged conditioning is limited by in-context learning capacity. We propose RISE (Recursive Improvement via Self-Extrapolating Policy Distillation), which constructs a synthetic teacher directly from the model&apos;s own RLVR training trajectory. By extrapolating the displacement between the current checkpoint and a trailing anchor---in parameter space or output logit space---RISE converts a sparse outcome-induced parameter update into a dense token-level target, without any external model or privileged conditioning. RISE combines RLVR and OPD in a comple</description>
+      <pubDate>2026-09-04T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>When Quantization Breaks Memory: Recurrent-State Write-Back in Low-Precision Temporal Inference</title>
+      <link>https://arxiv.org/abs/2609.04490</link>
+      <guid isPermaLink="false">2609.04490</guid>
+      <description>Ismail Erbas, Xavier Intes, Vikas Pandey — Quantization is widely used to reduce the computational and memory demands of neural-network inference. In recurrent networks, however, the quantized state is stored and returned at the next time step, so the rule used to store that state can alter subsequent computations. Here, we introduce recurrent-state write-back to denote this rule and isolate its effect in a compact GRU encoder--decoder for fluorescence lifetime imaging, a molecular imaging modality used in quantitative biological imaging. A central task is estimating two lifetime parameters, the short-lived component τ1 and the long-lived component τ2, from high-noise time-resolved fluorescence signals. Holding the trained model fixed, replacing continuous state propagation with deterministic 4-bit state storage increases estimatio</description>
+      <pubDate>2026-09-03T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Don&apos;t Drop Dropout: Optimizing Layer Sparsity for Efficient LLM Training and Inference</title>
+      <link>https://arxiv.org/abs/2609.05275</link>
+      <guid isPermaLink="false">2609.05275</guid>
+      <description>Mostafa Elhoushi, Alex Pretko, Nolan Dey — Layer dropout (a.k.a. stochastic depth) has been shown to enable faster training, higher accuracy, and robustness to zero-shot layer pruning in both language and vision transformers. However, as models and datasets have scaled, dropout - particularly layer dropout - has largely disappeared from large language models (LLMs) pre-training recipes. While some prior work has reported that dropout can degrade accuracy, no comprehensive study has quantified, let alone mitigated, this effect. In this study, we show that layer dropout should be used in state-of-the-art LLM training, establishing best practices and scaling analysis for both training and post-training benefits. Concretely, with optimal layer distribution, time schedule, and optimizer hyperparameters, we observe that at the same train</description>
+      <pubDate>2026-09-04T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>WorldSculpt: Generating Compositional Worlds from Grounded Videos</title>
+      <link>https://arxiv.org/abs/2609.05416</link>
+      <guid isPermaLink="false">2609.05416</guid>
+      <description>Muyao Niu, Jixuan He, Ruihan Yu — We study the problem of generating a compositional 3D representation of a cluttered scene containing hundreds of objects. The goal is to represent the scene as a collection of individual object meshes placed in a shared world frame, as required by downstream applications such as gaming, AR/VR, simulation, and robotics. This task is challenging in densely cluttered scenes, where objects heavily occlude one another and each view reveals only a fraction of their geometry. Geometry-based approaches typically reconstruct the scene as a single representation and leave incomplete geometry in occluded regions, while existing compositional methods with generative priors are largely limited to relatively simple scenes. We show that complex scenes with hundreds of objects can instead be generated com</description>
+      <pubDate>2026-09-04T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Group Adaptive Clipping Policy Optimization</title>
+      <link>https://arxiv.org/abs/2609.00444</link>
+      <guid isPermaLink="false">2609.00444</guid>
+      <description>Sheng Jia, Xiao Wang, Shiva Prasad Kasiviswanathan — Group relative policy optimization for reinforcement learning with verifiable rewards (RLVR) typically uses a fixed importance-sampling (IS) ratio clipping boundary across all rollouts. We identify a key limitation: rare correct rollouts on harder problems and abundant correct rollouts on easier problems are clipped at comparable rates, despite contributing very different learning signals. Rollouts with low group success exhibit larger IS ratios and carry stronger gradient signal for exploration and solving new problems, yet are disproportionately suppressed by fixed clipping.
+  To address this, we propose Group Adaptive Clipping Policy Optimization (GAPO), a plug-in modification to GRPO methods that adapts the clipping boundary to the rollout advantage. GAPO is motivated by a reverse-KL t</description>
+      <pubDate>2026-08-31T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Iris: Climbing to the Search Frontier</title>
+      <link>https://arxiv.org/abs/2609.04304</link>
+      <guid isPermaLink="false">2609.04304</guid>
+      <description>Ziyuan Liu, Hengqi Liu, Zichuan Wang — We present Iris-mini and Iris-pro, two search agents trained at the 35B-A3B and 397B-A17B scales, together with the data pipeline and training recipe behind them. Tasks are reverse-constructed from the hyperlink structure of a web corpus: we author multi-hop chains over an entity graph distilled from a seed page and its out-links, rewrite every non-answer entity into a descriptive reference so that no clue can be resolved by string matching, and admit only questions that a reference model fails closed-book yet solves once the supporting evidence is supplied. These questions are then turned into trajectories, which are filtered at both the trajectory and the turn level before SFT. The policy is then optimized by RL against live search, with the reward judge and the observation summarizer se</description>
+      <pubDate>2026-09-03T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>RoboTok: An Internet-Scale Data Engine for Human Demonstration Retrieval and Dexterous Manipulation Learning</title>
       <link>https://arxiv.org/abs/2609.03199</link>
@@ -280,86 +358,6 @@
       <guid isPermaLink="false">2608.29669</guid>
       <description>Marcus Gawronsky, Chun-Sung Huang — Spatial return models take the interaction matrix as given and leave feedback uninterpreted. We construct a bandwidth-free field from firms&apos; language-model article embedding distributions using target-anchored Wasserstein barycentric reconstruction. A quadratic exposure-adjustment problem maps feedback into a peer-misalignment penalty ratio. For 52 firms, the field, frozen from 2018-2022 news, yields a 2023-2026 penalty ratio of 3.46 (95% interval [2.89, 4.17]) and higher conditional quasi-likelihood than equal-weighted peer support or RBF weighting of the same distances. Joint penalty ratios for the barycentric and news co-mention fields are 2.33 and 0.86 with boundary calibrated tests which reject both exclusions.</description>
       <pubDate>2026-08-30T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>NeoMME: A Single-Tower Multimodal-Native Multilingual Foundation Encoder for Efficient Fine-Tuning and Inference</title>
-      <link>https://arxiv.org/abs/2609.01657</link>
-      <guid isPermaLink="false">2609.01657</guid>
-      <description>Aurélien Lac, Tony Wu — Multimodal models often build on architectures designed for generative vision-language modeling, typically combining separately pretrained vision encoders with causal language models. Visual document retrievers such as ColPali repurpose these models as encoders, carrying over the parameter and compute overhead of a VLM for a non-generative task.
-  We introduce NeoMME, a family of 260M and 800M-parameter Multimodal and Multilingual bidirectional Encoders that process multilingual text and raw image patches in a single bidirectional Transformer encoder. Both models are pretrained from scratch with a masked discrete-diffusion text objective, conditioned on visible image patches for multimodal examples. Both support a 16,384-token context, enough to encode up to two standard 4K UHD images.
-  T</description>
-      <pubDate>2026-08-31T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>FoldingAgent: Inferring Parametric Origami Procedures from Demonstration Videos</title>
-      <link>https://arxiv.org/abs/2609.00377</link>
-      <guid isPermaLink="false">2609.00377</guid>
-      <description>Maya Moriya, Sigal Raab, Yael Vinker — We present FoldingAgent, an agentic framework for inferring explicit parametric folding programs directly from origami demonstration videos. Our framework leverages the reasoning power of a pre-trained Vision-Language Model (VLM) equipped with a suite of specialized tools that enable the agent to simulate geometric transitions, verify physical plausibility, retrieve and compare visual content, and evaluate its own predictions. To translate visual content into folding programs, we define a parametric space that consists of the paper&apos;s geometry and a set of parametric folding actions. Unlike models that predict static crease patterns, our agent operates sequentially and possesses the ability to re-plan its actions, effectively mitigating the compounding errors inherent in multi-step folding.</description>
-      <pubDate>2026-08-31T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Ignorance or Incompetence? Constructing Knowledge-Gated, Verifiable Tasks for LLM Agents</title>
-      <link>https://arxiv.org/abs/2608.30322</link>
-      <guid isPermaLink="false">2608.30322</guid>
-      <description>Hanlin Tian, Minhao Li, Yu Mi — Professional agent tasks often depend on conventions that are absent from public corpora, yet benchmarks rarely control whether an agent has access to those conventions. We introduce a knowledge-gated task-construction protocol that separates a task instruction from a compact artefact containing private conventions, reference tables, and utility operators. Construction-time provenance, byte-identical task instructions across the provided- and withheld-artefact conditions, leak audits, and executable witnesses make dependence on the artefact explicit and testable. Across fifteen calibration tasks, one frontier agent configuration achieves a 68.0% pass rate with the artefact and 0% without it; on one task, a plausible but incorrect artefact also yields 0% across five trials. Deterministic so</description>
-      <pubDate>2026-08-31T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Exploring Collaboration between a language and a non-language agent</title>
-      <link>https://arxiv.org/abs/2609.00474</link>
-      <guid isPermaLink="false">2609.00474</guid>
-      <description>Harini S I, Somesh Singh, Yaman K Singla — LLMs are increasingly deployed as orchestrators that coordinate specialized subagents to solve complex tasks through natural language. However, in many important domains like game playing and robotics, the strongest available agents are not language models. Integrating non-language agents with LLMs would require verbalization: compressing their rich continuous representations into sparse textual summaries at each interaction step. To study whether verbalization constitutes a bottleneck, we introduce LLAMIA-Bench, a suite of six diverse collaborative chess tasks spanning three facets: behavioral imitation, state assessment, and natural-language explanation. Each task instantiates a well-established chess problem that neither the LLM nor the chess engine can solve alone. To solve LLM collabo</description>
-      <pubDate>2026-09-02T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Beyond Visual Similarity: Entity-Aligned Retrieval for Knowledge-Based Visual Question Answering</title>
-      <link>https://arxiv.org/abs/2608.21450</link>
-      <guid isPermaLink="false">2608.21450</guid>
-      <description>Hangrui Xu, Zhengxian Wu, Yunyao Yu — Knowledge-Based Visual Question Answering (KB-VQA) relies on retrieving external information to answer queries involving long-tail entities. However, existing retrieval pipelines predominantly employ CLIP-style dual encoders, which prioritize surface-level visual similarity over entity-level semantic alignment. This paradigm often fails when semantically identical concepts exhibit large visual variations or when distinct entities appear visually similar. To address this, we propose KBMR, the first MLLM-based embedding retriever tailored for KB-VQA. Leveraging the robust autoregressive capabilities of MLLMs, KBMR maps images into a semantic space that better preserves concept identity. To tackle the challenge of noisy supervision in Wikipedia-scale retrieval, we introduce an MLLM-based sema</description>
-      <pubDate>2026-08-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Autoregressive Mosaics: Probing 2D Spatial Reasoning in Text-Only Language Models</title>
-      <link>https://arxiv.org/abs/2608.30751</link>
-      <guid isPermaLink="false">2608.30751</guid>
-      <description>Ashwin Nedungadi, Stefan Oehmcke, Stefan Lüdtke — Large language models (LLMs) trained only on text and code can sometimes generate programs that draw recognizable images. However, it is unclear whether this reflects an internal representation of 2D spatial layout or simply the ability to translate spatial descriptions into code. We introduce Autoregressive Mosaics (AM-Bench), a benchmark that separates these factors: First, a translation task gives a model a fully specified geometry of a picture in words as a prompt and asks for the code that produces it. Second, a layout task requires the model to compose an image from an underspecified prompt. Across eight open-weight text-and-code-only models, all models reliably translate specified geometry into code, but their open-ended layout performance differs substantially, indicating that thes</description>
-      <pubDate>2026-09-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>ZipTok3D: High-Fidelity 3D Tokenization with Compact Token Prefixes</title>
-      <link>https://arxiv.org/abs/2609.01740</link>
-      <guid isPermaLink="false">2609.01740</guid>
-      <description>Mingda Lin, Weijie Wang, Zeyu Zhang — Compact token sequences are essential for efficient 3D generation. However, existing 3D tokenizers typically organize latent representations either over spatial regions or as fixed-size sets of global tokens, both suffering sharp reconstruction degradation when compressed to extremely low token budgets. In this paper, we present ZipTok3D, a 3D tokenizer designed for high-fidelity reconstruction from extremely short token sequences. Its key idea is to organize object geometry into progressively informative global-token prefixes and unfold these compact representations through iterative decoding. Specifically, nested dropout randomly truncates the latent sequence after encoding during training and requires each retained prefix to reconstruct the complete object, thereby prioritizing essentia</description>
-      <pubDate>2026-09-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions</title>
-      <link>https://arxiv.org/abs/2608.29607</link>
-      <guid isPermaLink="false">2608.29607</guid>
-      <description>Zirong Chen, Fuda Ye, Kuan Zhang — Mobile AI acts as a visual oracle, empowering users to snap a picture of something and ask for information. Snap-and-ask retrieval is now one of the most common entry points for mobile AI, yet photos are often blurry, while text questions may be short or mistyped. Existing benchmarks only test on clean inputs or do not isolate paired robustness in snap-and-ask retrieval. Therefore, we introduce SnapBench, the first paired benchmark for robust snap-and-ask multimodal retrieval, spanning 1,145 queries, 9,085 gallery items under 53 controlled corruption conditions with human annotations. We evaluate 16 multimodal retrievers, covering dual-tower encoders and embedding-based VLMs. Results show that image corruptions substantially degrade retrieval, while text corruptions mainly affect text-only</description>
-      <pubDate>2026-08-30T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>VibeVoice-ASR-Streaming Technical Report</title>
-      <link>https://arxiv.org/abs/2609.02812</link>
-      <guid isPermaLink="false">2609.02812</guid>
-      <description>Yujie Tu, Zhiliang Peng, Jianwei Yu — Traditional speaker-attributed ASR systems treated ASR and speaker diarization as two separate tasks. Recently, end-to-end models such as VibeVoice-ASR have unified the two tasks within a single model. However, existing unified models still mainly support offline recognition, making it difficult to meet the low-latency requirements of real-time voice assistants and agents. To tackle this issue, we present VibeVoice-ASR-Streaming, one of the first LLM-based end-to-end approaches to streaming speaker-attributed ASR. It interleaves fixed-size audio chunks, a small amount of lookahead audio and previous text. This allows the model to produce &apos;&apos;who said what&apos;&apos; as speech arrives, without a separate diarization stage. For transcription accuracy, our 7B model achieves the lowest average WER/CER ac</description>
-      <pubDate>2026-09-02T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>A Glance Is All You Need: Single-Pass Fine-Grained Image Captioning with SimLoss</title>
-      <link>https://arxiv.org/abs/2609.00591</link>
-      <guid isPermaLink="false">2609.00591</guid>
-      <description>Suryaansh Jain, Rahasya Barkur, Vishal G — An image may be worth a thousand words, but most captioning models describe it in only a few. Modern vision-language models produce fluent high-level captions, yet routinely miss the attributes, counts, textures, materials, and spatial relations that make an image visually specific. Recent multi-stage systems recover some of these details through generation, decomposition, verification, and rewriting, but they do so at the expense of substantially higher inference latency.
-  We propose SimLoss, a reference-free embedding-space objective for single-pass fine-grained image captioning. SimLoss trains a vision-language model to align its projected hidden-state representation with a frozen image embedding through an InfoNCE contrastive loss, supplying a dense visual supervision signal before an</description>
-      <pubDate>2026-09-01T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>CRISP: Cliff-awaRe Input-adaptive Sparse Prefilling with Structural-Mass-Motivated Routing</title>
-      <link>https://arxiv.org/abs/2609.01925</link>
-      <guid isPermaLink="false">2609.01925</guid>
-      <description>Huu Huy Nguyen, Chien Van Nguyen, Franck Dernoncourt — The attention prefilling phase of long-context LLM inference scales quadratically, making self-attention a severe computational bottleneck. Traditional sparse attention methods mitigate this through fixed patterns or offline profiling, but lack the flexibility to adapt to input-dependent attention structure. Recent dynamic methods address this by routing heads to sparse patterns in real-time, but rely on indirect routing proxies with overhead and budget allocation mechanisms that overlook the post-softmax mass hierarchy. We present CRISP (Cliff-awaRe Input-adaptive Sparse Prefilling), which identifies and addresses two structural challenges in this dynamic routing paradigm. First, we show that the routing decision can be read directly off the structure of the proxy attention map. We replac</description>
-      <pubDate>2026-09-01T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
