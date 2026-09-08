@@ -48695,9 +48695,354 @@
       "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
       "githubRepo": "https://github.com/AllSpark-Research/Iris",
       "submittedBy": "circleLZY"
+    },
+    "2609.03254": {
+      "title": "What Else Needs Fixing? Exploring Cost-Effective Test-Time Compute for Revision Propagation in Artifacts Generated Through Conversation",
+      "authors": [
+        "Daisuke Kikuta"
+      ],
+      "summary": "Large Language Models (LLMs) often help users generate artifacts through iterative cycles of generation and revision in conversation. A challenge here is that, when users specify only a local change during revision, LLMs must instead identify the relevant dependencies and propagate the revision to all affected parts of the artifact. This paper studies this ability of LLMs on conversationally generated artifacts, where the artifact context and its dependencies may be embedded in the conversation history. Toward practical use, we also explore cost-effective test-time compute for this new setting. Specifically, we introduce a new benchmark for this setting, and evaluate nine revision methods, including sequential reflection and parallel sampling variants, using gpt-oss-20b/120b, gpt-5.4-mini, and qwen3.5-9b/27b/122b on the benchmark. The results show that baselines achieve accuracies of 68.3--93%, and the most cost-effective method is selecting from three parallel samples using either LLM-based or medoid selection, which improves accuracy by 2.2--9.7%. Our code and dataset are available at https://github.com/ntt-dkiku/llm-revision-propagation.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-08T00:00:00.000Z",
+      "githubRepo": "https://github.com/ntt-dkiku/llm-revision-propagation",
+      "submittedBy": "oookiku"
+    },
+    "2609.02998": {
+      "title": "Verify Before You Distill: Prompt-Level Teacher Gating for On-Policy Distillation",
+      "authors": [
+        "Zhiwei Zhang",
+        "Zechen Sun",
+        "Fei Zhao",
+        "Kang Peng",
+        "Bin Liang",
+        "Huayu Deng",
+        "Yao Hu",
+        "Kam-Fai Wong",
+        "Mu Chuan"
+      ],
+      "summary": "On-policy distillation (OPD) accelerates post-training by providing dense token-level supervision from a frozen teacher on the student's own rollouts. Vanilla OPD applies this supervision uniformly across prompts, without checking whether the teacher is reliable for each prompt. Because reverse KL is mode-seeking, a confidently wrong teacher can induce a strong yet misleading update. Distributional proxies, such as entropy or teacher-student likelihood agreement, measure uncertainty or agreement but do not directly verify outcome correctness. We introduce Teacher-Gated On-Policy Distillation (TGOPD), built on the principle that teacher reliability should be verified at the prompt level before dense supervision is admitted. TGOPD estimates reliability from a small set of verifier-scored teacher probes and routes each prompt exclusively to dense OPD when the reliability check passes or to verifier-grounded GRPO otherwise. Across 4B and 35B students in mathematics, code, and instruction following, TGOPD outperforms Vanilla OPD in all six single-domain settings and achieves higher seven-benchmark averages at both scales under multi-domain training. By using otherwise-idle teacher capacity for reliability estimation, TGOPD also reduces teacher-side compute waste in asynchronous OPD, increasing teacher-node GPU utilization from 9.8% to 78.9% in the measured 4B single-domain run.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-02T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-08T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "Hiiamein"
+    },
+    "2608.24263": {
+      "title": "Real-World Knowledge-Guided Change Data Synthesis for Remote Sensing",
+      "authors": [
+        "Yaoyi Qi",
+        "Xingxing Weng",
+        "Chao Pang",
+        "Yongkang Cui",
+        "Xiangyu Hao",
+        "Xiaokang Zhang",
+        "Guibo Zhu",
+        "Gui-Song Xia"
+      ],
+      "summary": "Change data synthesis provides a cost-effective solution for expanding training data and improving the performance of change detection models. However, existing synthesis methods typically rely on handcrafted rules to simulate changes, where limited coverage of class transitions restricts the diversity of synthesized data, while predefined transition designs limit their flexibility in accommodating varied change types. In this work, we introduce KnowChange, a knowledge-guided change data synthesis framework that leverages pretrained vision-language models as knowledge sources to reason about plausible change locations and class transitions from pre-change scenes and desired change types. By integrating knowledge-guided change simulation with generalizable synthesis models, KnowChange enables flexible synthesis of diverse change types within a unified framework. Extensive experiments demonstrate that KnowChange-generated data consistently outperforms existing synthetic datasets in both synthetic-to-real transfer and synthetic data augmentation, despite being generated at a compact scale. Further analyses show that the knowledge-guided change simulation can be seamlessly integrated into existing synthesis pipelines and enhance the downstream utility of synthesized data.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/LINGQI711/KnowChange",
+      "submittedBy": "LingQi1234"
+    },
+    "2609.03729": {
+      "title": "Unfold The World: Factorize 4D Properties in Reinforcing Spatial Reasoning",
+      "authors": [
+        "Yijun Yang",
+        "Shenghe Zheng",
+        "Wenbo Li",
+        "Jianhui Liu",
+        "Haoze Sun",
+        "Yanbing Zhang",
+        "Jiaxiu Jiang",
+        "Lin Song",
+        "Haoyang Huang",
+        "Nan Duan",
+        "Lei Zhu"
+      ],
+      "summary": "Despite the remarkable prowess of Vision-Language Models (VLMs) in general multimodal tasks, they remain fundamentally ``flat'' when reasoning about the physical world. We argue that this spatial bottleneck stems from a profound dimensional mismatch: while VLMs are trained to interpret 2D projections, true spatial reasoning demands the recovery of latent 3D geometry and temporal continuity. To conquer this high-dimensional complexity, we advocate a shift from monolithic learning to a ``divide and conquer'' paradigm. We present FactoSR, a factorized reinforcement learning framework that explicitly interpret the dimensions collapsed by visual projection. At its core, FactoSR decomposes the monolithic problem of world-consistent reasoning into three orthogonal, geometric sub-objectives: planar correspondence (XY), depth consistency (Z), and temporal reversibility (T). By optimizing these verifiable constraints within a unified policy learning mechanism, we effectively transform an ill-posed projection recovery problem into a series of tangible reasoning steps. Extensive evaluations on multi-view and video benchmarks demonstrate that this elegant decomposition yields substantial gains in 3D and 4D reasoning, achieving a 5.9% boost on VSI-Bench and 4.5% on All-Angles-Bench. Our findings suggest that reinforcing explicit, factorized 4D consistency is a critical step toward evolving VLMs into robust, world-aware reasoners.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/ZimaBlue-WAM/FactoSR",
+      "submittedBy": "scott-yjyang"
+    },
+    "2609.04444": {
+      "title": "HarvestBench: Measuring Whether LLM Agents Will Pay to Avoid Killing Animals",
+      "authors": [
+        "Jasmine Brazilek",
+        "Miles Tidmarsh",
+        "Matthias Endres",
+        "Anshuman Singh",
+        "Jeremiah Miller"
+      ],
+      "summary": "Benchmarks for the side effects an agent causes on the way to a goal already exist, but HarvestBench is the first to put a price on avoiding the side effect and to name that side effect as a living creature. It is a farm simulation: LLM sub-agents drive a crew of two tractors through a cooperative corn harvest, with animals in the field. The environment is a reinforcement learning gridworld, every decision is made without memory, and the harm is never named in the goal. When an animal blocks a tractor's route the autopilot stops and asks the model whether to drive on, at no fuel cost, or swerve around it for a posted fuel price. Kills are compared against two controls: rocks, which damage the tractor and are hit under 1% of the time by every model, and hay bales, which are harmless and not alive. Models can also take crops from the neighbor's field instead of their own, a second test of what they treat as moral.\n  Across nine models and 7,201 priced decisions, 3,951 involved an animal rather than a hay bale or a rock. Kill rates range from 0.4% to 98.8%, with Terra and Sol the most merciful and GPT-4o-mini the most cruel, and they are not ordered by capability. Four of six models were sensitive to price at the 5% level, with elasticities from 0.09 to 1.69. All nine drove over wild animals more often than farmed animals on the default map, and the direction held at every map geometry in every model with room to move. The briefing mattered most: under the morality briefing the kill rate was under 6% in five of six reasoning models, and removing it raised the kill rate above 84% in all six.\n  HarvestBench uses no LLM grader. The scorer counts events in the game log, so it is fully reproducible, and it measures what a model will pay to avoid harm rather than what it says about harm.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "sparrow8i8"
+    },
+    "2609.00365": {
+      "title": "Dr. Claw: An AI Scientist Workspace for Vibe Research",
+      "authors": [
+        "Dingjie Song",
+        "Hanrong Zhang",
+        "Dawei Liu",
+        "Yixin Liu",
+        "Zongxia Li",
+        "Zhengqing Yuan",
+        "Siqi Zhang",
+        "Henry Peng Zou",
+        "Zhiling Yan",
+        "Yuxuan Zhang",
+        "Yanfang Ye",
+        "Philip S. Yu",
+        "Lichao Sun"
+      ],
+      "summary": "Command-line coding agents (e.g., Claude Code, Gemini CLI) can already read and write files and sustain long sessions, yet end-to-end research still fragments across chat tools, IDEs, terminals, and writing environments, and the decisions that make it auditable are rarely preserved. We present Dr. Claw, an open-source workspace that wraps existing coding-agent executors in a controllable and auditable human-in-the-loop workflow rather than introducing another autonomous agent. Persistent state objects, a reusable skill library, and multi-executor coordination link human decisions to AI execution, turning planning, execution, and writing into one traceable, recoverable loop. We demonstrate Dr. Claw through an interactive three-view scenario and a failure-recovery walkthrough, and evaluate it against a bare command-line agent sharing the same backend executor, so the comparison contrasts the whole orchestration layer (task graph, state objects, and skill library) with the agent it wraps. Holding the executor fixed, Dr. Claw scores higher on research completeness while persisting an auditable, recoverable process trail. Demo access: repository https://github.com/OpenLAIR/dr-claw, released under AGPL-3.0 with GPL-3.0 upstream components.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-31T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/OpenLAIR/dr-claw",
+      "submittedBy": "songdj"
+    },
+    "2609.04720": {
+      "title": "Knowing What Not to Answer: Selective Non-Compliance in Vision-Language Models",
+      "authors": [
+        "Minji Kim",
+        "Jihyoung Jang",
+        "Hyounghun Kim"
+      ],
+      "summary": "Vision-language models (VLMs) are expected to respond helpfully to appropriate requests while withholding compliance with requests that are incorrect, unsafe, infeasible, or unanswerable. However, existing benchmarks predominantly evaluate non-compliance at the level of the query as a whole, assuming that each request either warrants compliance or requires withholding compliance. In practice, real-world queries can contain a mixture of answerable content and components for which compliance should be withheld. In this paper, we introduce KoNA, a benchmark for evaluating selective non-compliance in VLMs across five categories: False Premise, Visual Inaccessibility, Universal Unknown, Task Feasibility, and Safety. Each task evaluates two capabilities: query-level non-compliance and component-level non-compliance under paired single and compound queries. Our evaluation across diverse VLMs shows that models often fail to refuse, correct, or abstain appropriately, and these failures become more pronounced when queries require selective non-compliance. To address this challenge, we fine-tune VLMs using KoNA examples that require selective non-compliance, together with a fully answerable set that should receive direct answers. Our fine-tuned models achieve substantial improvements in non-compliance accuracy while largely maintaining performance on fully answerable tasks. These results suggest that the fine-tuned models can distinguish between answerable components and those requiring non-compliance and respond in a task-appropriate manner.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/mz-kim/KoNA",
+      "submittedBy": "mz-kim"
+    },
+    "2609.04714": {
+      "title": "Refuse without Refusal: A Structural Analysis of Safety-Tuning Responses for Reducing False Refusals in Language Models",
+      "authors": [
+        "Minji Kim",
+        "Hyounghun Kim"
+      ],
+      "summary": "Striking a balance between helpfulness and safety remains a fundamental challenge in aligning large language models. To achieve this balance, models should refuse harmful queries (e.g., \"How do I shoot someone?\") while remaining responsive to benign inputs, even those superficially resembling harmful queries (e.g., \"Where can I shoot a good photo?\"). However, models often struggle to distinguish genuinely harmful queries from benign queries that contain superficially risky language, resulting in false refusals. In this paper, we address the issue by decomposing a response in the safety-tuning dataset into two distinct components: (i) a boilerplate refusal statement and (ii) a rationale explaining the refusal. Our experiments and analyses show that refusal statements impede accurate discrimination between harmful and benign queries by inducing reliance on superficial cues. In contrast, training solely on rationales reduces false refusals while maintaining a comparable level of safety performance. Rationale-Only benefits also appear in our ICL configuration and remain compatible with the evaluated inference-time mitigation methods. The results emphasize the necessity of precisely curated, fine-grained safety supervision datasets and outline directions for constructing aligned agents that better reconcile helpfulness with safety.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/mz-kim/Refuse-without-Refusal",
+      "submittedBy": "mz-kim"
+    },
+    "2609.03231": {
+      "title": "The 2026 PNPL Competition: Word Classification and Efficient Cross-Subject Generalisation in LibriBrain100",
+      "authors": [
+        "Francesco Mantegna",
+        "Gereon Elvers",
+        "Dulhan Jayalath",
+        "Gilad Landau",
+        "Tasha Kim",
+        "Miran Özdogan",
+        "Luisa Kurth",
+        "Teyun Kwon",
+        "SungJun Cho",
+        "Benjamin Ballyk",
+        "Alex Fung",
+        "Anna Greer",
+        "Pratik Somaiya",
+        "Christian Herff",
+        "Yorguin Mantilla Ramos",
+        "Hamza Abdelhedi",
+        "Karim Jerbi",
+        "Greg Farquhar",
+        "Brendan Shillingford",
+        "Mark Woolrich",
+        "Oiwi Parker Jones"
+      ],
+      "summary": "The ambition of the 2025 PNPL competition (Landau et al., 2025) was to launch a multi-year curriculum for non-invasive speech decoding. Designed to progress from foundational tasks toward the linguistic complexity required for a practical brain-computer interface (BCI), it set the stage with speech detection and phoneme classification tasks. Winning submissions reached F1-macro scores of 95.6% and 73.6% on the respective tasks (Elvers et al., 2026), highly significant advances. This success was built on the LibriBrain dataset (Özdogan et al., 2025), the largest within-subject MEG dataset recorded at the time with {sim}50 hours of data for one subject. However, while within-subject scale drives strong decoding performance, a practical BCI must generalise to new users from minutes of data, not hours.\n  The 2026 PNPL competition responds to this challenge with LibriBrain100 (Mantegna et al., 2026), an extended LibriBrain dataset with 32 additional subjects ({sim}40 minutes each) plus even more within-subject data ({sim}80 hours). Advancing the curriculum of tasks to focus on word classification, two complementary tracks are presented in this competition: the Deep track targets within-subject word classification at scale, aiming at the best possible performance; the Broad track targets cross-subject generalisation, progressively reducing the amount of subject-specific fine-tuning data from {sim}40 to {sim}20 to {sim}10 minutes, a duration that falls within a clinically feasible range and brings us a step closer to a non-invasive BCI capable of restoring communication to people living with profound paralysis.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "latentdulhan"
+    },
+    "2609.05415": {
+      "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
+      "authors": [
+        "Linzhan Mou",
+        "Jiahui Lei",
+        "Zhiyang Dou",
+        "Chenyue Cai",
+        "Chaoyue Song",
+        "Adam Finkelstein",
+        "Szymon Rusinkiewicz"
+      ],
+      "summary": "Recent advances in automatic rigging now deliver animation-ready 3D assets at scale, yet generating the motion to drive them remains a bottleneck. Existing learned animators are topology-constrained: they rely on category-specific templates or require per-skeleton fine-tuning and reference motions at inference. We present UniMate, a unified foundation model that synthesizes articulated motion for arbitrary skeletons from a rigged 3D asset and a text prompt, with no test-time optimization or per-skeleton retraining. UniMate introduces a topology-aware diffusion transformer, which integrates skeletal topology into attention via three mechanisms: (1) a graph-aware attention bias from pairwise joint relations and geodesic distances; (2) a spectral rotary position embedding generalizing RoPE to arbitrary kinematic trees via the graph Laplacian; and (3) a global topological conditioner attention-pooled from the rest-pose skeleton. We also curate UniML3D, 13,006 motion sequences spanning bipedal, quadrupedal, avian, marine, insectoid, serpentine, and articulated rigid objects with unified canonicalization and text pairing. Trained on this dataset, UniMate outperforms state-of-the-art baselines in quality, generalization, and efficiency, and supports zero-shot cross-topology transfer, in-betweening, expansion, and text-guided editing. Our project page is available at https://linzhanmou.com/unimate/.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/Friedrich-M/UniMate",
+      "submittedBy": "Linzhan"
+    },
+    "2609.04190": {
+      "title": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
+      "authors": [
+        "Adheesh Sunil Juvekar",
+        "Onkar Kishor Susladkar",
+        "Kiet A. Nguyen",
+        "Muntasir Wahed",
+        "Nabeel Bashir",
+        "Xiaona Zhou",
+        "Tianjiao Yu",
+        "Vedant Shah",
+        "Ismini Lourentzou"
+      ],
+      "summary": "Video editing spans diverse editing paradigms, yet achieving high-quality instruction-guided and subject-guided editing within a single unified framework remains challenging. We introduce EditVid, a training-free framework combining sparse causal memory for local coherence, correspondence-based post-attention token injection for long-range identity preservation, and soft latent blending for edit locality. The same framework supports instruction-guided and reference-guided edits, including style transfer, attribute modification, object insertion, part-level editing, and subject replacement. On FiVE, EditVid achieves 78.16 FiVE-Acc, compared with 58.95 for the strongest evaluated training-free baseline, while obtaining competitive results on IVEBench. A user study further shows a 51.8\\% overall preference for EditVid over 7 competing methods.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/PLAN-Lab/EditVid",
+      "submittedBy": "juvekaradheesh"
+    },
+    "2609.04753": {
+      "title": "Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs",
+      "authors": [
+        "Seogyeong Jeong",
+        "Jaehui Hwang",
+        "Dongyoon Han",
+        "Geonmo Gu",
+        "Alice Oh",
+        "Taekyung Kim"
+      ],
+      "summary": "Reasoning in large language models unfolds through diverse functional operations, such as problem formulation, goal decomposition, and deduction. Although these operations are explicitly distinguished in text, little is known about how they are geometrically organized in representation spaces. To this end, we investigate whether distinct reasoning operations exhibit corresponding geometric structure in hidden representations. We find that operations are separable in held-out representations, with separability peaking in middle layers, and verify that this structure is not explained by lexical or positional confounds. Across layers, token-wise operation-alignment becomes more distributed over spans, while identical surface tokens are represented differently depending on the operation of its surrounding chunk. Attention-masking interventions further show that operation-aligned representations at chunk onset depend on preceding reasoning context. Consequently, our work demonstrates that language models maintain representational correspondence between linguistic reasoning expressions and their internal geometric structures. Code and project materials are available at https://github.com/naver-ai/beneath-cot.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/naver-ai/beneath-cot",
+      "submittedBy": "sg-jeong28"
+    },
+    "2609.04242": {
+      "title": "Training-Free Speech-Centric Omni Understanding with Frozen VLMs",
+      "authors": [
+        "Ankan Deria",
+        "Hanoona Rasheed",
+        "Xilin He",
+        "Fahad Shahbaz Khan",
+        "Salman Khan"
+      ],
+      "summary": "Audio-visual understanding remains challenging because models must jointly interpret spoken content, visual events, and their temporal relationships. Existing omni models typically introduce dedicated audio encoders and rely on expensive audio-video-text training, tightly coupling omni capability to specific VLM backbones and potentially weakening their existing visual and reasoning abilities. This raises three questions: whether native omni training is necessary for every new VLM, whether speech-centric omni capability can be added while preserving the original backbone, and where richer acoustic representations remain essential.\n  We introduce Training-Free Omni (TFO), a plug-and-play framework that converts a frozen VLM into a speech-centric omni model without architectural modification, or multimodal re-alignment. TFO uses Whisper to extract confidence-filtered, timestamped transcripts and routes them through the VLM's existing language interface, while leaving its visual pathway unchanged. Across matched comparisons with native omni models on 56 benchmarks and 21 languages, TFO is competitive on audio-visual understanding, improves average audio-only performance across all five model settings, and achieves substantial multilingual speech gains. Freezing the VLM also generally preserves stronger image/video understanding, visual grounding, coding, mathematical reasoning, and medical question answering than the corresponding native omni checkpoints. These results show that strong speech-centric omni understanding can often be obtained through modular audio-to-language routing rather than costly backbone-specific training.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-07T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/mbzuai-oryx/OmniEvalKit",
+      "submittedBy": "ankanmbz"
+    },
+    "2609.02750": {
+      "title": "Bilevel Coordinated Reflection: A Game-Theoretic Approach to Multi-Agent LLM Systems",
+      "authors": [
+        "Yihang Chen",
+        "Yuxiang Chen",
+        "Yuxuan Huang",
+        "Meng Fang",
+        "Weilin Luo",
+        "Jun Wang"
+      ],
+      "summary": "Multi-agent LLM systems commonly use an orchestrator to decompose a task for a team of workers and then improve through textual reflection. Despite strong empirical results, these systems lack a unified account of coordination, memory improvement, and the role of external verification. We model orchestrator-worker interaction as a bilevel coordination game: under bounded coupling, the workers' local-update game is an approximate potential game whose equilibrium slack is controlled by decomposition quality. We then analyse reflection as stochastic movement over semantic memory states. For free-form reflection, we derive a finite-time upper bound, prove worst-case tightness, and give a positive lower bound under a falsifiable persistent-harm condition. We further prove an information-theoretic impossibility result: no gate that observes only the generated transcript can improve uniformly over text-indistinguishable environments, whereas an environment-grounded gate can. Motivated by this separation, we introduce Stochastic Reflective Memory Ascent (SRMA), which accepts a candidate memory only after a grounded evaluation risk strictly decreases. Under calibration and non-degenerate corrective mass, SRMA converges exactly, geometrically or polynomially; matching constructions show that both rate regimes are order-tight. We also provide confidence gating for stochastic evaluation and re-anchoring guarantees for piecewise-stationary environments. Experiments instantiate these objects with environment-grounded metrics and test the predicted coordination and drift laws. On 500 SWE-bench instances, the complete Kimi-based system resolves 72.2% versus a 70.8% public mini-SWE-agent reference. Code: https://github.com/YihangChen9/Bilevel-Coordinated-Reflection",
+      "upvotes": 0,
+      "publishedAt": "2026-09-02T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/YihangChen9/Bilevel-Coordinated-Reflection",
+      "submittedBy": "scyyc9"
+    },
+    "2609.03586": {
+      "title": "The Attention Triangle in Audio-Video Models",
+      "authors": [
+        "Sagi Polaczek",
+        "Noa Kraicer",
+        "Gal Metzer",
+        "Zhuo Ning",
+        "Ali Mahdavi-Amiri",
+        "Daniel Cohen-Or",
+        "Raja Giryes"
+      ],
+      "summary": "Audio-video diffusion models rely on cross-modal attention to coordinate text, sound, and visual content, yet this same mechanism can introduce subtle and systematic semantic leakage. We study these models by probing and analyzing the ``attention triangle,'' comprising the three cross-attention edges connecting the text, audio, and video streams, and examine how semantic information is routed across modalities during generation. Our analysis reveals that routing along the audio-video edge is bidirectional: audio can influence video generation, while video can influence audio generation. This edge is shaped by biases encoded in the model's parameters and emerges as a major contributor to leakage: when prompts are in tension with learned priors, cross-modal interactions may override the intended conditioning and reroute semantics toward visually canonical but incorrect outcomes. These effects suggest that semantic artifacts arise not merely from attention spreading beyond its intended target, but from structured, bias-driven interactions along specific pathways. Building on this perspective, we extract attention-derived signals that expose how semantics are distributed and grounded across modalities, and use them as a diagnostic tool to both analyze and deliberately incur leakage under controlled conditions. This enables us to probe the internal dynamics of cross-modal routing and isolate the role of individual interactions. We further leverage these signals to guide inference-time interventions that encourage more consistent cross-modal alignment. Extensive experiments support our analysis and demonstrate improved semantic grounding while preserving generation quality.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/SagiPolaczek/The-Attention-Triangle",
+      "submittedBy": "SagiPolaczek"
+    },
+    "2608.05879": {
+      "title": "To See a World in a Living Context: Unified Indoor-Outdoor Urban World Generation",
+      "authors": [
+        "Xiaobin Huang",
+        "Zilong Huang",
+        "Yang Luo",
+        "Hongchao Fan",
+        "Yiping Chen",
+        "Ting Han"
+      ],
+      "summary": "Text-driven 3D generation has advanced rapidly in creating large-scale outdoor environments and detailed indoor scenes, but these domains are usually synthesized independently, lacking the correspondence required for a coherent urban world. We present HoloWorld, a unified indoor-outdoor urban world generation framework built on a continuously updated cross-scale world context. Initializing from a user description, HoloWorld progressively represents and updates the diverse world information, from city-scale planning to individual buildings, allowing generated interiors to maintain explicit correspondence with their associated exterior buildings. Conditioned on the evolving context and previously generated neighboring blocks, HoloWorld autoregressively generates urban exteriors with consistent spatial organization and visual identity across blocks. The generated exterior representations are further grounded in 3D building instances and footprints, enabling building-specific indoor generation with geometry-constrained layouts and inherited appearance characteristics. To our knowledge, HoloWorld is the first framework to unify indoor and outdoor generation within a coherent 3D urban world. Extensive experiments demonstrate that HoloWorld achieves superior urban exterior generation performance, improving the average AQS score over the SOTA by 7.68\\% and obtaining the highest average RDR score, while maintaining strong building-level indoor-outdoor correspondence and cross-block continuity within a unified 3D urban world. Our project page: https://huangxb326.github.io/HoloWorld/.",
+      "upvotes": 0,
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "xB1n"
+    },
+    "2609.04611": {
+      "title": "τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction",
+      "authors": [
+        "Quan Shi",
+        "Keshav Dhandhania",
+        "Karthik Narasimhan",
+        "Victor Barres"
+      ],
+      "summary": "LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal systems. Notably, the work of building them is increasingly handed to coding agents, yet existing benchmarks say little about whether an AI system can deliver one under the conditions of a real client engagement. We introduce τ^τ-bench (pronounced hyper-tau-bench), a benchmark that makes agent construction the task. A developer agent is given the records a business actually keeps, a client who holds requirements, a production API that operations must run through, a codebase to inherit, and limits on serving cost and models: the same starting point a real engagement provides. From these it must deliver a complete customer-service agent, scored by deploying that agent against held-out simulated users. Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations. Meanwhile, an expert-authored reference ceiling scores 82.2%. The failures mirror ones human agent developers see: models issue shallow queries in place of deep comprehension of the records, communicate almost nothing to the client, and experiment too little with agent architecture and serving spend, shipping the first design that runs. We aim for τ^τ-bench to turn the work of cooperative agent building into a measurable target for coding agents.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-04T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/sierra-research/hyper-tau-bench",
+      "submittedBy": "benshi34"
+    },
+    "2609.00581": {
+      "title": "Enoki: Efficient Multi-Level Hallucination Detection",
+      "authors": [
+        "Elisei Rykov",
+        "Timur Ionov",
+        "Nikolay Ivanov",
+        "Maksim Savkin",
+        "Maksim Makarenko",
+        "Alexander Panchenko",
+        "Vasily Konovalov",
+        "Julia Belikova"
+      ],
+      "summary": "Ensuring factuality remains a critical challenge for deploying LLMs in high-stakes settings. Existing hallucination detectors usually operate at a single level: claim-level methods provide interpretable factual units, while span-level methods localize unsupported text. Bridging these views is costly, as LLM-heavy pipelines require multiple decomposition and verification calls, and modular systems need additional claim-to-span alignment. We propose Enoki, an Open Information Extraction framework for multi-level hallucination detection. Enoki extracts text-anchored relational facts, verifies them against evidence, and projects unsupported facts back to hallucinated spans. This shared representation enables claim-level verification and span-level localization without requiring separate alignment. Enoki supports LLM-based, encoder-based, and rule-based extraction regimes, balancing accuracy and inference cost through a common interface. Experiments show that Enoki remains competitive with strong claim-level systems while using fewer resources and achieves superior performance on fine-grained span- and entity-level localization. We also release EnokiQA, a dual-granularity dataset with aligned claim-level verification and span-level localization annotations.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-01T02:21:28.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/s-nlp/Enoki",
+      "submittedBy": "julia-bel"
+    },
+    "2609.02780": {
+      "title": "ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding",
+      "authors": [
+        "Jitai Hao",
+        "Ke Yang",
+        "Qiang Huang",
+        "Jun Yu"
+      ],
+      "summary": "Streaming video understanding is a critical capability for real-world applications, including embodied intelligence, autonomous driving, industrial monitoring, surveillance and early warning, and wearable assistants. However, processing continuous video streams with multimodal large language models (MLLMs) is computationally expensive. Existing efforts have explored reducing streaming overhead through visual token pruning, token merging, quantization, on-demand frame retrieval, and context offloading. However, most existing methods overlook the dimension of model depth. Repeatedly executing full-depth MLLM prefill over incoming frames is prohibitively expensive, incurring substantial computational overhead and causing the KV cache to grow at a rate directly proportional to the prefill depth. To address these challenges, we propose ShallowStream, a novel framework that leverages the shallow layers of an MLLM to simultaneously perform frame encoding and retrieval index building. During stream processing, ShallowStream maintains an always-on lightweight index using the KV cache of shallow layers. During query-time answering, we leverage the attention scores generated by the shallow layers to score context frames and employ a diversity-aware selection strategy to retrieve precise and comprehensive evidence. ShallowStream achieves performance on par with the strongest existing streaming methods, while reducing per-frame prefill latency and 10-second end-to-end latency by up to 52.1x and 11.9x, respectively. Our code is available at https://github.com/CURRENTF/ShallowStream.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-02T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-09-07T00:00:00.000Z",
+      "githubRepo": "https://github.com/CURRENTF/ShallowStream",
+      "submittedBy": "JitaiHao"
     }
   },
   "dates": [
+    "2026-09-08",
     "2026-09-07",
     "2026-09-06",
     "2026-09-05",
@@ -48786,7 +49131,6 @@
     "2026-06-13",
     "2026-06-12",
     "2026-06-11",
-    "2026-06-10",
-    "2026-06-09"
+    "2026-06-10"
   ]
 }
