@@ -5,8 +5,176 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-09-23</lastBuildDate>
+    <lastBuildDate>2026-09-24</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents</title>
+      <link>https://arxiv.org/abs/2609.27334</link>
+      <guid isPermaLink="false">2609.27334</guid>
+      <description>Yefan Zhou, Yang Li, Zeyu Leo Liu — Agentic memory systems reuse past experience to improve future performance, yet most existing designs curate memory at write time: once a task is completed, its trajectory is distilled into a fixed artifact, such as a reflection, workflow, skill, or reasoning strategy, that is later retrieved by similarity. This forces the system to decide what is worth remembering before the future query is known, irreversibly discarding information and producing a query-independent summary that must serve many possible downstream tasks. Learning such a write-time curator is also difficult because the value of a storage decision may only become apparent when a relevant query arrives, potentially many tasks later, creating a long-horizon credit-assignment problem. We instead retain raw trajectories and def</description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics</title>
+      <link>https://arxiv.org/abs/2609.27308</link>
+      <guid isPermaLink="false">2609.27308</guid>
+      <description>Haoxiang You, Zeyu Shen, Yilang Liu — We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a singl</description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>StudentBench: AI and human tutoring yield equivalent GRE learning gains</title>
+      <link>https://arxiv.org/abs/2609.28470</link>
+      <guid isPermaLink="false">2609.28470</guid>
+      <description>Curtis Northcutt, Inaara Hasmani, Kevin Feng — Artificial intelligence offers an unprecedented opportunity to augment human capabilities, yet progress at the frontier has focused primarily on advancing model capabilities. We introduce StudentBench, a suite of AI teaching evaluations and a public platform that enables large-scale data collection with over 175,000 student-AI messages to study whether large language models (LLMs) produce learning gains equivalent to human tutoring. Using StudentBench, we measured learning gains on Quantitative and Verbal GRE questions across 2,383 human participants receiving AI tutoring, human tutoring, or no tutoring. We establish that AI tutoring is statistically equivalent to expert human tutoring for GRE learning gains (p = .015), and in five of the seven GRE domains, the best performing AI tutor sur</description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>MemBodied: Recurrent Associative Memory for Vision-Language-Action Models</title>
+      <link>https://arxiv.org/abs/2609.28256</link>
+      <guid isPermaLink="false">2609.28256</guid>
+      <description>Tej Deep Pala, Navonil Majumder, Bryce Goh — Vision-Language-Action models provide a strong foundation for general-purpose robot control, yet a vast majority of policies do not preserve and leverage episode-level information beyond the current observation. This limitation is consequential in history-dependent manipulation tasks that depend on information available only in past observations. Retaining past observations in context can aid in recovering this information, but at the significant cost of ever-growing, bloated context and inference latency. We thus introduce MemBodied, a fixed-size episodic memory with two complementary components: an associative state that records interactions across policy calls and an episode anchor that preserves a compact representation of the initial scene as a reference. At each policy call, the mode</description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue</title>
+      <link>https://arxiv.org/abs/2609.26780</link>
+      <guid isPermaLink="false">2609.26780</guid>
+      <description>Haobo Zheng, Tan Tang, Yan Chen — Long-term conversational memory in multi-party settings requires more than retrieving relevant content from long-term conversations: it must distinguish who said what, whom each statement concerns, how individuals perceive one another, what information is shared by the group, and how states change over time. Recent studies on multi-party dialogue benchmarks show that existing general-purpose LLM memory systems tend to lose person and group relations or struggle to integrate clues distributed across members, groups, and time. Together, these issues reveal two core bottlenecks: message attribution and relational understanding in multi-party dialogue, and state reconstruction from interleaved histories. To address both, we propose SpeakerMem-R1: its dual-track memory stores speaker-labeled ve</description>
+      <pubDate>2026-09-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling</title>
+      <link>https://arxiv.org/abs/2609.22947</link>
+      <guid isPermaLink="false">2609.22947</guid>
+      <description>Zhenchen Tang, Yang Li, Songlin Yang — Reinforcement learning (RL) is vital for optimizing video generation models, with a robust reward model (RM) serving as the cornerstone. However, existing video reward models often produce unstable scalar scores because they directly map complex, subjective video quality into a single score without explicit evaluation criteria. This leads to scalar drift, where the scoring scale collapses or shifts across different prompts, making the reward unreliable for RL. Drawing inspiration from professional human annotation engineering, we address this problem with RewardVerse, a rubric-based video reward framework that introduces a dynamic rubric as an intermediate representation between the evaluation query and the scorer. Instead of unconstrained direct scoring, RewardVerse first generates explic</description>
+      <pubDate>2026-09-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>PACT: From Credit Assignment to Critic Alignment</title>
+      <link>https://arxiv.org/abs/2609.26355</link>
+      <guid isPermaLink="false">2609.26355</guid>
+      <description>Jiayan Fu, Hang Xu, Yong Zhang — Reinforcement learning has become a central component of large language model (LLM) post-training, yet token-level credit lacks a generally accepted mathematical definition, leaving its relationship to commonly used training signals unclear. We formulate three regularity conditions, namely Completeness, Prefix Consistency, and Neutrality, and prove that they uniquely determine token-level credit. This characterization provides a unified basis for explaining phenomena across existing algorithms and guides the development of an improved actor-critic training procedure. Through this lens, an ideal teacher in On-Policy Distillation (OPD) acts as an implicit critic, yielding an expected policy gradient proportional to that induced by token-level credit. Response-level REINFORCE Leave-One-Out (R</description>
+      <pubDate>2026-09-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Hunyuan-A13B Technical Report</title>
+      <link>https://arxiv.org/abs/2609.27284</link>
+      <guid isPermaLink="false">2609.27284</guid>
+      <description>Tencent Hunyuan Team, Ao Liu, Botong Zhou — We present Hunyuan-A13B, an open-source large language model based on a Mixture-of-Experts architecture. It contains 80 billion total parameters but activates only 13 billion during inference, balancing model capability, computational efficiency, and deployment cost. The model is pretrained on a rigorously filtered 20T-token corpus with enhanced STEM data curation, improving factual reliability and reasoning ability. High-quality supervised fine-tuning and large-scale reinforcement learning further enhance its overall performance. Hunyuan-A13B also introduces a dual-mode Chain-of-Thought framework that adapts reasoning depth to task complexity: fast thinking for routine queries and slow thinking for complex, multi-step problems. Evaluations show competitive performance across mathematics, </description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Verifiable Hidden Dynamics Play: Generating Agentic RL Environments from Solved Mechanisms</title>
+      <link>https://arxiv.org/abs/2609.27321</link>
+      <guid isPermaLink="false">2609.27321</guid>
+      <description>Xinjie Shen, Wei Fan, Xudong Guo — Language-model agents increasingly face long-horizon tasks with evolving state, interdependent decisions, and delayed outcomes. Scaling their training requires diverse agentic environments, dependable outcome signals, and low extension cost. Existing generation pipelines commonly construct an environment before defining its outcome rule or annotating its trajectories, leaving dynamics and evaluation to be aligned post hoc. VHD-Play reverses this dependency by sampling and solving a mathematical model before a corpus-grounded setter renders its decision process as stateful tools. The executable dynamics and trajectory-scoring reference are inherited from the same solved model. The pipeline produces 3,300 diverse agentic environments at a cost of a few cents each. Training Qwen3.6-35B-A3B on</description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents</title>
+      <link>https://arxiv.org/abs/2609.27490</link>
+      <guid isPermaLink="false">2609.27490</guid>
+      <description>Jingjie Ning, Xueqi Li, Yibo Kong — AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure experimental understanding, the accuracy of predictions about component changes after budgeted experimentation. Agents inspect code, select measurements, and submit a response surface, a table predicting scores for every configuration of component settings. Exhaustive CPU execution supplies reference effects for changing each component while holding the others fixed. These effects capture combinations of changes across 36 tasks from 30 data sources and 8 workflow types, with 1248 configuration records. Core evaluation combines 4,206 numerical-control records across all eight families and 108 agent episodes across the original six. At eight new measurements, pair-effe</description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>InternW0: A Foundational Physical World Model for Efficient Real-World Interactions</title>
+      <link>https://arxiv.org/abs/2609.27656</link>
+      <guid isPermaLink="false">2609.27656</guid>
+      <description>Jisong Cai, Yao Mu, Ganlin Yang — Physical intelligence requires more than predicting how the world may evolve: predictions must remain actionable as the world continues to change. We introduce InternW0, the first instantiation of the InternW physical world model series from Shanghai AI Laboratory, built around omnimodal interfaces, asynchronous multi-frequency processing, and local physical modeling under partial observations and external influences. InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert provides longer-horizon predictive context, while a lightweight action expert operates at a faster timescale. Instead of regenerating the future for every action update, InternW0 reuses layerwise K/V and </description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>The Past Frames the Future: Memory for Autoregressive Video Generation</title>
+      <link>https://arxiv.org/abs/2609.28466</link>
+      <guid isPermaLink="false">2609.28466</guid>
+      <description>Harold Haodong Chen, Rongjin Guo, Disen Lan — Advances in generative models have improved video fidelity, enabling long-horizon generation, interactive world modeling, and evolving visual environments. Autoregressive (AR) video generation extends visual sequences through causal rollouts. However, a fundamental bottleneck emerges: as the generated sequence expands, practical models must operate under strictly bounded context windows, storage, and computational limits. Consequently, critical historical information, e.g., entity identities, dynamic states, and intervention-induced causal changes, often leaves the active context long before its relevance diminishes. Overcoming this limitation and maintaining temporal persistence constitutes a fundamental memory problem. We present a systematic and comprehensive review of memory mechanisms</description>
+      <pubDate>2026-09-23T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Schrödinger&apos;s Code Repository: Have LLMs Learned SWE-bench or Memorized It?</title>
+      <link>https://arxiv.org/abs/2609.27891</link>
+      <guid isPermaLink="false">2609.27891</guid>
+      <description>Silin Chen, Yufei Yang, Xiaodong Gu — Repository-level coding benchmarks have become the standard for evaluating coding agents, yet they inherently suffer from data leakage because they are built upon popular open-source repositories repeatedly used for training. Consequently, strong performance may reflect memorization of canonical repository cues rather than robust repository reasoning. We propose SchrodingerRepo (Schrödinger&apos;s Repository), an evaluation framework for testing coding agents under dynamically instantiated repository representations. Instead of repeatedly using a static representation of the test repository, SchrodingerRepo treats the test repository as an evaluation-time latent variable that is dynamically instantiated only when the agent enters the evaluation environment. The instantiated repository preserves</description>
+      <pubDate>2026-08-21T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis</title>
+      <link>https://arxiv.org/abs/2609.26793</link>
+      <guid isPermaLink="false">2609.26793</guid>
+      <description>Shufan Sun, Chen Wang, Enxin Song — Compositional 3D scene reconstruction has recently been explored from two directions: agentic reasoning that provides semantic understanding of spatial relationships but lacks precise alignment with input images; and visual geometry foundation models that predict dense point maps from input images but the reconstruction quality is limited. Therefore, recovering a complete 3D scene from a single monocular image with accurate inter-object relationships and high-fidelity reconstruction quality remains challenging. In this paper, we present HARMONY, a hierarchical chain-of-thought framework that leverages both agentic reasoning and visual geometry foundation. Given an image of an indoor scene, starting from an empty 3D floorplan, HARMONY first calibrates the camera against the reference image </description>
+      <pubDate>2026-09-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Tri-PvP: Exposing Modality Bias in Omni-Modal Large Language Models through Perceptual-Propositional Evidence Conflicts</title>
+      <link>https://arxiv.org/abs/2609.06011</link>
+      <guid isPermaLink="false">2609.06011</guid>
+      <description>Yen-Ting Piao, Shu-Yun Chen, Chin-Hui Chu — Omni-modal large language models (OLLMs) jointly process vision, audio, and text, yet their modality bias under cross-modal conflict remains underexplored. Existing benchmarks conflate two distinct forms of evidence within a single modality: perceptual signals (e.g., a photograph or recording of a dog) and propositional signals (e.g., the declarative claim &quot;this is a dog&quot;), such that any measured modality bias is inherently confounded with evidence-form bias, precluding clean attribution to either source. To address this, we introduce Tri-PvP, an 8,000-sample tri-modal conflict benchmark crossing vision, audio, and text, where vision and audio each take perceptual or propositional form. Evaluating five OLLMs, we find robust visual bias across most models and evidence-type conditions. Cruci</description>
+      <pubDate>2026-09-05T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Embedding Physics Priors in Robot Learning: A Survey</title>
+      <link>https://arxiv.org/abs/2609.22319</link>
+      <guid isPermaLink="false">2609.22319</guid>
+      <description>Mattia Piccinini, Lucas Schulze, Alice Plebe — The rapid progress of artificial intelligence is reshaping robotics and accelerating the adoption of learning-based approaches. While purely data-driven methods have achieved remarkable success in computer vision and natural language processing, robotics remains constrained by limited data, complex real-world interactions, and the need for reliable operation. These challenges have motivated the exploration of physics-embedded robot learning, which embeds physics priors into learning algorithms. By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency. However, the literature on physics-embedded robot learning remains fragmented a</description>
+      <pubDate>2026-09-15T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Agensh: Scaling Organizational Intelligence to 1,024 Agents</title>
+      <link>https://arxiv.org/abs/2609.26781</link>
+      <guid isPermaLink="false">2609.26781</guid>
+      <description>Zhihao Zhan, Ting Song, Li Dong — A multi-agent system can reduce latency on complex tasks by executing work concurrently. Several pioneering harness frameworks support multi-agent systems. However, the scalability of current multi-agent harnesses is often constrained by a central orchestrator&apos;s capacity to allocate tasks and coordinate workers. To address this limitation, we introduce Agensh, a scalable self-organized multi-agent harness without a central orchestrator: concurrent workers execute a multi-agent cooperation loop, continuously gathering context, claiming and self-assigning sub-tasks, taking action and sharing findings, verifying results, and merging progress in an asynchronous manner. The loop is supported by the agentic organization infrastructure comprising three components: a shared workspace holds propose</description>
+      <pubDate>2026-09-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>JEV-as-a-Judge: Accept When Confident, Escalate When Unsure</title>
+      <link>https://arxiv.org/abs/2609.26550</link>
+      <guid isPermaLink="false">2609.26550</guid>
+      <description>Yubo Li, Yidi Miao, Ramayya Krishnan — LLM-as-a-judge enables evaluation across diverse tasks, but inference cost and confidence reliability become critical at scale. We study whether a decision-only judge can provide an economical first pass and identify when stronger evaluation is needed. Comparing jev-as-a-judge with sixteen generative and reward-model judges, with blinded human adjudication, we find it within three percentage points of a state-of-the-art LLM judge, our strongest comparator, on ordinary preference and evidence-grounded factuality at 0.36% of the comparator&apos;s fee. Larger gaps arise when judgments require checking a derivation or resisting an elaborately written wrong answer. On several benchmarks, JEV&apos;s gap to this comparator is concentrated in low-confidence decisions. A frozen cascade that accepts confident</description>
+      <pubDate>2026-09-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay</title>
+      <link>https://arxiv.org/abs/2609.25053</link>
+      <guid isPermaLink="false">2609.25053</guid>
+      <description>Simon P. Villani — Can one language model hand its live memory to another without the receiver rereading the context? We demonstrate useful persistent hybrid-state transfer across one architecture-matched Qwen3.5 4B-to-9B sibling pair. To our knowledge, this is the first demonstrated cross-model handoff of persistent recurrent inference state between differently sized hybrid language models without target prefix replay. Translated attention KV alone leaves a large gap; adding the Gated DeltaNet (GDN) persistent-state package lowers teacher-forced negative log-likelihood (NLL), the average next-token log-loss, by 0.747 nats/token (95% paired document bootstrap CI [0.6921, 0.8047]), improving all 64 PG19 documents. Direct recurrent and convolution reuse outperforms the tested learned GDN maps, consistent with </description>
+      <pubDate>2026-09-07T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents</title>
+      <link>https://arxiv.org/abs/2609.25636</link>
+      <guid isPermaLink="false">2609.25636</guid>
+      <description>Chang Guo, Yukun Xie, Bohan Tan — Modern embodied agents achieve impressive success rates, yet their actual instruction-following ability is far weaker than these numbers suggest. We trace this illusion to a structural property we term low scene entropy: when a visual scene admits only one valid task, language becomes redundant and a policy can score highly while barely using it. We introduce RoboFollow, a diagnostic benchmark with three principles: (1) High Scene Entropy: each training scene supports multiple kinematically distinct task branches, making vision alone insufficient and forcing reliance on language. (2) Hierarchical Diagnostic Protocol: a four-level protocol (L0--L3) progressively perturbs visual layout and semantics, probing whether equivalent instructions yield consistent behavior and distinct ones yield di</description>
+      <pubDate>2026-09-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Blaming Across the Aisle: Political Contrasting and Blame Attribution in the Danish Parliament</title>
+      <link>https://arxiv.org/abs/2609.26346</link>
+      <guid isPermaLink="false">2609.26346</guid>
+      <description>Markus Lundsfryd Jensen, Rune Egeskov Trust, Kenneth Christian Enevoldsen — Political discourse is widely perceived to be growing more hostile, yet robust evidence remains scarce. This study examines blame attribution in the Danish Parliament from 1997 to 2026, combining a purpose-built classifier, BlameBERT (F1: 0.80), with multilevel statistical modeling. The classifier is constructed using an annotation-efficient pipeline for blame attribution in low-to-mid resource languages. The results reveal a banana-shaped trajectory, with blame declining until around 2016 before entering a significant and sustained increase in recent years (2019-2026). Government status consistently influenced blame attribution - an effect we term political contrasting - with opposition parties blaming substantially more than governing parties. This effect was moderated by ideology: The b</description>
+      <pubDate>2026-09-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>ImIR: Image-Instruction Tuning for All-in-One Image Restoration</title>
+      <link>https://arxiv.org/abs/2609.25267</link>
+      <guid isPermaLink="false">2609.25267</guid>
+      <description>Süleyman Aslan, Görkay Aydemir, Mısra Yavuz — Degradations vary widely across images, so a practical restoration system has to handle many degradation types with one model. A recent and effective recipe adapts a large pretrained image-editing model to restoration using a small low-rank adapter with a text prompt. We replace that prompt with an instruction derived from the degraded image itself. The image reaches the editor through two paths: its structure comes from the model&apos;s VAE, and its semantic instruction comes from a lightweight token mapper that shifts the degraded image&apos;s vision-language embedding toward the embedding a clean image would produce. Because the instruction is a continuous vector, scaling it yields a family of valid restorations for tasks whose target is not unique, such as low-light enhancement. We adapt one Qwe</description>
+      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Emergent Collusion in Long-Horizon LLM Agent Interaction</title>
+      <link>https://arxiv.org/abs/2609.24967</link>
+      <guid isPermaLink="false">2609.24967</guid>
+      <description>Xinrui Shi, Yanzhe Zhang, Diyi Yang — LLM agents are increasingly deployed in collaborative settings, yet long-term interaction may give rise to undesirable coordination. We study the emergence of collusion in a long-horizon multi-agent environment: two agents repeatedly complete individual tasks, share task logs, verify each other&apos;s work, and receive rewards. We introduce realistic constraints that make compliance with the verification protocol incompatible with reward maximization, and find that agents increasingly deviate from the protocol over repeated interactions. Collusion emerges in 94% of trajectories across 10 models, and more capable models within the same family reach it earlier. Controlled peer interventions show that collusion is shaped by peer behavior, while ablations reveal additional effects of reward structu</description>
+      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Lean Pool: An AI-Maintained Archive of Formalized Mathematics</title>
+      <link>https://arxiv.org/abs/2609.25199</link>
+      <guid isPermaLink="false">2609.25199</guid>
+      <description>Vasily Ilin — Lean Pool is a repository of formalized mathematics. It is grown, maintained and optimized by AI agents.</description>
+      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks</title>
       <link>https://arxiv.org/abs/2609.25804</link>
@@ -190,174 +358,6 @@
       <guid isPermaLink="false">2609.24797</guid>
       <description>Julien Siems, Riccardo Grazzi, Korbinian Pöppel — Linear RNNs based on the delta-rule enable efficient sequence modeling, but their linear updates with a low-rank correction constrain their expressivity. Prior work has shown that composing two delta-rule transitions in a single recurrent update can model a 2D rotation, but this increases the rank and the cost of the updates compared to a single transition. We show that Kimi Delta Attention (KDA) can realize 2D rotations by combining a single delta-rule transformation with a second reflection supplied by its channel-wise gate. This requires extending the parameter ranges of KDA by combining two existing range extensions: allowing gates in [-1,1] and the delta-rule coefficient β in [0,2]. We call the resulting model Complex KDA (CKDA). It preserves KDA&apos;s stability and efficiency, with trans</description>
       <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Streaming Video Editing with Easy Adaptation</title>
-      <link>https://arxiv.org/abs/2609.24788</link>
-      <guid isPermaLink="false">2609.24788</guid>
-      <description>Yujia Hu, Jiajun Li, Zihao He — In this paper, we propose SVEET, a framework that requires merely training on a pretrained bidirectional video diffusion model but supports high-quality streaming video editing in an auto-regressive fashion. To tackle this problem, we first systematically revisit existing video-to-video diffusion approaches and identify two key principles for such streaming adaptation: backbone feature disentanglement and conditional frame independence. Building on these insights, we develop a novel paradigm for controllable video generation. At its core, an auxiliary model branch encodes source video inputs with temporally independent self-attention, and the intermediate features are injected into the corresponding backbone blocks for streaming-compatible control. Moreover, to bridge the discrepancy betwe</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Document Retrieval-Aware Chunking (D-RAC): Universal Retrieval-Aware Ingestion of Enterprise Documents via PDF Normalization and Multimodal Markdown Conversion</title>
-      <link>https://arxiv.org/abs/2609.24220</link>
-      <guid isPermaLink="false">2609.24220</guid>
-      <description>Uday Allu, Abhivanth Sivaprakash, Pratik Singh — Retrieval-Augmented Generation (RAG) systems over enterprise knowledge bases must ingest heterogeneous document formats -- PDFs, Word documents, presentations, and scans -- whose content is locked inside complex visual layouts, multi-column pages, and dense tables. Rule-based extraction and OCR destroy reading order, flatten tables, and lose heading hierarchy, while fully agentic chunking over extracted text incurs high token costs and hallucination risk. We present Document Retrieval-Aware Chunking (D-RAC), an extension of our Web Retrieval-Aware Chunking (W-RAC) framework to arbitrary document formats. D-RAC first normalizes any input document into PDF, exploiting the fact that virtually every format has a faithful, deterministic PDF rendering. A single multimodal LLM pass then converts </description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Mira-Scene: Pixel-Aligned Layouts for Generative 3D Scene</title>
-      <link>https://arxiv.org/abs/2609.23796</link>
-      <guid isPermaLink="false">2609.23796</guid>
-      <description>Yang-Tian Sun, Tianjia Liu, Zehuan Huang — Single-image 3D object generation can now produce high-fidelity assets, yet accurately placing them into a coherent scene layout remains an open challenge. A central difficulty lies in how object layout is represented. Holistic methods absorb placement into a scene-level generation process, sacrificing object-level detail. Compositional methods preserve object fidelity by decoupling geometry from layout, but typically parameterize layout as sparse, unbounded pose variables that are difficult to learn and generalize poorly under scarce scene-level supervision.We present Mira-Scene, a compositional 3D scene reconstruction framework that replaces sparse pose regression with dense, bounded correspondence recovery. At its core is the Canonical Coordinate Map (CCM), a pixel-aligned field that ma</description>
-      <pubDate>2026-09-20T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Deep Persona: A Psychologically Grounded Architecture and Evaluation Framework for Role-Playing Agents and Simulations</title>
-      <link>https://arxiv.org/abs/2609.22255</link>
-      <guid isPermaLink="false">2609.22255</guid>
-      <description>Rotem Dror, Zohar Elyoseph, Yuval Haber — Existing approaches to persona simulation with Large Language Models (LLMs) mostly rely on shallow character descriptions that fail to sustain coherent character behavior across extended interactions. We introduce Deep Persona, a psychologically grounded, three-layered architecture that organizes personas into hierarchical levels of observable expression, latent beliefs, and core motivational drives, for constructing highly convincing role-playing agents. Governed by the principles of scripted determinism and bounded agency, the architecture restricts the model to a reactive engine guided by a structured internal script. We further propose a reference-free evaluation framework that benchmarks dialogue naturalness against empirical human distributions using established psychological clinica</description>
-      <pubDate>2026-09-06T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>CARE: Experience-Guided Atomic Corrective Execution for Vision-Language-Action Policies</title>
-      <link>https://arxiv.org/abs/2609.24118</link>
-      <guid isPermaLink="false">2609.24118</guid>
-      <description>Junlan Xiao, Junwei Jiang, Zaibin Zhang — Vision-Language-Action (VLA) policies achieve strong performance in robotic manipulation but remain brittle once execution deviates from nominal trajectories. We propose CARE (Corrective Atomic Robotic Execution), a framework that improves recovery by learning from failures encountered during execution. Instead of generating corrective data from manually designed or random perturbations, CARE collects failed rollouts, models stage-conditioned post-failure deviations, and uses the resulting empirical distributions to synthesize representative failure states and corrective demonstrations. At inference time, CARE combines stage-wise planning with physically grounded 3D monitoring to trigger atomic adjustments or re-operations while preserving task progress. We further introduce the Failure St</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>OmniEdu: Open Foundation Models for Learning and Teaching</title>
-      <link>https://arxiv.org/abs/2609.23088</link>
-      <guid isPermaLink="false">2609.23088</guid>
-      <description>Hao Liang, Qihan Lin, Meiyi Qiang — Educational foundation models must solve problems, understand curriculum structure, diagnose learner difficulties, and provide appropriate instructional support. Existing educational language models often focus on either problem solving or tutoring, with training mixtures organized by source or task rather than capability. We present OmniEdu, an open family of foundation models for K-12 learning and teaching. Its instruction-tuning corpus combines over 100 educational resources and general instruction sources, organized around four capabilities: subject competence, curriculum grounding, diagnostic reasoning, and pedagogical action and scaffolding. Our pipeline integrates deterministic cleaning, semantic auditing and rewriting, task-specific quality scoring, token-budgeted diversity selecti</description>
-      <pubDate>2026-09-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>1% of Tokens Can Be Enough: On Gradient Estimation in On-Policy Distillation</title>
-      <link>https://arxiv.org/abs/2609.24432</link>
-      <guid isPermaLink="false">2609.24432</guid>
-      <description>Huanxin Sheng, Zhiling Ye, Haonan Wang — Sparse on-policy distillation (OPD) allocates teacher supervision to a small subset of tokens in student-generated trajectories. However, useful teacher guidance can yield a noisy update when its gradient is estimated from a sampled next token. We study this estimation problem at a fixed prefix in information geometry and propose an information-efficiency ratio (IER) based on a signal-to-noise decomposition. IER characterizes relative gradient estimation error under an optimal scalar baseline. A candidate-set approximation enables token selection based on IER and its combination with existing usefulness scores, while retaining the sampled reverse-KL training objective. On mathematical and medical reasoning tasks, adding IER improves existing selectors in multiple settings, with sparse conf</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction</title>
-      <link>https://arxiv.org/abs/2609.24983</link>
-      <guid isPermaLink="false">2609.24983</guid>
-      <description>Lei Yang, Mengyin Liu, Jia Wang — We present onPanda, an interactive tool for efficiently annotating LLM alignment data and agent trajectories. onPanda adopts token-level correction as its core interaction: while reading a model response, the annotator locates the first inappropriate token and either picks a substitute from the model&apos;s candidate tokens or types the correct text via free-form editing. The system then truncates everything after that position and continues generation from the corrected prefix, repeating this locate-correct-continue loop until a satisfactory response is obtained. This mechanism lets annotators precisely steer model outputs at low cost: a small controlled study suggests that onPanda reduces median annotation time by 52% over manual post-editing. Since the vast majority of tokens in the final re</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Harness-Zero: Harness Distillation via Agent-as-Harness</title>
-      <link>https://arxiv.org/abs/2609.24974</link>
-      <guid isPermaLink="false">2609.24974</guid>
-      <description>Haoran Ye, Yuxing Lu, Haonan Dong — Agent harnesses, the external systems that mediate model-environment interaction, can substantially improve agent performance, but their gains remain tied to the harness at deployment. Because the best harness varies across domains, instances, and models, a general-purpose agent must either settle for a suboptimal shared harness or route among an ever-growing set of specialized ones. We therefore study agent harness distillation: using a domain- or instance-optimized harness as training-time guidance and transferring the behaviors it induces into model weights, so that its gains survive under a single fixed target harness. The challenge is that the two harnesses differ in action space and available information, so guidance from the optimized harness cannot serve directly as supervision for</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Measuring the Checker: Mutation Analysis for GPU-Kernel Benchmark Oracles</title>
-      <link>https://arxiv.org/abs/2609.22220</link>
-      <guid isPermaLink="false">2609.22220</guid>
-      <description>Mingzhe Du, Anh Tuan Luu, Dong Huang — Benchmarks for LLM-generated GPU kernels decide correctness with a few random inputs and a loose floating-point tolerance, and their verdicts now feed leaderboards and reinforcement-learning rewards. Recent work agrees these checkers are weak and patches them by hand---extra input distributions, fuzzing recipes, tighter tolerances---with no way to measure whether any patch suffices. We introduce mutation analysis as an adequacy metric for kernel-benchmark oracles: deterministic rules inject 10{,}303 compilable faults into verified CUDA implementations of 188 KernelBench problems, 7{,}384 of them with an independent kill witness; any test protocol is scored by the fraction it detects. The official check misses one in six witnessed faults (16.9%), deterministically, and the misses are skewed</description>
-      <pubDate>2026-09-02T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Grounded Action Model: 3D Grounding as a Foundation for Robotics</title>
-      <link>https://arxiv.org/abs/2609.23863</link>
-      <guid isPermaLink="false">2609.23863</guid>
-      <description>Gehao Zhang, Weikai Huang, Shailesh Shailesh — Manipulation policies must know which objects matter and where they are, yet the pretrained backbones that current robot foundation models build on, from language in vision-language-action models (VLAs) to video generation in world-action models (WAMs), do not directly require this metric grounding, leaving it to be learned implicitly from robot demonstrations. We propose Grounded Action Models (GAMs), a new paradigm of robot foundation models built with 3D grounding. GAM can be conditioned using language, points, or box prompts, which are first transformed into a shared object-centric representation of the selected objects. This representation captures target-focused visual features and metric object geometry, which is mixed with robot state history through a multi-stream transformer to p</description>
-      <pubDate>2026-09-20T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay</title>
-      <link>https://arxiv.org/abs/2609.25001</link>
-      <guid isPermaLink="false">2609.25001</guid>
-      <description>Yiran Wang, Xingyilang Yin, Junfu Pu — Modern video games provide a measurable testbed for AI models, combining abilities of visual understanding, instruction decomposition, goal planning, and precise action control over multiple temporal horizons. Existing datasets and benchmarks, however, either cover a narrow range of games, lack language instructions, or rely on high-variance online rollouts. To address these challenges, we introduce GameHorizon, a unified data and evaluation suite that measures gameplay capabilities at different horizons for diverse model families. GameHorizon Suite consists of three components. First, GameHorizon-Annotator is a scalable and automated annotation pipeline for multi-horizon instructions. Second, utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay dataset</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents</title>
-      <link>https://arxiv.org/abs/2609.23986</link>
-      <guid isPermaLink="false">2609.23986</guid>
-      <description>Dongming Jiang, Yi Li, Bingzhe Li — Agentic memory is becoming essential for long-horizon AI agents, yet many existing systems rely on autoregressive LLMs to control how memories are organized, retrieved, and used, placing expensive generation on the critical path of memory operations. We introduce \method, a new agentic memory architecture inspired by System-One/System-Two cognition. System One captures fast, lightweight decision-making, whereas System Two performs slower, deliberative reasoning. Jev-Mem brings this division of labor to agentic memory through a dedicated System-One control plane, a structured multi-relational memory plane, and a System-Two reasoning plane. The System-One controller governs memory typing and relational organization during construction, and dynamically performs query routing, retrieval-budget</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>VideoGen-Agent: Reinforcing Video Generation Agents</title>
-      <link>https://arxiv.org/abs/2609.24997</link>
-      <guid isPermaLink="false">2609.24997</guid>
-      <description>Binxu Li, Haoyi Duan, Yuhui Zhang — Recent advances in video generative models have enabled high-fidelity, temporally coherent video generation. However, these models often struggle to satisfy prompts requiring specialized knowledge, specific identities, physical consistency, or ordered events. In this paper, we present VideoGen-Agent, a multimodal agent trained through multitask agentic reinforcement learning to use external tools for video generation. The agent coordinates augmentation, generation, and verification tools through multi-turn interactions, using the prompt and intermediate observations to guide its decisions. We train a shared policy on a category-balanced dataset spanning six tasks. Supervised fine-tuning on teacher-generated trajectories establishes tool-use behavior, which is then refined through reinforce</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Think Like a World Model, Act Like a VLA: Distilling World-Model Representations into Compact Robot Policies</title>
-      <link>https://arxiv.org/abs/2609.24682</link>
-      <guid isPermaLink="false">2609.24682</guid>
-      <description>Trung Dao, Sankalp Yamsani, Jaden Park — Vision-Language-Action (VLA) models map observations to actions with no objective that accounts for how the world responds, so their robustness is bounded primarily by data coverage. World models carry precisely that missing objective and are better grounded for it, yet rolling the future forward costs seconds per decision and rules them out of the control loop. We show the two can be separated. What a world model knows about physical scenes lives in its internal features; generating the future is merely the objective that produced them, so the grounding can be inherited while the generative machinery is left behind. We add one feature-alignment term to ordinary VLA training: a frozen world model is run over the training frames once and cached, and the student learns to agree with that cac</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>HuRo: Robotizing Human Videos for Scalable VLA Pretraining</title>
-      <link>https://arxiv.org/abs/2609.10706</link>
-      <guid isPermaLink="false">2609.10706</guid>
-      <description>Jinho Jeong, Se June Joo, Jaehyun Kang — Human video datasets offer an abundant and diverse source of interaction data that can complement expensive real-robot data. To bridge the human-to-robot embodiment gap, existing approaches either robotize videos in task-matched settings or address observation and action alignment separately at scale. In this work, we systematically examine whether robotized human videos can serve as an effective and scalable source of supervision for VLA pretraining. To this end, we develop a robotization pipeline that converts heterogeneous human videos into robot-aligned observations and action trajectories while inferring missing intermediate signals across annotation levels. Using this pipeline, we construct the HuRo dataset, comprising about 630K robotized episodes and 142M processed frames from five</description>
-      <pubDate>2026-09-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>RRSI: Regularized Recursive Self-Improvement of Agent Harnesses</title>
-      <link>https://arxiv.org/abs/2609.24972</link>
-      <guid isPermaLink="false">2609.24972</guid>
-      <description>Peng Xia, Rujun Han, Zifeng Wang — An LLM agent&apos;s capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selec</description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory</title>
-      <link>https://arxiv.org/abs/2609.24984</link>
-      <guid isPermaLink="false">2609.24984</guid>
-      <description>Wangbo Yu, Kunhao Liu, Wenbo Hu — Video world models enable interactive exploration of dynamic environments, yet struggle to respect prior observations over long horizons and across viewpoints. We present WorldCrafter, a video world model that learns a camera-queryable implicit 3D-aware memory for this purpose. The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator&apos;s limited token budget. Trained jointly with the video generator, a memory encoder and pose-conditioned readout module integrate historical observations into a fixed set of target view-specific tokens before denoising, without explicit depth-based correspondences. By combining this memory with recent temporal context and few-step distillation, WorldCrafter enables streaming scene exploration from a </description>
-      <pubDate>2026-09-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Transferring the Intelligence of VLMs to Robotic Control</title>
-      <link>https://arxiv.org/abs/2609.22966</link>
-      <guid isPermaLink="false">2609.22966</guid>
-      <description>Meng-Hao Guo, Zhe-Han Mo, Jia-Jun Wang — Humans can seamlessly adapt to both physical and digital worlds, suggesting that while a digital-to-real gap exists in embodiment, environment and task, human intelligence itself may transfer across this gap. This naturally raises a fundamental question: can the intelligence of vision-language models (VLMs) similarly generalize from the digital world to the physical world for robotic control? We investigate this question through RoboDawn, a human-intuitive interface that exposes robotic control to an agentic VLM through a compact set of discrete translation, rotation, and gripper commands. Using this interface, the VLM controls a robot in a closed loop: it observes the current visual state, reasons about the next action, executes it, and adapts subsequent decisions to the resulting state. </description>
-      <pubDate>2026-09-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Why Do Video Diffusion Models Violate Physics? Unveiling the Flaws in Attention Mechanisms</title>
-      <link>https://arxiv.org/abs/2609.23658</link>
-      <guid isPermaLink="false">2609.23658</guid>
-      <description>Yueyan Li, Haibo Wang, Caixia Yuan — Despite impressive visual quality, state-of-the-art video diffusion models often generate content that violates real-world physical laws. While existing solutions rely on external priors or specialized data, we investigate the root cause by exploring the internal mechanisms of these models. Specifically, we present the first interpretability study on the &apos;&apos;motion planning&apos;&apos; process of text-to-video diffusion models, revealing how motion trajectories form during early denoising stages. Building upon the &apos;&apos;first shape, then details&apos;&apos; finding, we combine cross-attention trajectory patterns with causal head contributions to identify a specific subset of attention heads driving motion planning. Further, our self-attention analysis shows that Rotary Position Embedding (RoPE) induces excessive sp</description>
-      <pubDate>2026-09-20T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents</title>
-      <link>https://arxiv.org/abs/2609.23377</link>
-      <guid isPermaLink="false">2609.23377</guid>
-      <description>Jie Zhao, Ziyu Jiang, Suhang Zheng — Repository-level software engineering (SWE) comprises heterogeneous task categories, whose progress under pooled agentic reinforcement learning can be uneven: gains in some categories coincide with regressions in others, while aggregate resolution obscures these changes. Motivated by this category see-saw, we develop a category-aware expert-training and policy-integration framework. Executable task construction and SWE Labeler, an evidence-grounded multi-axis labeling system, organize the training pools. Initial category-specific RL improves average training success while leaving uneven instance-level progress, motivating explicit consolidation of successful behavior and policy-adaptive task selection. Same-origin category experts alternate long-horizon Agentic-miniRL with Refresh-Repair-E</description>
-      <pubDate>2026-09-20T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>SteerDuplex: Steerable Duplex Speech Dialogue Models</title>
-      <link>https://arxiv.org/abs/2609.12623</link>
-      <guid isPermaLink="false">2609.12623</guid>
-      <description>Utkarsh Tyagi, Ramaneswaran Selvakumar, Advait Gosai — Full-duplex spoken dialogue models support low-latency turn taking, interruption handling, and backchanneling, yet a key capability remains underexplored: steerability, the ability to reliably shift conversational behavior along attributes such as tone, persona, speaking rate, and voice style in response to user instructions. We introduce a taxonomy of text- and audio-based steerability that identifies substantial gaps in current full-duplex models. To address this gap, we introduce SteerDuplex, a Moshi-based full-duplex speech model fine-tuned on natural conversations and synthetic dialogues targeting instruction following, vocal delivery, reasoning, and duplex interaction. We further apply two-stage reinforcement learning (RL) with hybrid rewards, combining verifiable interaction checks </description>
-      <pubDate>2026-09-11T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention</title>
-      <link>https://arxiv.org/abs/2609.21788</link>
-      <guid isPermaLink="false">2609.21788</guid>
-      <description>Sichang Su, Benjamin Yang, Zhiyun Deng — A pretrained robot foundation policy may execute most of a long-horizon task yet repeatedly fail at a few critical subtasks. Collecting additional full-task demonstrations for supervised fine-tuning (SFT) requires operators to repeat behaviors the policy already performs well. Reinforcement learning (RL) fine-tuning offers a promising path to bridge this gap, but existing approaches struggle to solve long-horizon tasks using only sparse rewards. We present PARTS (Policy Adaptation with RL on Targeted Subtasks), a real-world subtask RL framework that concentrates practice at these bottlenecks while allowing training rollouts to proceed with minimal human intervention. The frozen pretrained policy supplies nominal actions throughout execution, while agent-generated selectors and success veri</description>
-      <pubDate>2026-09-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops</title>
-      <link>https://arxiv.org/abs/2609.19169</link>
-      <guid isPermaLink="false">2609.19169</guid>
-      <description>Ranran Haoran Zhang, Aysa Xuemo Fan, David Munhá Correia — Concurrent local LLM serving on unified-memory desktops must preserve memory headroom and output fidelity, which speed-only rankings overlook. We introduce SiliconBench, which evaluates nine Apple Silicon serving engines through three lenses: speed, memory, and fidelity. We evaluate chat and agent serving on Qwen3, Qwen3.5, and Gemma 4. We use a classification task to check for quality regressions against an NVIDIA reference. DGX Spark provides a complementary serving-performance reference. Three desiderata guide interpretation: serving architecture readiness, memory discipline, and multi-node scaling. On Qwen3-0.6B, vllm-metal alone more than doubles throughput on both workloads from concurrency 1 to 16. CUDA vLLM and SGLang show stronger concurrency scaling on the same prompts. Explicit </description>
-      <pubDate>2026-09-12T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
