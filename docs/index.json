@@ -1,7 +1,196 @@
 {
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "count": 50,
   "papers": [
+    {
+      "id": "2609.28603",
+      "title": "Learning to Discover Interesting Mathematics",
+      "authors": [
+        "Niket Patel",
+        "Ahmad Rammal",
+        "Amaury Hayat",
+        "Remi Munos",
+        "Julia Kempe"
+      ],
+      "summary": "Recently, Large Language Models (LLMs) have been increasingly able to solve advanced mathematical problems, including many that have been open for decades. This opens the door to expansion of mathematical knowledge at unprecedented scale. Yet, while LLMs may be able to conjecture and prove more and more theorems, it remains open whether this new mathematical knowledge is interesting or useful. We define intrinsic interestingness of a theorem as the ratio between the length of its proof and the length of its statement. We show that this correlates strongly with an extrinsic measure of the downstream utility of a theorem. We identify the difficulty of a proof conditioned on a set of premises as a useful primitive for computing these metrics, and train a 27B model that predicts proof difficulty more accurately than frontier general-purpose models. Optimizing for our metric creates a model capable of producing more interesting theorems, while also reducing substantial or full overlap with Mathlib from 91.9% to 30.6%, showcasing the creation of more out-of-distribution math. We show that our system can generate candidate theorems, select the most interesting among them, and iteratively build on a self-expanding mathematical library. These metrics provide a practical and quantifiable signal for ranking conjectures and guiding proof search within formal mathematical libraries. Our framework provides a path towards self-expanding, machine-verified mathematical libraries that can choose worthwhile statements without relying on human-supplied targets.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.28603",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.28603",
+      "githubRepo": null
+    },
+    {
+      "id": "2609.29028",
+      "title": "RGBD20K: A Large-Scale Benchmark for RGB-D Semantic Segmentation",
+      "authors": [
+        "Shaohua Dong",
+        "Zexuan Meng",
+        "Haiyan Sun",
+        "Bing Fan",
+        "Cuicui Zhang",
+        "Dylan Joseph",
+        "Kewei Sha",
+        "Yunhe Feng",
+        "Heng Fan"
+      ],
+      "summary": "In this paper, we propose RGBD20K, a novel dataset for facilitating the development of more robust and general RGB-D semantic segmentation by encompassing abundant categories and high-quality annotations. RGBD20K possesses several attractive properties: (1) Expanded Semantic Space. In particular, it covers 160 fine-grained categories, largely surpassing the category diversity of existing popular RGB-D benchmarks (e.g., NYUv2 with 40 classes and SUN RGB-D with 37 classes). With such enriched semantic coverage, we expect to promote the learning of more generalizable segmentation models. (2) Larger Scale. Compared with current benchmarks, RGBD20K offers 20,000 RGB-D image pairs, providing a substantially larger training resource that benefits the development of more powerful deep models. (3) High-Fidelity Annotation. We perform rigorous re-evaluation and correction of existing labels to resolve long-standing annotation noise, resulting in a clean and reliable ground-truth foundation. Furthermore, we propose a novel score-purified fusion (SPF) method, which achieves state-of-the-art performance across all evaluated benchmarks, demonstrating the effectiveness of our approach in leveraging high-quality multimodal information for RGB-D semantic segmentation. The dataset is here: https://github.com/ShaohuaDong2021/RGBD20K/.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.29028",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.29028",
+      "githubRepo": "https://github.com/ShaohuaDong2021/RGBD20K"
+    },
+    {
+      "id": "2609.29816",
+      "title": "AV-GRPO: Modality-Anchored Decoupling Diffusion Reinforcement Learning for Joint Audio-Video Generation",
+      "authors": [
+        "Zhiyu Xu",
+        "Weilong Yan",
+        "Yufei Shi",
+        "Shiyang Li",
+        "Yihao Liu",
+        "Kin-Man Lam",
+        "Yuewen Cao"
+      ],
+      "summary": "Recent years have witnessed major progress in joint audio-video generation. Existing models still suffer from limited per-modality fidelity, insufficient text-modality alignment and weak cross-modal synchronization. While reinforcement-learning post-training offers a promising remedy, directly adapting it to joint audio-video generation is challenging. Heterogeneous multimodal rewards entangle learning signals and complicate credit assignment. Joint optimization of two modality towers is computationally expensive given their divergent dynamics. Moreover, synchronization evaluation difficulty depends on paired samples, preventing fair reward comparisons. We propose AV-GRPO, a modality-anchored online diffusion RL framework, and 5DAV, a decoupled, difficulty-controllable training dataset. AV-GRPO includes three key modules: (1) modality-anchored rollouts to disentangle learning signals and stabilize difficulty; (2) trajectory-locked frozen-tower optimization to reduce cost and reassign credit; (3) adaptive objectives and perturbation strengths tailored to modality-specific dynamics. This converts coupled multimodal preference learning into unimodal subproblems for precise reward attribution and better synchronization. Our 5DAV dataset decouples samples across five dimensions for systematic training. Experiments on JavisBench and VABench demonstrate AV-GRPO outperforms LTX-2.3 in generation quality, semantic alignment and cross-modal synchronization under LoRA and full fine-tuning. Ablations confirm our designs. Code and data: https://github.com/zhiyuxu03/AV-GRPO",
+      "upvotes": 0,
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.29816",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.29816",
+      "githubRepo": "https://github.com/zhiyuxu03/AV-GRPO"
+    },
+    {
+      "id": "2609.29845",
+      "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
+      "authors": [
+        "Pavel Tikhonov",
+        "Anton Korznikov",
+        "Matvey Mikhalchuk",
+        "Nikita Dragunov",
+        "Temurbek Rahmatullaev",
+        "Polina Druzhinina",
+        "Anton Razzhigaev",
+        "Ivan Oseledets",
+        "Elena Tutubalina"
+      ],
+      "summary": "While Large Language Models (LLMs) rely on highly non-linear components, in this work we demonstrate that they exhibit fundamental linearity: when inputs from distinct text streams are linearly combined, the model outputs a superposition of the individual next-token distributions. We term this the Superposition Linearity Hypothesis. We provide evidence that superposition is an intrinsic property of the Transformer architecture rather than an emergent consequence of training; in fact, we observe that it tends to diminish as pretraining progresses. However, we demonstrate that linearity can be substantially restored through lightweight fine-tuning, significantly reducing the divergence between the predicted next-token distribution and the average of the individual next-token distributions. Finally, we introduce a guided decoding procedure that disentangles superposed outputs, enabling the simultaneous generation of two coherent continuations from a single forward pass.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.29845",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.29845",
+      "githubRepo": null
+    },
+    {
+      "id": "2609.29429",
+      "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+      "authors": [
+        "Ruoqi Guo",
+        "Yi Liu",
+        "Gelei Deng",
+        "Yuekang Li",
+        "Lida Zhao",
+        "Yutao Wu",
+        "Simin Chen",
+        "Ying Zhang",
+        "Leo Yu Zhang"
+      ],
+      "summary": "Detectors of alignment failures screen deployed language models and score alignment benchmarks. Most are generative judges that spend a decoding pass on every criterion, and classifiers that read token probabilities, such as Llama Guard, still score one fixed label per call. Jev, a model trained with reinforcement learning for calibrated decisions (RLCD), answers many typed questions about one input with calibrated probabilities in a single call. Whether it detects alignment failures has not been measured. We present RLCDAlignBench, which benchmarks Jev on ten alignment failures: sycophancy, jailbreaks, deception, prompt injection, hallucination, privacy violation, social bias, reward hacking, concealing uncertainty, and power seeking. It spans 44 benchmarks and five target models, labelled by each benchmark's scorer and, on two, by humans. Many of these failures are relational, defined against a reference, such as the user's belief or an injected instruction, that the response alone does not reveal. Our key idea is therefore to vary what Jev is asked separately from what it sees: the question's wording and answer type on one side, the fields of the input on the other. A single generic question reaches a median AUROC of 0.886 zero-shot and beats supervised baselines on most benchmarks. Question wording matters little, while context matters more, mostly through fields that encode the label. Jev matches the reference scorer's agreement with human labels, surfaces label defects in existing benchmarks, and costs 63x less than LLM-judge scorers. Code and data: https://github.com/sumleo/RLCDAlignBench.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.29429",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.29429",
+      "githubRepo": "https://github.com/sumleo/RLCDAlignBench"
+    },
+    {
+      "id": "2609.29362",
+      "title": "Parts-of-Speech as Emergent Categories in SAE Latent Space",
+      "authors": [
+        "Alessandro Bondielli",
+        "Lucia Passaro",
+        "Serena Auriemma",
+        "Alessandro Lenci"
+      ],
+      "summary": "Sparse AutoEncoders (SAEs) offer a promising way to inspect language model representations, but it is still unclear what kind of linguistic structure their latents expose. We use part-of-speech (PoS) categories as a controlled test case to study whether morpho-syntactic information is encoded by individual latents or by structured groups of features. We find that PoS distinctions are highly recoverable from SAE activations, but do not align with one-to-one latent / category mappings. This recoverability is not reducible to lexical memorisation, and Open and Closed PoS classes differ substantially. Categories are supported by compact groups of sparse latents, with substantial variation across tags. These groups remain stable on held-out data, while also showing overlap between related categories. Our results show that SAEs localise morpho-syntactic information in a distributed and category-dependent form rather than through atomic grammatical features.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.29362",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.29362",
+      "githubRepo": "https://github.com/colinglab/pos-sae-latents"
+    },
+    {
+      "id": "2609.30233",
+      "title": "Coding Agents for Generalized Task and Motion Planning Problems",
+      "authors": [
+        "Matteo Merler",
+        "Bowen Li",
+        "Josh Roy",
+        "Yichao Liang",
+        "Qianwei Wang",
+        "Yixuan Huang",
+        "Tom Silver"
+      ],
+      "summary": "Task and motion planning (TAMP) problems remain difficult even with full observability and object-centric states because discrete decisions are tightly coupled to geometric, kinematic, and dynamic constraints. Generalized TAMP addresses this difficulty by exploiting regularities across problem instances to reduce planning effort on new instances. However, existing methods require substantial TAMP-specific engineering. We investigate whether coding agents can automate this process by synthesizing programs that generalize across instances. Given a task description and simulator access, each agent chooses how to interact with the environment while developing a program within a fixed synthesis budget. The program is then frozen and evaluated on unseen instances. We evaluate Claude Code (Opus 5) and Codex (GPT-5.6 Sol and GPT-6 Astra) on 28 simulated environments from KinDER and PDDLStream, with object counts beyond those evaluated in the original benchmark. Across all program synthesis methods, we evaluate 980 generated programs on 100 held-out instances each, 98,000 evaluation episodes in total. Overall, we find that coding agents are surprisingly effective at generalized TAMP: all three agent configurations outperform hand-engineered planners, one-shot generation, and an LLM-based generalized planning baseline in mean success (56% to 95% versus 47% for the planners, on the 16 environments where a planner is available). As object counts grow, the agents' programs maintain higher success than the planner, using an order of magnitude less computation per instance on average. Logs show agents using interaction to calibrate physical models, test edge cases, and refine strategies. We release all code, including the full prompts given to the agents. These findings suggest that coding agents are a strong baseline for generalized TAMP.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.30233",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.30233",
+      "githubRepo": "https://github.com/tomsilver/robocode"
+    },
+    {
+      "id": "2609.28811",
+      "title": "DeltaWAM: Delta World Action Models for Bimanual Manipulation",
+      "authors": [
+        "Han Yan",
+        "Zishang Xiang",
+        "Haokai Jiang",
+        "Zeyu Zhang",
+        "Qilin Wang",
+        "Weiyu Guo",
+        "Yandong Guo",
+        "Boxin Shi",
+        "Hao Tang"
+      ],
+      "summary": "World-action models (WAMs) transfer visual and motion priors from pretrained video generators to robot control by jointly modeling visual dynamics and actions. Existing WAMs, however, predict dense future frames during training, repeatedly modeling largely unchanged content and coupling action-conditioned dynamics to nuisance appearance variations. At inference, processing each complete observation with the heavy video expert bottlenecks few-step action generation. Accordingly, we propose DeltaWAM, which jointly predicts visual deltas and actions using dense-anchor, sparse-delta, and action streams, with three architectures that differ in representation and computation sharing. We further develop Streaming Delta Memory (SDM), which updates cached anchor context with compact observed deltas, reducing heavy video-expert processing. On RoboTwin, DeltaWAM with SDM improves average success over Fast-WAM from 81.3% to 85.4% in the clean setting and from 75.8% to 83.9% under visual randomization. The three architectures reduce training FLOPs by 17.78-23.77%, while SDM reduces one-step inference latency and FLOPs by 36.57% and 31.55%, respectively; real-world evaluations further show the highest overall success rate and normalized progress among the evaluated policies. Code: https://github.com/AIGeeksGroup/DeltaWAM. Website: https://aigeeksgroup.github.io/DeltaWAM.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.28811",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.28811",
+      "githubRepo": "https://github.com/AIGeeksGroup/DeltaWAM"
+    },
+    {
+      "id": "2609.29421",
+      "title": "Rufus-Air: An Open LLM Post-Training Recipe",
+      "authors": [
+        "Chia-Yuan Chang",
+        "Renyuan Cheng",
+        "Rui Feng",
+        "Xiaotian Han",
+        "Yuan He",
+        "Hongye Jin",
+        "Linwei Li",
+        "Shiyang Li",
+        "Fenglin Liu",
+        "Xin Liu",
+        "Priyanka Nigam",
+        "Haoyang Wen",
+        "Zhenghao Xu",
+        "Zhuocheng Xu",
+        "Bing Yin",
+        "Qingyu Yin",
+        "Chao Zhang",
+        "Rongzhi Zhang",
+        "Zhihan Zhang",
+        "Zixuan Zhang",
+        "Zixuan Zhang",
+        "Tuo Zhao"
+      ],
+      "summary": "Rufus-Air is an open and reproducible post-training recipe on GLM-4.5-Air-Base (106B-A12B), organized as a serial pipeline of eight stages: SFT, Reasoning RL, Coding RL, Instruction-Following RL, General Agent, Coding Agent, Search Agent, and RLHF. We document the data, reward design, infrastructure, stage order, and stagewise results needed to reproduce the recipe. Stages progress from basic to advanced capabilities and from hard, verifiable rewards to softer judge-based signals. Training builds on open-source components and public data, much of it used as released, without new human annotation or an in-house distillation teacher. Our main findings are that (i) diverse, high-quality SFT establishes a strong capability floor; (ii) difficulty filtering keeps RL prompts within a productive learning range; (iii) reward reliability provides a practical principle for ordering stages; and (iv) infrastructure and engineering choices are part of the recipe, not just an implementation detail. Rufus-Air improves over the official GLM-4.5-Air post-trained release and is competitive with similarly sized open models.",
+      "upvotes": 0,
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "arxivUrl": "https://arxiv.org/abs/2609.29421",
+      "arxivPdfUrl": "https://arxiv.org/pdf/2609.29421",
+      "githubRepo": null
+    },
     {
       "id": "2609.23087",
       "title": "Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone",
@@ -1031,170 +1220,6 @@
       "arxivUrl": "https://arxiv.org/abs/2609.28466",
       "arxivPdfUrl": "https://arxiv.org/pdf/2609.28466",
       "githubRepo": "https://github.com/HaroldChen19/Awesome-AR-Video-Memory"
-    },
-    {
-      "id": "2609.27891",
-      "title": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
-      "authors": [
-        "Silin Chen",
-        "Yufei Yang",
-        "Xiaodong Gu",
-        "Yuling Shi",
-        "Chengcheng Wan",
-        "Haibing Guan"
-      ],
-      "summary": "Repository-level coding benchmarks have become the standard for evaluating coding agents, yet they inherently suffer from data leakage because they are built upon popular open-source repositories repeatedly used for training. Consequently, strong performance may reflect memorization of canonical repository cues rather than robust repository reasoning. We propose SchrodingerRepo (Schrödinger's Repository), an evaluation framework for testing coding agents under dynamically instantiated repository representations. Instead of repeatedly using a static representation of the test repository, SchrodingerRepo treats the test repository as an evaluation-time latent variable that is dynamically instantiated only when the agent enters the evaluation environment. The instantiated repository preserves the original executable behavior while eroding familiar cues such as naming conventions, file layouts, and implementation patterns through four transformation levels: problem statement reconstruction, namespace remapping, intra-file layout reordering, and functionality-preserving code rewriting. We evaluate popular LLMs on SWE-bench Verified and SWE-QA. Results show that removing familiar repository cues consistently degrades agent performance and substantially increases interaction costs across models. Further analysis reveals that the additional cost is primarily caused by increased difficulty in repository exploration and localization. These findings suggest that current coding agents may partially rely on memorized repository-side cues, highlighting the need for evaluation under dynamically instantiated repository representations.",
-      "upvotes": 0,
-      "publishedAt": "2026-08-21T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.27891",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.27891",
-      "githubRepo": "https://github.com/cslsolow/Schrodinger-Repo"
-    },
-    {
-      "id": "2609.26793",
-      "title": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
-      "authors": [
-        "Shufan Sun",
-        "Chen Wang",
-        "Enxin Song",
-        "Jiatao Gu",
-        "Lingjie Liu"
-      ],
-      "summary": "Compositional 3D scene reconstruction has recently been explored from two directions: agentic reasoning that provides semantic understanding of spatial relationships but lacks precise alignment with input images; and visual geometry foundation models that predict dense point maps from input images but the reconstruction quality is limited. Therefore, recovering a complete 3D scene from a single monocular image with accurate inter-object relationships and high-fidelity reconstruction quality remains challenging. In this paper, we present HARMONY, a hierarchical chain-of-thought framework that leverages both agentic reasoning and visual geometry foundation. Given an image of an indoor scene, starting from an empty 3D floorplan, HARMONY first calibrates the camera against the reference image to establish a semantically-grounded spatial frame, then uses agentic VLM reasoning to recover the 3D room layout and an initial placement order. It then places the objects in a hierarchical order, from wall-mounted elements, free-standing furniture, to dependent decorations on top of furniture. We also use depth-first traversal for furniture so each placement conditions on previously resolved structure and a reflective feedback loop to avoid error accumulation. After each object placement by VLM, we use the point cloud estimations to perform geometry-based refinement so that the rendered image aligns better with the input. HARMONY can produce 3D scenes that are semantically consistent and perceptually aligned with the reference image, extending single-image compositional reconstruction to complex indoor scene images. Experiments on synthetic and real-world images demonstrate that HARMONY outperforms the evaluated reconstruction baselines, while qualitative comparisons with GPT-6 Astra suggest more faithful object arrangements and better preservation of scene details.",
-      "upvotes": 0,
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.26793",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.26793",
-      "githubRepo": "https://github.com/ShufanSun/harmony-release"
-    },
-    {
-      "id": "2609.06011",
-      "title": "Tri-PvP: Exposing Modality Bias in Omni-Modal Large Language Models through Perceptual-Propositional Evidence Conflicts",
-      "authors": [
-        "Yen-Ting Piao",
-        "Shu-Yun Chen",
-        "Chin-Hui Chu",
-        "Chun-Wei Chen",
-        "Shih-Yun Shan Kuan",
-        "Hung-yi Lee",
-        "Yun-Nung Chen"
-      ],
-      "summary": "Omni-modal large language models (OLLMs) jointly process vision, audio, and text, yet their modality bias under cross-modal conflict remains underexplored. Existing benchmarks conflate two distinct forms of evidence within a single modality: perceptual signals (e.g., a photograph or recording of a dog) and propositional signals (e.g., the declarative claim \"this is a dog\"), such that any measured modality bias is inherently confounded with evidence-form bias, precluding clean attribution to either source. To address this, we introduce Tri-PvP, an 8,000-sample tri-modal conflict benchmark crossing vision, audio, and text, where vision and audio each take perceptual or propositional form. Evaluating five OLLMs, we find robust visual bias across most models and evidence-type conditions. Crucially, we reveal a systematic asymmetry in evidence-form bias: models exhibit a stronger bias toward perceptual signal in vision but propositional in audio. Further analyses via layer-wise linear probing and contrastive decoding reveal that modality bias is already linearly decodable from early representation layers and can only be partially mitigated, calling for mitigation strategies beyond surface-level interventions.",
-      "upvotes": 0,
-      "publishedAt": "2026-09-05T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.06011",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.06011",
-      "githubRepo": "https://github.com/MiuLab/Tri-PvP"
-    },
-    {
-      "id": "2609.22319",
-      "title": "Embedding Physics Priors in Robot Learning: A Survey",
-      "authors": [
-        "Mattia Piccinini",
-        "Lucas Schulze",
-        "Alice Plebe",
-        "Matteo Saveriano",
-        "Thomas Beckers",
-        "Yuan Gao",
-        "Oleg Arenz",
-        "Baha Zarrouki",
-        "Dingrui Wang",
-        "Finn Rasmus Schäfer",
-        "Jan Peters",
-        "Johannes Betz",
-        "Gastone Pietro Rosati Papini"
-      ],
-      "summary": "The rapid progress of artificial intelligence is reshaping robotics and accelerating the adoption of learning-based approaches. While purely data-driven methods have achieved remarkable success in computer vision and natural language processing, robotics remains constrained by limited data, complex real-world interactions, and the need for reliable operation. These challenges have motivated the exploration of physics-embedded robot learning, which embeds physics priors into learning algorithms. By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency. However, the literature on physics-embedded robot learning remains fragmented across terminology, methodologies, and application domains, making it difficult to assess this growing body of work. This survey reviews physics-embedded robot learning across a broad range of physics priors, robotics applications, and machine learning models, from single-layer perceptrons to generative foundation models. We adopt a unified taxonomy that classifies existing approaches according to their physics embedding: physics-guided inputs, data, and representations; physics-encoded model architectures; and physics-informed training loss functions. Building on this taxonomy, we review methods for robot dynamics learning, trajectory planning, prediction, control, and estimation, together with the corresponding open-source software ecosystem. We identify key open challenges, and outline promising future research directions. Overall, we argue that physics priors provide a particularly relevant robotics-specific inductive bias, complementing rather than replacing data-driven learning, and paving the way toward more generalizable, data-efficient, and trustworthy robotic systems.",
-      "upvotes": 0,
-      "publishedAt": "2026-09-15T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.22319",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.22319",
-      "githubRepo": "https://github.com/TUM-AVS/survey-physics-embedded-robot-learning"
-    },
-    {
-      "id": "2609.26781",
-      "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
-      "authors": [
-        "Zhihao Zhan",
-        "Ting Song",
-        "Li Dong",
-        "Shaohan Huang",
-        "Jianxun Lian",
-        "Yan Xia",
-        "Furu Wei"
-      ],
-      "summary": "A multi-agent system can reduce latency on complex tasks by executing work concurrently. Several pioneering harness frameworks support multi-agent systems. However, the scalability of current multi-agent harnesses is often constrained by a central orchestrator's capacity to allocate tasks and coordinate workers. To address this limitation, we introduce Agensh, a scalable self-organized multi-agent harness without a central orchestrator: concurrent workers execute a multi-agent cooperation loop, continuously gathering context, claiming and self-assigning sub-tasks, taking action and sharing findings, verifying results, and merging progress in an asynchronous manner. The loop is supported by the agentic organization infrastructure comprising three components: a shared workspace holds proposed, ongoing, and completed work; a message interface lets workers communicate; and shared context retains reusable findings and work intentions. To test the scalability of Agensh, we evaluate it on the five hardest ProgramBench tasks with GPT-5.6-sol (high). Scaling from 1 to 128 agents raises the mean final test-pass rate from 19.31% to 28.78%, an approximately 49% relative improvement. Larger organizations reach comparable test-pass rates earlier. On pandoc, scaling from 1 to 1,024 agents raises the final test-pass rate from 33.89% to 55.06%. Worker trajectories further show that different forms of self-organized cooperation gradually emerges and standardizes as the organization grows. These results reveal the number of agents as a new scaling dimension for multi-agent organizations to expand the frontier of general intelligence, offering a practical solution for complex tasks under hard latency constraints or time budgets.",
-      "upvotes": 0,
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.26781",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.26781",
-      "githubRepo": null
-    },
-    {
-      "id": "2609.26550",
-      "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
-      "authors": [
-        "Yubo Li",
-        "Yidi Miao",
-        "Ramayya Krishnan",
-        "Rema Padman"
-      ],
-      "summary": "LLM-as-a-judge enables evaluation across diverse tasks, but inference cost and confidence reliability become critical at scale. We study whether a decision-only judge can provide an economical first pass and identify when stronger evaluation is needed. Comparing jev-as-a-judge with sixteen generative and reward-model judges, with blinded human adjudication, we find it within three percentage points of a state-of-the-art LLM judge, our strongest comparator, on ordinary preference and evidence-grounded factuality at 0.36% of the comparator's fee. Larger gaps arise when judgments require checking a derivation or resisting an elaborately written wrong answer. On several benchmarks, JEV's gap to this comparator is concentrated in low-confidence decisions. A frozen cascade that accepts confident verdicts and escalates uncertain ones retains 99% of the comparator's accuracy at lower cost.",
-      "upvotes": 0,
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.26550",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.26550",
-      "githubRepo": null
-    },
-    {
-      "id": "2609.25053",
-      "title": "LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay",
-      "authors": [
-        "Simon P. Villani"
-      ],
-      "summary": "Can one language model hand its live memory to another without the receiver rereading the context? We demonstrate useful persistent hybrid-state transfer across one architecture-matched Qwen3.5 4B-to-9B sibling pair. To our knowledge, this is the first demonstrated cross-model handoff of persistent recurrent inference state between differently sized hybrid language models without target prefix replay. Translated attention KV alone leaves a large gap; adding the Gated DeltaNet (GDN) persistent-state package lowers teacher-forced negative log-likelihood (NLL), the average next-token log-loss, by 0.747 nats/token (95% paired document bootstrap CI [0.6921, 0.8047]), improving all 64 PG19 documents. Direct recurrent and convolution reuse outperforms the tested learned GDN maps, consistent with partial functional compatibility of persistent-state coordinates. A fresh component factorial selects translated KV with direct recurrent and convolution state. An additional 434,176-parameter correction improves that base on 64 fresh web documents: continuation loss is 0.076 nats/token above native 9B (excess NLL), Jensen-Shannon (JS) divergence is 0.022, and native context recovery (NCR) is 0.918. Corrected 9B significantly beats continued 4B inference while processing zero historical prefix tokens. Evidence covers one direction, one geometry-matched Base-model pair, and 4K teacher-forced continuation; the near-native gate failed, the 16K branch was not run, and free-generation equivalence and a general state interface remain unproven.",
-      "upvotes": 0,
-      "publishedAt": "2026-09-07T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.25053",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.25053",
-      "githubRepo": "https://github.com/mmprotest/latentport-paper"
-    },
-    {
-      "id": "2609.25636",
-      "title": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
-      "authors": [
-        "Chang Guo",
-        "Yukun Xie",
-        "Bohan Tan",
-        "Zheng Chang",
-        "Zhaokai Yin",
-        "Qianli Ma",
-        "Yingqiao Wang",
-        "Chao Liang",
-        "Zhipeng Zhang"
-      ],
-      "summary": "Modern embodied agents achieve impressive success rates, yet their actual instruction-following ability is far weaker than these numbers suggest. We trace this illusion to a structural property we term low scene entropy: when a visual scene admits only one valid task, language becomes redundant and a policy can score highly while barely using it. We introduce RoboFollow, a diagnostic benchmark with three principles: (1) High Scene Entropy: each training scene supports multiple kinematically distinct task branches, making vision alone insufficient and forcing reliance on language. (2) Hierarchical Diagnostic Protocol: a four-level protocol (L0--L3) progressively perturbs visual layout and semantics, probing whether equivalent instructions yield consistent behavior and distinct ones yield discriminable behavior across spatial relations, attributes, trajectory constraints, and logic. (3) Confound-Controlled Diagnosis: we simplify interaction objects, restrict actions to the trained repertoire and report stage-wise Intent and Execution scores, isolating comprehension from motor execution. Evaluation of nine VLA and WAM policies shows that strong L0 performance, where attained, does not reliably transfer to L1--L3 under our fine-tuning setup. Representative mitigations, including stronger VLM backbones, QA co-training, LangForce, and Classifier-Free Guidance, all fail to close this gap. RoboFollow exposes genuine instruction following as a critical, overlooked bottleneck. Code and dataset are available at https://github.com/AutoLab-SAI-SJTU/RoboFollow and https://huggingface.co/datasets/AutoLab-SJTU/robofollow-data.",
-      "upvotes": 0,
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.25636",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.25636",
-      "githubRepo": "https://github.com/AutoLab-SAI-SJTU/RoboFollow"
-    },
-    {
-      "id": "2609.26346",
-      "title": "Blaming Across the Aisle: Political Contrasting and Blame Attribution in the Danish Parliament",
-      "authors": [
-        "Markus Lundsfryd Jensen",
-        "Rune Egeskov Trust",
-        "Kenneth Christian Enevoldsen",
-        "Sara Kolding"
-      ],
-      "summary": "Political discourse is widely perceived to be growing more hostile, yet robust evidence remains scarce. This study examines blame attribution in the Danish Parliament from 1997 to 2026, combining a purpose-built classifier, BlameBERT (F1: 0.80), with multilevel statistical modeling. The classifier is constructed using an annotation-efficient pipeline for blame attribution in low-to-mid resource languages. The results reveal a banana-shaped trajectory, with blame declining until around 2016 before entering a significant and sustained increase in recent years (2019-2026). Government status consistently influenced blame attribution - an effect we term political contrasting - with opposition parties blaming substantially more than governing parties. This effect was moderated by ideology: The blame-dampening effect of governing was less pronounced among right-wing parties, and ideological extremity amplified blame more strongly on the right. In recent years, the interaction between political wing and ideological extremity intensified, suggesting an ideological hardening of the blame rhetoric concentrated on the right of the political spectrum. Taken together, these patterns suggest that the perceived rise in harsh political language reflects not merely a general rhetorical drift, but an ideologically asymmetric hardening of political discourse. A sensitivity analysis showed that the conclusions were robust to varying classification thresholds.",
-      "upvotes": 0,
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "arxivUrl": "https://arxiv.org/abs/2609.26346",
-      "arxivPdfUrl": "https://arxiv.org/pdf/2609.26346",
-      "githubRepo": "https://github.com/Lundsfryd/BlameBERT"
     }
   ]
 }
