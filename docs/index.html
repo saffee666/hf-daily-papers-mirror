@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HF Daily Papers Mirror — 2026-10-14</title>
+<title>HF Daily Papers Mirror — 2026-10-15</title>
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   body{font-family:Georgia,'Noto Serif SC',serif;background:#faf9f6;color:#1a1a1a;line-height:1.6}
@@ -59,7 +59,8 @@
 </nav>
 
 <div class="archive-panel">
-  <ul><li><a href="#" data-date="2026-10-14" onclick="loadDate('2026-10-14')">2026-10-14</a></li>
+  <ul><li><a href="#" data-date="2026-10-15" onclick="loadDate('2026-10-15')">2026-10-15</a></li>
+<li><a href="#" data-date="2026-10-14" onclick="loadDate('2026-10-14')">2026-10-14</a></li>
 <li><a href="#" data-date="2026-10-13" onclick="loadDate('2026-10-13')">2026-10-13</a></li>
 <li><a href="#" data-date="2026-10-12" onclick="loadDate('2026-10-12')">2026-10-12</a></li>
 <li><a href="#" data-date="2026-10-11" onclick="loadDate('2026-10-11')">2026-10-11</a></li>
@@ -71,764 +72,763 @@
 <li><a href="#" data-date="2026-10-05" onclick="loadDate('2026-10-05')">2026-10-05</a></li>
 <li><a href="#" data-date="2026-10-04" onclick="loadDate('2026-10-04')">2026-10-04</a></li>
 <li><a href="#" data-date="2026-10-03" onclick="loadDate('2026-10-03')">2026-10-03</a></li>
-<li><a href="#" data-date="2026-10-02" onclick="loadDate('2026-10-02')">2026-10-02</a></li>
-<li><a href="#" data-date="2026-10-01" onclick="loadDate('2026-10-01')">2026-10-01</a></li></ul>
+<li><a href="#" data-date="2026-10-02" onclick="loadDate('2026-10-02')">2026-10-02</a></li></ul>
 </div>
 
 <main>
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.18010" target="_blank">Fish Audio Drama 3 Technical Report</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.15725" target="_blank">SkillMarker: A KGW-Based Watermarking Method for Agent Skill Ownership Verification</a></h2>
   <div class="meta">
-    <span>Dawei Han, Shidong Li, Shijia Liao, Jiahua Liu, Songting Liu et al.</span>
+    <span>Alan Tang, Lifeng Wang, Gang Wu, Tao Zhang, Yantao Jia et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @qingzhengwang</span>
+    <span>by @AlanTang7</span>
   </div>
-  <div class="summary">We introduce Fish Audio Drama 3, an open-source speech generation model that turns text into directed performances, built on a 35B-parameter mixture-of-experts backbone that activates 3B parameters per token. It clones voices from multiple references, follows natural-language direction, revises a take when the next turn gives a note, voices multi-character scenes, edits existing speech by infilling, and synthesizes long-form and streaming audio. Multi-turn revision, scene dubbing, editing by inf</div>
+  <div class="summary">Agent skills encode operational procedures and domain expertise as reusable knowledge assets, yet their distribution in plaintext exposes them to unauthorized copying and leakage. However, practical mechanisms for skill ownership verification and leakage tracing remain underdeveloped. Watermark embedding before distribution offers a potential solution, but structured, compact skill instructions impose stringent requirements for factual and procedural accuracy. To address these challenges, we int</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.18010" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.18010" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.15725" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.15725" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/fuxi-ailabs/SkillMarker" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.19820" target="_blank">ActionOPD: Distilling Decisions, Not Tokens</a></h2>
+  <div class="meta">
+    <span>Huining Yuan, Xiangmin Yi, Zelai Xu, Zixu Wang, Xinlei Chen et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @HuiningYuan</span>
+  </div>
+  <div class="summary">Distilling capable language-model agents into smaller models requires aligning the student's behavior with the teacher's. This raises a fundamental question: at which states and at what granularity should this alignment be performed? Offline imitation provides dense but token-specific supervision and can suffer from state-distribution mismatch. Token-level on-policy distillation (OPD) addresses this mismatch but typically requires teacher token probabilities and compatible tokenization. We argue</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.19820" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19820" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/thu-nics/ActionOPD" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.14448" target="_blank">KV4-RL: Unlocking Faster Asynchronous Rollouts for RLVR with INT4 KV Cache Quantization</a></h2>
+  <div class="meta">
+    <span>Sihwan Park, Sung-Yub Kim, Doohyuk Jang, Eunho Yang</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @sihwanpark</span>
+  </div>
+  <div class="summary">Asynchronous rollout improves the efficiency of reinforcement learning with verifiable rewards (RLVR) by reducing under-utilization during long-tail generation. Sustained concurrency also concentrates context processing into fewer decode steps, increasing the KV workload per step. We characterize this KV concentration and find that KV cache quantization delivers substantially greater acceleration than weight-only and weight-activation quantization in our matched-workload comparisons. However, IN</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.14448" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.14448" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15765" target="_blank">A Decade in a Day: Synthesizing Agent-Native Interfaces from Human-Oriented Software Evolution</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.09055" target="_blank">MimicX: Policy-in-the-Loop Supervision Refinement for Video-Driven Humanoid Motion Tracking</a></h2>
   <div class="meta">
-    <span>Alan Wu, Wei Tao, Yiwen Guo</span>
+    <span>Shuaijun Liu, Chenglong Zhang, Xuhao Liu, Feiyang You, Yifan Liao et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @itaowe</span>
+    <span>by @Shuaijun</span>
   </div>
-  <div class="summary">Large language model agents are emerging as an important new class of users of desktop applications. However, existing desktop interfaces were designed for human end users or application developers, leaving agents to interpret visual controls or discover and compose low-level software operations. This mismatch can hinder even capable agents, yet it remains unclear what interface properties make desktop software easier for agents to use. To study this question, we treat software evolution as a na</div>
+  <div class="summary">Human videos provide rich motion targets for humanoid learning, yet visually plausible references can still produce persistent failures under physics-based execution. These failures reveal where training supervision should change. We present MimicX, a policy-in-the-loop framework that uses execution feedback to refine video-driven humanoid motion tracking. Starting from reconstructed and retargeted motion, MimicX localizes difficult transitions and affected body regions, then jointly adapts trac</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.15765" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15765" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/co-evolve-lab/ANIS" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.09055" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.09055" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/NEBULIS-Lab/MimicX" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.17540" target="_blank">TacitVLA: Reasoning Vision-Language-Action Models Without Reasoning Latency</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.19551" target="_blank">TextVerifier: Seeing Beyond Recognition to Verify Chinese Text Rendering</a></h2>
   <div class="meta">
-    <span>Jack Lu, Yurong You, Boyi Li, Yulong Cao, Thomas Tian et al.</span>
+    <span>Yiyang Chen, Guo-Hua Wang, Yaoli Liu, Qing-Guo Chen, Zhao Xu et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @Jacklu0831</span>
+    <span>by @Flourish</span>
   </div>
-  <div class="summary">Textual reasoning before acting has improved vision-language-action (VLA) models, but at the cost of latency: every action conditioned on the reasoning text must wait for autoregressive decoding. We show that actions do not need to wait for or condition on the generated reasoning to benefit from it, because the reasoning supervision already improves the backbone representation. We introduce TacitVLA, a reasoning VLA whose action expert never attends to the reasoning it generates for the current </div>
+  <div class="summary">Text-to-image models increasingly generate readable Chinese text that still contains local rendering defects, such as a character with an extra or missing stroke or a malformed component. Such errors are invisible to OCR and vision-language models, which are trained for recognition and are therefore invariant to the very structural deviations that define a rendering error. We formalize text rendering verification as a target-conditioned problem: given a target character and an image crop, decide</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.17540" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.17540" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.19551" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19551" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.14912" target="_blank">Probable but Not Valid: A Psychometric Audit of Decision Models as Synthetic Survey Respondents</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.18284" target="_blank">Efficient Scene-Text Refinement via Pixel-Space Grouped Image Generation</a></h2>
   <div class="meta">
-    <span>Mantas Lukauskas, Viktorija Šarkauskaitė</span>
+    <span>Yaoli Liu, Guo-Hua Wang, Yiyang Chen, Qing-Guo Chen, Zhao Xu et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @MLukauskas</span>
+    <span>by @Flourish</span>
   </div>
-  <div class="summary">Language models are increasingly used to create synthetic survey samples, also called silicon samples. Decision models are a new class of language models that return a probability for each point of a rating scale instead of text. We ask whether these models, or the newest generative LLMs, can stand in for human respondents on a psychometric survey. We test fourteen decision models from eleven providers and 47 generative LLMs on an open Lithuanian organisational-psychology survey (n=263, 68 items</div>
+  <div class="summary">Generated images often have coherent layouts and visual content, yet local errors in small text and complex characters still limit their readability and practical use. Scene-text refinement requires accuracy, preservation, and efficiency. Existing methods based on variational autoencoders (VAEs) can lose fine strokes during reconstruction, while full-image editing can shift background colors. In this work, we introduce PixText, a model that formulates local text refinement as grouped image gener</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.14912" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.14912" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.18284" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18284" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.18272" target="_blank">JevGPT: Thinking Fast and Slow in Autonomous Research</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.20195" target="_blank">What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds</a></h2>
   <div class="meta">
-    <span>Yasheng Sun, Yanning Dai, Yimeng Chen, Nanbo Li, Firas Laakom et al.</span>
+    <span>Caixin Kang, Ke Wang, Yuchuan Wu, Xiaoqiang Wang, Ling Li et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @SlowWorker</span>
+    <span>by @Ukpkmkkk</span>
   </div>
-  <div class="summary">Autonomous research agents must acquire and reason over evidence within a limited budget. Yet relevant sources can remain uninspected or unused, leaving a gap between retrieval coverage and the evidence that informs research. The challenge is to align fast local judgments with changing evidence needs and feed their findings back into research decisions. We introduce JevGPT, a dual-system architecture for autonomous research that couples fast evidence processing with deliberative research plannin</div>
+  <div class="summary">Effective social interaction requires more than fluent responses: agents must reach plans that fit the participants' needs and circumstances. Existing evaluations of social agents mainly rely on LLM judges that rate the conversation, without checking the resulting plan. We introduce HICO-Bench, a benchmark of 180 everyday coordination scenarios, such as resource allocation, scheduling, and authorization, in which two agents with private information converse and then independently record the plan</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.18272" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.18272" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.20195" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20195" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.18766" target="_blank">Rubrics from the Task, Verdicts from Evidence: Pointwise Rubric Rewards with Tool-Augmented Judges</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.17831" target="_blank">Diff Diffusion: Predicting Edit Paths with Diffusion Models for Efficient Code Editing</a></h2>
   <div class="meta">
-    <span>Tianci Liu, Haoyu Wang</span>
+    <span>Xiaolong Xu, Hao Jiang, Bo Jiang, Zhiwen Deng, Ningyuan Sun et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @haoyuw</span>
+    <span>by @TechxGenus</span>
   </div>
-  <div class="summary">Rubric-based reward models (RMs) evaluate responses against explicit criteria. However, existing methods often derive criteria from observed response candidates, introducing response-induced bias that may limit rubric generalizability. Their judges also struggle with mechanical constraints when relying on reading alone, and commonly used pairwise judges provide only relative preferences, complicating their direct use for policy optimization. We propose ReVeR, a pointwise rubric RM that derives h</div>
+  <div class="summary">Diffusion large language models (dLLMs) are appealing for code generation because they can update many tokens in parallel, yet many are optimized for sequence synthesis rather than edit prediction. This setting is poorly matched to modern AI-assisted IDEs, where edit prediction must infer the next code change from recent edits, the current file, and cursor-local context. Such changes are usually sparse and preserve most source tokens, so regenerating a full code segment wastes computation. We pr</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.18766" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.18766" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.17831" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.17831" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.18872" target="_blank">EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.20524" target="_blank">Physical Time as a Missing Dimension of Robot Policy Memory Dynamics</a></h2>
   <div class="meta">
-    <span>Yunsong Zhou, Xuekun Jiang, Haiqi Shen, Hangxu Liu, Chaojian Shi et al.</span>
+    <span>Yushen Liang, Yue Peng, Baosheng Jin, Tianluo Zhang, Xinyu Zhang et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @YunsongZhou</span>
+    <span>by @pengyue-polaron</span>
   </div>
-  <div class="summary">Learning humanoid loco-manipulation from human demonstrations rests on observing how locomotion, posture, and object interaction evolve together as tasks unfold. Scaling collection across diverse environments, in turn, favors lightweight, portable capture systems. Yet, existing datasets provide only partial views of this coordination. Thus, we introduce EgoExplorer, a 100-hour vision-motion-touch observatory of human loco-manipulation built with a wearable system. With an emphasis on professiona</div>
+  <div class="summary">Existing robot policy memories typically evolve with observation sequences, implicitly treating each update as the same amount of physical time. Yet identical observation histories can span different durations and require different actions, exposing physical time as a missing dimension of policy memory. We introduce Temporal Flow Policy (TFP), which learns memory dynamics to retain past events and evolve the memory state over measured time intervals. Observations and prior memory determine the c</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.18872" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.18872" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/InternRobotics/EgoExplorer" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15166" target="_blank">ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling</a></h2>
-  <div class="meta">
-    <span>Xinge Peng, Zhen Fang, Ruibing Wang, Yongxuan Lv, Haodong Li et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @HelenPeng</span>
-  </div>
-  <div class="summary">Coding agents are increasingly evolving beyond reproducing what a world looks like toward constructing executable worlds that capture how a world works. This shift calls for executable world modeling, which integrates two core capabilities: world understanding, reasoning about the underlying structural, mechanical, and causal principles of a world, and executable realization, translating that understanding into a code-based system whose behavior emerges from physical interactions. However, exist</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.15166" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15166" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.20524" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20524" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.17227" target="_blank">AReA: Adaptive Receptive-Field Attention for Efficient High-Resolution Diffusion Transformers</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.18861" target="_blank">Hybrid Reasoning Agents</a></h2>
   <div class="meta">
-    <span>Javad Rajabi, Koorosh Roohi, David B. Lindell, Babak Taati</span>
+    <span>Jiaru Zou, Yunzhe Qi, Sirui Chen, Federico Bianchi, Shang Zhu et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @Nova2001</span>
+    <span>by @jiaruz2</span>
   </div>
-  <div class="summary">Generating images beyond the training resolution of Diffusion Transformers (DiTs) remains challenging, as the number of tokens grows rapidly with resolution, full attention becomes expensive, and outputs often suffer from structural distortions and degraded detail. We identify uniform full attention as the common source of both problems. Attending to all tokens at every step causes quadratic cost and exposes the model to more tokens and relative distances beyond the training range, pushing the m</div>
+  <div class="summary">How can we build an agent that thinks beyond human language, yet still acts through it in the external environment? Modern LLM agents still reason and interact through text, while latent reasoning offers an efficient internal medium but lacks native tool access and reasoning transparency. We bridge these two directions with Hybrid Reasoning Agents (HybridAgents), which dynamically navigate between latent reasoning and text-based interaction throughout a unified generation process. Architecturall</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.17227" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.17227" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/KooroshRH/AReA" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.18861" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18861" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/togethercomputer/HybridAgent" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.16811" target="_blank">X-Ragent: Tool-Augmented Reinforcement Learning for Evidence-Grounded Chest X-Ray Reasoning</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.20584" target="_blank">Player-1: Learning to Play from Synthetic Experience</a></h2>
   <div class="meta">
-    <span>Yi Wang, Zhenlong Yuan, Yuchan Guo, Maolei Huang, Zijian Song et al.</span>
+    <span>Mingyu Ouyang, Yiran Wang, Siyuan Hu, Xingyilang Yin, Huiqiang Sun et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @ZhenlongYuan</span>
+    <span>by @yyyang</span>
   </div>
-  <div class="summary">Chest X-ray (CXR) interpretation often requires integrating visual findings with task-specific evidence rather than relying on direct visual recognition alone. While tool-augmented medical agents can supply such evidence via external modules, they often lack explicit mechanisms for learning when auxiliary evidence is needed and for preventing inapplicable quantitative evidence from entering diagnostic reasoning. To address this, we propose X-Ragent, a post-training framework for tool-augmented r</div>
+  <div class="summary">Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Pla</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.16811" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.16811" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.20584" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20584" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/TencentARC/Player-1" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2606.24472" target="_blank">G^3VLA: Geometric Inductive Bias for Vision-Language-Action Models</a></h2>
+  <div class="meta">
+    <span>Yue Peng, Yongzhe Zhao, Artur Habuda, Khuyen Pham, Yanheng Zhu et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @pengyue-polaron</span>
+  </div>
+  <div class="summary">Vision-language-action (VLA) models have rapidly advanced generalist robot manipulation by harnessing the semantic knowledge of pretrained vision-language backbones. However, their visual representations are typically grounded in 2D image coordinates rather than calibrated camera geometry. This limitation is especially pronounced in multi-camera systems, where views are coupled by known intrinsics and extrinsics but processed as independent images. We propose G^3VLA, a camera-aware geometric mod</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2606.24472" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2606.24472" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.13416" target="_blank">Web$hell: A Unified Interface for Agentic Web Access</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.19525" target="_blank">Diagnosing and Correcting Reward Hacking in Verifiable Instruction Following</a></h2>
   <div class="meta">
-    <span>Sunghwan Kim, Deogyong Kim, Sangam Lee, Donguk Kwon, Dongha Lee</span>
+    <span>Sangyeon Yoon, Wooseok Seo, Hamish Ivison, Hyesoo Hong, Donghoon Kim et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @augustinLib</span>
+    <span>by @HwanChang0106</span>
   </div>
-  <div class="summary">Large language model (LLM) agents are becoming direct users of the open web. As they take on increasingly complex and information-intensive tasks, effective web access is becoming a core capability for agentic problem solving. Existing approaches have advanced agentic web access through different access models, including search-augmented agents, browser-based agents, and, more recently, filesystem-based agents. Nevertheless, as users expect agents to complete long-horizon, end-to-end tasks, they</div>
+  <div class="summary">Verifiable instruction-following benchmarks emphasize output-constraint satisfaction but can overlook whether responses meaningfully answer the underlying request, creating an evaluation blind spot. We show that frontier models can receive full credit for responses with little substantive answer content. Using the same verifier-based criterion as a training reward can induce reward hacking, as publicly released checkpoints exhibit higher constraint satisfaction but lower response quality after r</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.13416" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.13416" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.19525" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19525" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.16118" target="_blank">Elephant in the Fridge: Constant-Memory Frame Packing for Long Video Understanding</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.20344" target="_blank">Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents</a></h2>
   <div class="meta">
-    <span>Shuo Gao, Chenhao Zheng, Zhongzheng Ren</span>
+    <span>Yuyao Ge, Shenghua Liu, Peizhong Gao, Chendi Ge, Chenxu Liu et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @jasonren</span>
+    <span>by @YuyaoGe</span>
   </div>
-  <div class="summary">Hour-long videos, streaming feeds, and movie-length content are pushing vision-language models (VLMs) past their breaking point -- the standard recipe of encoding each frame into visual tokens yields sequences that grow linearly with video length, causing prohibitive memory consumption and inference latency. Existing approaches, such as token reduction and keyframe selection, shorten the token sequence but leave the O(n) scaling intact, failing to resolve the fundamental bottleneck. We propose F</div>
+  <div class="summary">Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real workspaces. How well they perform depends as much on the harness around the model as on the model itself. Existing benchmarks measure downstream task success under a fixed harness, leaving harness engineering itself unexplored. We propose Doc2Harness, a two-stage benchmark that evaluates long-horizon harness engineering directly. In Stage 1, a build model operating inside </div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.16118" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.16118" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/ZelD0n/framepack-U" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.20344" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20344" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/YuyaoGe/doc2harness" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.16577" target="_blank">CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.18248" target="_blank">Are We Testing Too Much? A Survey of Benchmark Compression for Efficient Evaluation of Large Language Models</a></h2>
   <div class="meta">
-    <span>Jialei Wang, Zehan Wang, XiaoYang Wu, Ziang Zhang, Siyu Chen et al.</span>
+    <span>Guoming Ling, Yupei Lin, Zhongzhan Huang, Junxin Li, Junjie Liu et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @UncleWang233</span>
+    <span>by @linggm</span>
   </div>
-  <div class="summary">Reconstructing reference videos as editable dynamic 3D scenes is an important path toward controllable video generation for filmmaking: these scenes provide modifiable, renderable visual proxies that enable explicit control over scene layout, subject actions, and camera behavior. To evaluate agents' ability to reconstruct editable dynamic 3D scenes from dynamic reference videos, we introduce CineRecon, a benchmark comprising 50 reference videos and 360 annotated evaluation clips. The reference v</div>
+  <div class="summary">Benchmarks are essential for evaluating and improving large language models (LLMs). Yet many widely used benchmarks are redundant, making evaluation unnecessarily expensive. Benchmark compression lowers this cost by estimating full-benchmark scores and rankings from a partial evaluation. Research in this area has grown rapidly since 2024, but to our knowledge no survey has systematically organized its methods and findings. We review 119 papers to explain how methods choose what to evaluate, reco</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.16577" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.16577" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/Unc1eW4ng/CineRecon" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.18248" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18248" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/MilkThink-Lab/Awesome-Benchmark-Compression" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.17666" target="_blank">DeltaTTG: Training Multi-Turn Agents with a Token-to-Go Progress Meter</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.20442" target="_blank">Towards Agentic Robots: Model, Data, Environment, and Harness</a></h2>
   <div class="meta">
-    <span>Xuyan Ye, Xiyan Fu, Shengda Fan, Jiawei Cui, Yankai Lin et al.</span>
+    <span>Chonghan Qin, Dongming Wu, Kaituo Feng, Jiaxu Wang, Xinlei Yu et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @LulaCola</span>
+    <span>by @KaituoFeng</span>
   </div>
-  <div class="summary">Reinforcement learning with verifiable rewards (RLVR) for multi-turn agents relies on sparse terminal rewards that say little about individual steps. Within-group step comparisons depend on reliable state matching and sufficiently diverse sampled outcomes, while direct step scoring may require costly external evaluators, human annotations, or task-specific heuristics. We introduce DeltaTTG to learn a reusable progress signal through a shared progress meter, using low-cost supervision from divers</div>
+  <div class="summary">Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current stud</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.17666" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.17666" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/Xuyan923r/DeltaTTG" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15915" target="_blank">VIEWCRAFT: Evolving What Multimodal Agents See and How They Read It</a></h2>
-  <div class="meta">
-    <span>Binxiao Xu, Ruichuan An, Bocheng Zou, Weihua Du, Xinyu Wei et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @hhua2</span>
-  </div>
-  <div class="summary">Reusable skills improve multimodal agents without updating model weights, but their effectiveness depends on both the evidence presented and the procedure used to read it. We introduce ViewCraft, which jointly evolves an executable evidence interface and its reading procedure. The interface selects, transforms, and organizes observations; the reader interprets the resulting views. Failure traces guide revisions, replay and paired evaluation retain useful changes, and interface projection recover</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.15915" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15915" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/Little-Fridge/ViewCraft" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.18067" target="_blank">WorkRover: Scaling Long-Horizon Cowork Agent Training Via Recursive Environment Evolution</a></h2>
-  <div class="meta">
-    <span>Hang He, Linting Wang, Guanming Liu, Bo Mao, Jinxiu Liu et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @Benchanything</span>
-  </div>
-  <div class="summary">Scaling interactive environments is important for training long-horizon agents through reinforcement learning. These environments often require further testing and refinement after initial generation, and correcting defects in a task may also require updating its work context and verifier. However, existing construction pipelines offer limited support for such iterative refinement while keeping these components aligned. We introduce WorkRover, a framework for training long-horizon cowork agents </div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.18067" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.18067" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.20442" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20442" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.14293" target="_blank">GeoFix: Geometry Fixing for 4D Consistent Generation</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.19789" target="_blank">More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning</a></h2>
   <div class="meta">
-    <span>Yeobin Hong, Hyojun Go, Dohun Lee, Jeongjae Lee, Sunghwan Hong et al.</span>
+    <span>Linhao Zhong, Bozhen Fang, Xuehao Wang, Duochao Shi, Zekai Luo et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @Yeobin</span>
+    <span>by @zhongzero</span>
   </div>
-  <div class="summary">Video diffusion models increasingly serve as priors for 4D generation, but the generated videos often lack geometric consistency. Recent approaches address this through post-training by designing geometric rewards, yet this can degrade texture and fine detail, requiring auxiliary appearance rewards and careful reward balancing. To address this challenge, we propose GeoFix, a unified framework that improves geometric consistency and visual quality with a single geometric reward, applicable to bot</div>
+  <div class="summary">Self-distillation in agentic reinforcement learning has produced a growing number of methods. However, existing evaluations often reuse published baseline scores under differing experimental conditions, provide few direct comparisons among contemporaneous methods, and give limited attention to training stability and computational cost. These limitations obscure the source of reported gains and the practical strengths and weaknesses of competing methods. Costly agent training further motivates a </div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.14293" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.14293" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.19789" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19789" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/aim-uofa/Self-Distillation-AgentRL" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.20256" target="_blank">Long-Horizon RL Needs Muon</a></h2>
+  <div class="meta">
+    <span>Kai Ruan, Jinghao Lin, Tao Chen, Ziqi Zhou, Qianshan Wei et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @6cf</span>
+  </div>
+  <div class="summary">Long-horizon agents must coordinate reasoning, tool use, and environment feedback over extended interactions. Learning from sparse outcome rewards requires weighting trajectories of different lengths and updating the policy while rollouts are still being collected. We examine a single-rollout asynchronous recipe combining Muon, token-averaged loss, truncated importance sampling, and auxiliary length and tool-error penalties. Single-rollout sampling allows asynchronous learning without waiting fo</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.20256" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20256" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.00359" target="_blank">Diffusion Editing with Soft Mask: Pixel Level Redo of Image and Video with Adjustable Strength</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.19366" target="_blank">Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory</a></h2>
   <div class="meta">
-    <span>Candi Zheng, Yuan Lan</span>
+    <span>Minghao Guo, Qingyue Jiao, Xiujin Liu, Jianhong Pang, Ruimeng Yang et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @charrywhite</span>
+    <span>by @qingyuejiao</span>
   </div>
-  <div class="summary">Diffusion models with prompt and reference image-guided editing have seen rapid progress, yet they remain too coarse for pixel-level control. One promising direction is to incorporate a soft mask that specifies spatially varying edit strengths but training such fine-grained control demands expensive pixel-wise annotations, while existing zero-shot methods often yield unsatisfactory results. We introduce SoftPaint, a new zero-shot sampling method that leverages soft masks to enable a continuous s</div>
+  <div class="summary">Multimodal models and agents have emerged to enable AI systems to learn from and interact with the real world more like humans by integrating information across multiple modalities. However, enabling multimodal agents to continually acquire useful information from complex, heterogeneous multimodal data remains a significant challenge as they move toward long-horizon tasks and lifelong settings. Addressing this challenge requires effective memory mechanisms that can maintain continuity across ses</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.00359" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.00359" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.19366" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19366" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/Seeing-Maintaining-Learning/multimodal-agent-memory-evolution" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.19138" target="_blank">MA-Bench: Measuring Operational Planning in Language Models</a></h2>
+  <div class="meta">
+    <span>Rodney Lafuente-Mercado, Robert Sincero, Phil Sage, Yuan Xue</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @taesiri</span>
+  </div>
+  <div class="summary">How well can a language model turn a large, incomplete and partly contradictory body of documents into a plan when no single correct answer exists? We introduce Mission Analysis (MA)-Bench, built on mission analysis, the first step of military operational planning, in which a staff reads the full situation and states the problem before anyone proposes a solution. Its 10 expert-built scenarios pair synthetic packets of ten to twelve documents with 1,257 expert-written pass/fail requirements, each</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.19138" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19138" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.01496" target="_blank">SALD: Self-Referenced Advantage Learning for Diffusion Models</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.13521" target="_blank">Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation</a></h2>
   <div class="meta">
-    <span>Aryan Das, Surjo Dey, Koushik Biswas, Swalpa Kumar Roy, Moloud Abdar et al.</span>
+    <span>Shi-Yu Tian, Yong Liu, Ximan Liu, Tianrui Zhu, Sule Bai et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @vkvermaa</span>
+    <span>by @kevin715</span>
   </div>
-  <div class="summary">Recent work on language-model adaptation has shown that single models can obtain informative training signals by evaluating their behavior in demonstrationor feedback-augmented contexts, with the help of a teacher network, which is driven by the student's learned parameters. Inspired by this internal-reference principle, we investigate how diffusion models can identify self-referenced training signals without external demonstrations or teacher networks. We introduce SALD, a self-referenced train</div>
+  <div class="summary">Multi-teacher on-policy distillation (MOPD) extends on-policy distillation (OPD) by routing domain-specific data to specialized teachers, integrating their capabilities through dense token-level supervision on student-generated trajectories. However, domain routing only distinguishes the supervision sources for different domains; updates from all domains still act on shared parameters. When teachers differ substantially in response style and domain expertise, supervision that is effective in iso</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.01496" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.01496" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.13521" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.13521" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.14163" target="_blank">AutoEnvScaling: Automating the Data Flywheel with Terminal Agents</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.20572" target="_blank">Recovering Reliable Supervision via Critique-Guided On-Policy Distillation</a></h2>
   <div class="meta">
-    <span>Simon Yu, Baolin Peng, Bo Liu, Zhengyan Shi, Zhaoyang Wang et al.</span>
+    <span>Kaixiang Zhao, Tianrun Yu, Shangzhe Li, Yuxiao Yang, Amanda Hughes et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @simonycl</span>
+    <span>by @kzhao5</span>
   </div>
-  <div class="summary">Terminal agents solve tasks in software engineering and scientific research by executing commands in a terminal. Training them via reinforcement learning (RL) requires diverse and verifiable environments, but these environments are still mostly designed by human researchers, so their supply grows only as fast as researchers can work. We introduce AutoEnvScaling, which treats environment design as a terminal task and uses agents to automate the data flywheel. A proposer agent builds new RL enviro</div>
+  <div class="summary">On-policy distillation (OPD) trains a student model on its own rollouts with token-level supervision from a teacher, assuming that the teacher can reach a correct answer from any prefix the student writes. We call this property the recoverability of the teacher and show it fails on incorrect rollouts: the teacher follows student errors, although it recognizes them. We propose CriticOPD, using error recognition to restore recoverability. The teacher critiques an incorrect rollout, allowing the st</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.14163" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.14163" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/MSR-Orchard/AutoEnvScaling" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.20572" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20572" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/kzhao5/CriticOPD" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.16794" target="_blank">TPPO: Tracking-Value PPO For Language Model Reasoning</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.02089" target="_blank">HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution</a></h2>
   <div class="meta">
-    <span>Futing Wang, Chenxi Li, Jianhao Yan, Yun Luo, Zhi Wang et al.</span>
+    <span>Kyochul Jang, Seohyeon Park, Ohchul Kwon, Sangjun Park, Junhyeok Choi et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @astrid01052</span>
+    <span>by @OfficerChul</span>
   </div>
-  <div class="summary">Proximal Policy Optimization (PPO) is widely used in reinforcement learning with verifiable rewards for language-model reasoning. While value evolution along trajectory characterizes relative token-level credit, yet standard critics often fail to track it under sparse terminal rewards. To model this evolution, we analyze the relation between successive prefix values and show that they admit a Bayesian decomposition with additive updates in log-odds space. We use this additive structure to constr</div>
+  <div class="summary">As robotic hardware and learning methods advance, humanoids need tools to perform tasks beyond their inherent physical limits. Successful tool use requires selecting a suitable tool and coordinating manipulation and, when needed, locomotion to complete the task. Existing benchmarks do not jointly evaluate these capabilities on a humanoid. We introduce HumanoidToolBench, an 18-task benchmark spanning three scenarios, three execution levels, and two tool-set modes, together with ToolBook, a datase</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.16794" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.16794" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/LINs-lab/TPPO" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.02089" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.02089" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/SNU-PI/HumanoidToolBench" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15327" target="_blank">CIViC: Evidence Gates for Audio-Conditioned Visual Prediction on Proxy Tasks</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.17638" target="_blank">Acting Through Registers</a></h2>
   <div class="meta">
-    <span>Mengzhe Geng, Max W. Y. Lam, Yuewen Cao, Shoukang Hu, Jing Xu et al.</span>
+    <span>Yiwei Zhang, Yantai Yang, Jin Gao, Jin Lou, Andong Chen et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @timcuhk</span>
+    <span>by @yantaiyang05</span>
   </div>
-  <div class="summary">Removing audio can shift a visual predictor's output without showing whether the task uses the intended audio information. We introduce Conditional Input and Visual Interpretation Checks (CIViC), a four-gate protocol that links an interpretation to an intervention, held-out task comparison, or endpoint control. We demonstrate CIViC on actor-disjoint face-raster tests, a synthetic audio-feature mixture, and source-video-disjoint SpeakerVid proxy tasks. In the static face-raster test, cross-actor </div>
+  <div class="summary">World Action Models (WAMs) use generative visual representations to condition robot actions, yet how these representations organize action-relevant information remains poorly understood. We identify persistent high-norm spatial outliers in WAM representations and find that their action relevance persists even after normalization and K/V projection attenuate their extreme magnitude. Motivated by this observation, we introduce RegisterWAM, which adds learnable non-spatial registers to the world mo</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.15327" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15327" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/MENGZHEGENG/Audio-to-Video" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.17638" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.17638" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/Z1zyw/RegisterWAM" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2609.38847" target="_blank">Scoring Higher, Answering Worse: Mitigating Reward Hacking in Rubric-Based RL via Protocol-Level Rubrics</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.20456" target="_blank">The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation</a></h2>
   <div class="meta">
-    <span>Maoqi Liu, Junwei He, Bowen Zhang, Feiran Li, Wentao Ma et al.</span>
+    <span>Ian Magnusson, Noah A. Smith, Pang Wei Koh</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @jwhe</span>
+    <span>by @IanMagnusson</span>
   </div>
-  <div class="summary">Rubric-based reinforcement learning (Rubric-RL) trains language models where no verifier exists. A judge checks each criterion of a rubric, and the verdicts are aggregated into a reward, most often by a weighted sum. We show that this additive aggregation is the weak point. Under a sum, criteria compensate for one another: a policy that misses the one decision that matters can buy the points back with advice nobody asked for. On clinical consultation, such a policy scores higher and answers wors</div>
+  <div class="summary">The scaling relationship of compute and performance for language models (LMs) has been extensively studied; more recently, models are being designed to scale memory use, as well. In particular, adding embeddings for n-grams scales memory separately from compute use, because each pass only processes individual embedding rows, which are much smaller than the storage used for the whole embedding table. However, existing methods train embeddings from scratch, which needs expensive GPU memory for fas</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2609.38847" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2609.38847" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.20456" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20456" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/IanMagnusson/COUNT" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.20571" target="_blank">Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation</a></h2>
+  <div class="meta">
+    <span>Weijie Wang, Haomin Zhang, Ye Li, Akide Liu, Zeyu Zhang et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @lhmd</span>
+  </div>
+  <div class="summary">Long-form agentic video generation must turn a screenplay into shots that remain spatially and temporally consistent across nonconsecutive requests. Passing prompts or recent frames between shots does not provide a shared spatial frame for revisiting a scene or a time-indexed record for replaying an earlier event. We present Any Time, Any Space (ATAS), which compiles a screenplay into shot requests with explicit location, camera, and event-time references. Before generation, it retrieves relevan</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.20571" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20571" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/ziplab/ATAS" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.15425" target="_blank">Exploring the Limits of Combinatorial Generalization in Embodied Manipulation</a></h2>
+  <div class="meta">
+    <span>Xupeng Zhang, Yantai Yang, Chang Guo, Zhaokai Yin, Zhipeng Zhang</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @yantaiyang05</span>
+  </div>
+  <div class="summary">In embodied manipulation, Vision Language Action (VLA) models can execute atomic skills, but long-horizon manipulation requires recombining these skills without demonstrations for every skill combination. The full instruction route treats skill chaining as long-horizon imitation. In a controlled study, full instruction training on limited skill combination sequences reaches 40.0% ordered success on covered combinations but only 7.7% on recombination, suggesting memorization of sequence templates</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.15425" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.15425" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/AutoLab-SAI-SJTU/RoboCombine" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.19118" target="_blank">DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision</a></h2>
+  <div class="meta">
+    <span>Yifan Lan, Zhongye Liu, Yurui Chang, Hanyu Wang, Yongkang Du et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @yflantmy</span>
+  </div>
+  <div class="summary">Emerging decision models such as JEV provide typed interfaces that map task instructions and observations directly to choices, judgments, and scores. As these models are increasingly used for automated decision-making, understanding their reliability under adversarial manipulation becomes critical. We introduce DecisionRobust, a benchmark for systematically evaluating the robustness of decision models across textual and visual inputs. Our benchmark covers practical decision-making scenarios and </div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.19118" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19118" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.14118" target="_blank">ClawLoop: Self-Improving Agents via Harness-Native Training Loop</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.19975" target="_blank">LatentLoop: Scaling Looped MoE Models with Asymmetric Compute Allocation</a></h2>
   <div class="meta">
-    <span>Hansi Yang, Linji Hao, Hongyan Hao, An Wang, Han Wu et al.</span>
+    <span>Zefeng He, Yunkai Chai, Xiaoyang Chen, Tong Zhu, Zongliang Wu et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @animawang</span>
+    <span>by @yhx12</span>
   </div>
-  <div class="summary">The rapid advancement of Large Language Models (LLMs) has driven their deployment toward general-purpose harness environments, where LLM-based agents operate in sandbox workspaces and interact directly with file systems and shells. While numerous post-training pipelines exist for tool-use agents, their counterparts for harness-based agents remain scarce and are predominantly one-shot and teacher-dependent: a stronger external model synthesizes tasks and collects trajectories, the target agent is</div>
+  <div class="summary">Looped Mixture-of-Experts (MoE) models combine parameter reuse with sparse computation to improve performance under matched budgets. Prior work demonstrates that different loop visits can play different roles even when they share parameters. To probe the contributions of different loop visits, we learn separate residual coefficients in a model that applies a shared block twice, observing a smaller scale in the first visit. Fixed coefficient experiments show that reducing the first visit's scale </div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.14118" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.14118" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.19975" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19975" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/lcqysl/LatentLoop" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.18097" target="_blank">APT: Feedback-Driven Agentic Post-Training for Text-to-Image Generation</a></h2>
+  <div class="meta">
+    <span>Sirui Zhang, Fangyun Wei, Dong Chen, Jinjing Zhao, Yitong Wang et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @zsr200901</span>
+  </div>
+  <div class="summary">Post-training is crucial for improving text-to-image models, yet existing pipelines typically rely on manually curated training data and fixed training distributions. We introduce APT (Agentic Post-Training), a fully automated framework that adaptively post-trains a base model according to its evolving capability profile. APT coordinates three agents to construct evaluation sets from user requirements, diagnose model-specific strengths and failure modes, and generate reinforcement learning data </div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.18097" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18097" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/siruizhang30/APT" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.19100" target="_blank">GroundGUI: GUI Grounding by High-Quality Data and Distillation-to-Reinforcement Learning</a></h2>
+  <div class="meta">
+    <span>Qingsong Xie, Jiahao Tian, Jiacheng Tang, Zhifeng Li, Madalina Ciobanu et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @AIGCer-OPPO</span>
+  </div>
+  <div class="summary">Constructing robust GUI agents relies on multimodal visual grounding: the ability to precisely map natural language intents to actionable on-screen components. Despite abundant desktop, web, and mobile benchmarks, high-fidelity resources tailored for diverse environments are surprisingly scarce. To bridge this gap, we introduce the Screen Referring Grounding Dataset (ScreenRef), a comprehensive GUI grounding dataset consisting of GUI screenshots paired with natural language referring expressions</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.19100" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.19100" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/PrentisAI/GroundGUI" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.20586" target="_blank">Continuum Attention</a></h2>
+  <div class="meta">
+    <span>Afshin Khadangi</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @akhadangi</span>
+  </div>
+  <div class="summary">We introduce Continuum Attention (CA), a causal Transformer attention operator that replaces discrete key and value lookup with integration over a continuous, piecewise linear memory curve. Each query induces an exponential relevance density along the curve. Integrating the density and interpolated values yields exact normalized attention from closed form exponential moments, including half token boundary contributions. The gradients follow analytically from moments of order at most two, enablin</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.20586" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.20586" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/akhadangi/continuum-attention" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.18072" target="_blank">LensErase: A Foundation Model for Erase Anything</a></h2>
+  <div class="meta">
+    <span>Yunuo Chen, Xiuyu Wu, Qinhong Yang, Jinjing Zhao, Yanchen Dong et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @yuUnuo</span>
+  </div>
+  <div class="summary">We introduce LensErase, a general-purpose mask-based Erase Anything foundation model designed to cover a broad spectrum of real-world erase scenarios. LensErase supports diverse objects, visual text, watermarks, associated visual effects, multiple-object removal, and a wide range of object scales, aspect ratios, and image resolutions. First, to enable such broad coverage, we construct LensErase-100M, a large-scale dataset containing 101.07 million paired source-mask-target examples spanning dive</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.18072" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18072" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/LensFamily/LensErase" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.16302" target="_blank">RAR: Rate-Adaptive Rollout for Time-Consistent Interactive World Models</a></h2>
+  <div class="meta">
+    <span>Yaoyang Liu, Dongyu Yan, Yihua Du, Shengju Qian, Zeke Xie et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @LazySheeep</span>
+  </div>
+  <div class="summary">Video-based interactive world models aim to enable real-time, user-controllable environments. Yet most existing systems are trained and rolled out at a fixed temporal rate, limiting both runtime-rate adaptation and physical-horizon coverage -- a limitation we term temporal-rate coupling. Specifically, when runtime generation throughput differs from the learned temporal rate, the generated world evolves unintentionally more slowly or quickly. Moreover, using a single temporal rate imposes an inhe</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.16302" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.16302" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/HKUST-LongGroup/RAR" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.17893" target="_blank">Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards</a></h2>
+  <div class="meta">
+    <span>Keru Chen, Sen Lin, Yingbin Liang, Nathaniel D. Bastian, Shaofeng Zou</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @CliverChen</span>
+  </div>
+  <div class="summary">Effective collaboration among large language model (LLM) agents in multi-agent systems requires sharing relevant evidence, requesting missing information, and incorporating teammates' contributions into decisions. Training these behaviors is challenging because final task outcomes provide limited feedback on the value of individual messages. We introduce CoSIR (Collaboration via Surprisal-based Information Rewards), a post-training approach that uses a simple, verifiable environment to teach col</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.17893" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.17893" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.16533" target="_blank">Spectral-Driven Adaptive-Rank Optimizer for Large Language Model Reinforcement Learning with Verifiable Rewards</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.16117" target="_blank">Beyond Perfect Teammates: Multi-Agent Collaboration with Unreliable Colleagues</a></h2>
   <div class="meta">
-    <span>Zhipeng Chen, Wayne Xin Zhao, Ji-Rong Wen</span>
+    <span>Chen Huang, Yiyang Zhang, Yuhao Wu, Yang Deng, Wenxuan Zhang</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @TimothyCzp</span>
+    <span>by @Albus-Chen</span>
   </div>
-  <div class="summary">Reinforcement learning with verifiable rewards (RLVR) is reshaping how large language models (LLMs) acquire reasoning capabilities, yet the optimizers used remain largely inherited from teacher-forcing training. This raises a fundamental question: does RLVR induce a distinct optimization geometry that calls for a different optimizer? We investigate this question through the spectral structure of LLM gradients and find that gradient energy progressively concentrates into a shrinking effective sub</div>
+  <div class="summary">LLM-based multi-agent collaboration is increasingly used to solve complex tasks by dividing work among specialized agents and integrating complementary expertise. Yet existing systems and evaluations largely rest on an implicit perfect-colleague assumption: collaborators provide correct and complete information and respond promptly to requests. In realistic teamwork, however, collaborators may return information that does not answer the intended question, provide insufficient detail to support a</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.16533" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.16533" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.16117" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.16117" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/iNLP-Lab/UnCoBench" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.18472" target="_blank">Simplifying and Improving On-Policy Distillation for Few-Step Diffusion</a></h2>
+  <div class="meta">
+    <span>Jiawei Zhang, Ziyu Wan, Nanye Ma, Long Zhao, Dong Chen et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @zjwfufu</span>
+  </div>
+  <div class="summary">Few-step distillation reduces the sampling cost of diffusion and flow models, but existing approaches often require auxiliary score models or specialized architectures. We show that simple on-policy velocity regression already provides a strong foundation for 4-NFE generation. To represent teacher velocity variation within each coarse transition, we introduce Pivot, a training-only residual proxy that separates local corrections from the student's interval-mean prediction. We further repel the s</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.18472" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18472" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.04851" target="_blank">CURIO: Curiosity-Driven Test-Time Learning for Open-Ended Discovery</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.18677" target="_blank">Model-Based Online Decision Making via Generative Trajectory Planning</a></h2>
   <div class="meta">
-    <span>Tao Feng, Fangxu Yu, Zijie Lei, Jiaru Zou, Changjiang Jiang et al.</span>
+    <span>Haldun Balim, Yilun Du, Na Li</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @ParadiseYu</span>
+    <span>by @haldunbalim</span>
   </div>
-  <div class="summary">Open-ended discovery requires learning from repeated attempts while continuing to explore directions whose value is not yet apparent. Search with a frozen large language model (LLM) can reuse previous solutions in context, but cannot update the model from its successes and failures on the test problem. Reinforcement learning (RL) enables such adaptation; however, strongly favoring high-reward trajectories may suppress low-reward yet potentially promising directions too early. We introduce CURIO,</div>
+  <div class="summary">Online decision-making faces a tension between efficient inference and long-horizon reasoning. Value-based methods rely on short-horizon bootstrapping that limits the propagation of long-term information, while trajectory optimization methods plan explicitly but must solve a high-dimensional optimization problem at every decision step. We propose Generative Trajectory Planning (GTP), a model-based framework that addresses this tension by learning a generative model as a proposal distribution ove</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.04851" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.04851" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/ft2023/CURIO" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.18677" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18677" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/haldunbalim/GTPlanning" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.10808" target="_blank">Controlled Acquisition and Abstention in Three-Channel Score Conflicts</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.02638" target="_blank">Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript</a></h2>
   <div class="meta">
-    <span>Mengzhe Geng</span>
+    <span>Jie Jin, Ziyin Ma, Min Yin, Jinyu Chen, Haigang Song et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @timcuhk</span>
+    <span>by @BitKnight</span>
   </div>
-  <div class="summary">When audio, video, and text disagree, accuracy alone does not show whether to acquire another source or abstain. We study these choices in a controlled three-score benchmark: a policy observes two signed scores, may request the third at a cost, and can abstain. The primary reward is mechanism-specific: abstention is correct only for one designated ambiguity mechanism and is penalized under mixed corruption. Matched controls show that a threshold policy matches always-request decisions with fewer</div>
+  <div class="summary">Full-duplex voice agents make many small, closed decisions, which current systems answer by slow autoregressive decoding. We propose DuplexJev, which feeds ASR-encoder hidden states through a small connector into a frozen LLM and reads each question as a single-token distribution over its options. Nothing is decoded, and an 8-GPU node answers 80 decisions about eight utterances in about 0.1 s. With a last-layer connector, spoken QA stays close to reading the transcript (90% vs. 91%). DuplexJev a</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.10808" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.10808" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/MENGZHEGENG/audio-video-text-conflicts" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15028" target="_blank">UltraBERT: Beyond the Limit of BERT Pre-Training</a></h2>
-  <div class="meta">
-    <span>Jungwoo Park, Taewhoo Lee, Jaewoo Kang</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @affjljoo3581</span>
-  </div>
-  <div class="summary">Recent bidirectional encoders have been modernized with innovations from causal large language models (LLMs). However, the pretraining recipe itself remains inherited from small-scale conventions, leaving encoders underoptimized, with no single model performing competitively across both classification and retrieval tasks. In this work, we investigate how far encoder performance can be pushed by revisiting core design choices in training, revealing three key findings: (1) Encoders saturate on dow</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.15028" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15028" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.02638" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.02638" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15357" target="_blank">UniForge3D: Joint 3D Reconstruction and Generation in a Shared Anchor-Guided Space</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.18497" target="_blank">Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments</a></h2>
   <div class="meta">
-    <span>Wenjue Chen, Wenyue Chen, Heliang Zheng, Rongfei Jia, Yuan Liu et al.</span>
+    <span>Linhai Ma, Yan Wang, Lingfei Qian, Yupeng Cao, Victor Gutierrez Basulto</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @xishushu</span>
+    <span>by @lm2445</span>
   </div>
-  <div class="summary">Generating complete 3D assets from sparse, unposed images requires preserving observed geometry while completing unseen regions. Joint reconstruction and generation offers a way to address both goals: reconstruction recovers the geometry observed in the input images, while generation contributes learned shape priors. However, combining camera-relative reconstruction with canonical-space generation introduces a coordinate mismatch that makes direct geometric interaction more difficult. Moreover, </div>
+  <div class="summary">Tool-call judges evaluate argument values proposed by LLM agents. We find that they accept a correct value less often when their input holds no reference for it, that is, no text that says what the value should be. This happens when the value is a default value from the function schema that the user did not mention, when it has to be inferred, or when the text it comes from was cut from the judge input. We call this drop in acceptance the derivation gap. It appears across all seven judges we eva</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.15357" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15357" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/xibushu/UniForge3D" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.18497" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18497" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/SarielMa/DeRef_release" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15788" target="_blank">Agent Sociodrama: Social-Dynamics-Guided Persona Recasting for LLM Agent Teams</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.14530" target="_blank">Who to Trust in Multi-Robot Systems: Joint Robot and Object Hypothesis Trust Inference via Neural-Symbolic Cross-Validation</a></h2>
   <div class="meta">
-    <span>Yirui Qi, Xiaoming Zhang, Jaehong Yoon</span>
+    <span>Ruiyang Wang, Hao-Lun Hsu, Haocheng Meng, Songqiao Xie, Miroslav Pajic</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @jaehong31</span>
+    <span>by @ruiyangw</span>
   </div>
-  <div class="summary">Large language model (LLM) agents are increasingly deployed as teams, yet they fail in characteristically social ways: information holders stay silent, dominant speakers anchor groups on wrong answers, and norm violations go unsanctioned. We present Agent Sociodrama, a framework for modeling and validating evolving social dynamics in LLM agent teams. Under fixed personas, agents' emotional states and directed, asymmetric relationships are updated every round by a unified external LLM judge and s</div>
+  <div class="summary">Multi-robot systems (MRS) offer significant advantages over single-robot platforms by enabling information sharing and coordination for different tasks in complex environments. However, reliable cooperation critically depends on inferring trust over both information sources and their reported hypotheses, particularly under partial observability and potential adversarial interference. Existing approaches frequently depend on pre-established trust relationships or side-channel information, which m</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.15788" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15788" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/lululu896/Agent-Sociodrama" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15772" target="_blank">RSIPO: Recursive Self-Improving Policy Optimization for Agentic Reinforcement Learning via Skill-Policy Co-Evolution</a></h2>
-  <div class="meta">
-    <span>Fan Zhang, Hao Wu, Jinyang Wu, Hongyu Qu, Zheng Lian et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @Karl28</span>
-  </div>
-  <div class="summary">Recent focus in agentic reinforcement learning (RL) seeks to improve credit assignment in long-horizon tasks. One promising direction combines reinforcement learning with verifiable rewards (RLVR) and on-policy self-distillation (OPSD), integrating trajectory-level advantages with dense token-level supervision. This line of work often conditions a teacher model on privileged context, such as agentic skills, to score tokens generated by the student policy. Despite their progress, they largely ove</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.15772" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15772" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/zfkarl/RSIPO" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.14224" target="_blank">Harness^2: Recursive Agent Harnessing for an Open World</a></h2>
-  <div class="meta">
-    <span>Ruiyao Xu, Yanfei Chen, Zhongying CuiZhu, Bhavana Dalvi Mishra, Yifei Ming et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @ruiyaox</span>
-  </div>
-  <div class="summary">LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, open-world tasks are typically unseen during the harness design phase and novel at test time, leaving no ground-truth verifiers to reliably guide online harness edits. Second, the RSI process remains h</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.14224" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.14224" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/google-research/harness2" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.14709" target="_blank">Vela: User Behavior as Supervision Sparks LLM Intelligence</a></h2>
-  <div class="meta">
-    <span>Yang Xiao, Yusong Sun, Haoyi Wu, Wenyang Hui, Weiqiang Hang et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @YangXiao-nlp</span>
-  </div>
-  <div class="summary">Large language models are increasingly deployed in applications that act on users' long-term behavior histories, from personal assistants to recommendation and advertising systems. These applications demand the user dimension of LLM intelligence: inferring a person's preferences, intent, and likely future actions from weeks to years of behavior data. Yet current models are trained on static text or synthetic data, neither of which captures how user behavior evolves over time. Real-world behavior</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.14709" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.14709" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/AllSpark-Research/Vela" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.13990" target="_blank">DoSA: Dots Sparse Attention</a></h2>
-  <div class="meta">
-    <span>Fanxu Meng, Taosong Fang</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @fxmeng</span>
-  </div>
-  <div class="summary">Sparse attention visits few keys, yet finding them can still require scoring every key with every indexer head. We introduce DoSA (Dots Sparse Attention), a lossless method for making this computation conditional while preserving exact token selection. Its central observation is that Top-K selection requires sufficient evidence to reject a candidate, not necessarily its full score. A seed set supplies a lower bound on the winning threshold. Nonnegative head projections and joint residual bounds </div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.13990" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.13990" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/llm-sys/flash-indexer" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.12818" target="_blank">LeWAM: End-to-End World and Action Modeling with JEPAs</a></h2>
-  <div class="meta">
-    <span>Minghao Fu, Tavis Siebert, Eryk Halicki, Randall Balestriero</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @MinghaoFu</span>
-  </div>
-  <div class="summary">Joint-embedding predictive architectures (JEPAs) learn compact latent world models without pixel reconstruction. Existing JEPA pipelines typically train visual representations and action-conditioned dynamics before adding a control policy or solver. We introduce LeWAM, an end-to-end JEPA for control with: (1) a joint training objective over next latent state prediction and action flow matching, and (2) an isotropic Gaussian constraint on the latent state, enabling a single model to support direc</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.12818" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.12818" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/MinghaoFu/lewam" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15124" target="_blank">ShellElastic: Scalable Elastic Pretraining with Simultaneous Maximal Updates and Hyperparameter Transfer</a></h2>
-  <div class="meta">
-    <span>Can Jin, Yan Kang, Yifan Gong, Chongjian Ge, Mingze Xu et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @Can111</span>
-  </div>
-  <div class="summary">Foundation models need to support diverse inference budgets, yet training a separate model for each budget duplicates pretraining effort. Elastic models train several nested sub-networks inside one weight-shared supernet, but existing recipes face three obstacles: variable per-step workloads that hinder distributed scaling, limited hyperparameter (HP) transfer across model sizes, and no guarantee that all sub-networks are maximally updated at once. We present \Ours, an elastic transformer that o</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.15124" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15124" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/jincan333/ShellElastic" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.15208" target="_blank">PANINI-DR: Controlled Deep Research through Generative Semantic Workspaces</a></h2>
-  <div class="meta">
-    <span>M. Yigit Turali, Shreyas Rajesh, M. Efe Lorasdagi, Chenda Duan, Kartik Sharma et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @yigitturali</span>
-  </div>
-  <div class="summary">Deep research requires connecting multiple steps of search, reasoning, and computation, with intermediate findings guiding what to investigate next. As investigations grow, agents must maintain research state across model calls and check findings before errors propagate into subsequent work. We introduce PANINI-DR, a multi-agent harness that separates coordination of the overall investigation from the research and verification of individual subquestions. A shared workspace, built on the Generati</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.15208" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.15208" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.14530" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.14530" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2609.38377" target="_blank">PhyProbe: Rethinking Physical Consistency Evaluation in Generated Videos</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.04906" target="_blank">Scaling Verifiable Environments for Long-horizon Work Agents</a></h2>
   <div class="meta">
-    <span>Max Ku, Jiaojiao Fan, Zekun Hao, Francesco Ferroni, Heng Wang et al.</span>
+    <span>Jiazheng Zhang, Long Ma, Yunxian Yang, Zhiheng Xi, Zhikai Lei et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @vinesmsuic</span>
+    <span>by @LeoZhang1999</span>
   </div>
-  <div class="summary">Evaluating the physical consistency of generated videos remains a fundamental challenge. Existing approaches rely on off-the-shelf vision-language models, which can often be myopic to physical dynamics, or fine-tuned evaluators trained on human annotations, which overfit to dataset-specific cues and fail to generalize. A key challenge is that existing supervision sources provide either relative ordering or absolute scores, but not both reliably and consistently across varied settings. To this en</div>
+  <div class="summary">Work agents operate over digital artifacts to execute professional knowledge-intensive work, requiring training environments that support long-horizon interaction and trustworthy verification. However, hand-crafted environments incur prohibitive engineering overhead that prevents environment scaling, whereas synthesis methods sacrifice workspace complexity, realism, or grounded verifiability. To bridge this gap, we introduce WorkForge, a scalable synthesis framework for constructing verifiable w</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2609.38377" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2609.38377" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/vinesmsuic/PhyProbe" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2609.35291" target="_blank">Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment</a></h2>
-  <div class="meta">
-    <span>Shunchang Liu, Lukas Fluri, Xin Chen, Francesco Croce</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @Shunchang</span>
-  </div>
-  <div class="summary">Modern AI models are aligned through post-training to adapt them to downstream tasks. Recent work shows that fine-tuning language models on narrow tasks can induce emergent misalignment (EM), causing broadly harmful behaviors beyond the training task. However, EM has been studied almost entirely in text-only tasks, leaving its manifestation in multimodal models unclear. In this paper, we define and analyze EM in the context of vision-language models. We first induce EM via fine-tuning on narrow </div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2609.35291" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2609.35291" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/shunchang-liu/vlm-em" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.12417" target="_blank">WOVEN: Weaving Visual World Modeling into Multimodal LLMs</a></h2>
-  <div class="meta">
-    <span>Zheyu Fan, Yue Zhang, Mingkai Deng, Kangrui Wang, Qineng Wang et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @LordUky</span>
-  </div>
-  <div class="summary">Multimodal large language models (MLLMs) struggle with spatial, embodied, physical, and temporal reasoning. We hypothesize that these failures reflect a shared deficit in visual transition reasoning, and test whether this capability can serve as a shared training primitive, one that different models can learn from different supervision sources and reuse across different tasks, with a systematic training recipe. Existing benchmarks document these deficits separately but do not support controlled </div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.12417" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.12417" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/mll-lab-nu/WOVEN" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.03039" target="_blank">HyperThink: Text-to-Parameter Hypernetworks for Efficient Reasoning</a></h2>
-  <div class="meta">
-    <span>Donggyun Kim, Jack Lu, Chanwoo Kim, Mengye Ren, Seunghoon Hong</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @Jacklu0831</span>
-  </div>
-  <div class="summary">Long-form thinking traces can substantially improve the multi-step reasoning performance of large language models (LLMs), but they introduce high inference-time overhead, with latency dominated by sequential decoding. We propose HyperThink, a text-to-parameter approach that amortizes this reasoning computation into a single query-conditioned parameter update: a lightweight hypernetwork reads the question and predicts updates to a small subset of the base LLM's parameters, while a vector-quantize</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.03039" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.03039" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.04906" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.04906" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2609.36642" target="_blank">PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.14091" target="_blank">Pristine Models</a></h2>
   <div class="meta">
-    <span>Muyang Li, Jie Yang, Zhengyu Fang, Junchao Zhu, Zhengkun Xiao et al.</span>
+    <span>Anirudh Sundara Rajan, Krishna Kumar Singh, Richard Zhang, Yong Jae Lee</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @Balibata</span>
+    <span>by @AniSundar18</span>
   </div>
-  <div class="summary">Language-model agents are usually trained by reinforcement learning from one reward per episode, and privileged self-distillation enriches it by letting the same policy, given a skill, teach its skill-free self through token probabilities. However, we identify two phenomena that question this channel. Invisible Advantage: a skill in context lifts WebShop success from 42.2% to 56.2%, yet changes the probabilities of fewer than a quarter of the sampled tokens. Much to Align: a skill changes the hi</div>
+  <div class="summary">Training on broad, unfiltered data enables high-quality image generation, but can also teach models concepts that should not be generated; restricting the training data ensures safety, but reduces quality because examples containing unsafe concepts also provide useful knowledge that is not itself unsafe. Existing approaches largely address this trade-off post hoc through concept unlearning, which can lead to catastrophic forgetting as the number of concepts to remove grows. We instead ask whethe</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2609.36642" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2609.36642" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/balibata/PR-OPD" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.12099" target="_blank">UNITAS: A 3D-Native World Action Model for Embodied Manipulation</a></h2>
-  <div class="meta">
-    <span>Ruixiang Wang, Yongyi Su, Wenlve Zhou, Bo Yue, Hengyan Liu et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @RobbinWang123</span>
-  </div>
-  <div class="summary">World action models (WAMs) aim to answer a coupled physical question: given a task instruction, what motion should the robot execute, and how will that motion change the surrounding world? Most existing WAMs build on pretrained video generators and represent world evolution through images or visual latents. Robotic interaction, however, takes place in metric three-dimensional space, while images are view-dependent projections whose pixel distances do not directly encode physical distances. We in</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.12099" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.12099" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/DexForce/UNITAS" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.05637" target="_blank">Visual Grounding Safety in Vision-Language Models</a></h2>
-  <div class="meta">
-    <span>Erfan Shayegani, Kundan Krishna, Yue Dong, Nael Abu-Ghazaleh, Leon Gatys et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @Erfan-Shayegani</span>
-  </div>
-  <div class="summary">Vision-language models (VLMs) are increasingly trained to generate structured outputs like points and bounding boxes that downstream interfaces, agents, and robots can act on, yet safety alignment of this output channel has not been systematically analyzed. We study visual grounding safety by repurposing three safety benchmarks spanning direct harm (VLSU), social bias (BBQ-V), and situational safety (Asimov-2.0) into 15,401 matched pairs of harmful requests that differ only in the requested outp</div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.05637" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.05637" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.14091" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.14091" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.02740" target="_blank">Prospective Hindsight: Self-Calibrating Reinforcement Learning via Prediction-Reality Gaps</a></h2>
+  <h2><a href="https://arxiv.org/abs/2607.08809" target="_blank">Privacy-Preserving Intent Fulfilment and Assurance for 6G RAN</a></h2>
   <div class="meta">
-    <span>Jiaxin Zhang, Xiangyu Peng, Qinglin Chen, Yu Li, Hiroaki Hayashi et al.</span>
+    <span>Joss Armstrong</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @zhangjiaxin2012</span>
+    <span>by @jarmstrong001</span>
   </div>
-  <div class="summary">Reinforcement learning for long-horizon agents relies on purely retrospective training signals: credit is assigned only after observing environmental consequences, leaving the agent's belief at action time invisible to the gradient. We introduce Prospective Hindsight (PH), a self-calibrating training principle that augments any retrospective base method with a signal derived from the gap between the agent's prospective prediction (before feedback) and the retrospective evaluation (after feedback</div>
+  <div class="summary">Intent-based network management automates 6G service lifecycles, but existing fulfilment and assurance approaches require traffic inspection, per-flow tracking, or vendor-internal telemetry. These requirements conflict with privacy constraints in multi-tenant networks and vendor opacity in O-RAN deployments. We present an architecture that provisions resources from declared intent categories without traffic inspection and verifies fulfilment using only cell-level standardised PM counters at the </div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.02740" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.02740" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2607.08809" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2607.08809" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.12998" target="_blank">Evaluating LLM Creativity through Long-Tail Performance</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.16759" target="_blank">Image Tokenizers Should Be Trained Between Images</a></h2>
   <div class="meta">
-    <span>Yichen Wang, Tenghao Huang, Vishakh Padmakumar, Mina Lee</span>
+    <span>Ole Beißwenger, Jan-Niklas Dihlmann, Hendrik Lensch</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @ZachW</span>
+    <span>by @Obeisswenger</span>
   </div>
-  <div class="summary">Creativity benchmarks for large language models (LLMs) vary widely in task and metric design. This raises the question of whether they capture a common notion of creativity. We propose that this shared target can be formalized as task-specific performance in the long tail of a reference input-output distribution, which describes how common input-output pairs are relative to a chosen source of text. We ground this proposition in the novelty-quality product formulation and evaluate it empirically </div>
+  <div class="summary">Latent diffusion models generate images as codes of an image tokenizer, whose decoder turns them into the pixel image. Recent tokenizers improve how well these codes reconstruct an image and how easily a generator learns them. Yet a generator does not reproduce the codes of training images, and when a generated code lands outside what the decoder expects, the decoded image contains imperfections. Current methods make the decoder more robust to generated codes by adding noise during training. How</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.12998" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.12998" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/YichenZW/longtail-creativity" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.16759" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.16759" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/cgtuebingen/InterpTok" target="_blank">GitHub</a>
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.03825" target="_blank">Same Output, Different Gold: Measuring How Reference Choice Moves a Multilingual Benchmark Score</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.18760" target="_blank">Beyond the Verdict: Agentic Code Judging with Verifiable Feedback</a></h2>
   <div class="meta">
-    <span>Parth Kulshreshtha, Shivali Dalmia, Abhishek Mukherji</span>
+    <span>Zheye Deng, Sha Li, Changlong Yu, Xin Liu, Qin Lu et al.</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @ParthKulshreshtha</span>
+    <span>by @dzy97</span>
   </div>
-  <div class="summary">A benchmark score compares a system output against a reference, and methodological attention falls almost entirely on the first term. We measure the second. The retained annotation record of a six-language benchmark for personally identifiable information contains two independent annotator labellings, the aggregate shipped as gold, and a reviewer gold from independent expert re-annotation of a sample. Using it, we hold the scored output fixed and exchange the reference. The score moves by 4.95 F</div>
+  <div class="summary">Test-time scaling for large language models (LLMs) can involve generating multiple candidate solutions for selection or revising an earlier attempt. To guide selection and revision, we need a verifier that can estimate candidate correctness and provide evidence of failure. In competitive programming, however, official judging systems provide authoritative verdicts under finite submission budgets, without revealing failure explanations or failing inputs. To provide informative feedback without co</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.03825" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.03825" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.18760" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18760" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/horizon-llm/IOI2026" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.15228" target="_blank">Words to World: Benchmarking LLMs in Interactive Physical Environments</a></h2>
+  <div class="meta">
+    <span>Xinnan Dai, Kaiqi Yang, Yaxin Li, Cheng Luo, Wanli Li et al.</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @wdlctc</span>
+  </div>
+  <div class="summary">Words are increasingly becoming an interface for action: large language models (LLMs) can now invoke tools, operate devices, and make decisions that affect the physical world. However, current benchmarks largely evaluate LLMs through static text responses, offline tool calls, or simulated tasks, leaving open the question of how well they can act in real physical environments. We present a benchmark for measuring LLMs in closed-loop physical interaction, where models control a harness system conn</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.15228" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.15228" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.00707" target="_blank">Initialization Improves LLM-Driven Discovery</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.18596" target="_blank">ACCRUE: Continual Off-Policy Reinforcement Learning for Robot Foundation Models</a></h2>
   <div class="meta">
-    <span>Mansi Sakarvadia, Marco Ciccone, Colin Raffel</span>
+    <span>Changyeon Kim, Kimin Lee, Yashraj Narang, Yijie Guo</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @mciccone</span>
+    <span>by @changyeon</span>
   </div>
-  <div class="summary">Large Language Models (LLMs) have been used for novel discovery of algorithms, theorems, drugs, and other tasks through the use of harnesses that prompt an LLM to iteratively optimize an objective. In this work, we study the relationship between the population of previous iterates and eventual discovery success. We generalize past work on harness design to develop a suite of 12 harnesses called 'Modular' and characterize their performance across 5 diverse discovery tasks, finding that discovery </div>
+  <div class="summary">Reinforcement learning (RL) post-training improves robot foundation models (RFMs) beyond their demonstrations, but real-world deployment demands more: learning new tasks efficiently while retaining previously acquired behaviors. Existing continual RL methods on top of VLAs mitigate forgetting but rely on on-policy updates with limited forward transfer, whereas off-policy methods improve single-task sample efficiency without addressing learner persistence across tasks. We propose ACCRUE, a contin</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2610.00707" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.00707" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/msakarvadia/llm_optimizer" target="_blank">GitHub</a>
-  </div>
-</article>
-
-<article class="paper">
-  <h2><a href="https://arxiv.org/abs/2610.13481" target="_blank">Branching On-Policy Distillation</a></h2>
-  <div class="meta">
-    <span>Dongyang Chen, Shudong Liu, Shubo Li, Duoxun Tang, Jinwei Liang et al.</span>
-    <span class="upvotes">▲ 0</span>
-    <span>by @DongyangChen</span>
-  </div>
-  <div class="summary">On-policy distillation (OPD) provides teacher supervision on student-generated trajectories, but a single trajectory realizes only one continuation at each decision, limiting supervision coverage under a finite sampling budget. We propose BranchOPD (Branching On-Policy Distillation), which selects informative decision points using student uncertainty and teacher-student disagreement, resamples student-policy continuations from shared prefixes, and applies token-level teacher supervision to both </div>
-  <div class="links">
-    <a href="https://arxiv.org/abs/2610.13481" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2610.13481" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://arxiv.org/abs/2610.18596" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18596" target="_blank" class="arxiv-pdf">PDF</a>
     
   </div>
 </article>
 
 <article class="paper">
-  <h2><a href="https://arxiv.org/abs/2609.36616" target="_blank">CrossTimeEdit: A Decade-Spanning Cross-View Dataset and Reward-Guided Editing for Historical Street-View Generation</a></h2>
+  <h2><a href="https://arxiv.org/abs/2610.18738" target="_blank">Enabling Token-wise Importance Sampling in Off-Policy RLVR with Proximal KL Regularization</a></h2>
   <div class="meta">
-    <span>Hanwen Lu, Jun He, Mingjia Yang, Hao Wei, Jinhao Huang et al.</span>
+    <span>Hao Bai, Jiarui Yao, Tong Zhang</span>
     <span class="upvotes">▲ 0</span>
-    <span>by @LuHanwen</span>
+    <span>by @JackBAI</span>
   </div>
-  <div class="summary">Historical street-view imagery records urban evolution, but uneven coverage leaves substantial gaps in historical records. Generating plausible past appearances requires restoring changed structures while preserving persistent scene content. We construct VIGOR-his, a decade-spanning cross-view dataset containing 43,653 location-level quadruplets across 11 cities on three continents. Its automated pipeline performs spatial pairing, consistency screening, change classification, and the generation </div>
+  <div class="summary">Off-policy data in reinforcement learning with verifiable rewards (RLVR) can arise from asynchronous generation, rollout-training mismatch, and response reuse. Token-wise importance weighting avoids multiplying likelihood ratios across a response but generally biases policy gradients. We prove that, under coverage and local expressiveness conditions, full future KL credit makes the exact proximal optimizer the update's unique stationary policy, even for mixtures of older policies, without full-r</div>
   <div class="links">
-    <a href="https://arxiv.org/abs/2609.36616" target="_blank">arXiv</a>
-    <a href="https://arxiv.org/pdf/2609.36616" target="_blank" class="arxiv-pdf">PDF</a>
-    <a href="https://github.com/LuHanwen67/CrossTimeEdit-release" target="_blank">GitHub</a>
+    <a href="https://arxiv.org/abs/2610.18738" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18738" target="_blank" class="arxiv-pdf">PDF</a>
+    <a href="https://github.com/BiEchi/proximal-kl-core" target="_blank">GitHub</a>
+  </div>
+</article>
+
+<article class="paper">
+  <h2><a href="https://arxiv.org/abs/2610.18579" target="_blank">Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops</a></h2>
+  <div class="meta">
+    <span>Yubo Li, Ramayya Krishnan, Rema Padman</span>
+    <span class="upvotes">▲ 0</span>
+    <span>by @yubol</span>
+  </div>
+  <div class="summary">System One models choose an agent's next action by scoring a supplied set of options in a single pass. This makes them fast and cheap, but when they choose wrongly there is nothing to inspect: did the model misread what the agent has seen, or read it correctly and still act wrongly? We answer behaviorally. On a frozen benchmark of agent decision states from simulated environments, customer-service policies, tool use, web navigation and coding, we pair every next-action question with factual prob</div>
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.18579" target="_blank">arXiv</a>
+    <a href="https://arxiv.org/pdf/2610.18579" target="_blank" class="arxiv-pdf">PDF</a>
+    
   </div>
 </article></main>
 
 <footer>
   <p>Papers from <a href="https://huggingface.co/papers">HuggingFace Daily Papers</a> — content on <a href="https://arxiv.org">arXiv</a></p>
-  <p>Generated 2026-10-14 · <a href="https://github.com/saffee666/hf-daily-papers-mirror">GitHub</a> · <a href="rss.xml">RSS Feed</a> · <a href="index.json">JSON API</a></p>
+  <p>Generated 2026-10-15 · <a href="https://github.com/saffee666/hf-daily-papers-mirror">GitHub</a> · <a href="rss.xml">RSS Feed</a> · <a href="index.json">JSON API</a></p>
 </footer>
 </div>
 
