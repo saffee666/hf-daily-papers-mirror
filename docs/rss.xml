@@ -5,356 +5,356 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-10-20</lastBuildDate>
+    <lastBuildDate>2026-10-21</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>HSPR: Recovering Software-Agent Benchmark Scores via Hierarchical Posterior Inference</title>
-      <link>https://arxiv.org/abs/2610.24611</link>
-      <guid isPermaLink="false">2610.24611</guid>
-      <description>Wanyi Chen, Wanqin Shen, Yuanchen Shi — Evaluating software agents on a full benchmark is expensive. A small task subset can preserve agent rankings while yielding inaccurate scores. Historical responses provide useful structure, but tasks with identical source responses can have different outcomes for a new target agent. We introduce Hierarchical Score Posterior Recovery (HSPR), which combines source-fitted response factors with uncertain group success rates. Observed target outcomes update the posteriors over the target latent state and group rates; posterior-guided acquisition selects subsequent tasks. Its score-based criterion equals the expected one-step reduction in full-score posterior variance. Observed successes and posterior-predictive counts for unqueried tasks yield a full-score posterior. The final estimate uses its</description>
+      <title>More Memory, Worse Agents: Error Reproduction and Anti-Persistence in LLM Agents</title>
+      <link>https://arxiv.org/abs/2610.27406</link>
+      <guid isPermaLink="false">2610.27406</guid>
+      <description>Ruhan Wang, Kishan Panaganti, Dongruo Zhou — LLM agents can improve across tasks without updating model parameters by storing experience from their own executions in external memory and reusing it to guide later decisions. A central design question is whether to retain only observed trajectories and outcomes or also the rules, summaries, and skills inferred from them. Retaining these abstractions allows agents to reuse strategies without repeatedly deriving them from raw trajectories. However, errors in stored abstractions can propagate to subsequent decisions through retrieval and reuse. They can also shape execution trajectories, which then become the basis for new abstractions that reproduce the original errors. We term this feedback mechanism error reproduction: errors are regenerated through a cycle of abstraction, execution, an</description>
+      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Harness Self-Evolution for Long-Horizon Terminal Agents</title>
+      <link>https://arxiv.org/abs/2610.27435</link>
+      <guid isPermaLink="false">2610.27435</guid>
+      <description>Ruhan Wang, Yucheng Shi, Zongxia Li — Long-horizon terminal agents may solve a task in one run yet fail across repeated runs. Stochastic errors can propagate through actions and context, creating a gap between capability and reliable execution. We present RiseHarness, a framework for iteratively improving agent harnesses with model weights fixed. It focuses on flipping tasks with both successful and failed runs under the same configuration, using successful runs as references for failure analysis. RiseHarness combines agent trajectories with internal harness traces from a runtime monitor to examine how model actions interact with command execution, feedback, context management, and completion decisions. A Harness Handbook links this evidence to harness behaviors and source code, helping identify recurring problems in mechanism</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems</title>
+      <link>https://arxiv.org/abs/2610.28522</link>
+      <guid isPermaLink="false">2610.28522</guid>
+      <description>Xialie Zhuang, Mingcong Lei, Zunhai Su — Decision models support routing, guardrails, and output verification in LLM systems. However, item accuracy alone cannot establish whether models make correct decisions across controlled variations or assign reliable confidence to their predictions. We introduce DecisionPivot, a diagnostic benchmark comprising 48 tasks and 40,033 items across seven decision roles. Its core track contains 7,800 items from 13 generated task families, organized into contrast groups with computed answers verified by independently implemented solvers. The complementary reference track contains 32,233 items from 35 public test sets, preserving their original evaluation metrics. We evaluate 40 decision models and 14 general models using documented, model-specific protocols, assessing item and contrast-group accur</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Beyond Compilation: Evaluating Faithful Natural-Language-to-Lean Statement Formalization</title>
+      <link>https://arxiv.org/abs/2606.31002</link>
+      <guid isPermaLink="false">2606.31002</guid>
+      <description>Ke Zhang, Patricio Gallardo Candela, Sudhir Murthy — Lean verifies that a generated declaration is well typed, but cannot check whether it states what the user intended. We measure how far compilation overstates faithfulness in statement autoformalization without canonical Lean targets. Our criterion requires Lean compilation and agreement of two LLM judges from different model families. On an independent random audit, it agrees with the human majority on 91.5% of cases; it rarely accepts an unfaithful output but rejects some faithful ones. Across eight systems on 227 university-level statements, the gap between compiling and accepted outputs ranges from 1.3 to 29.5 percentage points: our tool-augmented agent compiles 87.2% of the statements, but only 57.7% are accepted. Human review of all the agent&apos;s rejections confirms that 23.8 of its 29</description>
+      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Breaking Diffusion: Parallel Reasoning with Draft Refinement</title>
+      <link>https://arxiv.org/abs/2610.26542</link>
+      <guid isPermaLink="false">2610.26542</guid>
+      <description>Jaesang Yu, Seoyeon Byun, Yun Wang — Drafting an answer allows a reasoning model to reconsider each decision in the context of the others. Yet repeated diffusion denoising does not ensure that individually plausible token updates form a better answer together. We introduce Draft Refinement Language Models (DRLMs), which use a single denoiser to propose parallel revisions and evaluate a candidate draft. We train the denoiser to reconstruct every token from uniformly corrupted drafts, teaching both preservation and repair. Its predictions specify revisions directly, without a diffusion reverse transition. Evaluation requires a different use of these predictions: confidence in an existing token reflects both contextual support and evidence from observing the token itself. Using the known corruption process, we correct for this s</description>
+      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Learning the 4D World through Point Trajectory Forecasting</title>
+      <link>https://arxiv.org/abs/2610.28594</link>
+      <guid isPermaLink="false">2610.28594</guid>
+      <description>Byungwoo Jeon, Sunghwan Hong, Dohyeon Kim — Reliable multi-view forecasting requires videos from different cameras to describe the same evolving 3D scene. To this end, we introduce Video-Point Model (VPM), a world model that conditions on multi-view video histories and a language instruction to jointly forecast future videos from arbitrary viewpoints and the 3D trajectories of persistent scene points. We extend a pretrained world model with camera-conditioned multi-view processing that integrates complementary observations across cameras, and add a trajectory head that predicts how physical points move through time. Each trajectory tracks a single point across all views, and supervising these trajectories alongside video generation therefore anchors appearance changes in every camera to a shared description of 3D motion. To support </description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>S-Agent 2.0: Spatial Reasoning with a General Coding Agent</title>
+      <link>https://arxiv.org/abs/2610.28354</link>
+      <guid isPermaLink="false">2610.28354</guid>
+      <description>Rui Gong, Ruoyu Wang, Yalun Dai — Spatial reasoning asks a model to work out where objects are in 3D space, how they relate to one another, and how they move. Agentic VLMs have recently brought large improvements on such tasks by letting the model actively gather evidence with 3D perception tools instead of answering in a single pass. Even so, on many questions the tools return the right evidence and the model still does not arrive at the correct answer: the gap between model and tools, where raw readings become usable conclusions, is left unfilled. We present S-Agent 2.0, a spatial reasoning agent that equips an off-the-shelf general coding agent with a command-line perception toolkit, and we design the interface around one principle: help the VLM close the evidence loop: acquire scene evidence, remember it in a persisten</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking</title>
+      <link>https://arxiv.org/abs/2610.27628</link>
+      <guid isPermaLink="false">2610.27628</guid>
+      <description>Pan Wang, Yihao Hu, Guangyuan Dong — Looped language models can run more iterations at test time, but additional iterations need not help them solve longer problems. For sequential state tracking, final-answer supervision does not specify how far each iteration should advance, and repeated updates can change the scale of the recurrent state. We introduce Progress-Aligned Recurrence (PAR), which trains the prediction at iteration k to match the state after the first k operations and rescales recurrent states to their first-iteration norms. On swap-S_5, a Qwen2.5-0.5B model trained on at most 32 moves achieves 95.5\% mean full-state accuracy at 512 moves, or 16times the training length, compared with 55.7\% reported for RLT and 0.8\% for explicit chain of thought on the same backbone. Controlled S_5 ablations show that removing</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>WinARDet: Compressed Window Auto-Regression for Long-Horizon Vision-Language Grounding</title>
+      <link>https://arxiv.org/abs/2610.19419</link>
+      <guid isPermaLink="false">2610.19419</guid>
+      <description>Chenxu Wang, Hangyi Kuang, Bo-Wen Yin — MLLM-based detectors formulate vision-language grounding as autoregressive coordinate generation, yet in dense scenes, they often collapse into a box repetition loop, repeatedly emitting identical boxes until the decoding budget is exhausted. We trace this failure to historical-answer attention takeover: Under full-history autoregression, repeated coordinate tokens in the growing answer history attract disproportionate attention, crowding out the attention sinks needed to attend to new visual evidence. % To break this loop, in this paper, we propose Compressed Window Auto-Regression (WinAR). This new mechanism partitions a long answer sequence into consecutive generation windows and restricts full token-level autoregression to the current window only while compressing each previous window </description>
+      <pubDate>2026-10-14T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>EvaOmni: An Evidence-Grounded Benchmark for Audio-Visual Reasoning</title>
+      <link>https://arxiv.org/abs/2610.28444</link>
+      <guid isPermaLink="false">2610.28444</guid>
+      <description>Xiaoxing Hu, Wenxi Yao, Chaoyuan Shi — Omni LLMs can naturally locate key audio and visual evidence and integrate information across modalities for audiovisual reasoning. Existing audio-visual reasoning benchmarks that mainly rely on multiple-choice questions usually score models solely based on answer correctness, making it difficult to assess whether a model truly forms a reasoning chain from evidence to the correct answer. In addition, textual or unimodal shortcuts may allow models to answer correctly without analyzing the necessary audio-visual evidence, further weakening the reliability of evaluation benchmarks. To address these issues, we introduce EvaOmni, an evidence-grounded benchmark containing 392 videos and 1,027 purely human-annotated question-answer pairs, covering 15 capabilities and three levels: retrieval and l</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience</title>
+      <link>https://arxiv.org/abs/2610.26855</link>
+      <guid isPermaLink="false">2610.26855</guid>
+      <description>Tianqi Liu, Hanfei Zhao, Qifeng Liang — World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heterogeneous action spaces and limited multimodal supervision. We present Ropedia W0, the first egocentric loco-manipulation world foundation model spanning humans and robots with diverse embodiments. We curate Xp-Data, comprising 10k hours of egocentric human data and 3k hours of robot data with unified multimodal annotations and systematic quality control. A unified kinematic representation encodes locomotion through camera poses and manipulation through projected skeletons, with robot skeletons combining embodiment-specific forward kinematics with extensive manual keypoint annotation and correction. We also introdu</description>
+      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Large Flow Language Models</title>
+      <link>https://arxiv.org/abs/2610.28559</link>
+      <guid isPermaLink="false">2610.28559</guid>
+      <description>Arnav Chavan, Chanhyuk Lee, Udbhav Bamba — Continuous flow language models offer a path to parallel generation with tools for control and acceleration unavailable to discrete diffusion, yet effective techniques for building them at the billion-parameter scale remain less established. We present Lafa (Large flow language model), a fast, high-performing flow language model scaled to 8B parameters in a data-efficient manner. Lafa is a blockwise flow model with causal attention on the prefix and bidirectional, asynchronous flow within each block. This design enables efficient training by adapting pretrained autoregressive (AR) models and fast inference via prefix caching and blockwise parallel decoding. We train Lafa at 0.5B, 7B, and 8B scales with fewer than 30B tokens, more efficient than previous diffusion models, and evaluate it on</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds</title>
+      <link>https://arxiv.org/abs/2610.27999</link>
+      <guid isPermaLink="false">2610.27999</guid>
+      <description>Jihai Zhang, Runjia Qian, Kaiqin Kong — Moving from controllable videos to genuinely playable worlds requires persistent world state, executable game rules, and low-latency interaction. We outline a roadmap for the next generation of Matrix-Game that separates game execution from visual generation through an executable game harness, and introduce Matrix-Game 4.0 as the first system built on this design. A lightweight game engine maintains world state and executes interaction rules, a multimodal coding agent translates player ideas into game code and dynamic scene captions, and a renderer based on autoregressive video model transforms engine-rendered low-poly proxies into detailed visuals, conditioned on dynamic captions and memory references. This framework provides continuous guidance for visual generation and enables natural-l</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Correction Training for Diffusion Models</title>
+      <link>https://arxiv.org/abs/2610.14136</link>
+      <guid isPermaLink="false">2610.14136</guid>
+      <description>Donghoon Ahn, Runqian Wang, Alexei A. Efros — Iterative sampling in diffusion models can lead to error accumulation due to exposure bias. The denoiser is trained on real images interpolated with noise, but at inference its inputs are constructed from its own imperfect predictions from the earlier steps, something it has never seen at training time. This might be one reason diffusion models often struggle without additional help, such as CFG. We introduce a correction step for diffusion models which attempts to reduce this training-inference gap. The corrector takes the base model&apos;s prediction as input and is trained against the same ground-truth target. This makes correction an explicit learning task, with training inputs provided by the base model. During sampling, at each denoising step, we iteratively refine the denoiser&apos;s clean-sa</description>
+      <pubDate>2026-10-14T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>SWIFT: Self-guided Weak-to-strong dIFfusion models via Target extrapolation</title>
+      <link>https://arxiv.org/abs/2610.25844</link>
+      <guid isPermaLink="false">2610.25844</guid>
+      <description>Yanjin He, Cuifeng Shen, Wanzhou Lei — Training high-quality diffusion models is computationally expensive, and inference-time guidance often adds further sampling cost. In this work, we introduce Swift, a simple yet effective self-guided training method that uses a frozen weak denoiser to improve a stronger model without adding inference overhead. For each noisy input, Swift extrapolates the clean regression target away from the weak denoiser&apos;s prediction, amplifying components that remain underfit. The weak guide can be an early training checkpoint, requires no backpropagation during main-model training, and is discarded afterward. The resulting model retains the original sampler and supports both conditional and unconditional generation without label dropout or an unconditional branch. We explain this mechanism through a spe</description>
+      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>From Short Clips to Real-Time Streams: Identity-Aware Supervision and Context-Efficient Generation for Video Face Swapping</title>
+      <link>https://arxiv.org/abs/2610.26681</link>
+      <guid isPermaLink="false">2610.26681</guid>
+      <description>Zekai Luo, Yuwei Liang, Ruiqi Ma — Video face swapping transfers the reference identity to a target video while preserving its other attributes and motion. Despite recent progress in reference-guided flow-based methods, jointly achieving faithful identity transfer, high fidelity, and real-time generation over long video streams remains challenging. To address this challenge, we rethink the task-specific structure of reference-guided video face swapping. First, face swapping changes only identity while preserving most visual content, yet flow-matching supervision is weakly sensitive to these changes. We therefore develop Joint Rec-ID Loss, which balances explicit identity supervision and latent reconstruction according to the noise level. Second, the target video already provides non-edited attributes and temporal dynamics, </description>
+      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse</title>
+      <link>https://arxiv.org/abs/2610.25043</link>
+      <guid isPermaLink="false">2610.25043</guid>
+      <description>Sicheng He, Yi Pan, Qiuting Yu — Flow-matching vision-language-action (VLA) models generate an action chunk by iteratively denoising Gaussian noise, but typically execute only a short prefix before replanning with updated observations. Under this receding-horizon paradigm, the unexecuted remainder---the action tail---is discarded, and the next chunk is regenerated from fresh noise. We show that this discarded tail retains transferable denoising progress: action-tail initialization can match or outperform a native 10-step Gaussian baseline using fewer denoising steps. However, the optimal denoising budget varies substantially across samples, indicating that tail reuse should be adapted to the updated environment. Based on this observation, we introduce VLA-Rolling, a lightweight inference framework that reuses action tails</description>
+      <pubDate>2026-10-18T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>EdgeKernelBench: Unified LLM-Driven Kernel Generation for Edge Backends</title>
+      <link>https://arxiv.org/abs/2610.24648</link>
+      <guid isPermaLink="false">2610.24648</guid>
+      <description>Yuhua Zheng, Xueyi Chen, Xinze Zou — Recent works show that LLMs can generate kernels with strong performance on server GPUs. Edge deployment presents distinct challenges because the hardware is heterogeneous, the software stacks are fragmented, and the resource budgets are tight. LLM kernel generation across diverse edge backends has yet to be studied systematically. We introduce EdgeKernelBench, which combines a unified IR deployment framework with a hierarchical benchmark for edge workloads. The unified IR captures reusable computation, scheduling, and memory decisions and connects to each target backend through a compiler interface. The benchmark spans progressively larger program scopes, from individual operators to compact model graphs, across representative edge application domains. We instantiate the design with TVM a</description>
       <pubDate>2026-10-17T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments</title>
-      <link>https://arxiv.org/abs/2610.25950</link>
-      <guid isPermaLink="false">2610.25950</guid>
-      <description>Rui Wang, Zishen Lai, Jiayu Liu — Large Language Model (LLM) agents are increasingly deployed in unfamiliar and evolving environments, requiring them to proactively explore, understand, and adapt to environmental dynamics. However, existing benchmarks rarely test whether agents can proactively discover how an environment works and adapt as it evolves. To address this gap, we introduce AdaExploreBench, a benchmark for proactive exploration and test-time adaptation in evolving environments. By instantiating environmental dynamics as hidden rules, AdaExploreBench requires agents to actively acquire evidence and infer the rules. Under implicit rule drift, the latent rule changes without announcement, requiring agents to detect from degraded performance that prior knowledge is stale and re-explore. Experiments on eight leading </description>
+      <title>HybridResearcher: Bridging the Structured-Unstructured Boundary for Deep Research Agents</title>
+      <link>https://arxiv.org/abs/2610.24899</link>
+      <guid isPermaLink="false">2610.24899</guid>
+      <description>Soyoung Yoon, Peiran Xu, Han Wang — While LLM agents are increasingly capable of gathering and synthesizing evidence from a single homogeneous source, such as structured tables or unstructured data, real-world analytical questions frequently span heterogeneous sources. For example, answering one enterprise question may require both a result computed over an internal database and evidence found on the web. Recent evaluations on benchmarks like HybridDeepResearch show that even frontier agents struggle when evidence must cross this boundary. While these benchmarks have exposed the limitation, methodologies to explicitly teach cross-source reasoning remain absent. To address this, we introduce HybridResearcher, a 4B agent trained to bridge evidence across the structured and unstructured boundary. To build it, we synthesize cros</description>
+      <pubDate>2026-10-17T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>HumanSkill-4D: Training-Free Language Querying of Animatable Gaussian Avatars in Space and Time</title>
+      <link>https://arxiv.org/abs/2610.24452</link>
+      <guid isPermaLink="false">2610.24452</guid>
+      <description>unsu Kim, Naeun Kim, Dongyoon Han — We introduce avatar referring segmentation, which selects regions of animatable Gaussian avatars from language queries. A query can also specify a pose or motion to select matching intervals. This lets users interact with avatars for local editing and motion inspection. However, making these selections with existing language Gaussian splatting methods poses two challenges: adjacent parts and garments are hard to separate and may be referred to indirectly (region ambiguity), while fine-grained motions can look alike in RGB (motion ambiguity). We address these challenges with HumanSkill-4D, a training-free framework that shares a multimodal large language model (MLLM) and geometric operators across avatars. For each avatar, a semantic memory links body-part and garment categories to persiste</description>
+      <pubDate>2026-10-17T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition</title>
+      <link>https://arxiv.org/abs/2610.28578</link>
+      <guid isPermaLink="false">2610.28578</guid>
+      <description>Wenjie Lou, Tianshuo Peng, Shiyang Feng — In this report, we introduce Sage-A1.5, a 35B Mixture-of-Experts agentic model that builds on A1 to advance long-horizon problem solving through adaptive capability composition. Compared with A1, Sage-A1.5 learns not only to solve individual tasks, but also to organize work and revise its approach during execution. Sage-A1.5 highlights three improvements: agentic orchestration, verification, and open scientific discovery. First, agentic orchestration extends single-agent execution through task delegation and parallel collaboration among subagents with isolated contexts, enabling complex tasks to be decomposed and addressed concurrently and supporting efficient execution while reducing interference across concurrent subagents. Second, agentic verification strengthens long-horizon reliabilit</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>SolarRenderer: Few-Step Generative Reference Rendering</title>
+      <link>https://arxiv.org/abs/2610.28630</link>
+      <guid isPermaLink="false">2610.28630</guid>
+      <description>Guian Fang, Shengju Qian, Dongyue Lu — Game engines and coding agents can specify the layout, motion, and camera of a scene, yet turning such coarse structure into realistic video requires a renderer that follows the structure and completes the appearance it leaves open. Existing renderers are tied to the representation of one engine, need tens of denoising steps or a costly distillation of their own, and learn from conditions that are not aligned with their target videos. We present SolarRenderer, a structure-conditioned video renderer that adapts a frozen MiniMax-H3 33B backbone with two lightweight LoRAs. Structural videos enter the native reference pathway of the backbone at the positions of the frames they describe, without a type identifier and described only in plain text, so that a single control LoRA follows arbitrary </description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Focused Omni-Modal GUI Agents</title>
+      <link>https://arxiv.org/abs/2610.26203</link>
+      <guid isPermaLink="false">2610.26203</guid>
+      <description>Fuyao Zhang, Wenwen He, Jiaming Zhang — Graphical User Interface (GUI) agents increasingly act over streaming omni-modal observations spanning screenshots, audio, video, interaction history, and device states. However, exposing this complete context uniformly at every step ignores that relevance is transient and sparse: the signal determining one action can become clutter at the next. Because executed actions feed back into the context, these errors compound into Sequential Distraction, driving the agent into irreversible trajectory drift. We formulate the underlying requirement as Focused Perception: a representation that is step-adaptive, action-sufficient, and non-intrusive. We realize this in FocusGUI, a lightweight adapter that dynamically prioritizes multimodal channels against a step-specific decision reference. Instead o</description>
       <pubDate>2026-10-19T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>AffordanceWAM: Affordance-Aware Joint World-Action Modeling for Robot Manipulation</title>
-      <link>https://arxiv.org/abs/2609.22332</link>
-      <guid isPermaLink="false">2609.22332</guid>
-      <description>Jiadi You, Qize Yu, Yue Chen — Generalizable robot manipulation requires predicting how a scene will evolve, identifying where interactions are feasible, and determining how to act. Action-labeled robot videos directly supervise control but are costly and limited in diversity, whereas egocentric human videos capture diverse interactions but lack robot actions and differ in embodiment and appearance. We introduce AffordanceWAM, an affordance-aware generative World Action Model that represents object-centric spatiotemporal affordance through Scalar Affordance and Affordance Heatmap, within the generated future World. This representation grounds visual prediction in task-relevantant objects and interaction regions for action generation, and provides shared interaction targets across human and robot videos. Built on a pretr</description>
-      <pubDate>2026-10-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Scaling Parameter-Efficient Fine-Tuning for Brain Encoding</title>
-      <link>https://arxiv.org/abs/2610.26802</link>
-      <guid isPermaLink="false">2610.26802</guid>
-      <description>Zhuofan Josh Ying, Guanglong Sun, Nolan Ho — Brain encoding models aim to predict neural responses to stimuli. The most widely used approach fits readouts from frozen pretrained backbones. Using neural data to train large models from scratch or fully fine-tune them after task-pretraining has proven difficult because neural data is costly and limited. We show that parameter-efficient fine-tuning (PEFT) enables us to effectively adapt very large pretrained backbones for brain encoding with a small number of trainable parameters. To make it computationally practical, we exploit the backbone&apos;s causal structure to predict multiple timepoints in a single pass instead of using sliding windows, significantly reducing feature-extraction cost. This enables efficient fine-tuning of multimodal backbones with up to 104B parameters, the largest mo</description>
+      <title>PhysSkin++: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning</title>
+      <link>https://arxiv.org/abs/2610.26067</link>
+      <guid isPermaLink="false">2610.26067</guid>
+      <description>Yuanhang Lei, Baofei Liu, Xingxuan Li — Generalizing real-time physics-based animation across diverse 3D shapes and spatial discretizations remains challenging. In this paper, we introduce PhysSkin++, a physics-informed framework that learns continuous neural skinning fields from static geometries to construct compact deformation subspaces. Specifically, we propose a Neural Skinning Fields Autoencoder that predicts shape-dependent deformation subspaces without per-object network training. To learn these subspaces without simulation trajectories, we develop a Physics-Informed Self-Supervised Learning strategy that combines skinning-field normalization with conflict-aware gradient correction, stabilizing joint optimization under physical and orthogonality constraints. The learned representation supports efficient reduced dynamics </description>
       <pubDate>2026-10-19T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>Holi-World: Building Holistic World Intelligence from Human-Ego Experience</title>
-      <link>https://arxiv.org/abs/2610.26549</link>
-      <guid isPermaLink="false">2610.26549</guid>
-      <description>Hao Li, Xiyuan Zheng, Yuanyuan Gao — Human egocentric experience offers a rich foundation for learning how the world is organized and how it changes through interaction. Realizing this potential at scale requires turning growing volumes of recordings into learning resources that connect scene structure, object semantics, and interaction histories across viewpoints and time, while reducing dependence on costly manual annotation. We introduce HOLI-WORLD, an integrated ecosystem connecting experience capture, world representation, automated data construction, model learning, and independent evaluation. To sup- port learning at scale, HOLIWORLD-Foundry combines complementary static and dynamic perception to automatically construct world records that connect persistent scene structure and evolving object states with interaction hi</description>
+      <title>EMBER: Predicting TCR--pMHC Binding Without a Docked Complex</title>
+      <link>https://arxiv.org/abs/2610.27334</link>
+      <guid isPermaLink="false">2610.27334</guid>
+      <description>Lin Ha, Chen Zhou, Haozheng Luo — We propose EMBER, a structure-based framework for TCR--pMHC binding prediction that eliminates the need for a predicted docked complex, and with it the placement error that dominates such predictions. Traditional structure-based predictors utilize the co-folded complex structure of the receptor and the antigen and interpret binding from its contact surface. Consequently, every downstream feature inherits any deviation the structure-prediction tool introduced. Methodologically, EMBER folds the TCR and pMHC independently, encodes them as SE(3)-invariant residue graphs, and compares their learned representations without constructing a shared coordinate frame. A relative pose is therefore not an input of the model, so placement error cannot propagate into the prediction. Computationally, EMBER</description>
       <pubDate>2026-10-19T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>Learning from Fleet Experience: A Collective Learning Paradigm for Robots</title>
-      <link>https://arxiv.org/abs/2610.25736</link>
-      <guid isPermaLink="false">2610.25736</guid>
-      <description>Chao Yu, Shu&amp;#39;ang Yu, Hao Lin — Experience generated during deployment offers an opportunity for robots to improve policy reliability through learning from their own executions. However, learning through human corrections requires teleoperators to monitor execution and intervene when policies fail, a demand that is difficult to meet as robot fleets grow. We introduce collective experience learning (CEL), a learning paradigm in which deployed robots share their execution experience to improve a common policy. We realize CEL through failure-guided experience retrieval fine-tuning (FERT), which uses failure contexts from robot executions to retrieve relevant trajectory segments from the fleet&apos;s shared successful experience and uses their actions as supervision for policy updates, without collecting additional expert demonst</description>
+      <title>MMEnterprise-Bench: Evaluating Enterprise Agents over Evolving Multimodal Records</title>
+      <link>https://arxiv.org/abs/2610.27911</link>
+      <guid isPermaLink="false">2610.27911</guid>
+      <description>Seohyun Lee, Jongha Kim, Dohwan Ko — Enterprise agents answer questions over workplace records that evolve through team collaboration. As information is shared, corrected, and revised across documents, chats, and figures, multiple versions of the same information accumulate in the workspace. Reliable question answering therefore requires agents to reason over sufficient evidence, resolve cross-source and temporal conflicts, and recognize when the available evidence is insufficient to establish an answer. To systematically evaluate these capabilities, we introduce MMEnterprise-Bench, a benchmark comprising 1,613 questions grounded in evolving multimodal records from simulated collaboration projects, covering three categories: Evidence Reasoning, Conflict Resolution, and Unanswerability. We evaluate 10 proprietary and open-sour</description>
+      <pubDate>2026-10-20T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>TRACE: Tracking Multimodal Clinical Trajectories for Inpatient Risk Prediction</title>
+      <link>https://arxiv.org/abs/2610.25765</link>
+      <guid isPermaLink="false">2610.25765</guid>
+      <description>Minjun Kim, Jong Hak Moon — Accurate inpatient risk prediction requires modeling heterogeneous clinical evidence that accumulates irregularly over time. This challenge spans in-hospital mortality, prolonged length of stay, and readmission, each with task-specific observation windows. Existing multimodal approaches combine structured health record data, chest x-rays, and clinical text, but primarily focus on modality fusion or missing-modality compensation, with limited attention to temporal trajectories over an admission. We propose TRACE (TRAjectory modeling of multimodal Clinical Events), a daily-scale framework organizing clinical events into day-level trajectories, separating day-invariant global context from day-specific local events drawn from EHR data, chest x-rays, radiology reports, and discharge summaries. </description>
       <pubDate>2026-10-19T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>Competing Learning in Hybrid Architectures</title>
-      <link>https://arxiv.org/abs/2610.26830</link>
-      <guid isPermaLink="false">2610.26830</guid>
-      <description>Xingyu Shen, Yingfa Chen, Ziqing Qiao — Many modern language models have adopted hybrid architectures that incorporate both linear-time recurrence and softmax attention. Modern recurrence layers provide a highly expressive mixing mechanism while ensuring high throughput by compressing contextual information into a fixed-size state, but underperform softmax attention in contextual information retrieval. In this paper, we reveal a Competing Learning phenomenon where different kinds of mixers compete to learn the same function, and when any layer learns a function, it suppresses the corresponding learning signal for other layers. Layer attribution analysis reveals that under typical data distributions, modern recurrence learns retrieval functions faster than softmax attention, causing attention to fail to learn retrieval in most ca</description>
+      <title>TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning</title>
+      <link>https://arxiv.org/abs/2610.26754</link>
+      <guid isPermaLink="false">2610.26754</guid>
+      <description>Liana Patel, Rishabh Ranjan, Ion Stoica — Expert human readers process large inputs (e.g., code repositories and long documents) by skimming to closely read only what matters. On the other hand, language models process all input tokens through each model layer, resulting in significant processing costs for long-context inputs. We introduce TokenGate, a small, drop-in component that extends existing trained models to enable end-to-end learnable token pruning over long-context inputs for fast and memory-efficient prefill. To enable end-to-end learning despite the non-differentiable top-K operator for token pruning, we introduce token-gated attention, a mechanism inspired by Mixture-of-Experts that re-weights attention logits using token importance scores. Across diverse tasks, TokenGate achieves 1.4-11.3times faster time-to-first to</description>
       <pubDate>2026-10-19T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>InfiniDream: Open-Ended Photorealistic 3D Worlds Through Procedural Generation</title>
-      <link>https://arxiv.org/abs/2610.26853</link>
-      <guid isPermaLink="false">2610.26853</guid>
-      <description>Yi-Chuan Huang, Hao-Jen Chien, Zheng-Hui Huang — Procedural generation plays a key role in synthetic data creation and game development, offering greater controllability, editability, and diversity than static mesh representations. However, VLM-based code generation often produces relatively simple 3D assets, while sophisticated photorealistic procedural systems require extensive manual development. Existing VLM-guided procedural methods remain largely constrained by predefined factories and APIs, limiting their ability to create novel asset types. We introduce InfiniDream, a VLM-driven framework for open-ended procedural 3D world generation. First, we propose Symbolically Constrained Asset Generation, which leverages existing procedural algorithms to create novel, photorealistic assets while preserving editability and seed-based diversi</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>State World Models: Execute the Rules, Generate the Pixels</title>
-      <link>https://arxiv.org/abs/2610.26811</link>
-      <guid isPermaLink="false">2610.26811</guid>
-      <description>Chan Yan Ki, Yanran Zhang, Wenzhao Zheng — Existing world models can generate action-conditioned video from a single image. Many focus on camera movement, allowing users to explore the generated scene. However, navigation alone does not ensure that an action follows persistent rules when its outcome depends on state that is invisible in the current frame. We present Stateful Harness, a framework that separates world evolution from video rendering to support stateful and rule-governed interaction. It maintains an evolving world state under specified rules, renders each resulting event with a frozen video model, and uses the generated clip to update the world state for the next turn. At each turn, the harness resolves the action selected by the user and compiles the resulting event into an instruction, while a preview clip from an ed</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Manga2Animate: An Agentic Framework for Faithful Manga Animation with Script and Storyboard Planning</title>
-      <link>https://arxiv.org/abs/2610.26851</link>
-      <guid isPermaLink="false">2610.26851</guid>
-      <description>Sheng-Wei Zhang, Hsi-An Chen, Yan-Ting Liou — Adapting existing manga into coherent animation that stays faithful to the source is a valuable yet challenging task. Existing methods either access the manga mainly through text, losing its characters and art style, or feed manga pages directly into video generation models, which misinterpret the manga&apos;s structure and produce incorrect storylines. In this paper, we propose Manga2Animate, a multi-agent framework that grounds every stage of generation in the source manga. We decompose the task into two intermediate representations, an animation script and a visual storyboard. Each representation is produced by a creator agent and reviewed against the source panels by a paired reviewer agent. We tailor representation-specific selection and dual-level feedback to progressively refine both bef</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Factorization-Guided Training and Inference for Diffusion-Drafted Speculative Decoding</title>
-      <link>https://arxiv.org/abs/2610.23935</link>
-      <guid isPermaLink="false">2610.23935</guid>
-      <description>Jiakun Fan, Min Xiao, Qiang Wang — Speculative decoding accelerates large language model inference through parallel verification of tokens proposed by a drafter. Diffusion drafters further parallelize proposal generation, but greater proposal capacity or higher mean accepted tokens (MAT) need not yield higher throughput. Because verification accepts only a consecutive prefix, early rejections can render later correct predictions ineffective, limiting MAT gains, while even higher MAT may not improve throughput if per-round latency increases. We introduce DScout, which uses two complementary factorizations to guide diffusion drafter training and inference for higher throughput. For training, DScout factorizes position-wise loss into inclusion, weighting, and prediction loss. This guides the design and combination of mixed-hor</description>
-      <pubDate>2026-10-07T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory</title>
-      <link>https://arxiv.org/abs/2610.26860</link>
-      <guid isPermaLink="false">2610.26860</guid>
-      <description>Yu Zhou, Cheng-Fu Yang, Rui Sun — Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only modest gains. Such tasks demand grounded perception, external knowledge, and numerical measurements obtained through heterogeneous tools, whose outputs must be made interpretable to the model and retained across reasoning steps. We introduce OpenVLHarness, a multimodal reasoning harness organized around a capability layer and persistent multimodal memory. The capability layer combines task-level tool interfaces with evidence rendering, providing consistent access to heterogeneous backends and con</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Interlock: From Local Correctness to Task Completion in Long-Horizon Agents</title>
-      <link>https://arxiv.org/abs/2610.19686</link>
-      <guid isPermaLink="false">2610.19686</guid>
-      <description>Linji Hao, Yanji He, Zihan Wang — Large language model agents increasingly undertake long-horizon tasks in complex environments characterized by fragmented evidence, partially completed states, and dependencies across resources and artifacts. Existing agents may satisfy individual requirements while failing to maintain these relationships, producing locally correct but incomplete outcomes. These failures arise because task completion depends on relationships among environmental evidence, consequential decisions, and required effects. To address this completion gap, we propose Interlock, a framework for task synthesis that represents each task as a typed completion graph. Grounding edges connect public evidence to decisions, coupling hyperedges impose joint constraints across components, and realization edges connect decisi</description>
-      <pubDate>2026-10-14T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>CoworkEnv: Synthesizing Training Environments for Long-Horizon Cowork Agents</title>
-      <link>https://arxiv.org/abs/2610.24960</link>
-      <guid isPermaLink="false">2610.24960</guid>
-      <description>Zhongwei Xie, Yiming Du, Jiaxin Bai — AI coworkers must coordinate tools, communicate across turns, and act on changing workspace state while respecting workflow constraints. Constructing training experience for these capabilities requires coherent requests, service records, tool interfaces, and grading checks. We present CoworkEnv, a capability-guided framework for synthesizing executable training environments for AI coworkers. Workflow requirements guide task construction, and programmatic validation with feedback repair checks generated specifications and grading behavior. Teacher executions yield curated demonstrations for supervised fine-tuning (SFT), while student interactions provide rollouts and rewards for reinforcement learning (RL). Using these resources, we train compact PocketWorker models. For Qwen3-VL-8B-Instruc</description>
-      <pubDate>2026-10-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience</title>
-      <link>https://arxiv.org/abs/2610.26625</link>
-      <guid isPermaLink="false">2610.26625</guid>
-      <description>Xinhao Ji, Hui En Pang, Hao Li — Reconstructing human activity from egocentric video requires more than recovering individual 3D components: the observer&apos;s motion, surrounding geometry, and hand-object interactions must fit together in a consistent world. Achieving this coherence requires both joint reconstruction and aligned supervision, yet existing methods and datasets offer limited support for either. We present EgoXperience, a full-stack paradigm that addresses these needs through data collection, automatic annotation, unified modeling, and benchmarking. Central to EgoXperience is an automatic annotation engine, EgoX-Engine, that couples geometrically verified object tracking with SLAM-based world alignment, yielding consistent supervision for the camera, scene, hands, and objects. This yields EgoX-Data-6M, a 50-hour</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Remembering Has a Price: Learning Memory Worth under Resource Constraints</title>
-      <link>https://arxiv.org/abs/2610.26453</link>
-      <guid isPermaLink="false">2610.26453</guid>
-      <description>Guannan Lai, Zi-Yang Bai, Jun-Peng Jiang — Lifelong agents continually accumulate and reuse experience to improve after deployment, yet in practice they often operate under tight generation, interaction, and memory budgets. Under such stringent joint constraints, we find that existing lifelong-memory methods can become ineffective, with several sophisticated approaches offering little advantage over simple retrieval or even no-memory agents. This reveals a more fundamental problem: resource scarcity makes each memory decision more consequential. When only a small amount of past experience can be retained or reused and opportunities for reasoning and recovery are limited, retrieving a relevant but ineffective memory can consume scarce context and hinder downstream execution. The key challenge is therefore not simply to retrieve rele</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>AnyGoal: On World Model Generalization Beyond Expert Rollouts</title>
-      <link>https://arxiv.org/abs/2610.26844</link>
-      <guid isPermaLink="false">2610.26844</guid>
-      <description>Heejeong Nam, Divyat Mahajan, Quentin Le Lidec — The goal of a world model is to capture the dynamics of an environment. This has the great appeal that it allows agents to plan and simulate a course of actions with the help of a world model. For these uses to be reliable, however, the learned dynamics must behave well beyond the specific state-action combinations observed in expert rollouts. Despite this, the relationship between data coverage, dynamics generalization, and downstream planning performance remains underexplored. We study this relationship through the lens of compositional generalization: can a world model recombine familiar state and action factors into valid dynamics? To answer this, we introduce AnyGoal, a benchmark of goal-shifted task variants built from widely used world-model environments, together with an open-sourc</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>QD-Rec: Open-Ended Evolution of Recommendations via Quality-Diversity</title>
-      <link>https://arxiv.org/abs/2610.23470</link>
-      <guid isPermaLink="false">2610.23470</guid>
-      <description>Takashi Ishida, Taro Makino, Issa Sugiura — Open-ended search combined with foundation models has produced advances such as faster algorithms, new results on open mathematical problems, and self-improving agents. We extend this paradigm to recommendation for decision-making, focusing on decisions where the set of possible choices is fixed but the reasons for choosing them are not. In high-stakes decisions, e.g., which company to acquire or which customer to target, comparing diverse, well-reasoned options can be more useful than a single ranked list. We formalize open-ended recommendation as building a diverse, high-quality set of recommendations, each an item together with a hypothesis, a natural-language reason why the item fits the needs of a decision maker. We propose QD-Rec, a quality--diversity method that selects items with a</description>
-      <pubDate>2026-10-16T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>SPARC: Spoken Profile Authorship Recognition Corpus</title>
-      <link>https://arxiv.org/abs/2610.25265</link>
-      <guid isPermaLink="false">2610.25265</guid>
-      <description>Efthymios Tsaprazlis, Bowen Yi, Tiantian Feng — Speech anonymization has focused on the acoustic signal, leaving open how much speaker information the transcribed words themselves retain. In this work, we study pairwise speaker and demographic-attribute verification from transcribed speech. We introduce SPARC (Spoken Profile Authorship Recognition Corpus), a benchmark built from two podcast corpora comprising over 12,500 speakers, 1.5M quality-filtered utterances, and speaker-level inferred or source-provided labels for sex, age, and accent, and evaluate five attribution models and three LLMs on identity- and attribute-verification trials with episode- and metadata-based topic proxies. LLM adversaries distinguish same-speaker pairs from text alone. Attribute-label agreement is harder to verify, but LLMs perform sex- and accent-label ver</description>
-      <pubDate>2026-10-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Think Visually Across Space and Time: Grounded Reasoning for Video Segmentation</title>
-      <link>https://arxiv.org/abs/2610.25090</link>
-      <guid isPermaLink="false">2610.25090</guid>
-      <description>Junwei Wen, Deshui Miao, Guangming Lu — Video Reasoning Segmentation (VRS) requires a model to identify an implicitly described target and predict its pixel-level mask trajectory, while resolving the spatial relations and temporal events that determine the answer. Text-only Chain-of-Thought (CoT) can explain a target choice without making the underlying visual references explicit, leaving a video reference gap between linguistic inference and the evidence distributed across frames. We introduce Temporal Chain of Video Primitives (TCoVP), a spatiotemporally grounded form of Video CoT that organizes query-relevant observations into a chronological reasoning chain. Each primitive associates an entity reference with temporal support and timestamped spatial evidence, and the chain interleaves these references with language to guide r</description>
-      <pubDate>2026-10-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>DeOverlay: A Benchmark and Source-Anchored Flow for Video Overlay Removal</title>
-      <link>https://arxiv.org/abs/2610.26081</link>
-      <guid isPermaLink="false">2610.26081</guid>
-      <description>Deshui Miao, Yuhang Ma, Shaoyong Jia — Video overlay removal aims to recover scenes obscured by subtitles, titles, and logos while preserving surrounding content. Existing methods use temporal propagation or source-conditioned generation, but can leave residual overlays and distort scene structure when useful source information is obscured. We propose DeOverlay, a source-anchored flow model that reconstructs the clean video from the source latent with fixed source guidance. Specifically, we train a shared velocity network along paired source-to-clean paths using region-weighted flow matching, enabling successive cor- rections from intermediate states. To select local source cues, we develop visibility-normalized temporal aggregation that excludes masked positions and averages the remaining observations. Global source context an</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs</title>
-      <link>https://arxiv.org/abs/2610.26770</link>
-      <guid isPermaLink="false">2610.26770</guid>
-      <description>Zhuoshi Pan, ZhiYuan Feng, Yukuo Cen — Harness development plays a crucial role in building capable AI agents. Recent approaches improve harnesses through recursive self-improvement (RSI), but their performance gains often come with higher execution costs. We introduce HarnessPro, a label-free method for evolving harnesses to improve task performance while reducing execution cost. In this setting, candidate harnesses are evaluated using LLM-generated tests without access to ground-truth solutions or official tests. Specialized agents diagnose execution trajectories, plan updates with different performance-cost priorities, and implement them as candidate harnesses. Rather than returning a single harness, HarnessPro uses normalized weighted squared-distance selection to provide cost-focused (lite), balanced (medium), and performa</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Co-Evolving Acting and Forecasting for Language Agents</title>
-      <link>https://arxiv.org/abs/2610.20597</link>
-      <guid isPermaLink="false">2610.20597</guid>
-      <description>Haofei Yu, Yixing Chen, Yining Zhao — Training language agents is bottlenecked by the high cost of long-horizon rollouts, yet standard agentic reinforcement learning (RL) learns only from a terminal scalar reward, leaving the supervision in intermediate steps largely unused. Prior work exploits this supervision through value targets that estimate per-step success probabilities or observation targets that fit environment response. Both are hard to construct well: (1) value targets come from the same single scalar signal for each step in the trajectory, and (2) observation targets, such as web pages and terminal logs, are long and noisy and reach only one step ahead. We propose CoPE, which adds a third kind of multi-step action targets. On successful on-policy trajectories, CoPE trains the policy backbone to generate the action </description>
+      <title>Harness-Delta Attribution: Dissecting Gains From Harness Evolution</title>
+      <link>https://arxiv.org/abs/2610.22466</link>
+      <guid isPermaLink="false">2610.22466</guid>
+      <description>Wenxuan Ding, Qin Lu, Changlong Yu — Harness evolution automatically optimizes the prompts, skills, tools, and orchestration code around a fixed-weight model, offering a way to improve agentic systems without updating model weights. The agent harness is iteratively optimized to achieve higher performance on the search set. But how much of this gain reflects benchmark-specific overfitting or additional inference-time compute, and how much may generalize beyond the search set? In this work, we introduce Harness-Delta Attribution (HDA), an evaluation protocol that dissects an evolution gain into artifact-driven overfitting, gains explained by test-time scaling, and the remainder, which gives an upper bound on residual generalizable improvement. We apply HDA to 11 executor models and three harness-evolution frameworks across math</description>
       <pubDate>2026-10-15T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>RSIFlow: Adaptive Self-Improvement Workflows with an Evolving Meta-Agent</title>
-      <link>https://arxiv.org/abs/2610.21791</link>
-      <guid isPermaLink="false">2610.21791</guid>
-      <description>Huan Zhang, Mingju Chen, Dongxu Zhou — Large language model (LLM) agents have demonstrated strong capabilities in complex tasks, including code generation, tool use, and multi-hop question answering. Existing self-improvement methods enhance agent performance through model optimization, harness evolution, and executable artifact refinement, while recursive self-improvement (RSI) further extends optimization to the improvement mechanisms themselves. However, adapting self-improvement workflows to evolving performance bottlenecks while improving workflow orchestration through execution feedback remains a key challenge. We propose RSIFlow, a Recursive Self-Improvement framework that integrates adaptive workflow orchestration with meta-agent capability evolution. RSIFlow diagnoses performance bottlenecks from task-agent trajectorie</description>
-      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>ScaleNav: Scalable Internet Video Pretraining for Language-Conditioned Local Navigation</title>
-      <link>https://arxiv.org/abs/2610.25690</link>
-      <guid isPermaLink="false">2610.25690</guid>
-      <description>Yihui Yang, Yuanhong Yu, Jiawei Wang — We study language-conditioned local navigation, where a robot must navigate to a text-specified target visible in its initial observation and stop at the described location. End-to-end navigation policies require diverse training data to generalize across scenes, yet real-robot data is costly to collect and simulated data leaves a sim-to-real gap. Internet egocentric videos offer a scalable source of real-world navigation experience. Our key insight is to learn goal-directed visual dynamics from Internet egocentric videos, and use these dynamics to support robot action generation. To this end, we propose ScaleNav, a unified world-action framework with three-stage training. We first perform instruction-conditioned video pretraining on these videos to learn how observations evolve as the cam</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution</title>
-      <link>https://arxiv.org/abs/2610.17816</link>
-      <guid isPermaLink="false">2610.17816</guid>
-      <description>Pengcheng Huang, Zhenghao Liu, Shixin Ren — Edge-cloud collaboration combines the lower inference overhead and greater data locality of edge-side execution with the stronger capabilities of cloud-hosted models. However, as LLM agents increasingly operate in long-horizon scenarios, cloud participation becomes interleaved throughout execution rather than a one-shot decision for each query. Such interleaved participation introduces trajectory-level effects that remain insufficiently understood. To address this gap, we introduce EC2-Bench, a benchmark for evaluating edge-cloud collaboration in long-horizon agent execution. It provides executable digital-workspace agent tasks and a unified evaluation framework covering task performance, resource usage, and privacy exposure. Using this benchmark, we empirically study diverse forms of edge</description>
-      <pubDate>2026-10-13T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>OR-License: Evaluating LLM Agents as Real-World Operations Research Practitioners</title>
-      <link>https://arxiv.org/abs/2610.24087</link>
-      <guid isPermaLink="false">2610.24087</guid>
-      <description>Peisong Wang, Feixue Liu, Yize Meng — Can large language model (LLM) agents deliver expert-level operations research (OR) solutions directly from original client materials, without prior expert reformulation? Existing OR benchmarks typically begin with self-contained descriptions or predefined optimization tasks, underrepresenting the translation of original business materials into professionally validated solutions. We introduce OR-License, an end-to-end benchmark of 31 instances across 10 industrial scenarios from paid OR engagements totaling USD 3.68 million. It preserves original requirements, input data, deliverable formats, and information boundaries after de-identification. To study information acquisition, we introduce ORSim, a controlled client simulator that discloses business facts without supplying OR expertise. Hi</description>
-      <pubDate>2026-10-16T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>RoAR-VAE: Improving Latent Diffusability through Robust Prediction</title>
-      <link>https://arxiv.org/abs/2610.26216</link>
-      <guid isPermaLink="false">2610.26216</guid>
-      <description>Yang Yue, Fangyun Wei, Yitong Wang — An effective visual tokenizer must preserve image fidelity while producing latents that downstream diffusion models can learn efficiently. Prior work improves latent diffusability through semantic alignment or joint tokenizer--diffusion training. Revisiting REPA-E, a representative approach, we find that removing its diffusion objective and dedicated generative blocks while retaining semantic prediction from corrupted latents yields comparable downstream generation performance under a matched setting. This observation motivates a general principle of robust prediction: generation-relevant information should remain recoverable from corrupted latents. We instantiate this principle with two complementary objectives. RobustAlign predicts pretrained semantic features from corrupted latents to p</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Learning to Discriminate Scene Structures Makes Self-Supervised Depth Learning Scalable</title>
-      <link>https://arxiv.org/abs/2610.23600</link>
-      <guid isPermaLink="false">2610.23600</guid>
-      <description>Mengtan Zhang, Yuchuan Cui, Yu Ma — Self-supervised monocular depth estimation is appealing for its potential to scale with unlabeled data, yet existing methods often degrade when trained on diverse scenes. This study finds that, under self-supervision, models tend to encode dataset-specific structural biases rather than transferable scene geometry, leading to cross-domain optimization conflicts. To address this issue, this study proposes the MaSS framework, aiming to make self-supervised depth learning scalable to diverse data. MaSS introduces a dedicated structural representation pathway explicitly decoupled from contextual features, which is guided by a novel scene-structure discrimination objective to learn generalized, layout-aware structural representations for depth decoding. Trained and evaluated on four diverse data</description>
-      <pubDate>2026-10-16T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Frechet Forcing: Training Long-Horizon Streaming World Models from Short Clips</title>
-      <link>https://arxiv.org/abs/2610.25666</link>
-      <guid isPermaLink="false">2610.25666</guid>
-      <description>Yian Zhao, Yu Yan, Hongcan Guo — Streaming video world models generate the future chunk by chunk, conditioned on their own past and a stream of actions. Trained on short clips, they drift once a rollout exceeds the training horizon, as prediction errors re-enter the context and compound. A common remedy is to train the model on its own rollouts via distribution matching distillation (DMD). For action-conditioned world models, the teacher becomes a bottleneck: an external video model is agnostic to the actions, whereas the model&apos;s own pretrained network drifts in the same manner as the student. We observe that a long rollout need not match a teacher, provided it remains a realistic continuation of its own scene that follows the commanded actions. Realism and scene fidelity can be measured against real-data statistics, whic</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Self-Evolving Coding Agents via Harness-Policy Optimization</title>
-      <link>https://arxiv.org/abs/2610.22791</link>
-      <guid isPermaLink="false">2610.22791</guid>
-      <description>Zhepei Wei, Wenlin Yao, Baolin Peng — Large language model (LLM) agents have shown promising potential in coding tasks, and their performance is jointly determined by the policy model and the harness that mediates their interaction with the environment. Indeed, harness and policy are mutually reinforcing and evolving only one component is suboptimal---a harness tuned for one checkpoint may not target the failure modes of an updated policy, while policy learning remains limited to the trajectories elicited by a fixed harness. In light of this, we propose Self-HPO, a recursive self-improving framework for coding agents that alternates harness and policy optimization, using the evolving policy as its own harness proposer. Specifically, in each round, the current policy first analyzes its own failures and proposes new harness cand</description>
-      <pubDate>2026-10-16T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>World Model Interpretability: From Decoding Representations to Understanding Latent Worlds</title>
-      <link>https://arxiv.org/abs/2610.25296</link>
-      <guid isPermaLink="false">2610.25296</guid>
-      <description>Jize Wang, Yongcheng Jing, Xinyi Le — Emerging Joint-Embedding Predictive Architectures (JEPAs) are moving beyond representation learning towards latent world models that support prediction, planning, and control. Yet their latent worlds naturally lack a human-interpretable interface. In this Perspective, we argue that as JEPA latents become internal states for prediction and action, interpretability must move beyond what they encode to how latent variables interact, evolve, and causally drive prediction. To this end, we envision a four-stage research agenda, involving Ground, Structure, Verify, and Act, to guide this shift toward actionable latent-world understanding. Within our framework, existing JEPA interpretability efforts provide early evidence for Ground, while systematic analysis of latent structure, causal verificati</description>
+      <title>Vision as Proprioception: Estimating Humanoid Robot Pose from Video</title>
+      <link>https://arxiv.org/abs/2610.25288</link>
+      <guid isPermaLink="false">2610.25288</guid>
+      <description>Jiaxi Jiang, Matthias Heyrman, René Zurbrügg — Estimating a humanoid robot&apos;s internal state from video has a wide range of real-world applications but remains unexplored. During interactions with a robot, its onboard state information may be unavailable due to privacy, ownership, or communication constraints. Meanwhile, online and AI-generated robot videos provide rich sources of data but typically lack corresponding joint configurations, limiting their direct use in robot learning. To address these issues, we present HumanoidPose, a new framework that treats vision as proprioception to recover full-body joint configurations in world space from video alone. Specifically, we combine pretrained human-pose features with robot kinematics in a unified model that predicts each embodiment&apos;s joint configurations. We retarget human motions to s</description>
       <pubDate>2026-10-18T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>Self-Evaluating Recursive Agents</title>
-      <link>https://arxiv.org/abs/2610.04902</link>
-      <guid isPermaLink="false">2610.04902</guid>
-      <description>TianYi Lyu, Xiaozhe Li, Yang Li — Recursive language-model agents decompose tasks and delegate subtasks to child instances of the same policy, forming a tree of work. Training them, however, is hard: the final outcome is verifiable, but the self-invented intermediate subtasks are numerous and carry no ground truth. Existing methods score each node with a verifier or judge, which is costly at scale and blind to decomposition quality. We argue that a recursive agent must learn three coupled capabilities within one set of weights: decomposing problems into subtasks, solving them, and evaluating the outcomes, each requiring its own training signal. SERA (Self-Evaluating Recursive Agents) turns evaluation into a learned capability of the policy itself. Before delegating, the parent writes a rubric of weighted success criteria f</description>
-      <pubDate>2026-10-04T00:00:00.000Z</pubDate>
+      <title>A Language-Informed Loss for Visual Generation</title>
+      <link>https://arxiv.org/abs/2610.23653</link>
+      <guid isPermaLink="false">2610.23653</guid>
+      <description>Suchir Agarwal, Keshigeyan Chandrasegaran, Ziyu Chen — End-to-end visual generation with pixel-space loss has recently achieved competitive performance without the need for learned image tokenizers. In this work, we study whether language-informed supervision can provide a richer training signal than pixel loss for visual generation. We introduce LILIE (pronounced &quot;lily&quot;), a Language-Informed and Lossless Image Encoder. LILIE is an invertible image transform trained such that a vision-language model can recover captions from noised features. The encoder uses a normalizing flow transformer trained jointly with a vision-language model via next token prediction. We then use the encoder to extract a simple language-informed loss for text-to-image generation. We train JiT models with LILIE loss, reducing gFD by 14 points (66.84 to 53.01) against a </description>
+      <pubDate>2026-10-16T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>MT Forcing: Towards Stable and Consistent Multi-Turn Image Editing with Autoregressive Diffusion</title>
-      <link>https://arxiv.org/abs/2610.25404</link>
-      <guid isPermaLink="false">2610.25404</guid>
-      <description>Houyuan Chen, Fanzhou Wang, Xiangyu Fan — Multi-turn image editing aims to modify an image according to a sequence of instructions, enabling more effective interactive visual content creation for users. However, existing methods often exhibit noticeable drift after only a few editing turns, manifesting in two aspects: 1) unstable visual quality, with accumulating artifacts and degraded details; and 2) inconsistent image content, with unintended changes to preserved regions and prior edits. To address these challenges, we propose MT Forcing, a novel training paradigm for multi-turn image editing with unified multimodal models (UMMs) based on autoregressive diffusion. Specifically, we propose Single-Turn Distribution Matching Distillation (Single-Turn DMD), which supervises student self-rollouts with a teacher that applies cumulativ</description>
-      <pubDate>2026-10-18T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents</title>
-      <link>https://arxiv.org/abs/2610.22732</link>
-      <guid isPermaLink="false">2610.22732</guid>
-      <description>Aaron J. Li, Weijia Xu, Chandan Singh — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motivates us to evaluate agents over sequences of realistic coding tasks, where we find that agents exhibit recurring environment-dependent token costs that existing methods struggle to reduce. To minimize these costs, we introduce TokenEconomizer, an external controller that cuts environment-specific token costs over a sequence of tasks. These cuts come from determining (i) which operational micro-skills to inject, (ii) which persistently irrelevant tools to prune, and (iii) when to intervene in unp</description>
+      <title>First Passage Attention</title>
+      <link>https://arxiv.org/abs/2610.22714</link>
+      <guid isPermaLink="false">2610.22714</guid>
+      <description>Yuxuan Liu — Augmenting softmax attention with forget gates typically relies on summing decay contributions along the key--query path. Because such accumulation is monotonic, these mechanisms cannot selectively erase intermediate context while preserving older, structurally relevant tokens. We propose First Passage Attention (FPA), which shifts from path summation to path extrema by lowering a key&apos;s logit proportionally to the deepest dip of a learned scalar field below that key&apos;s level over the intervening span. FPA encompasses the Forgetting Transformer (FoX) as a special case, and when the field and levels follow a shared learned walk, the alive keys with unpenalised logits naturally form a stack. We show that a constant-dimension FPA head realises any subset of keys left alive by subsequent dips, w</description>
       <pubDate>2026-10-15T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>Robust Explanatory Analysis for Structured Optimization Networks (REASON) in Learning</title>
-      <link>https://arxiv.org/abs/2610.19378</link>
-      <guid isPermaLink="false">2610.19378</guid>
-      <description>Vahid Jebraeeli, Hamid Krim, Keisuke Fujii — We seek a hierarchical resolution of residual error under a composite learning objective as a principled mechanism for identifying and exploiting additional information, particularly under distribution shift and perturbation. Inspired by the System 1/System 2 paradigm, we formulate this principle as a two-loop mechanism serving a common inference goal. A fast, System 1-like loop resolves the residual addressable by the available evidence; the remaining epistemic residual triggers a medium speed, System 2-like loop that actively acquires additional evidence and measures its informational value through residual reduction. Over nested solution spaces, the medium-loop optimum is provably no worse than the fast-loop optimum. Experiments show that the resulting two-loop model consistently improv</description>
-      <pubDate>2026-10-14T00:00:00.000Z</pubDate>
+      <title>Competence-Based Evaluation of Logical Reasoning in Large Language Models</title>
+      <link>https://arxiv.org/abs/2610.22894</link>
+      <guid isPermaLink="false">2610.22894</guid>
+      <description>Jize Jiang, Chengxiang Zhai — Recent advances in large language models (LLMs) have brought impressive performance across diverse tasks; however, shortcomings remain in logical reasoning, including inconsistencies under linguistic variation. To improve the reasoning capacity of LLMs, we must be able to accurately measure their reasoning capacity. Current benchmarks primarily report single accuracy numbers on selected reasoning tasks. Such a performance-based evaluation methodology says little about a model&apos;s generalization capacity in reasoning. To address this limitation, we argue for a different evaluation paradigm, called competence-based evaluation (CBE), which tests whether models reliably apply the same competence across a family of problems. A parameterized generator scales complexity while keeping the required c</description>
+      <pubDate>2026-10-16T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>Recognition Is Not Grounding: Benchmarking Multilingual Financial Evidence Extraction</title>
-      <link>https://arxiv.org/abs/2610.19432</link>
-      <guid isPermaLink="false">2610.19432</guid>
-      <description>Lingfei Qian, Yan Wang, Xueqing Peng — Comparing financial disclosures across languages requires identifying shared accounting concepts and recovering all numerical facts that express them. Existing benchmarks evaluate aspects of these capabilities, but provide limited insight into whether both succeed on the same multilingual evidence. In particular, it remains unclear whether language models can recognize these concepts across languages and exhaustively recover their corresponding numerical evidence from the same contexts. We introduce MULTIFINGROUND, a benchmark designed to investigate this recognition-grounding gap in multilingual financial reports. Constructed from FY2025 disclosures of 90 issuers in English, French, and Greek, MULTIFINGROUND aligns independently authored reports through a shared accounting taxonomy and pr</description>
-      <pubDate>2026-10-14T00:00:00.000Z</pubDate>
+      <title>Legal Guidance in the Wild: How Users Seek Legal Help in Real-World LLM Conversations</title>
+      <link>https://arxiv.org/abs/2610.25159</link>
+      <guid isPermaLink="false">2610.25159</guid>
+      <description>Amirreza Mohseni, Gerasimos Spanakis — People ask conversational AI models about their legal rights, obligations, procedures, and personal situations that may have legal consequences. To study this behavior, we first need to distinguish requests for legal guidance from other legally themed discussions and unrelated conversations. We contribute a multi-axis taxonomy of legal queries capturing whether legal guidance is sought, how a request is formulated, and which legal domains it concerns; apply it to 2,122 naturally occurring WildChat-1M conversations; and create a human-reviewed gold evaluation set of 200 conversations. All annotations, model checkpoints, and evaluation code are publicly available. In this enriched sample, 71.1% of conversations containing legal content seek personalized or practical guidance. Rights-and-opti</description>
+      <pubDate>2026-10-18T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>BRACE: Adapting Whole-Body References for Force and Terrain Aware Humanoid Motion Tracking</title>
-      <link>https://arxiv.org/abs/2610.07052</link>
-      <guid isPermaLink="false">2610.07052</guid>
-      <description>Sudarshan Harithas, Chen Yu, Juan Borbon — Whole-body tracking has become the interface through which operators drive humanoid robots, yet the references it consumes are recorded on level ground and carrying nothing, so the tracker is aware of neither the forces the robot must exchange with objects nor the terrain it must stand on. Existing controllers address one side of this gap: force-capable policies command an end-effector force but prescribe no whole-body pose, while terrain-adaptive trackers treat loads as disturbances to reject rather than wrenches to command. We present BRACE, a whole-body tracker that exerts and compensates commanded hand forces from diverse poses while following a flat-ground reference on sloped terrain. Rather than leaving the tracker to absorb the load and the slope, BRACE folds both into the reference</description>
+      <title>Predicting Privileged Information Effectiveness for On-Policy Self-Distillation</title>
+      <link>https://arxiv.org/abs/2610.22512</link>
+      <guid isPermaLink="false">2610.22512</guid>
+      <description>Kaijian Zou, Emiliano Penaloza, MohammadHossein Rezaei — On-policy self-distillation (OPSD) enables large language models (LLMs) to learn from privileged information (PI) without a separate teacher model. However, prior work largely treats PI as a fixed design choice, leaving the effects of its content and construction poorly understood. This challenge is particularly important in multi-turn agentic settings, where trajectories contain actions, observations, and reasoning that can be transformed into PI in many ways. We systematically evaluate 16 PI configurations across three multi-turn agentic benchmarks and three student models that vary in scale and reasoning mode. We find that PI effectiveness depends on its content, generation source, and the student model. Information-dense trajectories and PI produced by more capable generators generally</description>
+      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Measuring Mechanistic Uncertainty in Large Language Models via Causal Robustness</title>
+      <link>https://arxiv.org/abs/2610.22636</link>
+      <guid isPermaLink="false">2610.22636</guid>
+      <description>Aneesh Komanduri, Majid Afshar, Timothy A. Miller — Large language models (LLMs) are increasingly used in critical domains, where their susceptibility to hallucinations makes reliable and interpretable uncertainty quantification essential. We introduce the concept of mechanistic uncertainty, which characterizes uncertainty through the stability of the internal mechanisms supporting a model&apos;s response. We propose the causal robustness margin, defined as the minimum internal intervention required to deviate the model&apos;s output, and operationalize it using Jacobian Lens (Jlens) concept steering vectors. Across three open-source models and five question-answering datasets, we show incorrect and uncertain responses exhibit smaller margins, indicating greater sensitivity to internal interventions, and the causal robustness margin complements conve</description>
+      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>StopLoss: Teaching Agents to Predict Failure and Stop Early</title>
+      <link>https://arxiv.org/abs/2610.25525</link>
+      <guid isPermaLink="false">2610.25525</guid>
+      <description>Jiarong Liang, Xueguang Ma, Dongfu Jiang — Coding agents keep working on runs that will fail verification, and asking a frontier model to watch for this is expensive in its own right. We introduce StopLoss, a small external monitor that learns failure recognition from completed trajectories and their verifier outcomes. The name is inspired by the stop-loss order in finance: StopLoss ends a run early when the run is likely to fail, which saves resources. Final outcomes label earlier local windows, so a fine-tuned language model can score the most recent tool steps in a single forward pass, and a threshold calibrated on successful runs turns that score into an abort decision without changing the executor. Trained on GPT-family SWE-rebench trajectories and evaluated on SWE-bench Verified and a SWE-bench Pro subset with GPT and Claude </description>
+      <pubDate>2026-10-18T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Heterogeneous Agentic Coevolution</title>
+      <link>https://arxiv.org/abs/2610.16078</link>
+      <guid isPermaLink="false">2610.16078</guid>
+      <description>Wenqian Ye, Ziwei Guan, Zi Yang — Recent advances in self-improving LLM agents have demonstrated the potential of AI systems that drive their own intelligence. However, many domain-specific applications rely on specialized foundation models that possess strong domain expertise but remain dependent on human-designed improvements. Extending recursive self-improvement to these models presents a key challenge: as a specialist improves, the strategies used to advance it must also adapt. To address this challenge, we propose Heterogeneous Agentic CoEvolution (HACE), a framework that jointly evolves specialized foundation models and LLM agents through reciprocal learning. HACE improves the specialist through supervised learning while training the agent with on-policy reinforced self-training, guided by verified performance gains </description>
+      <pubDate>2026-10-12T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Any 3D Scene is Worth 1K Tokens: 3D-Grounded Representation for Scene Generation at Scale</title>
+      <link>https://arxiv.org/abs/2604.11331</link>
+      <guid isPermaLink="false">2604.11331</guid>
+      <description>Dongxu Wei, Qi Xu, Zhiqi Li — Scene-level 3D generation has long been dominated by 2D multi-view or video diffusion models. Typically, these 2D-based approaches perform scene generation in a 2D latent space, which introduces two fundamental issues: (i) representing 3D scenes via 2D views leads to significant representation redundancy, and (ii) latent space rooted in 2D inherently limits the spatial consistency of the generated scenes. In this paper, we propose to perform 3D scene generation directly within a high-dimensional implicit 3D latent space derived from powerful 2D foundation models (e.g., DINOv2, SigLIP2, DA3). Then we tame diffusion transformers to perform diffusion modeling directly in the 3D latent space, enabling 3D-grounded scene generation. In our experiments, we not only demonstrate the advantages of o</description>
+      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Progress-Aware Distillation for Mitigating Stagnation in Small Language Model Agents</title>
+      <link>https://arxiv.org/abs/2610.19439</link>
+      <guid isPermaLink="false">2610.19439</guid>
+      <description>Yuanpu Cao, Saket Sathe, Hanyu Wang — While LLM-based agent systems have demonstrated remarkable proficiency in reasoning and solving complex real-world tasks, they also come with substantial token consumption and inference latency, limiting their practical deployment. To enhance the efficiency of agent systems, recent efforts have focused on transferring agentic capabilities from large-scale models to small language models (SLMs) via supervised fine-tuning-based distillation. Nevertheless, as interaction trajectories grow longer, involving extended reasoning-action chains and extensive environmental feedback, distilled student agents tend to experience progress stagnation: becoming trapped in unproductive loops characterized by persistent failed strategies and difficulty making meaningful progress. Our systematic analysis sho</description>
+      <pubDate>2026-10-17T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>HERA: Harness-Environment Co-Evolution for Reliable Agentic Abstention</title>
+      <link>https://arxiv.org/abs/2610.06563</link>
+      <guid isPermaLink="false">2610.06563</guid>
+      <description>Han Luo, Bingbing Wen, Guang Yang — Large language model (LLM) agents are increasingly capable of acting in complex tool-use environments, yet they often fail to recognize when tasks are infeasible and no valid solution exists. Recent work has formalized this reliability gap as the problem of agentic abstention, and existing approaches typically optimize a model or agent harness against a fixed set of tasks, leading to limited generalization to unseen failure modes. We introduce HERA, a framework for harness-environment co-evolution for agentic abstention. HERA consists of (i) a pipeline to automatically construct verifiable pairs of feasible and infeasible tasks by applying controlled environment mutations that transform solvable tasks into cases requiring abstention, and (ii) a co-evolution procedure in which performance f</description>
       <pubDate>2026-10-05T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>DisaggKD: Efficient Knowledge Distillation through Teacher-Student Disaggregation and a Fused Loss</title>
-      <link>https://arxiv.org/abs/2610.17644</link>
-      <guid isPermaLink="false">2610.17644</guid>
-      <description>Ruixuan Tu, Yuyang Dong — Knowledge distillation (KD) frameworks place teacher and student on the same GPUs, so per-GPU memory limits the teachers that fit. DisaggKD separates them across nodes: teacher replicas stream hidden states to the student, a KD loss over row windows and vocabulary shards equals the full-vocabulary loss in exact arithmetic without forming the full-vocabulary logits, and a prefetch ring paces producer and trainer. Closed-form memory and traffic models locate the memory limits of each layout. On the Qwen3.5-35B-A3B to 9B pair, the disaggregated layout matches the LM loss of the colocated run with the same loss and is faster than that run; our fused loss also lets a colocated run train on as few nodes at faster speed, while the split is memory efficient when the student spans several nodes. On</description>
-      <pubDate>2026-10-13T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Lean4AgenticRL: Advancing Agentic RL with Verifiable Multi-level Process Rewards</title>
-      <link>https://arxiv.org/abs/2610.22448</link>
-      <guid isPermaLink="false">2610.22448</guid>
-      <description>Ruida Wang, Gerald Friedland, Tong Zhang — Enhancing the agentic capabilities of Large Language Models (LLMs) to tackle complex software engineering (SWE) and general terminal-usage problems is a pressing challenge. Current state-of-the-art LLMs often go through large-scale agentic Reinforcement Learning (RL). However, they mostly rely on high-level outcome rewards, with minimal consideration of low-level toolcall and mid-level workflow-stage rewards, which makes the training less effective. To overcome this limitation, we propose **Lean4AgenticRL**, which, to the best of our knowledge, is the first framework that grounds multi-level process rewards in the unified Lean4 formalization schema for open-ended agentic RL. **Lean4AgenticRL** first builds a *problem-specific workflow* system that balances the agent&apos;s own capability and co</description>
+      <title>Training Reasoning Models to Generate Diverse Scientific Ideas</title>
+      <link>https://arxiv.org/abs/2610.22324</link>
+      <guid isPermaLink="false">2610.22324</guid>
+      <description>Manya Wadhwa, Pranav Narayanan Venkit, Hiroaki Hayashi — One of the first steps of a research pipeline is generating ideas. Large Language Models (LLMs) are increasingly used to automate this step, but most of this work optimizes the quality of individual ideas, while overlooking diversity. In our work, we study document-grounded ideation, focusing on increasing the diversity of LLM generated ideas and ensuring they are high quality. Given prior papers, a model must propose a set of ideas that are each high-quality and clearly distinct from one another, while also being grounded in the input documents. To optimize for this, we propose training with a set-level reinforcement learning objective. In our setup, in a single generation, the model writes K structured idea cards grounded in the source papers, and the set is scored jointly, where each id</description>
       <pubDate>2026-10-15T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications</title>
-      <link>https://arxiv.org/abs/2610.16402</link>
-      <guid isPermaLink="false">2610.16402</guid>
-      <description>David Nukrai, Bar Alon, Nativ Levy — Web application development often proceeds through successive requests that extend an existing implementation. Yet web-generation benchmarks primarily evaluate development toward fixed specifications. We introduce EvoWeb, a novel benchmark comprising 320 cumulative requests over 32 web applications, grounded in real-world product features and structured by functional dependency graphs. Agents iteratively modify a persistent codebase, while a multimodal web agent tests each intermediate application in a live browser, assessing newly requested functionality, cross-request integration, and previously requested functionality. To characterize reliability throughout development, we integrate trajectory performance across user-tolerance thresholds rather than impose a fixed stopping criterion. Ex</description>
-      <pubDate>2026-10-12T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>OmniXRef: A Unified Framework for Multimodal Multi-Reference Video Editing</title>
-      <link>https://arxiv.org/abs/2610.22744</link>
-      <guid isPermaLink="false">2610.22744</guid>
-      <description>Xiaoyan Cong, Tianyu Wang, Hyeonho Jeong — Creative intent in video editing can be expressed through text instructions (e.g., &quot;remove the people&quot;), image references (e.g., subject appearance), video references (e.g., camera movement), or a combination of the above. We introduce OmniXRef, a unified framework for multimodal multi-reference video editing that allows users to combine variable numbers of text, image, and video references to control diverse attributes of a source video. We first devise a unified input design with a reference-bank interface and introduce R^2-RoPE to support generalization to more references. Then our model, OmniXRef-Model, uses a single-stream diffusion transformer to jointly process the source video and multimodal context from an MLLM in an interleaved sequence. To address the scarcity of training data f</description>
+      <title>ACEdit: Stable Multi-Turn Image Editing via Asymmetric Conditioning</title>
+      <link>https://arxiv.org/abs/2610.22328</link>
+      <guid isPermaLink="false">2610.22328</guid>
+      <description>Sara Dorfman, Nir Goren, Gal Barak — Image editing models produce impressive results for individual edits, but their quality often deteriorates over multiple editing turns. Each editing turn introduces small distribution shifts that accumulate over successive edits, creating a gap between the input distributions encountered during the editor&apos;s original training and multi-turn inference. We introduce a training scheme that makes multi-turn image editing stable under this accumulating distribution shift. A key is to force the editor to operate on its own outputs from previous editing turns during training, bringing the principle of Self-Forcing to image editing. The main challenge is that self-generated editing trajectories deviate from ground-truth trajectories, making direct supervision unreliable. We address this challenge t</description>
       <pubDate>2026-10-15T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries</title>
-      <link>https://arxiv.org/abs/2610.22273</link>
-      <guid isPermaLink="false">2610.22273</guid>
-      <description>Anikait Singh, Teresa Zhang, Yoonho Lee — Reasoning over long document contexts remains a challenge for large language models (LLMs). Standard retrieval methods are inherently reactive, bottlenecking agents with complex, cross-document reasoning at inference time, while precomputed structures like knowledge graphs often fall short because they rely on rigid heuristics. Instead, can we allow agents to perform anticipatory directed curation: learning to proactively reorganize unstructured corpora prior to inference to efficiently serve diverse future queries. We build on a key asymmetry in modern agentic harnesses (e.g., Claude Code): while LLM agents are adept at navigating existing filesystems to solve an immediate task, they are rarely trained to construct reusable workspaces for future use. To instantiate this capability, we int</description>
-      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
+      <title>CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat</title>
+      <link>https://arxiv.org/abs/2610.19005</link>
+      <guid isPermaLink="false">2610.19005</guid>
+      <description>Bangya Liu, Jianhong Tu, Yueyang Pan — AI agents are demonstrating increasingly strong offensive and defensive cybersecurity capabilities in the real world. Current benchmarks mostly evaluate agents in isolation against static targets. Real cyber operations, however, are dynamic and coupled: security postures constantly change as attackers and defenders adapt to each other in real time. Static benchmarks quickly saturate and miss an agent&apos;s ability to attack and defend simultaneously under live pressure. To address this gap, we present CyberArena, a dynamic, symmetric adversarial benchmark built around multi-round attack-and-defense combat. In isolated sandboxes, two agents compete under identical rules, acting concurrently as both attackers and defenders over continuously changing services. This converts static targets into ev</description>
+      <pubDate>2026-10-13T18:05:26.000Z</pubDate>
     </item>
     <item>
-      <title>GlobeBench: Evaluating Text-Based World Model Capabilities for Scalable Environment Simulations</title>
-      <link>https://arxiv.org/abs/2610.22708</link>
-      <guid isPermaLink="false">2610.22708</guid>
-      <description>Nicholas Saban, Charvi Bannur, Mariya Vasileva — Text-based world models have recently shown potential to simulate complex RL environment state transitions for a diverse set of use cases. However, no standardized benchmark exists to compare, study and improve these models. Through this paper, we attempt to solve this problem by building GlobeBench, a novel benchmark with 1,632 tasks across five separate domains and nineteen simulation skills. The tasks check whether models can predict the environment&apos;s response to a specific action given the full agent trajectory by understanding earlier state changes, following environment rules, and predicting the effects of actions on both related and unrelated objects. We compare the predicted environment response with an execution-derived reference, using a hybrid architecture with both deterministi</description>
-      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Relational Learning as World Modeling</title>
-      <link>https://arxiv.org/abs/2610.16763</link>
-      <guid isPermaLink="false">2610.16763</guid>
-      <description>Zheyu Zhang, Gjergji Kasneci — Relational learning typically predicts from a database state, but decision making asks a different question: how will that state change under an action? In operational systems, the answer depends on system-specific dynamics that may not be visible in the database itself. We view each such system as a relational &quot;world&quot; and ask whether a model can infer how it behaves from observed executions. We introduce TabWM (Tabular World Model) and WorldRel, a generator of executable relational worlds for pretraining. Given executions from an unseen world, TabWM uses them as context to predict the sparse structured edits caused by a new action without parameter updates. Across 512 held-out worlds, complete-edit F1 rises from 0.016 with no observed executions to 0.685 with 64, where a correct edit must</description>
-      <pubDate>2026-10-12T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>What It Is, Not What It Says: Securing Agentic Browsing Interactions with Web Semantics</title>
-      <link>https://arxiv.org/abs/2610.22697</link>
-      <guid isPermaLink="false">2610.22697</guid>
-      <description>Umar Iqbal — AI agents increasingly browse the web on users&apos; behalf, yet they consume webpages as screenshots or text, exposing their LLMs to unvetted third-party content. Browsers enforce semantics under which what an element can do depends on what it is and where it comes from, not on what it says. Agents flatten these semantics, so injected text can persuade the LLM to exercise the user&apos;s authority for content that has none. As LLMs remain easy to persuade, the agent&apos;s interface to the web must itself ensure the integrity of what the agent reads, interprets, and does. We propose Intact, which runs on an unmodified browser. Intact builds GenTree, a bespoke representation that captures provenance and web semantics. Intact passes the page via GenTree to the LLM one element at a time, so the LLM decides</description>
-      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>ARC-SORT: Adaptive, Robust, Compensated Multi-Object Tracking with Interacting Multiple Models</title>
-      <link>https://arxiv.org/abs/2610.22306</link>
-      <guid isPermaLink="false">2610.22306</guid>
-      <description>Girish Kumar Adari — Multi-object tracking in sports broadcasts is hard for two reasons: athletes move fast and change direction abruptly, and the camera pans and zooms at the same time. We present ARC-SORT (Adaptive, Robust, Compensated SORT), a tracking-by-detection tracker that trains nothing and runs in real time. Its design rule: the tracker measures its own uncertainty, and that measurement decides how it acts. An Interacting Multiple Model (IMM) Kalman filter gives every track a predictive covariance, and we turn it into a per-track search region: the less reliable the motion prediction, the larger the region in which a detection may match (uncertainty-adaptive Expansion IoU, EIoU). On identical inputs, this continuous coupling is what matters: the same covariance used as a hard Mahalanobis gate hurts a</description>
-      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>AI-Driven Disaster Response and Displacement Monitoring</title>
-      <link>https://arxiv.org/abs/2610.21482</link>
-      <guid isPermaLink="false">2610.21482</guid>
-      <description>Noora Al-Emadi, Muhammad Imran, Yin Yang — ARTIFICIAL INTELLIGENCE (AI) has demonstrated its potential across a wide range of humanitarian tasks, offering scalable and data-driven solutions to some of the world&apos;s most pressing challenges. For instance, in addressing climate change, AI-powered models are being used for faster and more accurate global weather forecasting, control and design of renewable energy, and monitoring deforestation. Machine learning algorithms analyze satellite imagery and socioeconomic data to predict poverty and promote sustainable development. AI has also transformed disaster response and conflict monitoring, providing innovative solutions for assessing damage and urgent needs and tracking displacement.</description>
-      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Xiaomi-Lens-0 Technical Report</title>
-      <link>https://arxiv.org/abs/2610.23279</link>
-      <guid isPermaLink="false">2610.23279</guid>
-      <description>Pei Fu, Yike Liu, Yue Sun — Multimodal large language models (MLLMs) answer questions about whole images well, yet they still struggle with fine-grained region understanding. A key reason is that text-only supervision never specifies which regions support an answer. To close this gap, we present Xiaomi-Lens-0, a 4B MLLM built on Qwen3.5 that predicts masks from its own visual representations. Specifically, a lightweight decoder combines vision-encoder patch features with visual latents, the language model&apos;s mask-token states, so mask supervision reaches the shared backbone without an additional segmentation encoder. Because each latent decodes to a mask, the model can interleave reasoning with region-specific latents and thus think with visual latents, while grounded reasoning traces supervise the regions it visits d</description>
+      <title>N-Gram Memories at Two Bits: Quantizing Lookup Tables in Large Language Models</title>
+      <link>https://arxiv.org/abs/2610.21810</link>
+      <guid isPermaLink="false">2610.21810</guid>
+      <description>Donghoon Han, Minseop Jung, Dong Woo Kwak — Conditional memory expands language-model capacity through selective lookup, but the full embedding table must remain available for every possible input. We introduce Conditional Program (CP), a compressed representation that reconstructs only the rows an input requests. CP represents each row by a short code and a local scale, with a reconstruction program shared across the table. We instantiate this representation with a Gaussian trellis, norm restoration and independently decodable row records. CP&apos;s two-bit code lowers output KL by 41--63\% relative to 2-bit round-to-nearest. Analysis across three trained n-gram memory families shows that Gaussian-like coordinate statistics coexist with learned relationships among rows; at matched storage budgets, the shared trellis outperforms the fitt</description>
       <pubDate>2026-10-16T00:00:00.000Z</pubDate>
     </item>
     <item>
-      <title>MTEdit: Packed Trajectories Beat Rollouts for Multi-Turn Image Editing</title>
-      <link>https://arxiv.org/abs/2610.23751</link>
-      <guid isPermaLink="false">2610.23751</guid>
-      <description>Houyuan Chen, Fanzhou Wang, Xiangyu Fan — Multi-turn image editing aims to modify an image according to a sequence of instructions, making it better aligned with human-AI collaborative creation than single-turn editing. However, constructing high-quality multi-turn training data remains challenging, as conventional sequential rollout accumulates errors and introduces visual-quality drift across editing turns. To address this challenge, we introduce MTEdit, a multi-turn image editing dataset built through a pipeline centered on packed trajectory canvas (PTC) generation. By jointly generating multiple editing states within a unified visual context, this pipeline reduces visual-quality drift across turns. Covering both step-wise and context-aware editing scenarios, MTEdit comprises 500K multi-turn image editing trajectories, with up </description>
+      <title>Beyond Maliciousness: Static and Runtime Attack-Surface Profiling of Agent Skills</title>
+      <link>https://arxiv.org/abs/2610.19264</link>
+      <guid isPermaLink="false">2610.19264</guid>
+      <description>Ratnesh Pandey, Japneet Singh, Harsh Akshit — Agent skills are Markdown documents that a tool-using agent reads as instructions and then acts on with the privileges of the session that loaded them. Installing one grants authority (the standing to direct the agent, not new privilege), and the size of that grant is what we measure. We present a two-phase attack-surface profiling methodology that combines whole-bundle static analysis and dependency provenance checking with instrumented sandbox execution and separate model-based assessment of the resulting traces. We apply the methodology to 6,309 listings from two marketplaces, selecting listings for execution without conditioning that decision on a prior threat or risk signal. Half the corpus carries evidence of shell-execution capability; the corresponding shares are 35% for filesystem</description>
+      <pubDate>2026-10-13T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation</title>
+      <link>https://arxiv.org/abs/2610.25964</link>
+      <guid isPermaLink="false">2610.25964</guid>
+      <description>Kesav Kumar Jayakumar, Karthigeyan Thilak — We set out to reproduce a recent hallucination-mitigation result on the POPE benchmark. The LLaVA-1.5-7B baseline we measured, 82.21 F1 on the adversarial split, sat 1.21 to 8.67 points above the adversarial baselines we planned to compare against (81.00, 79.30, and 73.54). We looked at the evaluation code and found a readout choice that moves F1 on its own. A two-token logit readout decides yes versus no by comparing two vocabulary IDs, 3582 (&quot;yes&quot;) and 1217 (&quot;no&quot;). Across 9,000 greedy-decode questions spanning all three splits, neither ID is generated even once. The model emits &quot; Yes&quot; (token 3869) and &quot; No&quot; (token 1939), because SentencePiece prepends a space byte after the prompt suffix &quot;ASSISTANT:&quot;. Read with an eight-token lookup that covers the space-prefixed surface forms, LLaVA-1.5</description>
+      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>RealityBench: Simulated Environments to Evaluate a Vision Language Model&apos;s Ability to Document Human Physical Work</title>
+      <link>https://arxiv.org/abs/2610.14397</link>
+      <guid isPermaLink="false">2610.14397</guid>
+      <description>Andrew Perrault, Anmol Takiar, Dominik Wienecki — Augmenting worker capabilities in the physical world through guidance has been a decades-long goal for AI agents. One key supporting capability is to understand what the worker is doing, seeing through the human&apos;s camera or smart glasses, and assist them in documentation. Despite advances in vision language models, their capabilities in these settings remain uncertain and are challenging to benchmark because most physical work data is proprietary, and involves too much variability to study in a principled manner. Unlike structured settings such as kitchens and warehouses that have predictable lighting, geometry, and objects, field-facing tasks such as rooftop solar installation and vehicle repair are unconstrained and high variance. Here, we model real-world physical work in Blender across</description>
+      <pubDate>2026-10-09T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>RoboValue: A Fine-Grained Sim-and-Real Benchmark for Unified Evaluation of Robotic Value Models</title>
+      <link>https://arxiv.org/abs/2610.26663</link>
+      <guid isPermaLink="false">2610.26663</guid>
+      <description>Shengbang Liu, Zhengye Du, Zhilong Wan — Robotic value models assess task execution from visual observations and instructions, providing feedback for policy learning and execution monitoring. However, existing evaluations cover only selected aspects of execution understanding, leaving the reliability of value feedback insufficiently tested. We introduce RoboValue, a fine-grained sim-and-real benchmark for unified evaluation of robotic value models. Its framework evaluates four complementary capability dimensions through shared interfaces: task-state understanding, temporal progress monitoring, failure and recovery reasoning, and value consistency. Diagnostic trajectories and instruction variations test whether value judgments accurately reflect task requirements and changes throughout execution. RoboValue-Dataset covers 15 simula</description>
+      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Harnessing Textual Refusal Directions for Multimodal Safety</title>
+      <link>https://arxiv.org/abs/2606.31876</link>
+      <guid isPermaLink="false">2606.31876</guid>
+      <description>Moreno D&amp;#39;Incà, Nicu Sebe, Massimiliano Mancini — Safety in Multimodal Large Language Models (MLLMs) depends on unsafe multimodal data for post-training alignment or activation steering. However, such data is hard to collect, must be gathered anew for each modality, and its collection and distribution raise ethical and legal concerns. In this work, we relax this constraint and investigate whether textual refusal directions, extracted directly from the LLM backbone, generalize across modalities (i.e., image, video). Preliminary findings confirm this ability, though effectiveness is conditioned by layer selection, steering strength, and cross-modal alignment, with the latter causing safe multimodal inputs to be spuriously steered toward refusal. Building on this, we introduce Modality-Agnostic Refusal Steering (MARS), a lightweight training</description>
       <pubDate>2026-10-16T00:00:00.000Z</pubDate>
     </item>
   </channel>
