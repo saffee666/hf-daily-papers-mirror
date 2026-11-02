@@ -5,8 +5,120 @@
     <link>https://saffee666.github.io/hf-daily-papers-mirror</link>
     <description>Daily HuggingFace papers mirrored for access from China</description>
     <language>en</language>
-    <lastBuildDate>2026-11-01</lastBuildDate>
+    <lastBuildDate>2026-11-02</lastBuildDate>
     <atom:link href="https://saffee666.github.io/hf-daily-papers-mirror/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ReLift: Dense 3D Tracking as Lifted Trajectory Repair</title>
+      <link>https://arxiv.org/abs/2610.42136</link>
+      <guid isPermaLink="false">2610.42136</guid>
+      <description>Assaf Singer, Maroun Khriesh, Noam Rotstein — Dense 3D tracking from monocular video requires establishing point correspondences over time, estimating their depth, and inferring their trajectories during occlusion. Existing methods typically learn these tasks jointly, a demanding objective given the scarcity of 4D supervision. We show that strong pretrained 2D trackers and 3D geometry models provide an effective foundation: lifted trajectories, with occluded segments simply interpolated, already rival dedicated 3D trackers using the same geometry. However, lifted trajectories inherit correspondence and depth errors, and under occlusion, their depth comes from the occluder rather than the tracked point. We introduce ReLift, an efficient feed-forward framework that recasts dense 3D tracking as geometric trajectory repair and completion.</description>
+      <pubDate>2026-10-30T17:58:33.000Z</pubDate>
+    </item>
+    <item>
+      <title>HALO: Human-Grounded Granular Evaluation of Proactive Agents</title>
+      <link>https://arxiv.org/abs/2610.39086</link>
+      <guid isPermaLink="false">2610.39086</guid>
+      <description>Wenqi Pei, Xinyu Wang, Jinrui Liu — Proactive agents must decide whether, when, and how far to assist without an explicit request. Existing evaluations often rely on automated scores or binary verdicts, offering limited human diagnosis of evidence use and intervention quality. To address these gaps, we introduce HALO, Human-Grounded GrAnular EvaLuation of PrOactive Agents. HALO-Arena covers 4 proactive need types, Dependency, Blockage, Risk, and Opportunity, across 10 everyday domains and 50 personal environments. Scenarios require agents to retrieve evidence from structured databases or unstructured documents before judging whether assistance is warranted and choosing its scope. On HALO-Arena, we construct HALO-8K, a dataset of 8,000 responses from 10 models across 400 scenarios, annotated by 20 experts for action level, ac</description>
+      <pubDate>2026-10-29T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use</title>
+      <link>https://arxiv.org/abs/2610.40738</link>
+      <guid isPermaLink="false">2610.40738</guid>
+      <description>Aman Tiwari, Akshay Kalkunte, Akintunde Oladipo — A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoning backbone while retaining text and image input modalities. Built on the post-trained Gemma 4 26B-A4B checkpoint, Apriel Voice directly processes speech and generates both responses and tool calls without requiring a separate dialogue model. We introduce a two-stage training procedure to adapt the model to speech. The first stage establishes the speech interface, while the second jointly adapts the projector and backbone through supervised fine-tuning, text replay, and source-dependent cross-entropy and forward Kul</description>
+      <pubDate>2026-10-29T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Probing Spatial State Representations in Visual Foundation Models</title>
+      <link>https://arxiv.org/abs/2610.40636</link>
+      <guid isPermaLink="false">2610.40636</guid>
+      <description>Baiqiao Yin, Zhongang Cai, Ruisi Wang — An observer sees only part of the surrounding world, yet must keep track of what lies beyond the current view. Spatial perception therefore involves more than recognizing individual images: it calls for a persistent spatial state that is updated under self-motion and used to guide action. Do visual foundation models provide representations that support such a state? We study this question through four levels of spatial capability---spatial structure, object persistence, predictive spatial update, and actionability---using frozen-feature probes on ten representations under streaming egocentric observations of static indoor environments. The resulting capability profiles vary across tasks, network layers, and prefix lengths: strong readout of the visible scene does not ensure accurate object</description>
+      <pubDate>2026-10-29T17:58:16.000Z</pubDate>
+    </item>
+    <item>
+      <title>On the Origin and Evolution of Training-Inference Mismatch in LLM Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2610.40945</link>
+      <guid isPermaLink="false">2610.40945</guid>
+      <description>Yu Li, Yufa Zhou, Tian Lan — On-policy reinforcement learning for large language models assumes that training responses are sampled from the current policy. In practice, an inference engine samples the responses and a separate trainer computes the gradients, and the training-inference mismatch between the two makes the training data off-policy. The mismatch has two sources, the numerics of the engine and the stale weights of asynchronous sampling, and a correction that stabilizes training under one source can fail under the other. We ask which property of a mismatch source decides the correction it needs. Evaluating the trainer at the sampler&apos;s weights splits each sampled-token error exactly into a numerical discrepancy of the engine and a policy lag of the trainer, and we follow both through training. The numerical d</description>
+      <pubDate>2026-10-29T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents</title>
+      <link>https://arxiv.org/abs/2610.40799</link>
+      <guid isPermaLink="false">2610.40799</guid>
+      <description>Yijia Fan, Xilin He, Yilei Jiang — Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test </description>
+      <pubDate>2026-10-29T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory</title>
+      <link>https://arxiv.org/abs/2610.42141</link>
+      <guid isPermaLink="false">2610.42141</guid>
+      <description>Shengguang Wu, Suning Huang, Cherie Ho — Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternative to finetuning on a novel setup. In RoboArchitect, a coding model observes a robot&apos;s rollouts, diagnoses failures, and iteratively revises the harness around the frozen policy. The harness evolves on a set of episodes for its optimization and is evaluated on held-out scenes and tasks. Without updating any model weights, RoboArchitect raises average success from 9.7% to 43.3% on unseen scenes (4.5x) and from 12.7% to 40.2% on unseen tas</description>
+      <pubDate>2026-10-30T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>CausalWAM: Learning the Causes of Actions in World Action Models</title>
+      <link>https://arxiv.org/abs/2610.42096</link>
+      <guid isPermaLink="false">2610.42096</guid>
+      <description>Juntao Cheng, Jinzhou Tang, Fan Feng — World action models (WAMs) learn latent variables from observations and use these to both predict the evolution of the scene and to generate actions. The prediction has to be of the whole scene, whereas only a portion of the scene causes actions. WAMs fitted to demonstrations do not, in general, guarantee that they will generate actions solely from the latent causes of the demonstrated actions (the action-relevant latent variables), as the model could just as well learn to imitate in this way whilst entangling the action-relevant latent variables with the nuisance variables. We therefore separate out what causes action from what prediction depends on. We prove that under a sparsity constraint the latent variables used to generate actions are an invertible function of the action-relevant la</description>
+      <pubDate>2026-10-30T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>WeFair: Fidelity-Aware Alignment from Human Feedback for Personalized Query Rewriting in Short-Video Search</title>
+      <link>https://arxiv.org/abs/2610.16927</link>
+      <guid isPermaLink="false">2610.16927</guid>
+      <description>Yingtao Ren, Aolin Li, Cheng Cheng — Short-video search needs compact query rewriters that recover users&apos; personalized intent from ambiguous queries under strict latency constraints. Existing LLM-based methods have improved rewriting by using synthetic reasoning and subsequent consumption-behavioral feedback. However, overemphasizing subsequent consumption can favor engaging content over the user&apos;s immediate need, causing intent drift even when rewritten queries are grounded in behavioral history. We propose WeFair, Fidelity-Aware Alignment from Human Feedback for Personalized Query Rewriting in WeChat short-video search. WeFair uses human feedback according to how directly it reflects personalized intent, assigning feedback fidelity to a progression from demonstration to preference to verification. We first mine actual queri</description>
+      <pubDate>2026-10-30T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation</title>
+      <link>https://arxiv.org/abs/2610.36545</link>
+      <guid isPermaLink="false">2610.36545</guid>
+      <description>Yijing Lin, Zhendong Mao, Mengqi Huang — Unified conditional image generation requires a single model to preserve different aspects of a visual input while producing a target image that follows textual guidance. Pretrained video models provide a promising foundation by encoding visual transformations across time, yet existing approaches typically assign the condition and target to fixed temporal positions. We observe that condition-target relationships vary substantially across generation tasks, while video models naturally encode visual transformations at different temporal scales. This motivates us to model conditional generation through input-adaptive virtual temporal relations. We propose FrameForge, which captures two complementary aspects of such relations. Mixture of Temporal Experts (MoTE) models how far the target lies f</description>
+      <pubDate>2026-10-27T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>CEPO: A General Framework for Improving Prompt Optimization in Multi-Agent Systems</title>
+      <link>https://arxiv.org/abs/2610.34722</link>
+      <guid isPermaLink="false">2610.34722</guid>
+      <description>Jongha Kim, Seohyun Lee, Jonathan Minho Chung — Multi-agent systems (MAS) require both effective coordination and specialized task execution. Existing prompt optimization approaches typically couple these functions within agent-specific prompts. We introduce Coordinator-Executor Prompt Optimization (CEPO), a general framework for improving prompt optimization in MAS. CEPO separates system-level coordination from agent-level execution through a shared coordinator prompt and agent-specific executor prompts, and guides their updates according to their respective roles. This structure allows shared coordination rules to be refined consistently across agents while keeping execution instructions separately adjustable. CEPO provides the prompt structure and optimization guidance, while existing prompt optimizers perform the underlying search. </description>
+      <pubDate>2026-10-26T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Wizard: Manipulate Any World in Real Time via Agentic Control</title>
+      <link>https://arxiv.org/abs/2610.40339</link>
+      <guid isPermaLink="false">2610.40339</guid>
+      <description>Yuzhe Wu, Zijun Lin, Yeying Jin — Recent advances in video world models have enabled the generation of increasingly realistic and interactive virtual environments, opening new possibilities for player-customizable gameplay. Agentic frameworks further advance this direction by decoupling explicit game logic and controllable world representations from visual generation. However, existing approaches support only simple game settings and predefined motion patterns, generalize poorly to unseen environments and characters, and offer limited real-time interactivity. In this paper, we introduce Wizard, an agentic game world model that enables real-time, precise control over character motions while generalizing zero-shot across novel scenes, characters, and actions. To achieve this, we construct a diverse dataset spanning 750 scene</description>
+      <pubDate>2026-10-29T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?</title>
+      <link>https://arxiv.org/abs/2610.39497</link>
+      <guid isPermaLink="false">2610.39497</guid>
+      <description>Qi Wang, Yun Qu, Lizhou Cai — Progress toward artificial general intelligence (AGI) has largely relied on scaling a resource-intensive executive, System-2, through larger models, more data and compute, longer reasoning, and more agents. We ask whether the next stage may come instead from co-designing it with System-1, a lightweight, semantically aware predictor that evaluates candidate interactions before execution, so that System-2 acts only on those worth their cost. Our answer is a qualified yes. We study conditional interaction, a predict--gate--execute--update loop: System-1 estimates each candidate&apos;s utility, System-2 executes those admitted by an adaptive threshold, and the outcomes update System-1. The loop spans training, test-time reasoning, adaptive decision-making, and agentic tool use, with utility and cos</description>
+      <pubDate>2026-10-29T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>R^2Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop</title>
+      <link>https://arxiv.org/abs/2610.22740</link>
+      <guid isPermaLink="false">2610.22740</guid>
+      <description>Mingda Zhang, Yun Huang, Qiang Huang — In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task&apos;s rollouts all reach the same outcome, and unreliable evaluation signals that judge each skill by one noisy score. To address these challenges, we propose R^2Orch, a new paradigm of Recursive Self-Play Orchestration: an inner loop of self-play that improves the orchestrator on self-chosen tasks, and an outer loop that improves how the inner loop improves. To support this paradigm, we introduce Recursive Learnability, a training objective that rewards a Proposer for choosing tasks whose rollouts keep reaching different outcomes as skills are withdrawn. Built on this </description>
+      <pubDate>2026-10-22T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>WorldBridge: Bridging Video and Action for Task Generalization in World Action Models</title>
+      <link>https://arxiv.org/abs/2610.40748</link>
+      <guid isPermaLink="false">2610.40748</guid>
+      <description>Jun Cen, Yubo Guo, Hao Li — Achieving the broad task generalization of embodied models in physical environments remains a central challenge in robot learning. We study this challenge in World Action Models (WAMs) through two complementary capabilities: video generalization, which predicts the visual evolution of new tasks, and action generalization, which translates these predictions into executable behavior through a video-to-action bridge. By varying video and action supervision for tasks outside an initial training set, we examine their respective contributions to task transfer. On RoboTwin 2.0, using only in-distribution video-action supervision yields a 25.07% success rate on out-of-distribution tasks. Introducing videos of these tasks without their action labels raises success to 55.90%, while adding just one a</description>
+      <pubDate>2026-10-29T00:00:00.000Z</pubDate>
+    </item>
+    <item>
+      <title>HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model</title>
+      <link>https://arxiv.org/abs/2610.40373</link>
+      <guid isPermaLink="false">2610.40373</guid>
+      <description>Rongxing Ding, Hongyu Qu, Kehong Wu — Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones,</description>
+      <pubDate>2026-10-29T00:00:00.000Z</pubDate>
+    </item>
     <item>
       <title>EPSBench: Benchmarking LLM Agents for Earnings Forecasting</title>
       <link>https://arxiv.org/abs/2610.38293</link>
@@ -244,120 +356,6 @@
       <guid isPermaLink="false">2610.38352</guid>
       <description>Chenyu Mu, Wenming Weng, Qinrui Wang — Producing long-form videos from narration requires interdependent decisions that remain coherent across shots. Existing agentic editors often use multi-stage workflows driven by general models, leaving the quality-cost trade-off of compact, task-adapted policies unclear. We address this gap with WeVisCut, a long-form script-to-video system that connects tool execution with policy learning. Its agent harness maintains shared production state so that tool feedback informs subsequent decisions and repairs. Because finished videos do not expose these decisions, our four-stage data pipeline combines editing inversion with verified replay to turn recovered editing intent into executable supervision. Applied to 3,750 finished videos, this pipeline yields over 130K training examples. We use this s</description>
       <pubDate>2026-10-28T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation</title>
-      <link>https://arxiv.org/abs/2610.38425</link>
-      <guid isPermaLink="false">2610.38425</guid>
-      <description>Shaohan Yu, Jie Qin, Wende Tan — Humans routinely consume multimodal content, where textual and visual information is naturally interleaved. Although Unified Multimodal Models (UMMs) can jointly generate text and images, multimodal interleaved generation remains largely underexplored. Progress in this area is hindered by two key limitations: (1) the lack of well-defined interleaved generation tasks and corresponding training data, and (2) the absence of fine-grained evaluation protocols that can reliably diagnose model performance across different capability dimensions. To this end, we present IntReal, comprising two complementary components: IntReal-100K, a real-world dataset of multimodal interleaved samples spanning four major categories, and the IntReal Evaluation Suite, which evaluates model performance across seven </description>
-      <pubDate>2026-10-28T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team</title>
-      <link>https://arxiv.org/abs/2610.33106</link>
-      <guid isPermaLink="false">2610.33106</guid>
-      <description>Wenbo Hu, Ken Li, Jiazhe Wei — Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an Adversarial</description>
-      <pubDate>2026-10-22T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>WebAnything: From the Wild Web to Scalable Agent Environments</title>
-      <link>https://arxiv.org/abs/2610.37786</link>
-      <guid isPermaLink="false">2610.37786</guid>
-      <description>Tianci Xie, Zikun Cai, Chaoyun Zhang — Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering, while generative construction can diverge from specified real websites. Capture-and-replay preserves observations, with interaction coverage constrained by captured content and replay capabilities.
-  We present WebAnything, a fully automated framework that reconstructs source-grounded, reusable Web environments from real URLs without per-site manual implementation or repair after initial setup and authorization. An Explorer-Builder collects browser-observable structures, resources, and interaction outcomes; an independent verifier checks frozen candidates and guides local repair or targeted source recapture.
-  We construct</description>
-      <pubDate>2026-10-27T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training</title>
-      <link>https://arxiv.org/abs/2610.37161</link>
-      <guid isPermaLink="false">2610.37161</guid>
-      <description>Ziyang Zeng, Tingyang Chen, Jia Deng — Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constructing coherent and executable professional tasks. Starting from professional intents, information-level planning builds an information support graph to guide task instantiation, explicitly representing the dependencies and locations of information required for the intended outputs. Probe executions then identify support failures and guide repairs while preserving the intended work. We construct 112,686 tasks spanning 612 occupations and use the collected teacher trajectories to fine-tune Qwen m</description>
-      <pubDate>2026-10-27T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>After One-Click Video: The Inflow of Service-Type Content, the Failure of the Recommendation Pool Mechanism, and the BoLe System</title>
-      <link>https://arxiv.org/abs/2610.37695</link>
-      <guid isPermaLink="false">2610.37695</guid>
-      <description>Bo Zou, Chao Xu — In September 2026, a new large language model was released. Soon after, a new way of making explainer videos became very popular: people asked the model to write a program, and the program produced the video. &quot;One-click video&quot; content then appeared in large amounts on many platforms. On the surface, this is a rise in creative power at the level of the individual. We argue that, at a deeper level, it changes the structure of the content industry. This judgment rests on two observations. First, this wave of content is service-type content. People watch it to meet a need, not to enjoy the content itself. The other kind is work-type content. AI makes both kinds faster to produce. But anyone can come in and make service-type content, while work-type content is limited by the number of people wh</description>
-      <pubDate>2026-10-24T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>PreView: Enhancing GUI Grounding with Preprocessed Views and Cues</title>
-      <link>https://arxiv.org/abs/2610.33645</link>
-      <guid isPermaLink="false">2610.33645</guid>
-      <description>Wenjun Hou, Kaishuai Xu — GUI grounding requires locating small controls in cluttered screenshots and identifying which control a natural-language instruction refers to. Cropping and enlargement can expose local detail, but the resulting image may still leave ambiguity about the intended target. We propose PreView, an auxiliary preprocessor that improves the inputs to an existing grounding model without further training that model. PreView prepares two complementary types of input features: task-relevant views for localization and candidate-specific cues for target understanding. A trained lightweight auxiliary model predicts and refines a center, crops the screenshot into a local view, and enlarges that view for zoomed-in grounding. It also prepares a visual cue (i.e., a red-circle marker with a location hint) and</description>
-      <pubDate>2026-10-24T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas</title>
-      <link>https://arxiv.org/abs/2610.22990</link>
-      <guid isPermaLink="false">2610.22990</guid>
-      <description>Haoming Li, Defu Cao, Xu Hu — Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add constraints, or require approval before consequential actions. Completing the benchmark instruction does not guarantee serving the person who asked. We introduce PersonaCUABench, which holds 74 tasks across 11 domains fixed and varies only who asks. A persona agent, playing one of 44 personas in four groups, rewrites each instruction in that user&apos;s own words and answers the CUA&apos;s questions, while the CUA sees only the dialogue, never the profile or the original instruction. Across nine backbones (3,330 runs), mean task completion falls by 36% relative to the original requests. The losses have two sources: in 59.9% of cells that lose points, the agent engages with what t</description>
-      <pubDate>2026-10-16T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models</title>
-      <link>https://arxiv.org/abs/2610.27100</link>
-      <guid isPermaLink="false">2610.27100</guid>
-      <description>George Nigmatulin, Valentin Mohl, Sascha Frey — Realistic market impact is essential for generative limit order book (LOB) models to serve as world models for trading agents. If a simulator misprices this mechanism, agents learn policies that are optimal in the simulator but wrong in the real market. Existing metrics assess generated streams purely through distributional comparison with historical data, leaving counterfactual response to an agent&apos;s own orders largely unexplored. Here, we show that market impact emerges naturally in neural LOB generators trained solely for next-token prediction. We inject execution-style metaorders into the generated message flow of five autoregressive models across five NASDAQ stocks and measure the response using estimators from the empirical impact literature, validated on baselines whose physics is k</description>
-      <pubDate>2026-10-19T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Know, then Draw: A New Learning Paradigm for Visual Generation</title>
-      <link>https://arxiv.org/abs/2610.37626</link>
-      <guid isPermaLink="false">2610.37626</guid>
-      <description>Yucheng Mao, Chongjian Ge, Zhuowen Tu — Visual generation requires both high-level semantic knowledge and fine-grained pixel details. We propose a learning paradigm that assigns these roles to autoregressive pretraining for knowledge acquisition and diffusion post-training for high-fidelity rendering. Within this framework, we study the objective, representation, and scaling of knowledge acquisition and rendering. Controlled comparisons identify autoregression as the stronger pretraining objective for downstream rendering, improving both learning efficiency and final generation quality. We further find that AR-only generation quality does not necessarily correlate with final performance; semantic quality matters more. This motivates a purely semantic tokenizer trained with language supervision alone, without an image decoder or </description>
-      <pubDate>2026-10-27T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Instruction Capacity: Behavior and Degradation of Language Models under Controlled Load</title>
-      <link>https://arxiv.org/abs/2610.36095</link>
-      <guid isPermaLink="false">2610.36095</guid>
-      <description>Hennadii Kutomanov — The quality with which language models follow instructions falls as the load grows, yet there is still no quantity that expresses the limit of a model in units of load with an uncertainty. We propose an instrument in which the load consists of rules that replace single-token words in a text without meaning: such an instruction is atomic, the rules are independent by the construction of the task, and the outcome of every application of a rule is determined by a computable reference answer. Every occurrence of a word to be replaced becomes a Bernoulli trial with a known position in the answer and a known rule number. The statistical model first measures the shape of the dependence of the probability of a right replacement on the text length, the word position, the replacement density, the nu</description>
-      <pubDate>2026-10-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks</title>
-      <link>https://arxiv.org/abs/2610.35671</link>
-      <guid isPermaLink="false">2610.35671</guid>
-      <description>Yao Huang, Zhiyuan Zeng, Yu Wang — As frontier language models grow increasingly capable and autonomous, independent third-party evaluations are critical for characterizing their systemic safety risks. While closed-source releases are routinely accompanied by comprehensive system cards, open-weight models receive less scrutiny regarding frontier risks. To address this gap, we present an independent safety evaluation of DeepSeek V4.1 Flash-1017, the latest version of V4.1 Flash that departs from V4 with a new architecture, scaled-up training, and strong agentic capabilities. Drawing on the EU General-Purpose AI Code of Practice, we evaluate the model across 34 benchmarks, including 5 in-house suites, spanning evaluation integrity, loss of control, and harmful manipulation. Conforming to the AEF-1 standard, we compare V4.1 Fl</description>
-      <pubDate>2026-10-26T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>Amortizing Sequential Experimental Design in Reasoning LLMs</title>
-      <link>https://arxiv.org/abs/2610.20832</link>
-      <guid isPermaLink="false">2610.20832</guid>
-      <description>Anita Kriz, Antonin Berthon, Nicolás Astorga — Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasoning that guides action selection using information-gain rewards. Our approach specifies the experimental generative model independently of the LLM&apos;s own beliefs, allowing us to optimize expected information gain under a model of our choosing. We investigate the design choices for amortization, including alternative generative-model constructions, reward estimation, hypothesis-space specification, multi-step objectives, and computational costs relative to training- and inference-time BED baselines.</description>
-      <pubDate>2026-10-14T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents</title>
-      <link>https://arxiv.org/abs/2610.22507</link>
-      <guid isPermaLink="false">2610.22507</guid>
-      <description>Yunqi Liu, Peiyu Wang, Bingli Wang — Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisi</description>
-      <pubDate>2026-10-15T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data</title>
-      <link>https://arxiv.org/abs/2610.30132</link>
-      <guid isPermaLink="false">2610.30132</guid>
-      <description>Zhennan Wan, Jianfei Chen — Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose LongZero, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing</description>
-      <pubDate>2026-10-21T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents</title>
-      <link>https://arxiv.org/abs/2610.30161</link>
-      <guid isPermaLink="false">2610.30161</guid>
-      <description>Krishanu Adhikary, Prashant Devadiga — Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank&apos;s rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant </description>
-      <pubDate>2026-09-30T00:00:00.000Z</pubDate>
-    </item>
-    <item>
-      <title>CausGround: Causal Interaction Grounding for Adaptive Embodied Planning</title>
-      <link>https://arxiv.org/abs/2610.29702</link>
-      <guid isPermaLink="false">2610.29702</guid>
-      <description>Yijun Shen, Diqi He, Jinbang Guo — Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, making adaptation challenging. Yet existing approaches either require costly environment-specific training or rely on unstructured interaction experience that is difficult to reuse. Therefore, we introduce CausGround, a non-parametric causal interaction grounding framework that distills interaction experience into reusable action-centered causal knowledge. CausGround identifies action preconditions and effects and organizes them in a factorized world-state representation capturing object attribu</description>
-      <pubDate>2026-10-21T00:00:00.000Z</pubDate>
     </item>
   </channel>
 </rss>
