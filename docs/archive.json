@@ -97340,9 +97340,104 @@
       "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
       "githubRepo": "https://github.com/wongyun-yu/DexEngine",
       "submittedBy": "Wongyun"
+    },
+    "2611.33885": {
+      "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
+      "authors": [
+        "Yankuan Chi",
+        "Xin Lin",
+        "Baihan Yang",
+        "Yuheng Liu",
+        "Jason Li",
+        "Truong Nguyen"
+      ],
+      "summary": "3D layout-controlled image editing gives users explicit control over object placement and camera viewpoint. In a sequence of edits, however, the latest image can lose the appearance of an object when it is occluded or leaves view. The target layout specifies where the object should reappear, while its appearance must be recovered from earlier observations. We introduce LayoutRecall, a multi-round editor that stores and reuses appearance in the local coordinate systems of 3D boxes. Box-Surface Latent Memory retains image latents on box faces and retrieves them along rays in the target view. Geometry-Aligned Memory Conditioning supplies the retrieved tokens to a FLUX.2 editor using target-view positions, shared box-local embeddings, and object-wise attention. A correspondence loss encourages the editor to attend to matching observations during denoising. We also introduce LayoutLoop, a multi-round 3D layout-controlled image editing benchmark with calibrated layouts and designed revisits. We conduct extensive experiments on LayoutLoop and real-scene data to verify the ability of our method. The project page is at https://ykchizs.github.io/layoutrecall.github.io/.",
+      "upvotes": 0,
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "Yuheng02"
+    },
+    "2611.30025": {
+      "title": "Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning",
+      "authors": [
+        "Byunggu Yu",
+        "Justin Kim"
+      ],
+      "summary": "Conventional artificial neurons separate spatial feature aggregation from continuous physical time, limiting their ability to model irregular observations. We introduce the Damped Atomic Wave Integration Neuron (DAWIN), a continuous-time primitive for replacing standard neural layers in MLPs, Transformers, and graph neural networks. DAWIN couples spatial projection with elapsed-time-dependent wave excitation and integrates it into a local complex state through closed-form damped evolution, avoiding numerical differential equation solvers. We show that DAWIN generalizes static sinusoidal and memoryless wave neurons on interval-augmented inputs, derive closed-form gradients, and establish bounded-input bounded-output stability for positive damping and sampling intervals bounded away from zero. An associative Triton prefix-scan implementation, DAWINLinear, uses FP32 accumulation and achieves O(log L) parallel depth for sequence length L. Across 11 parameter-matched tasks covering irregular oscillators, MuJoCo dynamics, pedestrian trajectories, and PhysioNet 2012 clinical sequences, DAWIN outperforms Neural CDE on 9 tasks and ReLU-MLP on 8. It achieves the lowest error on dense clinical dynamics (0.9531 NRMSE, winning across all 10 seeds) and ties for the best mortality prediction (0.9993 AUROC). Shuffling elapsed intervals increases error by 58.2%-77.4% on selected dynamics tasks, versus 0.06% on a time-irrelevant control, supporting reliance on physical timing. On NVIDIA B200 GPUs, parallel wave integration accelerates inference by up to 2,630 times over its serial implementation and reduces peak GPU memory by up to 97.6% relative to Mamba in the tested configurations.",
+      "upvotes": 0,
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+      "githubRepo": "https://github.com/yumakemore/DAWIN",
+      "submittedBy": "yumakemore"
+    },
+    "2611.30723": {
+      "title": "BiSAT: Bidirectionally Aligned Semantic-Acoustic Tokenization for Speech Language Models",
+      "authors": [
+        "Y. Lu",
+        "L. Wang",
+        "S. Okada"
+      ],
+      "summary": "Speech language models (LMs) generate speech as sequences of discrete tokens. Their tokenizer must therefore preserve both acoustic detail and linguistic content at a low bitrate. Semantic-enhanced tokenizers may lose acoustic detail, whereas acoustic-oriented tokenizers retain acoustic variation that makes language modeling harder. Unified tokenizers combine both, but representing acoustic detail and linguistic content within a single feature space can cause interference between the two objectives, and existing approaches typically align acoustic representations to fixed semantic targets from a frozen teacher. We propose Bidirectionally Aligned Semantic-Acoustic Tokenization (BiSAT), a unified tokenization framework with separate acoustic and semantic branches aligned by a shared-index mechanism. This design learns acoustic and semantic representations in separate continuous spaces while producing a single discrete code sequence, and it jointly optimizes both encoders without relying on fixed semantic teacher targets. Based on BiSAT, we develop BiSAT-TTS, a zero-shot text-to-speech system comprising an autoregressive text-speech LM and a conditional flow-matching acoustic decoder. Reconstruction, downstream understanding, and diagnostic analyses show that BiSAT effectively preserves semantic and acoustic information in the code stream, performs well on in-the-wild and out-of-domain speech, and learns complementary codebook representations. The frozen-code understanding results also support its feasibility and potential for code-based reward modeling in reinforcement learning post-training. BiSAT-TTS performs comparably to state-of-the-art speech LM-based TTS baselines with less training data, further supporting BiSAT's effectiveness for speech language modeling. The audio demos are available at https://seekmind-lab.github.io/bisat-demo.",
+      "upvotes": 0,
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "zenkingsama"
+    },
+    "2611.27112": {
+      "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
+      "authors": [
+        "Sandeep Dhuri"
+      ],
+      "summary": "Teams put a one-page rules file in a repository and call it a control on coding agents. A registered study found agents rarely look up a repository's contribution rules. I asked the security question: what does a rules file do at a boundary, against a gate? I tested one 278-word rules file, with hypotheses and analysis code deposited first. Claude Code, Codex CLI, Gemini CLI and OpenCode with DeepSeek worked through 20 small repositories with hidden tests, 12 for three of them. Three agents met four boundaries I built: a refused endpoint, a destructive shortcut, a planted instruction and a planted package. Permission prompts, each vendor's own control layer, were off by design. A gate in front of the mock service blocked and logged forbidden requests. Every verdict was read from records the agent could not change. Only my first scoring pass was blind to arm. My checkers found no real bugs, with the file or without it. The file cost one agent a third of its score: Codex CLI fell from 99.0 to 67.7 percent on hidden tests, and in 11 of its 36 steps reported the task complete with all tests passing while under half of the hidden tests passed. Its own tests passed. Faced with two of its rules that clash on these tasks, three agents followed the task and one followed the rule. Pooled, passes fell from 98.2 to 90.9 percent. Matched pairs fell 7.7 points, 1.3 without Codex CLI. Attempts to cross were rare: 5 in 90 gated steps, 3 without the file, 2 with it, all by OpenCode with DeepSeek, all blocked. With no gate, under the neutral file, the same requests reached the mock in 7 of 45 runs. By an error in my run script, the no-file and rules-file arms always ran behind the gate at the three HTTP boundaries, so I could not test whether the file changes what an agent does there. On what I could measure, the file acted as advice. A file tells an agent what you want. A gate decides what it gets.",
+      "upvotes": 0,
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+      "githubRepo": "",
+      "submittedBy": "sandeepdhuriauthor"
+    },
+    "2611.30494": {
+      "title": "Revisiting LLMs as Context Engineers",
+      "authors": [
+        "Junrui Zhang",
+        "Zeyu Xu",
+        "Runchuan Zhu",
+        "Jie Peng",
+        "Long Zhang",
+        "Zixin Ding",
+        "Jiaxin Lin",
+        "Kai Wang",
+        "Jianmin Ji",
+        "Junyuan Hong"
+      ],
+      "summary": "As large language models (LLMs) are used in more and more new tasks, context engineering becomes a fundamental method to efficiently steer LLMs by constructing instruction prompts or metadata without intensive training. A growing number of LLM context engineering (LCE) approaches automate the task by casting the LLM itself as the engineer that draws generalizable instructions or experiences from offline trials as context. Although these methods resemble how humans learn from experiences, it remains unclear when and how LLMs can engineer effective context from data. To answer the question, we first establish a benchmark composed of datasets with different reasoning patterns. We compared different LCE methods with different LLM families in 8B size, showing that there is no single winner for all tasks, even compared with simple baselines like chain-of-thought. Even when scaling model capabilities via more parameters or generation iterations, LCEs do not consistently boost existing performance. Across all datasets and models, the performance gains of LCEs are negatively correlated (r=-0.5, ple 0.05) with the diversity of the failure modes of reasoning trajectories. Investigating how LCEs work, we find that (1) the improvement in instruction adherence can explain some success of LCEs; (2) one major bottleneck is whether LLMs can extract effective experiences out of natively diverse failures. Through this study, we uncover the limited capabilities of LCEs in abstracting principled contexts from diverse failure modes and understand how LCEs work, providing guidelines for future work.",
+      "upvotes": 0,
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+      "githubRepo": "https://github.com/costa-nus/LCEBench",
+      "submittedBy": "AlniyatRui"
+    },
+    "2611.31516": {
+      "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",
+      "authors": [
+        "Simon Weber",
+        "Mateo de Mayo",
+        "Je Hyeong Hong",
+        "Carl Olsson",
+        "Daniel Cremers",
+        "Ronald Clark"
+      ],
+      "summary": "Initialization-free bundle adjustment (InitFree BA) aims to jointly recover camera poses and scene structure without requiring an initial global estimate. It is a very challenging problem, especially compared to traditional BA where a good estimation is assumed. While recent methods optimize surrogate Object Space Error (OSE) objectives from random initialization, a low objective value does not necessarily yield an accurate reconstruction, revealing a gap between optimization and reconstruction. We show that existing InitFree BA pipelines struggle to produce accurate 3D reconstructions on modern SfM benchmarks, and demonstrate that incorporating learned metric depth substantially improves their practical feasibility. We introduce InitFree-SfM, a complete initialization-free SfM pipeline combining learned correspondences, metric depth, depth-consistent track construction, and joint metric refinement. Within this framework, we propose a simple depth-augmented OSE (dOSE), which complements the directional constraints of OSE by constraining landmark positions along their viewing rays. Our approach substantially outperforms existing InitFree BA methods and achieves competitive accuracy with established SfM pipelines, including on challenging low-overlap image collections. Importantly, our analysis challenges the prevailing emphasis on surrogate objectives in previous InitFree BA research, revealing that geometric constraints play a central role in accurate reconstruction, while OSE-based optimization provides further improvements.",
+      "upvotes": 0,
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+      "githubRepo": "https://github.com/simonwebertum/initfree-sfm",
+      "submittedBy": "SimonWeber"
     }
   },
   "dates": [
+    "2026-11-28",
     "2026-11-27",
     "2026-11-26",
     "2026-11-25",
@@ -97431,7 +97526,6 @@
     "2026-09-03",
     "2026-09-02",
     "2026-09-01",
-    "2026-08-31",
-    "2026-08-30"
+    "2026-08-31"
   ]
 }
